@@ -1,0 +1,212 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>interface</groupId>
+	<artifactId>hlife</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>hlife</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<xmlFileName></xmlFileName>
+	</properties>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/logging-interceptor 
+			日志拦截器 -->
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>logging-interceptor</artifactId>
+			<version>3.10.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.14.2</version>
+			<!--<scope>test</scope> -->
+			<!--作用范围，默认是test。验证部分被抽象，不仅test作用域需使用 -->
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.5</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.vimalselvam</groupId>
+			<artifactId>testng-extentsreport</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.vimalselvam</groupId>
+			<artifactId>testng-extentsreport</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.vimalselvam/testng-extentsreport -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>18.0</version>
+		</dependency>
+		<!-- 这是一条分割线 -->
+		<!-- 日志输出 -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.6.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.4</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+
+		<!-- get set自动生成 -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.18</version>
+		</dependency>
+
+		<!-- 阿里fastjson包JSON转换 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.47</version>
+		</dependency>
+
+		<!-- redis 连接 -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.24</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.bouncycastle/bcprov-jdk16 -->
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+			<version>1.46</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<!--扫描替换参数的文件路径 -->
+			</resource>
+		</resources>
+		<filters>
+			<filter>src/main/filters/${env}.properties</filter>
+			<!--环境过滤器的配置方式，回头需要在该路径下建立对应文件 -->
+		</filters>
+		<plugins>
+			<plugin>
+				<!--该插件是解决命令下执行mvn test指定testng xxx.xml 文件 的配置 -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.0</version>
+				<configuration>
+					<!--为了解决在jenkins maven执行test 报告乱码问题，编码格式设置为UTF-8 -->
+					<argLine>-Dfile.encoding=UTF-8</argLine>
+					<encoding>UTF-8</encoding>
+					<!--动态指定执行的xml文件。${project.basedir}项目目录，${xmlFileName}maven文件 -->
+					<suiteXmlFiles>
+						<suiteXmlFile>
+							${project.basedir}/target/classes/testng/${xmlFileName}</suiteXmlFile>
+						<!-- <suiteXmlFile>src\main\resources\testng\api\single\order.xml</suiteXmlFile> -->
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<!-- 第一套测试环境 默认激活 -->
+		<profile>
+			<id>first-debug</id>
+			<properties>
+				<env>first-debug</env>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault><!-- 默认启用的是第一套环境配置 -->
+			</activation>
+		</profile>
+		<!-- 嗨生活生产环境 -->
+		<profile>
+			<id>hlife_online</id>
+			<properties>
+				<env>hlife_online</env>
+			</properties>
+
+		</profile>
+
+		<!-- 住金所生产环境 -->
+		<profile>
+			<id>house_online</id>
+			<properties>
+				<env>house_online</env>
+			</properties>
+		</profile>
+		<!-- 住金所生产环境 -->
+		<profile>
+			<id>taiji_online</id>
+			<properties>
+				<env>taiji_online</env>
+			</properties>
+		</profile>
+	</profiles>
+</project>

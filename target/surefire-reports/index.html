@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-登录相关">
+              <span class="suite-name border-passed">登录相关</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-登录相关">
+                    <span>E:\project\hlife\src\main\resources\testng\api\integration\fast.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-登录相关">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-登录相关">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-登录相关">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-登录相关">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-登录相关">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-登录相关">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-登录相关" class="hide-methods passed suite-登录相关"> (hide)</a> <!-- hide-methods passed suite-登录相关 -->
+                      <a href="#" panel-name="suite-登录相关" class="show-methods passed suite-登录相关"> (show)</a> <!-- show-methods passed suite-登录相关 -->
+                    </span>
+                    <div class="method-list-content passed suite-登录相关">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-登录相关" title="hlife.test.integration.Fast" hash-for-method="pwdFast">pwdFast</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-登录相关" title="hlife.test.integration.Fast" hash-for-method="verifyFast">verifyFast</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-登录相关 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-登录相关" class="panel 登录相关">
+          <div class="suite-登录相关-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">hlife.test.integration.Fast</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="pwdFast">
+                  </a> <!-- pwdFast -->
+                  <span class="method-name">pwdFast</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyFast">
+                  </a> <!-- verifyFast -->
+                  <span class="method-name">verifyFast</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-登录相关-class-passed -->
+        </div> <!-- panel 登录相关 -->
+        <div panel-name="test-xml-登录相关" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\project\hlife\src\main\resources\testng\api\integration\fast.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;登录相关&quot;&gt;
+  &lt;parameter name=&quot;system.info&quot; value=&quot;reporter.config.MySystemInfo&quot;/&gt;
+  &lt;parameter name=&quot;report.config&quot; value=&quot;src/main/resources/config/report/extent-config.xml&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;reporter.listener.MyExtentTestNgFormatter&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;我的页面&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;hlife.test.integration.Fast&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- 我的页面 --&gt;
+&lt;/suite&gt; &lt;!-- 登录相关 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-登录相关" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for 登录相关</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">我的页面 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-登录相关" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for 登录相关</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Fast</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">pwdFast</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyFast</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-登录相关" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for 登录相关</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_登录相关');
+function tableData_登录相关() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'pwdFast')
+data.setCell(0, 2, 'hlife.test.integration.Fast')
+data.setCell(0, 3, 27921);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyFast')
+data.setCell(1, 2, 'hlife.test.integration.Fast')
+data.setCell(1, 3, 26609);
+window.suiteTableData['登录相关']= { tableData: data, tableDiv: 'times-div-登录相关'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 54 seconds</span>
+              <div id="times-div-登录相关">
+              </div> <!-- times-div-登录相关 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-登录相关" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for 登录相关</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyFast</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">country_code:86</span>
+                <span class="reporter-method-output">password:9999</span>
+                <span class="reporter-method-output">type:1</span>
+                <span class="reporter-method-output">uuid:00000000-53a8-ae41-ffff-ffffef05ac4a</span>
+                <span class="reporter-method-output">platform:taiji</span>
+                <span class="reporter-method-output">username:17611111111</span>
+                <span class="reporter-method-output">http://apitest.hishenghuo.com.cn:4000/union/login/verify/</span>
+                <span class="reporter-method-output">{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$JyHrqatti7HY8jMhQJOr6.UHNQnN0OV/k7afW9XH1man.d/9l1QcW","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}</span>
+                <span class="reporter-method-output">头像不为空，用例通过</span>
+                <span class="reporter-method-output">http://file.hishenghuo.com.cn/taiji/avatar.png</span>
+                <span class="reporter-method-output">头像可以成功访问，用例通过</span>
+                <span class="reporter-method-output">access_token不为空，用例通过</span>
+                <span class="reporter-method-output">password:9988</span>
+                <span class="reporter-method-output">type:1</span>
+                <span class="reporter-method-output">username:17611111111</span>
+                <span class="reporter-method-output">http://apitest.hishenghuo.com.cn:4000/union/login/verify/</span>
+                <span class="reporter-method-output">{"msg":"验证码不正确","data":{},"status":0}</span>
+                <span class="reporter-method-output">手机号正确，验证码不正确，用例通过</span>
+                <span class="reporter-method-output">password:9999</span>
+                <span class="reporter-method-output">type:1</span>
+                <span class="reporter-method-output">username:</span>
+                <span class="reporter-method-output">http://apitest.hishenghuo.com.cn:4000/union/login/verify/</span>
+                <span class="reporter-method-output">{"msg":"手机号码不能为空","data":{},"status":0}</span>
+                <span class="reporter-method-output">手机号为空，验证码正确，用例通过</span>
+                <span class="reporter-method-output">password:</span>
+                <span class="reporter-method-output">type:1</span>
+                <span class="reporter-method-output">username:17611111111</span>
+                <span class="reporter-method-output">http://apitest.hishenghuo.com.cn:4000/union/login/verify/</span>
+                <span class="reporter-method-output">{"msg":"验证码不能为空","data":{},"status":0}</span>
+                <span class="reporter-method-output">手机号正确，验证码为空，用例通过</span>
+                <span class="reporter-method-output">password:9999</span>
+                <span class="reporter-method-output">type:1</span>
+                <span class="reporter-method-output">username:176111</span>
+                <span class="reporter-method-output">http://apitest.hishenghuo.com.cn:4000/union/login/verify/</span>
+                <span class="reporter-method-output">{"msg":"手机号码有误","data":{},"status":0}</span>
+                <span class="reporter-method-output">手机号不正确，验证码正确，用例通过</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">pwdFast</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">password:123456</span>
+                <span class="reporter-method-output">type:3</span>
+                <span class="reporter-method-output">username:17611111111</span>
+                <span class="reporter-method-output">http://apitest.hishenghuo.com.cn:4000/union/login/verify/</span>
+                <span class="reporter-method-output">{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$JyHrqatti7HY8jMhQJOr6.UHNQnN0OV/k7afW9XH1man.d/9l1QcW","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}</span>
+                <span class="reporter-method-output">头像不为空，用例通过</span>
+                <span class="reporter-method-output">http://file.hishenghuo.com.cn/taiji/avatar.png</span>
+                <span class="reporter-method-output">头像可以成功访问，用例通过</span>
+                <span class="reporter-method-output">access_token不为空，用例通过</span>
+                <span class="reporter-method-output">password:123456</span>
+                <span class="reporter-method-output">type:3</span>
+                <span class="reporter-method-output">username:17611</span>
+                <span class="reporter-method-output">http://apitest.hishenghuo.com.cn:4000/union/login/verify/</span>
+                <span class="reporter-method-output">{"msg":"登陆失败，账号不存在！","status":0}</span>
+                <span class="reporter-method-output">执行手机号正确，密码错误用例</span>
+                <span class="reporter-method-output">password:123457</span>
+                <span class="reporter-method-output">type:3</span>
+                <span class="reporter-method-output">username:17611111111</span>
+                <span class="reporter-method-output">http://apitest.hishenghuo.com.cn:4000/union/login/verify/</span>
+                <span class="reporter-method-output">{"msg":"密码错误","status":0}</span>
+                <span class="reporter-method-output">执行手机号正确，密码为空用例</span>
+                <span class="reporter-method-output">password:</span>
+                <span class="reporter-method-output">type:3</span>
+                <span class="reporter-method-output">username:17611111111</span>
+                <span class="reporter-method-output">http://apitest.hishenghuo.com.cn:4000/union/login/verify/</span>
+                <span class="reporter-method-output">{"msg":"密码不能为空","data":{},"status":0}</span>
+                <span class="reporter-method-output">执行手机号正确，密码错误用例</span>
+                <span class="reporter-method-output">password:123</span>
+                <span class="reporter-method-output">type:3</span>
+                <span class="reporter-method-output">username:17611111111</span>
+                <span class="reporter-method-output">http://apitest.hishenghuo.com.cn:4000/union/login/verify/</span>
+                <span class="reporter-method-output">{"msg":"密码只能为6到20位","data":{},"status":0}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-登录相关" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-登录相关" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">hlife.test.integration.Fast</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">pwdFast</span>
+                <span class="method-start">6599 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyFast</span>
+                <span class="method-start">34530 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,4 @@
+2021-08-08 22:23:48 303 INFO  PropertiesUtils:152 - apitest.hishenghuo.com.cn:4000/union/login/verify/&=9999&platform=taiji&username=17611111111&uuid=00000000-53a8-ae41-ffff-ffffef05ac4a&type=1&country_code=86
+2021-08-08 22:25:14 208 INFO  PropertiesUtils:152 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/&=9999&platform=taiji&username=17611111111&uuid=00000000-53a8-ae41-ffff-ffffef05ac4a&type=1&country_code=86
+2021-08-08 22:30:42 784 INFO  PropertiesUtils:152 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/platform=taijiusername=17611111111verify=9999uuid=00000000-53a8-ae41-ffff-ffffef05ac4atype=1country_code=86
+2021-08-08 22:31:57 341 INFO  PropertiesUtils:152 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/&platform=taiji&username=17611111111&verify=9999&uuid=00000000-53a8-ae41-ffff-ffffef05ac4a&type=1&country_code=86

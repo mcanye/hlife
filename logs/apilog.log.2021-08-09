@@ -1,0 +1,428 @@
+2021-08-09 09:16:57 762 INFO  PropertiesUtils:152 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/&platform=taiji&username=17611111111&verify=9999&uuid=00000000-53a8-ae41-ffff-ffffef05ac4a&type=1&country_code=86
+2021-08-09 09:21:59 959 INFO  PropertiesUtils:152 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/?&platform=taiji&username=17611111111&verify=9999&uuid=00000000-53a8-ae41-ffff-ffffef05ac4a&type=1&country_code=86
+2021-08-09 09:26:27 687 INFO  PropertiesUtils:152 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/?&platform=taiji&username=17611111111&verify=9999&uuid=00000000-53a8-ae41-ffff-ffffef05ac4a&type=1&country_code=86
+2021-08-09 09:29:47 795 INFO  PropertiesUtils:152 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/?&platform=taiji&username=17611111111&verify=9999&uuid=00000000-53a8-ae41-ffff-ffffef05ac4a&type=1&country_code=86
+2021-08-09 09:33:17 891 INFO  PropertiesUtils:152 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/?passport_id=&access_token=&username=17611111111&password=9999&type=1&country_code=86&uuid=00000000-53a8-ae41-ffff-ffffef05ac4a&platform=taiji
+2021-08-09 10:13:16 680 INFO  PropertiesUtils:167 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/?passport_id=&access_token=&username=17611111111&password=9999&type=1&country_code=86&uuid=00000000-53a8-ae41-ffff-ffffef05ac4a&platform=taiji
+2021-08-09 10:13:53 175 INFO  PropertiesUtils:167 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 10:22:06 313 INFO  PropertiesUtils:167 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 10:24:01 600 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 10:25:54 444 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 14:33:38 560 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 14:33:40 074 INFO  Fast:47 - {"status":1,"data":{"phone":"17611111111","nickname":"176****1111","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","country_code":"86","isset_pswd":0,"id":"4030","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","switch_open":0,"rong_id":"4030","is_new":0,"username":"102672","is_bind_phone":1,"user_pid":"0","access_token":"$2y$13$JZ5liSIaAudwd7YfFj.2WuMSQ4Q55ndI3n/ApMvOkFHEEq/uExhd.","rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com"},"msg":"登录成功"}
+2021-08-09 14:50:43 099 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 14:50:44 190 INFO  Fast:47 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":0,"access_token":"$2y$13$JZ5liSIaAudwd7YfFj.2WuMSQ4Q55ndI3n/ApMvOkFHEEq/uExhd.","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-08-09 14:50:44 817 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sysConfig.value  [in template "email.ftl" at line 18, column 47]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sysConfig.value}  [in template "email.ftl" at line 18, column 45]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:207)
+	at freemarker.core.Items.accept(Items.java:43)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:276)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.vimalselvam.testng.EmailReporter.flush(EmailReporter.java:56)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:247)
+	at com.aventstack.extentreports.Report.flush(Report.java:169)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:272)
+	at reporter.listener.MyExtentTestNgFormatter.generateReport(MyExtentTestNgFormatter.java:255)
+	at org.testng.TestNG.generateReports(TestNG.java:1097)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2021-08-09 17:24:05 093 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:24:06 547 INFO  Fast:46 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":0,"access_token":"$2y$13$JZ5liSIaAudwd7YfFj.2WuMSQ4Q55ndI3n/ApMvOkFHEEq/uExhd.","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-08-09 17:24:06 554 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/avatar.png
+2021-08-09 17:24:06 664 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:24:06 795 INFO  Fast:77 - {"msg":"提交过于频繁！","data":{},"status":-2}
+2021-08-09 17:24:07 363 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sysConfig.value  [in template "email.ftl" at line 18, column 47]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sysConfig.value}  [in template "email.ftl" at line 18, column 45]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:207)
+	at freemarker.core.Items.accept(Items.java:43)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:276)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.vimalselvam.testng.EmailReporter.flush(EmailReporter.java:56)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:247)
+	at com.aventstack.extentreports.Report.flush(Report.java:169)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:272)
+	at reporter.listener.MyExtentTestNgFormatter.generateReport(MyExtentTestNgFormatter.java:255)
+	at org.testng.TestNG.generateReports(TestNG.java:1097)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2021-08-09 17:29:06 399 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:29:07 410 INFO  Fast:50 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":0,"access_token":"$2y$13$JZ5liSIaAudwd7YfFj.2WuMSQ4Q55ndI3n/ApMvOkFHEEq/uExhd.","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-08-09 17:29:07 427 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/avatar.png
+2021-08-09 17:29:07 526 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:29:07 656 INFO  Fast:81 - {"msg":"提交过于频繁！","data":{},"status":-2}
+2021-08-09 17:29:08 268 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sysConfig.value  [in template "email.ftl" at line 18, column 47]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sysConfig.value}  [in template "email.ftl" at line 18, column 45]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:207)
+	at freemarker.core.Items.accept(Items.java:43)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:276)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.vimalselvam.testng.EmailReporter.flush(EmailReporter.java:56)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:247)
+	at com.aventstack.extentreports.Report.flush(Report.java:169)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:272)
+	at reporter.listener.MyExtentTestNgFormatter.generateReport(MyExtentTestNgFormatter.java:255)
+	at org.testng.TestNG.generateReports(TestNG.java:1097)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2021-08-09 17:30:10 447 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:30:11 572 INFO  Fast:50 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":0,"access_token":"$2y$13$JZ5liSIaAudwd7YfFj.2WuMSQ4Q55ndI3n/ApMvOkFHEEq/uExhd.","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-08-09 17:30:11 578 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/avatar.png
+2021-08-09 17:30:11 683 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:30:11 816 INFO  Fast:81 - {"msg":"提交过于频繁！","data":{},"status":-2}
+2021-08-09 17:30:12 640 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sysConfig.value  [in template "email.ftl" at line 18, column 47]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sysConfig.value}  [in template "email.ftl" at line 18, column 45]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:207)
+	at freemarker.core.Items.accept(Items.java:43)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:276)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.vimalselvam.testng.EmailReporter.flush(EmailReporter.java:56)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:247)
+	at com.aventstack.extentreports.Report.flush(Report.java:169)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:272)
+	at reporter.listener.MyExtentTestNgFormatter.generateReport(MyExtentTestNgFormatter.java:255)
+	at org.testng.TestNG.generateReports(TestNG.java:1097)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2021-08-09 17:34:05 168 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:34:06 215 INFO  Fast:50 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":0,"access_token":"$2y$13$JZ5liSIaAudwd7YfFj.2WuMSQ4Q55ndI3n/ApMvOkFHEEq/uExhd.","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-08-09 17:34:06 222 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/avatar.png
+2021-08-09 17:34:06 312 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:34:06 452 INFO  Fast:81 - {"msg":"提交过于频繁！","data":{},"status":-2}
+2021-08-09 17:34:07 065 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sysConfig.value  [in template "email.ftl" at line 18, column 47]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sysConfig.value}  [in template "email.ftl" at line 18, column 45]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:207)
+	at freemarker.core.Items.accept(Items.java:43)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:276)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.vimalselvam.testng.EmailReporter.flush(EmailReporter.java:56)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:247)
+	at com.aventstack.extentreports.Report.flush(Report.java:169)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:272)
+	at reporter.listener.MyExtentTestNgFormatter.generateReport(MyExtentTestNgFormatter.java:255)
+	at org.testng.TestNG.generateReports(TestNG.java:1097)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2021-08-09 17:34:47 478 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:34:48 565 INFO  Fast:50 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":0,"access_token":"$2y$13$JZ5liSIaAudwd7YfFj.2WuMSQ4Q55ndI3n/ApMvOkFHEEq/uExhd.","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-08-09 17:34:48 574 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/avatar.png
+2021-08-09 17:34:53 661 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:34:53 817 INFO  Fast:81 - {"msg":"登录方式错误","data":{},"status":0}
+2021-08-09 17:34:54 492 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sysConfig.value  [in template "email.ftl" at line 18, column 47]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sysConfig.value}  [in template "email.ftl" at line 18, column 45]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:207)
+	at freemarker.core.Items.accept(Items.java:43)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:276)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.vimalselvam.testng.EmailReporter.flush(EmailReporter.java:56)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:247)
+	at com.aventstack.extentreports.Report.flush(Report.java:169)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:272)
+	at reporter.listener.MyExtentTestNgFormatter.generateReport(MyExtentTestNgFormatter.java:255)
+	at org.testng.TestNG.generateReports(TestNG.java:1097)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2021-08-09 17:45:40 697 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:45:41 749 INFO  Fast:50 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":0,"access_token":"$2y$13$JZ5liSIaAudwd7YfFj.2WuMSQ4Q55ndI3n/ApMvOkFHEEq/uExhd.","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-08-09 17:45:41 754 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/avatar.png
+2021-08-09 17:45:46 873 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:45:47 037 INFO  Fast:83 - {"msg":"验证码不正确","data":{},"status":0}
+2021-08-09 17:45:52 041 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:45:52 197 INFO  Fast:95 - {"msg":"手机号码不能为空","data":{},"status":0}
+2021-08-09 17:45:57 213 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:45:57 370 INFO  Fast:107 - {"msg":"验证码不能为空","data":{},"status":0}
+2021-08-09 17:46:02 374 INFO  PropertiesUtils:168 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-08-09 17:46:02 529 INFO  Fast:119 - {"msg":"手机号码有误","data":{},"status":0}
+2021-08-09 17:46:08 031 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sysConfig.value  [in template "email.ftl" at line 18, column 47]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sysConfig.value}  [in template "email.ftl" at line 18, column 45]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:207)
+	at freemarker.core.Items.accept(Items.java:43)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:276)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.vimalselvam.testng.EmailReporter.flush(EmailReporter.java:56)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:247)
+	at com.aventstack.extentreports.Report.flush(Report.java:169)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:272)
+	at reporter.listener.MyExtentTestNgFormatter.generateReport(MyExtentTestNgFormatter.java:255)
+	at org.testng.TestNG.generateReports(TestNG.java:1097)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
