@@ -168,8 +168,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<encoding>UTF-8</encoding>
-					<source>2.3.2</source>
-					<target>2.3.2</target>
+					<source>3.1</source>
+					<target>3.1</target>
 				</configuration>
 			</plugin>
 		</plugins>
