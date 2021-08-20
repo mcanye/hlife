@@ -70,8 +70,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="171" column="31" lean-forward="false" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
+            <state relative-caret-position="219">
+              <caret line="172" column="40" lean-forward="false" selection-start-line="172" selection-start-column="40" selection-end-line="172" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -204,7 +204,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="113" />
+    <option name="x" value="26" />
+    <option name="y" value="12" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -699,7 +700,7 @@
       <workItem from="1629247106060" duration="26903000" />
       <workItem from="1629333633616" duration="7670000" />
       <workItem from="1629367463893" duration="848000" />
-      <workItem from="1629423544232" duration="2571000" />
+      <workItem from="1629423544232" duration="3390000" />
     </task>
     <servers />
   </component>
@@ -736,7 +737,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126271000" />
+    <option name="totallyTimeSpent" value="127090000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -748,7 +749,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="113" y="0" width="1346" height="688" extended-state="0" />
+    <frame x="26" y="12" width="1346" height="688" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1161,8 +1162,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="171" column="31" lean-forward="false" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
+        <state relative-caret-position="219">
+          <caret line="172" column="40" lean-forward="false" selection-start-line="172" selection-start-column="40" selection-end-line="172" selection-end-column="40" />
           <folding />
         </state>
       </provider>
