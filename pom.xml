@@ -172,7 +172,7 @@
 					<source>1.8</source>
 					<target>1.8</target>
 					<compilerArgs>
-						<grg>src/main/webapp/WEB-INF/lib</grg>
+						<bootclasspath>src/main/webapp/WEB-INF/lib</bootclasspath>
 					</compilerArgs>
 				</configuration>
 			</plugin>
