@@ -34,7 +34,7 @@ public class Fast extends BaseApi {
      */
     @Test
     public void verifyFast() throws IOException,  InterruptedException {
-        verify = URLFiltration.addHost(verify);
+
         //手机号正确，验证码正确
         HashMap<String, String> params = new HashMap<>();
         params.put("type","1");
@@ -125,7 +125,7 @@ public class Fast extends BaseApi {
      * 密码登录
      */
     public void pwdFast() throws InterruptedException, IOException {
-        verify = URLFiltration.addHost(verify);
+        
         HashMap<String, String> params = new HashMap<>();
         params.put("type","3");
         params.put("username","17611111111");

@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Fast.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Fast.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4750">
-              <caret line="205" column="32" lean-forward="false" selection-start-line="205" selection-start-column="32" selection-end-line="205" selection-end-column="32" />
+            <state relative-caret-position="25">
+              <caret line="127" column="8" lean-forward="false" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -36,8 +36,8 @@
       <file leaf-file-name="BaseApi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1475">
-              <caret line="75" column="59" lean-forward="false" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="59" />
+            <state relative-caret-position="-350">
+              <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -67,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="91">
@@ -126,6 +126,7 @@
       <find>categoryList</find>
       <find>maven</find>
       <find>ommons-lang</find>
+      <find>maven-surefire-plugin</find>
     </findStrings>
     <replaceStrings>
       <replace>hlife</replace>
@@ -185,9 +186,9 @@
         <option value="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/hlife/base/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/HouseList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java" />
       </list>
     </option>
   </component>
@@ -241,6 +242,52 @@
               <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
               <item name="hlife" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
@@ -626,7 +673,7 @@
       <workItem from="1629247106060" duration="26903000" />
       <workItem from="1629333633616" duration="7670000" />
       <workItem from="1629367463893" duration="848000" />
-      <workItem from="1629423544232" duration="6240000" />
+      <workItem from="1629423544232" duration="6439000" />
     </task>
     <servers />
   </component>
@@ -663,7 +710,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129940000" />
+    <option name="totallyTimeSpent" value="130139000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1042,22 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4750">
-          <caret line="205" column="32" lean-forward="false" selection-start-line="205" selection-start-column="32" selection-end-line="205" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1475">
-          <caret line="75" column="59" lean-forward="false" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveList.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1090,6 +1121,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="154" column="47" lean-forward="false" selection-start-line="154" selection-start-column="47" selection-end-line="154" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="127" column="8" lean-forward="false" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
           <folding />
         </state>
       </provider>
