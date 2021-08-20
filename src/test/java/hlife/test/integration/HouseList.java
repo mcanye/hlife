@@ -264,7 +264,7 @@ public class HouseList extends BaseApi{
 
     @Test(dependsOnMethods = { "brandList" })
     public void houseList_barand() throws IOException {
-        house_list = URLFiltration.addHost(house_list);
+
        //遍历所有城市
        for (int i =0;i<city_id_list.size();i++){
            //遍历所有的品牌
