@@ -171,9 +171,9 @@
 					<encoding>UTF-8</encoding>
 					<source>1.8</source>
 					<target>1.8</target>
-					<compilerArguments>
-						<bootclasspath>${JAVA_HOME}/jre/lib/rt.jar</bootclasspath>
-					</compilerArguments>
+					<compilerArgs>
+						<grg>src/main/webapp/WEB-INF/lib</grg>
+					</compilerArgs>
 				</configuration>
 			</plugin>
 		</plugins>
