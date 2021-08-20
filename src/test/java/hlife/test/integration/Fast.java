@@ -125,7 +125,7 @@ public class Fast extends BaseApi {
      * 密码登录
      */
     public void pwdFast() throws InterruptedException, IOException {
-        
+
         HashMap<String, String> params = new HashMap<>();
         params.put("type","3");
         params.put("username","17611111111");
