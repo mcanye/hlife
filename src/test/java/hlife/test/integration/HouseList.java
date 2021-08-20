@@ -199,7 +199,8 @@ public class HouseList extends BaseApi{
 //                   }
 //                   Reporter.log("校验price_range用例通过");
                        }
-                       if ( pager.getString("pagesize").equals(page+"")){
+                       int pagesize= Integer.parseInt(pager.getString("pagesize"));
+                       if (list.size()<pagesize){
                            page=1;
                            break;
                        }else {
@@ -352,7 +353,8 @@ public class HouseList extends BaseApi{
 //                   }
 //                   Reporter.log("校验price_range用例通过");
                        }
-                       if ( pager.getString("pagecount").equals(page+"")){
+                       int pagesize= Integer.parseInt(pager.getString("pagesize"));
+                       if (list.size()<pagesize){
                            page=1;
                            break;
                        }else {

@@ -386,7 +386,8 @@ public class LiveList extends BaseApi {
                 }
 
 
-                if ( pager.getString("pagecount").equals(page+"")){
+                int pagesize= Integer.parseInt(pager.getString("pagesize"));
+                if (list.size()<pagesize){
                     page=1;
                     break;
                 }else {
