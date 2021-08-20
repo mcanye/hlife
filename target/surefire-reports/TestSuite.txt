@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 62.788 s - in TestSuite
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 8.57 s <<< FAILURE! - in TestSuite
+pwdFast(hlife.test.integration.Fast)  Time elapsed: 0.158 s  <<< FAILURE!
+java.lang.AssertionError: 验证码登录接口访问失败 expected [1] but found [0]
+	at hlife.test.integration.Fast.pwdFast(Fast.java:137)
+
+verifyFast(hlife.test.integration.Fast)  Time elapsed: 0.167 s  <<< FAILURE!
+java.lang.AssertionError: 验证码登录接口访问失败 expected [1] but found [0]
+	at hlife.test.integration.Fast.verifyFast(Fast.java:50)
+

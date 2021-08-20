@@ -2,7 +2,7 @@ package hlife.test.integration;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.sun.xml.internal.bind.v2.TODO;
+
 import hlife.base.BaseApi;
 import hlife.base.Constants;
 import hlife.filtration.URLFiltration;
@@ -14,7 +14,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;

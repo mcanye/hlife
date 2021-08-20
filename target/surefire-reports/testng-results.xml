@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
     <line>
       <![CDATA[country_code:86]]>
@@ -23,7 +23,7 @@
       <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
     </line>
     <line>
-      <![CDATA[{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$JyHrqatti7HY8jMhQJOr6.UHNQnN0OV/k7afW9XH1man.d/9l1QcW","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}]]>
+      <![CDATA[{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$b2HrncsJCYJx7dtEzlKwZuCvINmpneyPR2iLQB4vK4JDpGAx4eMWO","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}]]>
     </line>
     <line>
       <![CDATA[password:123456]]>
@@ -35,91 +35,10 @@
       <![CDATA[username:17611111111]]>
     </line>
     <line>
-      <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
+      <![CDATA[http://apitest.hishenghuo.com.cn:4000http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
     </line>
     <line>
-      <![CDATA[{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$JyHrqatti7HY8jMhQJOr6.UHNQnN0OV/k7afW9XH1man.d/9l1QcW","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}]]>
-    </line>
-    <line>
-      <![CDATA[头像不为空，用例通过]]>
-    </line>
-    <line>
-      <![CDATA[http://file.hishenghuo.com.cn/taiji/avatar.png]]>
-    </line>
-    <line>
-      <![CDATA[头像可以成功访问，用例通过]]>
-    </line>
-    <line>
-      <![CDATA[access_token不为空，用例通过]]>
-    </line>
-    <line>
-      <![CDATA[password:123456]]>
-    </line>
-    <line>
-      <![CDATA[type:3]]>
-    </line>
-    <line>
-      <![CDATA[username:17611]]>
-    </line>
-    <line>
-      <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-    </line>
-    <line>
-      <![CDATA[{"msg":"登陆失败，账号不存在！","status":0}]]>
-    </line>
-    <line>
-      <![CDATA[执行手机号正确，密码错误用例]]>
-    </line>
-    <line>
-      <![CDATA[password:123457]]>
-    </line>
-    <line>
-      <![CDATA[type:3]]>
-    </line>
-    <line>
-      <![CDATA[username:17611111111]]>
-    </line>
-    <line>
-      <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-    </line>
-    <line>
-      <![CDATA[{"msg":"密码错误","status":0}]]>
-    </line>
-    <line>
-      <![CDATA[执行手机号正确，密码为空用例]]>
-    </line>
-    <line>
-      <![CDATA[password:]]>
-    </line>
-    <line>
-      <![CDATA[type:3]]>
-    </line>
-    <line>
-      <![CDATA[username:17611111111]]>
-    </line>
-    <line>
-      <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-    </line>
-    <line>
-      <![CDATA[{"msg":"密码不能为空","data":{},"status":0}]]>
-    </line>
-    <line>
-      <![CDATA[执行手机号正确，密码错误用例]]>
-    </line>
-    <line>
-      <![CDATA[password:123]]>
-    </line>
-    <line>
-      <![CDATA[type:3]]>
-    </line>
-    <line>
-      <![CDATA[username:17611111111]]>
-    </line>
-    <line>
-      <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-    </line>
-    <line>
-      <![CDATA[{"msg":"密码只能为6到20位","data":{},"status":0}]]>
+      <![CDATA[{"msg":"未找到地址：/apitest.hishenghuo.com.cn:4000/union/login/verify/","data":{},"status":0}]]>
     </line>
     <line>
       <![CDATA[country_code:86]]>
@@ -140,106 +59,22 @@
       <![CDATA[username:17611111111]]>
     </line>
     <line>
-      <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
+      <![CDATA[http://apitest.hishenghuo.com.cn:4000http://apitest.hishenghuo.com.cn:4000http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
     </line>
     <line>
-      <![CDATA[{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$JyHrqatti7HY8jMhQJOr6.UHNQnN0OV/k7afW9XH1man.d/9l1QcW","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}]]>
-    </line>
-    <line>
-      <![CDATA[头像不为空，用例通过]]>
-    </line>
-    <line>
-      <![CDATA[http://file.hishenghuo.com.cn/taiji/avatar.png]]>
-    </line>
-    <line>
-      <![CDATA[头像可以成功访问，用例通过]]>
-    </line>
-    <line>
-      <![CDATA[access_token不为空，用例通过]]>
-    </line>
-    <line>
-      <![CDATA[password:9988]]>
-    </line>
-    <line>
-      <![CDATA[type:1]]>
-    </line>
-    <line>
-      <![CDATA[username:17611111111]]>
-    </line>
-    <line>
-      <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-    </line>
-    <line>
-      <![CDATA[{"msg":"验证码不正确","data":{},"status":0}]]>
-    </line>
-    <line>
-      <![CDATA[手机号正确，验证码不正确，用例通过]]>
-    </line>
-    <line>
-      <![CDATA[password:9999]]>
-    </line>
-    <line>
-      <![CDATA[type:1]]>
-    </line>
-    <line>
-      <![CDATA[username:]]>
-    </line>
-    <line>
-      <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-    </line>
-    <line>
-      <![CDATA[{"msg":"手机号码不能为空","data":{},"status":0}]]>
-    </line>
-    <line>
-      <![CDATA[手机号为空，验证码正确，用例通过]]>
-    </line>
-    <line>
-      <![CDATA[password:]]>
-    </line>
-    <line>
-      <![CDATA[type:1]]>
-    </line>
-    <line>
-      <![CDATA[username:17611111111]]>
-    </line>
-    <line>
-      <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-    </line>
-    <line>
-      <![CDATA[{"msg":"验证码不能为空","data":{},"status":0}]]>
-    </line>
-    <line>
-      <![CDATA[手机号正确，验证码为空，用例通过]]>
-    </line>
-    <line>
-      <![CDATA[password:9999]]>
-    </line>
-    <line>
-      <![CDATA[type:1]]>
-    </line>
-    <line>
-      <![CDATA[username:176111]]>
-    </line>
-    <line>
-      <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-    </line>
-    <line>
-      <![CDATA[{"msg":"手机号码有误","data":{},"status":0}]]>
-    </line>
-    <line>
-      <![CDATA[手机号不正确，验证码正确，用例通过]]>
+      <![CDATA[{"msg":"未找到地址：/apitest.hishenghuo.com.cn:4000http://apitest.hishenghuo.com.cn:4000/union/login/verify/","data":{},"status":0}]]>
     </line>
   </reporter-output>
-  <suite name="登录相关" duration-ms="61159" started-at="2021-08-13T09:42:17Z" finished-at="2021-08-13T09:43:18Z">
+  <suite name="登录相关" duration-ms="6953" started-at="2021-08-20T06:30:00Z" finished-at="2021-08-20T06:30:07Z">
     <groups>
       <group name="Fast">
         <method signature="Fast.pwdFast()[pri:0, instance:hlife.test.integration.Fast@4cf4d528]" name="pwdFast" class="hlife.test.integration.Fast"/>
         <method signature="Fast.verifyFast()[pri:0, instance:hlife.test.integration.Fast@4cf4d528]" name="verifyFast" class="hlife.test.integration.Fast"/>
       </group> <!-- Fast -->
     </groups>
-    <test name="我的页面" duration-ms="61159" started-at="2021-08-13T09:42:17Z" finished-at="2021-08-13T09:43:18Z">
+    <test name="我的页面" duration-ms="6953" started-at="2021-08-20T06:30:00Z" finished-at="2021-08-20T06:30:07Z">
       <class name="hlife.test.integration.Fast">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:hlife.test.integration.Fast@4cf4d528]" name="setUp" is-config="true" duration-ms="6599" started-at="2021-08-13T09:42:17Z" finished-at="2021-08-13T09:42:24Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:hlife.test.integration.Fast@4cf4d528]" name="setUp" is-config="true" duration-ms="6606" started-at="2021-08-20T06:30:00Z" finished-at="2021-08-20T06:30:06Z">
           <reporter-output>
             <line>
               <![CDATA[country_code:86]]>
@@ -263,11 +98,55 @@
               <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
             </line>
             <line>
-              <![CDATA[{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$JyHrqatti7HY8jMhQJOr6.UHNQnN0OV/k7afW9XH1man.d/9l1QcW","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}]]>
+              <![CDATA[{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$b2HrncsJCYJx7dtEzlKwZuCvINmpneyPR2iLQB4vK4JDpGAx4eMWO","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="pwdFast()[pri:0, instance:hlife.test.integration.Fast@4cf4d528]" name="pwdFast" duration-ms="27921" started-at="2021-08-13T09:42:24Z" finished-at="2021-08-13T09:42:52Z">
+        <test-method status="FAIL" signature="pwdFast()[pri:0, instance:hlife.test.integration.Fast@4cf4d528]" name="pwdFast" duration-ms="133" started-at="2021-08-20T06:30:06Z" finished-at="2021-08-20T06:30:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[验证码登录接口访问失败 expected [1] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 验证码登录接口访问失败 expected [1] but found [0]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at hlife.test.integration.Fast.pwdFast(Fast.java:137)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[password:123456]]>
@@ -279,95 +158,58 @@
               <![CDATA[username:17611111111]]>
             </line>
             <line>
-              <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
+              <![CDATA[http://apitest.hishenghuo.com.cn:4000http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
             </line>
             <line>
-              <![CDATA[{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$JyHrqatti7HY8jMhQJOr6.UHNQnN0OV/k7afW9XH1man.d/9l1QcW","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}]]>
-            </line>
-            <line>
-              <![CDATA[头像不为空，用例通过]]>
-            </line>
-            <line>
-              <![CDATA[http://file.hishenghuo.com.cn/taiji/avatar.png]]>
-            </line>
-            <line>
-              <![CDATA[头像可以成功访问，用例通过]]>
-            </line>
-            <line>
-              <![CDATA[access_token不为空，用例通过]]>
-            </line>
-            <line>
-              <![CDATA[password:123456]]>
-            </line>
-            <line>
-              <![CDATA[type:3]]>
-            </line>
-            <line>
-              <![CDATA[username:17611]]>
-            </line>
-            <line>
-              <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-            </line>
-            <line>
-              <![CDATA[{"msg":"登陆失败，账号不存在！","status":0}]]>
-            </line>
-            <line>
-              <![CDATA[执行手机号正确，密码错误用例]]>
-            </line>
-            <line>
-              <![CDATA[password:123457]]>
-            </line>
-            <line>
-              <![CDATA[type:3]]>
-            </line>
-            <line>
-              <![CDATA[username:17611111111]]>
-            </line>
-            <line>
-              <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-            </line>
-            <line>
-              <![CDATA[{"msg":"密码错误","status":0}]]>
-            </line>
-            <line>
-              <![CDATA[执行手机号正确，密码为空用例]]>
-            </line>
-            <line>
-              <![CDATA[password:]]>
-            </line>
-            <line>
-              <![CDATA[type:3]]>
-            </line>
-            <line>
-              <![CDATA[username:17611111111]]>
-            </line>
-            <line>
-              <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-            </line>
-            <line>
-              <![CDATA[{"msg":"密码不能为空","data":{},"status":0}]]>
-            </line>
-            <line>
-              <![CDATA[执行手机号正确，密码错误用例]]>
-            </line>
-            <line>
-              <![CDATA[password:123]]>
-            </line>
-            <line>
-              <![CDATA[type:3]]>
-            </line>
-            <line>
-              <![CDATA[username:17611111111]]>
-            </line>
-            <line>
-              <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-            </line>
-            <line>
-              <![CDATA[{"msg":"密码只能为6到20位","data":{},"status":0}]]>
+              <![CDATA[{"msg":"未找到地址：/apitest.hishenghuo.com.cn:4000/union/login/verify/","data":{},"status":0}]]>
             </line>
           </reporter-output>
         </test-method> <!-- pwdFast -->
-        <test-method status="PASS" signature="verifyFast()[pri:0, instance:hlife.test.integration.Fast@4cf4d528]" name="verifyFast" duration-ms="26609" started-at="2021-08-13T09:42:52Z" finished-at="2021-08-13T09:43:18Z">
+        <test-method status="FAIL" signature="verifyFast()[pri:0, instance:hlife.test.integration.Fast@4cf4d528]" name="verifyFast" duration-ms="159" started-at="2021-08-20T06:30:07Z" finished-at="2021-08-20T06:30:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[验证码登录接口访问失败 expected [1] but found [0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 验证码登录接口访问失败 expected [1] but found [0]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at hlife.test.integration.Fast.verifyFast(Fast.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[country_code:86]]>
@@ -388,94 +230,10 @@
               <![CDATA[username:17611111111]]>
             </line>
             <line>
-              <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
+              <![CDATA[http://apitest.hishenghuo.com.cn:4000http://apitest.hishenghuo.com.cn:4000http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
             </line>
             <line>
-              <![CDATA[{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$JyHrqatti7HY8jMhQJOr6.UHNQnN0OV/k7afW9XH1man.d/9l1QcW","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}]]>
-            </line>
-            <line>
-              <![CDATA[头像不为空，用例通过]]>
-            </line>
-            <line>
-              <![CDATA[http://file.hishenghuo.com.cn/taiji/avatar.png]]>
-            </line>
-            <line>
-              <![CDATA[头像可以成功访问，用例通过]]>
-            </line>
-            <line>
-              <![CDATA[access_token不为空，用例通过]]>
-            </line>
-            <line>
-              <![CDATA[password:9988]]>
-            </line>
-            <line>
-              <![CDATA[type:1]]>
-            </line>
-            <line>
-              <![CDATA[username:17611111111]]>
-            </line>
-            <line>
-              <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-            </line>
-            <line>
-              <![CDATA[{"msg":"验证码不正确","data":{},"status":0}]]>
-            </line>
-            <line>
-              <![CDATA[手机号正确，验证码不正确，用例通过]]>
-            </line>
-            <line>
-              <![CDATA[password:9999]]>
-            </line>
-            <line>
-              <![CDATA[type:1]]>
-            </line>
-            <line>
-              <![CDATA[username:]]>
-            </line>
-            <line>
-              <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-            </line>
-            <line>
-              <![CDATA[{"msg":"手机号码不能为空","data":{},"status":0}]]>
-            </line>
-            <line>
-              <![CDATA[手机号为空，验证码正确，用例通过]]>
-            </line>
-            <line>
-              <![CDATA[password:]]>
-            </line>
-            <line>
-              <![CDATA[type:1]]>
-            </line>
-            <line>
-              <![CDATA[username:17611111111]]>
-            </line>
-            <line>
-              <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-            </line>
-            <line>
-              <![CDATA[{"msg":"验证码不能为空","data":{},"status":0}]]>
-            </line>
-            <line>
-              <![CDATA[手机号正确，验证码为空，用例通过]]>
-            </line>
-            <line>
-              <![CDATA[password:9999]]>
-            </line>
-            <line>
-              <![CDATA[type:1]]>
-            </line>
-            <line>
-              <![CDATA[username:176111]]>
-            </line>
-            <line>
-              <![CDATA[http://apitest.hishenghuo.com.cn:4000/union/login/verify/]]>
-            </line>
-            <line>
-              <![CDATA[{"msg":"手机号码有误","data":{},"status":0}]]>
-            </line>
-            <line>
-              <![CDATA[手机号不正确，验证码正确，用例通过]]>
+              <![CDATA[{"msg":"未找到地址：/apitest.hishenghuo.com.cn:4000http://apitest.hishenghuo.com.cn:4000/union/login/verify/","data":{},"status":0}]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyFast -->
