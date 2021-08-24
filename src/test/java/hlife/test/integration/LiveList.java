@@ -410,6 +410,8 @@ public class LiveList extends BaseApi {
                 params.clear();
                 params.put("live_cid",live_cid);
                 params.put("pagesize","10");
+                params.put("live_process","1");
+                params.put("is_recommend","0");
                 params.put("page",page+"");
                 Reporter.log("校验code=200\n" +
                         "status=1\n" +
@@ -423,6 +425,7 @@ public class LiveList extends BaseApi {
                 String msg = rs.getString("msg");
                 Assert.assertEquals(msg,"获取直播列表成功","返回msg不正确");
                 JSONObject data = rs.getJSONObject("data");
+                Reporter.log(rs.toJSONString());
                 if(data!=null && data.size()>0){
                     JSONObject pager = data.getJSONObject("pager");
                     JSONArray list = data.getJSONArray("list");

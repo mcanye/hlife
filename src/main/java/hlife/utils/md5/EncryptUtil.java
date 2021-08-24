@@ -4,7 +4,9 @@ import org.testng.annotations.Test;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  * 加密方法
@@ -64,5 +66,10 @@ public class EncryptUtil {
 //		String encrypt = aes.encrypt(b);
 		String urlString = URLEncoder.encode("7,8,5", "utf-8");
 		System.out.println(urlString);
+		long l = System.currentTimeMillis();
+		l = l+7200000;
+		Date d = new Date(l);
+		SimpleDateFormat sbf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		System.out.println(sbf.format(d));
 	}
 }

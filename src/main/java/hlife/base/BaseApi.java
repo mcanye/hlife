@@ -16,6 +16,9 @@ import hlife.utils.Arith;
 import hlife.utils.PropertiesUtils;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 
 
@@ -59,6 +62,23 @@ public class BaseApi {
 	//直播列表
 	protected String liveList;
 
+	//发布预告
+	protected String createLiveNotice;
+	//预告详情
+	protected String liveNoticeDet;
+	//推荐预告
+	protected String setLiveNoticeRecommend;
+	//获取推荐直播预告列表
+	protected String liveNoticeRecommendList;
+	//直播预告关注列表
+	protected String liveNoticeFocuslist;
+	//直播预告列表根据live_cid区分类型
+	protected String liveNoticeList;
+	//预告预约
+	protected String liveNoticeEnroll;
+	//删除直播预告
+	protected String liveNoticeCancel;
+
 	@BeforeClass
 	public void setUp() throws  IOException, InterruptedException {
 
@@ -74,6 +94,14 @@ public class BaseApi {
 		liveCategorySort = PropertiesUtils.getConfigValue("liveCategorySort");
 		liveFocuslist = PropertiesUtils.getConfigValue("liveFocuslist");
 		liveList = PropertiesUtils.getConfigValue("liveList");
+		createLiveNotice = PropertiesUtils.getConfigValue("createLiveNotice");
+		liveNoticeDet = PropertiesUtils.getConfigValue("liveNoticeDet");
+		setLiveNoticeRecommend = PropertiesUtils.getConfigValue("setLiveNoticeRecommend");
+		liveNoticeRecommendList = PropertiesUtils.getConfigValue("liveNoticeRecommendList");
+		liveNoticeFocuslist = PropertiesUtils.getConfigValue("liveNoticeFocuslist");
+		liveNoticeList = PropertiesUtils.getConfigValue("liveNoticeList");
+		liveNoticeEnroll = PropertiesUtils.getConfigValue("liveNoticeEnroll");
+		liveNoticeCancel = PropertiesUtils.getConfigValue("liveNoticeCancel");
 		fast();
 	}
 
@@ -100,6 +128,18 @@ public class BaseApi {
 		JSONObject data = rs.getJSONObject("data");
 		access_token = data.getString("access_token");
 		Thread.sleep(5000);
+	}
+
+	/**
+	 * 获取日期
+	 * @return 年-月-日 时:分
+	 */
+	protected String getDate(long l){
+		Date d = new Date(System.currentTimeMillis()+l);
+		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		String format = dateFormat.format(d);
+		System.out.println(format);
+		return format;
 	}
 
 	
