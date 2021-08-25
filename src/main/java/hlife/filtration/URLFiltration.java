@@ -33,9 +33,13 @@ public class URLFiltration {
 	 */
 	public static String addHost(String url) {
 		String BASEURL_API = PropertiesUtils.getEvnValue("BASEURL_API");
+		String BASEURL_4001 = PropertiesUtils.getEvnValue("BASEURL_4001");
 		if (!"".equals(url)) {
 			if (url.contains("union") == true) {
 				url = BASEURL_API + url ;
+			}
+			if(url.contains("admin") == true){
+				url = BASEURL_4001 + url ;
 			}
 		}
 		return url;

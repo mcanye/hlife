@@ -39,7 +39,7 @@ public class LiveList extends BaseApi {
      */
     @Test
     public void liveRecommend() throws IOException {
-        liveRecommend = URLFiltration.addHost(liveRecommend);
+
         CloseableHttpResponse post = httpClient.post(liveRecommend, new HashMap<String, String>());
         int statusCode = httpClient.getStatusCode(post);
         JSONObject rs = httpClient.getResponseJson(post);
@@ -68,7 +68,7 @@ public class LiveList extends BaseApi {
      */
     @Test
     public void liveCategoryList() throws IOException {
-        liveCategoryList = URLFiltration.addHost(liveCategoryList);
+
         HashMap<String, String> header = URLFiltration.addHeader(new HashMap<String, String>());
         HashMap<String,String> params = new HashMap<>();
         CloseableHttpResponse post = httpClient.post(liveCategoryList,params,header);
@@ -119,7 +119,7 @@ public class LiveList extends BaseApi {
      */
     @Test
     public void advList() throws IOException {
-        advList = URLFiltration.addHost(advList);
+
         Reporter.log("校验adv_type为空");
         HashMap<String,String> params = new HashMap<>();
         CloseableHttpResponse post = httpClient.post(advList,params);
@@ -192,8 +192,7 @@ public class LiveList extends BaseApi {
      * 获取直播推荐列表
      */
     public void liveRecommendlist() throws IOException {
-        liveRecommendlist = PropertiesUtils.getConfigValue("liveRecommendlist");
-        liveRecommendlist = URLFiltration.addHost(liveRecommendlist);
+
         Reporter.log("校验code=200\n" +
                 "status=1\n" +
                 "msg=获取关注直播列表成功");
@@ -257,7 +256,7 @@ public class LiveList extends BaseApi {
      */
     @Test(dependsOnMethods = { "liveRecommendlist" })
     public void liveCategorySort() throws IOException {
-        liveCategorySort = URLFiltration.addHost(liveCategorySort);
+
         Reporter.log("校验access_token为空");
         HashMap<String,String> params = new HashMap<>();
         CloseableHttpResponse post = httpClient.post(liveCategorySort, params);
@@ -269,8 +268,7 @@ public class LiveList extends BaseApi {
         String msg = rs.getString("msg");
         Assert.assertEquals(msg,"请登录","返回msg不正确");
 
-        Reporter.log("校验type为空");
-        // TODO: 2021/8/18 待缺陷修复完善逻辑
+
 
         Reporter.log("校验items为空");
         params.clear();
@@ -325,18 +323,17 @@ public class LiveList extends BaseApi {
      */
     @Test
     public void liveFocuslist() throws IOException {
-        liveFocuslist = URLFiltration.addHost(liveFocuslist);
+
         Reporter.log("校验access_token为空");
         HashMap<String,String> params = new HashMap<>();
         CloseableHttpResponse post = httpClient.post(liveFocuslist, params);
         int statusCode = httpClient.getStatusCode(post);
         JSONObject rs = httpClient.getResponseJson(post);
         Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"请求失败");
-        // TODO 待缺陷修复后 释放代码
         int status = rs.getIntValue("status");
-//        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_Minus_1,"请求失败");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_Minus_1,"请求失败");
         String msg = rs.getString("msg");
-//        Assert.assertEquals(msg,"请登录","返回msg不正确");
+        Assert.assertEquals(msg,"请登录","返回msg不正确");
 
         while (true){
             Reporter.log("校验code=200\n" +
@@ -402,7 +399,7 @@ public class LiveList extends BaseApi {
      */
     @Test(dependsOnMethods = { "liveCategoryList" })
     public void liveList() throws IOException {
-        liveList = URLFiltration.addHost(liveList);
+
         for (int j = 1;j< live_typeMap.size();j++){
             String live_cid = live_typeMap.get(j);
             while (true){

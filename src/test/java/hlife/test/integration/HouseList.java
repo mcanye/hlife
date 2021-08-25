@@ -44,7 +44,6 @@ public class HouseList extends BaseApi{
      */
     @Test
     public void tagList() throws IOException {
-        tagList = URLFiltration.addHost(tagList);
         HashMap<String, String> params = new HashMap<>();
         JSONObject rs = httpClient.getResponseJson(httpClient.post(tagList,params));
         log.info(rs.toString());
@@ -79,7 +78,7 @@ public class HouseList extends BaseApi{
      */
     @Test(dependsOnMethods = { "tagList" })
     public void city() throws IOException {
-        city = URLFiltration.addHost(city);
+
         HashMap<String, String> params = new HashMap<>();
         JSONObject rs = httpClient.getResponseJson(httpClient.post(city,params));
         log.info(rs.toString());
@@ -113,7 +112,7 @@ public class HouseList extends BaseApi{
      */
     @Test(dependsOnMethods = { "city" })
     public  void houseList() throws IOException {
-        house_list = URLFiltration.addHost(house_list);
+
         //遍历所有的城市
         for (int i = 0;i<city_id_list.size();i++){
             //遍历城市下所有标签
@@ -221,7 +220,7 @@ public class HouseList extends BaseApi{
      */
     @Test(dependsOnMethods = { "city" })
     public void brandList() throws IOException {
-        brandList = URLFiltration.addHost(brandList);
+
         HashMap<String, String> params = new HashMap<>();
         params.put("house_cid","1");
         JSONObject rs = httpClient.getResponseJson(httpClient.post(brandList,params));

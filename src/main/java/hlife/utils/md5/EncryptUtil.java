@@ -7,6 +7,8 @@ import java.net.URLEncoder;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * 加密方法
@@ -60,16 +62,36 @@ public class EncryptUtil {
 	@Test
 	public void test111() throws UnsupportedEncodingException {
 		//String s  = "GluZWNsYXNzLmtMTBPSDRmQT0=VodWFhcHAuY29tL2VfYWRWaWRlbzE1Njc0OTIxMjk4ODgubXA0P2U9MTU3MTMwMDE3NSZ0b2tlbj0tNlZlb1VEc2MyVFRJdEpQMjZFR2dBWjVsNHY2YzJkN1VvRWhzbWVEOnZBckZMRkxMVnFha3ZTNHYycUQaHR0cDovL29ub";
-		String s = "7,8,5";
+	//	String s = "7,8,5";
 		//String decrypt = EncryptUtil.getDecryptKey(s);
 //		byte[] b = s.getBytes();
 //		String encrypt = aes.encrypt(b);
-		String urlString = URLEncoder.encode("7,8,5", "utf-8");
-		System.out.println(urlString);
-		long l = System.currentTimeMillis();
-		l = l+7200000;
-		Date d = new Date(l);
-		SimpleDateFormat sbf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-		System.out.println(sbf.format(d));
+//		String urlString = URLEncoder.encode("7,8,5", "utf-8");
+//		System.out.println(urlString);
+//		long l = System.currentTimeMillis();
+//		l = l+7200000;
+//		Date d = new Date(l);
+//		SimpleDateFormat sbf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+//		System.out.println(sbf.format(d));
+		String s = "\\u8bbe\\u4e3a\\u63a8\\u8350\\u6210\\u529f";
+		String s1 = unicodeToString(s);
+		System.out.println(s1);
+	}
+
+	/**
+	 * Unicode转中文
+	 * @param str 中文
+	 * @return
+	 */
+	public static String unicodeToString(String str) {
+
+		Pattern pattern = Pattern.compile("(\\\\u(\\p{XDigit}{4}))");
+		Matcher matcher = pattern.matcher(str);
+		char ch;
+		while (matcher.find()) {
+			ch = (char) Integer.parseInt(matcher.group(2), 16);
+			str = str.replace(matcher.group(1), ch + "");
+		}
+		return str;
 	}
 }

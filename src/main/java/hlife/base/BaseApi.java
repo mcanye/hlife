@@ -35,6 +35,7 @@ public class BaseApi {
 	private VerificationParameters verificationParameters = new VerificationParameters();
 	//用户登录token
 	protected String access_token;
+	protected String new_access_token;
 
 	//登录接口
 	protected String verify;
@@ -83,39 +84,60 @@ public class BaseApi {
 	public void setUp() throws  IOException, InterruptedException {
 
 		verify = PropertiesUtils.getConfigValue("verify");
+		verify = URLFiltration.addHost(verify);
 		city = PropertiesUtils.getConfigValue("city");
+		city = URLFiltration.addHost(city);
 		house_list = PropertiesUtils.getConfigValue("house_list");
+		house_list = URLFiltration.addHost(house_list);
 		tagList = PropertiesUtils.getConfigValue("tagList");
+		tagList = URLFiltration.addHost(tagList);
 		brandList = PropertiesUtils.getConfigValue("brandList");
+		brandList = URLFiltration.addHost(brandList);
 		liveRecommend = PropertiesUtils.getConfigValue("liveRecommend");
+		liveRecommend = URLFiltration.addHost(liveRecommend);
 		liveCategoryList = PropertiesUtils.getConfigValue("liveCategoryList");
+		liveCategoryList = URLFiltration.addHost(liveCategoryList);
 		advList = PropertiesUtils.getConfigValue("advList");
+		advList = URLFiltration.addHost(advList);
 		liveRecommendlist = PropertiesUtils.getConfigValue("liveRecommendlist");
+		liveRecommendlist = URLFiltration.addHost(liveRecommendlist);
 		liveCategorySort = PropertiesUtils.getConfigValue("liveCategorySort");
+		liveCategorySort = URLFiltration.addHost(liveCategorySort);
 		liveFocuslist = PropertiesUtils.getConfigValue("liveFocuslist");
+		liveFocuslist = URLFiltration.addHost(liveFocuslist);
 		liveList = PropertiesUtils.getConfigValue("liveList");
+		liveList = URLFiltration.addHost(liveList);
 		createLiveNotice = PropertiesUtils.getConfigValue("createLiveNotice");
+		createLiveNotice = URLFiltration.addHost(createLiveNotice);
 		liveNoticeDet = PropertiesUtils.getConfigValue("liveNoticeDet");
+		liveNoticeDet = URLFiltration.addHost(liveNoticeDet);
 		setLiveNoticeRecommend = PropertiesUtils.getConfigValue("setLiveNoticeRecommend");
+		setLiveNoticeRecommend = URLFiltration.addHost(setLiveNoticeRecommend);
 		liveNoticeRecommendList = PropertiesUtils.getConfigValue("liveNoticeRecommendList");
+		liveNoticeRecommendList = URLFiltration.addHost(liveNoticeRecommendList);
 		liveNoticeFocuslist = PropertiesUtils.getConfigValue("liveNoticeFocuslist");
+		liveNoticeFocuslist = URLFiltration.addHost(liveNoticeFocuslist);
 		liveNoticeList = PropertiesUtils.getConfigValue("liveNoticeList");
+		liveNoticeList = URLFiltration.addHost(liveNoticeList);
 		liveNoticeEnroll = PropertiesUtils.getConfigValue("liveNoticeEnroll");
+		liveNoticeEnroll = URLFiltration.addHost(liveNoticeEnroll);
 		liveNoticeCancel = PropertiesUtils.getConfigValue("liveNoticeCancel");
-		fast();
+		liveNoticeCancel = URLFiltration.addHost(liveNoticeCancel);
+		access_token = fast(verificationParameters.phone);
+		new_access_token = fast(verificationParameters.newPhone);
 	}
 
 	
 
-	private void fast() throws IOException, InterruptedException {
+	private String fast(String phone) throws IOException, InterruptedException {
 		HashMap<String, String> params = new HashMap<>();
 		params.put("type","1");
 		params.put("country_code","86");
 		params.put("uuid","00000000-53a8-ae41-ffff-ffffef05ac4a");
 		params.put("platform","taiji");
-		params.put("username",verificationParameters.phone);
+		params.put("username",phone);
 		params.put("password",verificationParameters.verificationCode);
-		verify = URLFiltration.addHost(verify);
+
 		HashMap<String, String> header = new HashMap<>();
 		header = URLFiltration.addHeader(header);
 		JSONObject rs = httpClient.getResponseJson(httpClient.post(verify,params,header));
@@ -124,10 +146,11 @@ public class BaseApi {
 		//check登录成功msg与token是否成功返回
 		Assert.assertEquals(rs.getIntValue("status"), Constants.RESPNSE_STATUS_CODE_1,"验证码登录接口访问失败");
 		Assert.assertEquals(rs.getString("msg"), "登录成功","验证码登录接口访问失败");
-
-		JSONObject data = rs.getJSONObject("data");
-		access_token = data.getString("access_token");
 		Thread.sleep(5000);
+		return rs.getJSONObject("data").getString("access_token");
+
+
+
 	}
 
 	/**
