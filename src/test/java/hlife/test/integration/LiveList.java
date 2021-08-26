@@ -297,11 +297,11 @@ public class LiveList extends BaseApi {
         s = s.replace(" ", "");
         s = s.replace("[", "");
         s = s.replace("]", "");
-        String items = URLEncoder.encode(s, "utf-8");
+        //String items = URLEncoder.encode(s, "utf-8");
         params.clear();
         params.put("access_token",access_token);
         params.put("type","0");
-        params.put("items",items);
+        params.put("items",s);
         post = httpClient.post(liveCategorySort, params);
         statusCode = httpClient.getStatusCode(post);
         rs = httpClient.getResponseJson(post);
@@ -416,6 +416,8 @@ public class LiveList extends BaseApi {
                 CloseableHttpResponse post = httpClient.post(liveList, params);
                 int statusCode = httpClient.getStatusCode(post);
                 JSONObject rs = httpClient.getResponseJson(post);
+                log.info(rs.toJSONString());
+                Reporter.log(rs.toJSONString());
                 Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"请求失败");
                 int status = rs.getIntValue("status");
                 Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"请求失败");

@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05317c89-b5df-4710-82ef-91eb2dab91c1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveList.class" afterPath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveNoticeList.class" afterPath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveNoticeList.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/apilog.log" afterPath="$PROJECT_DIR$/logs/apilog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" afterPath="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java" afterPath="$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hlife/parameters/VerificationParameters.java" afterPath="$PROJECT_DIR$/src/main/java/hlife/parameters/VerificationParameters.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hlife/utils/md5/EncryptUtil.java" afterPath="$PROJECT_DIR$/src/main/java/hlife/utils/md5/EncryptUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/evn.properties" afterPath="$PROJECT_DIR$/src/main/resources/evn.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/param.properties" afterPath="$PROJECT_DIR$/src/main/resources/param.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/HouseList.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/HouseList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/filters/hlife_online.properties" afterPath="$PROJECT_DIR$/src/main/filters/hlife_online.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/filters/house_online.properties" afterPath="$PROJECT_DIR$/src/main/filters/house_online.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/filters/taiji_online.properties" afterPath="$PROJECT_DIR$/src/main/filters/taiji_online.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/report.html" afterPath="$PROJECT_DIR$/test-output/report.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,18 +24,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HouseList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/HouseList.java">
+      <file leaf-file-name="BaseApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="265" column="32" lean-forward="false" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="32" />
-              <folding>
-                <element signature="method#tagList#0;class#HouseList#0" expanded="false" />
-                <element signature="method#city#0;class#HouseList#0" expanded="false" />
-                <element signature="method#houseList#0;class#HouseList#0" expanded="false" />
-                <element signature="method#brandList#0;class#HouseList#0" expanded="false" />
-                <element signature="method#houseList_barand#0;class#HouseList#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="72" column="44" lean-forward="false" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -44,57 +37,45 @@
       <file leaf-file-name="URLFiltration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+            <state relative-caret-position="193">
+              <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseApi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="70" column="43" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EncryptUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hlife/utils/md5/EncryptUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LiveList.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LiveList.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="400" column="46" lean-forward="false" selection-start-line="400" selection-start-column="46" selection-end-line="400" selection-end-column="46" />
+            <state relative-caret-position="165">
+              <caret line="419" column="46" lean-forward="false" selection-start-line="419" selection-start-column="46" selection-end-line="419" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#liveRecommend#0;class#LiveList#0" expanded="false" />
                 <element signature="method#liveCategoryList#0;class#LiveList#0" expanded="false" />
                 <element signature="method#advList#0;class#LiveList#0" expanded="false" />
                 <element signature="method#liveRecommendlist#0;class#LiveList#0" expanded="false" />
-                <element signature="method#liveCategorySort#0;class#LiveList#0" expanded="false" />
                 <element signature="method#liveFocuslist#0;class#LiveList#0" expanded="false" />
-                <element signature="method#liveList#0;class#LiveList#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LiveNoticeList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="liveList.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveList.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LiveNoticeList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="458" column="5" lean-forward="true" selection-start-line="458" selection-start-column="5" selection-end-line="458" selection-end-column="5" />
+            <state relative-caret-position="382">
+              <caret line="497" column="42" lean-forward="false" selection-start-line="497" selection-start-column="42" selection-end-line="497" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#createLiveNotice#0;class#LiveNoticeList#0" expanded="false" />
@@ -103,50 +84,8 @@
                 <element signature="method#cancelEnroll#0;class#LiveNoticeList#0" expanded="false" />
                 <element signature="method#advList#0;class#LiveNoticeList#0" expanded="false" />
                 <element signature="method#setLiveNoticeRecommend#0;class#LiveNoticeList#0" expanded="false" />
+                <element signature="method#liveCategoryList#0;class#LiveNoticeList#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evn.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/evn.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fast.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="35" column="71" lean-forward="false" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
-              <folding>
-                <element signature="method#verifyFast#0;class#Fast#0" expanded="false" />
-                <element signature="method#pwdFast#0;class#Fast#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="first-debug.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/filters/first-debug.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="46" column="24" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="29" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -188,6 +127,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/HouseList.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
@@ -219,9 +159,6 @@
         <option value="$PROJECT_DIR$/src/main/java/hlife/httpclient/HttpClient.java" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/single/HouseList.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/single/houseList.xml" />
-        <option value="$PROJECT_DIR$/src/main/filters/hlife_online.properties" />
-        <option value="$PROJECT_DIR$/src/main/filters/house_online.properties" />
-        <option value="$PROJECT_DIR$/src/main/filters/taiji_online.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/live.xml" />
         <option value="$PROJECT_DIR$/src/main/java/hlife/base/Constants.java" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java" />
@@ -232,11 +169,14 @@
         <option value="$PROJECT_DIR$/src/main/java/hlife/parameters/VerificationParameters.java" />
         <option value="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/HouseList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" />
         <option value="$PROJECT_DIR$/src/main/resources/evn.properties" />
         <option value="$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java" />
         <option value="$PROJECT_DIR$/src/main/java/hlife/utils/md5/EncryptUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/filters/hlife_online.properties" />
+        <option value="$PROJECT_DIR$/src/main/filters/taiji_online.properties" />
+        <option value="$PROJECT_DIR$/src/main/filters/house_online.properties" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" />
       </list>
     </option>
   </component>
@@ -253,7 +193,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="101" />
     <option name="y" value="11" />
     <option name="width" value="1200" />
@@ -276,8 +216,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -361,7 +299,42 @@
               <item name="hlife" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="reporter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="testng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="testng" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="testng" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
@@ -407,6 +380,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,7 +428,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LiveNoticeList">
+  <component name="RunManager" selected="TestNG.E:/project/hlife/src/main/resources/testng/api/integration/liveList.xml">
     <configuration name="E:/project/hlife/src/main/resources/testng/api/integration/liveList.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="hlife" />
@@ -725,11 +700,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.LiveNoticeList" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.EncryptUtil.test111" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.LiveNoticeList.advList" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.LiveNoticeList.createLiveNotice" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/src/main/resources/testng/api/integration/liveList.xml" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/src/main/resources/testng/api/integration/liveList.xml" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.LiveNoticeList" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.EncryptUtil.test111" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.LiveNoticeList.advList" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.LiveNoticeList.createLiveNotice" />
       </list>
     </recent_temporary>
   </component>
@@ -763,25 +738,26 @@
       <workItem from="1629423544232" duration="11225000" />
       <workItem from="1629680124267" duration="4096000" />
       <workItem from="1629766638990" duration="17061000" />
-      <workItem from="1629851916652" duration="18285000" />
+      <workItem from="1629851916652" duration="18287000" />
+      <workItem from="1629939711787" duration="18235000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EncryptUtil_test111 - 2021.08.25 at 17h 00m 54s.xml">
-      <configuration name="EncryptUtil.test111" configurationId="TestNG" />
+    <history-entry file="E__project_hlife_src_main_resources_testng_api_integration_liveList_xml - 2021.08.26 at 17h 31m 03s.xml">
+      <configuration name="E:/project/hlife/src/main/resources/testng/api/integration/liveList.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LiveNoticeList - 2021.08.25 at 15h 03m 50s.xml">
-      <configuration name="LiveNoticeList" configurationId="TestNG" />
+    <history-entry file="E__project_hlife_src_main_resources_testng_api_integration_liveList_xml - 2021.08.26 at 17h 57m 46s.xml">
+      <configuration name="E:/project/hlife/src/main/resources/testng/api/integration/liveList.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LiveNoticeList - 2021.08.25 at 15h 06m 02s.xml">
-      <configuration name="LiveNoticeList" configurationId="TestNG" />
+    <history-entry file="E__project_hlife_src_main_resources_testng_api_integration_liveList_xml - 2021.08.26 at 18h 10m 44s.xml">
+      <configuration name="E:/project/hlife/src/main/resources/testng/api/integration/liveList.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LiveNoticeList - 2021.08.25 at 15h 07m 46s.xml">
-      <configuration name="LiveNoticeList" configurationId="TestNG" />
+    <history-entry file="E__project_hlife_src_main_resources_testng_api_integration_liveList_xml - 2021.08.26 at 18h 23m 59s.xml">
+      <configuration name="E:/project/hlife/src/main/resources/testng/api/integration/liveList.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LiveNoticeList - 2021.08.25 at 15h 11m 04s.xml">
-      <configuration name="LiveNoticeList" configurationId="TestNG" />
+    <history-entry file="E__project_hlife_src_main_resources_testng_api_integration_liveList_xml - 2021.08.26 at 18h 28m 14s.xml">
+      <configuration name="E:/project/hlife/src/main/resources/testng/api/integration/liveList.xml" configurationId="TestNG" />
     </history-entry>
     <history-entry file="LiveNoticeList - 2021.08.25 at 15h 20m 07s.xml">
       <configuration name="LiveNoticeList" configurationId="TestNG" />
@@ -800,7 +776,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174367000" />
+    <option name="totallyTimeSpent" value="192604000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -812,8 +788,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39538714" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -824,13 +799,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42668864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51729816" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24886535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2526475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5673534" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -843,6 +817,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5673534" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -853,7 +828,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1053,27 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/filters/taiji_online.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/filters/house_online.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hlife/utils/md5/Base64Decoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1109,13 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveList.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1143,7 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1155,77 +1101,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="35" column="71" lean-forward="false" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
-          <folding>
-            <element signature="method#verifyFast#0;class#Fast#0" expanded="false" />
-            <element signature="method#pwdFast#0;class#Fast#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="400" column="46" lean-forward="false" selection-start-line="400" selection-start-column="46" selection-end-line="400" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#liveRecommend#0;class#LiveList#0" expanded="false" />
-            <element signature="method#liveCategoryList#0;class#LiveList#0" expanded="false" />
-            <element signature="method#advList#0;class#LiveList#0" expanded="false" />
-            <element signature="method#liveRecommendlist#0;class#LiveList#0" expanded="false" />
-            <element signature="method#liveCategorySort#0;class#LiveList#0" expanded="false" />
-            <element signature="method#liveFocuslist#0;class#LiveList#0" expanded="false" />
-            <element signature="method#liveList#0;class#LiveList#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="46" column="24" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/filters/first-debug.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/evn.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/utils/md5/EncryptUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/HouseList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="1175">
           <caret line="265" column="32" lean-forward="false" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="32" />
           <folding>
             <element signature="method#tagList#0;class#HouseList#0" expanded="false" />
@@ -1237,18 +1115,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/utils/md5/EncryptUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="85" column="22" lean-forward="false" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="method#verifyFast#0;class#Fast#0" expanded="false" />
+            <element signature="method#pwdFast#0;class#Fast#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/evn.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/taiji_online.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/house_online.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/first-debug.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="70" column="43" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="43" />
+        <state relative-caret-position="225">
+          <caret line="72" column="44" lean-forward="false" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="458" column="5" lean-forward="true" selection-start-line="458" selection-start-column="5" selection-end-line="458" selection-end-column="5" />
+        <state relative-caret-position="382">
+          <caret line="497" column="42" lean-forward="false" selection-start-line="497" selection-start-column="42" selection-end-line="497" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#createLiveNotice#0;class#LiveNoticeList#0" expanded="false" />
@@ -1257,6 +1210,30 @@
             <element signature="method#cancelEnroll#0;class#LiveNoticeList#0" expanded="false" />
             <element signature="method#advList#0;class#LiveNoticeList#0" expanded="false" />
             <element signature="method#setLiveNoticeRecommend#0;class#LiveNoticeList#0" expanded="false" />
+            <element signature="method#liveCategoryList#0;class#LiveNoticeList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveList.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="419" column="46" lean-forward="false" selection-start-line="419" selection-start-column="46" selection-end-line="419" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#liveRecommend#0;class#LiveList#0" expanded="false" />
+            <element signature="method#liveCategoryList#0;class#LiveList#0" expanded="false" />
+            <element signature="method#advList#0;class#LiveList#0" expanded="false" />
+            <element signature="method#liveRecommendlist#0;class#LiveList#0" expanded="false" />
+            <element signature="method#liveFocuslist#0;class#LiveList#0" expanded="false" />
           </folding>
         </state>
       </provider>

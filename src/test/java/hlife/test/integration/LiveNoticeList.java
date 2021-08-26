@@ -2,22 +2,20 @@ package hlife.test.integration;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.sun.xml.internal.bind.v2.TODO;
 import hlife.base.BaseApi;
 import hlife.base.Constants;
 import hlife.filtration.URLFiltration;
 import hlife.httpclient.HttpClient;
-import hlife.parameters.VerificationParameters;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-
-import javax.print.attribute.HashAttributeSet;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * 直播预告相关
@@ -30,8 +28,10 @@ public class LiveNoticeList extends BaseApi{
     private String notice_id;
     //直播ID
     private String live_id;
+    //直播分类
+    private List<String> live_typeMap = new ArrayList<>();
     private String date = getDate(7200000);
-
+    private int page = 1;
     /**
      * 发布直播预告
      */
@@ -457,4 +457,183 @@ public class LiveNoticeList extends BaseApi{
         Assert.assertEquals(msg,"设为推荐成功","推荐预告接口msg不正确");
 
     }
+
+    /**
+     *预告推荐列表
+     */
+    @Test(dependsOnMethods = { "setLiveNoticeRecommend" })
+    public void liveNoticeRecommendList() throws IOException {
+        Reporter.log("判断code=200\n" +
+                "status=1\n" +
+                "msg=获取推荐直播列表成功");
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",access_token);
+        CloseableHttpResponse post = httpClient.post(liveNoticeRecommendList, params);
+        int statusCode = httpClient.getStatusCode(post);
+        Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"预告推荐列表请求失败");
+        JSONObject rs = httpClient.getResponseJson(post);
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_Minus_1,"预告推荐列表请求失败");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(msg,"获取推荐直播列表成功","预告推荐列表返回msg不正确");
+        JSONArray data = rs.getJSONArray("data");
+        for(int i = 0; i<data.size();i++){
+            JSONObject dataObj = data.getJSONObject(i);
+            JSONArray list = dataObj.getJSONArray("list");
+            Reporter.log("判断每个分类推荐的直播间满足（0,5]条件");
+            Assert.assertEquals(list.size()>0 && list.size()<=5,true,"每个分类推荐的直播间不满足（0,5]条件");
+            Reporter.log("判断分类名称不为空");
+            String live_cname = dataObj.getString("live_cname");
+            Assert.assertEquals(live_cname.equals(""),false,"分类名称不应为空");
+
+            for (int j = 0;j<list.size();i++){
+                Reporter.log("判断预告标题不为空");
+                JSONObject jsonObject = list.getJSONObject(i);
+                String live_title = jsonObject.getString("live_title");
+                Assert.assertEquals(live_title.equals(""),false,"预告标题不应为空");
+                Reporter.log("判断直播预告封面图可正确显示");
+                String live_cover = jsonObject.getString("live_cover");
+                Assert.assertEquals(live_cover.equals(""),false,"直播预告封面图不应为空");
+               statusCode = httpClient.getStatusCode(httpClient.get(live_cover, new HashMap<>()));
+                Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"直播预告封面图不正确");
+                Reporter.log("判断开播时间不为空");
+                long live_start_time = jsonObject.getLongValue("live_start_time");
+                Assert.assertEquals(live_start_time>0,true,"开播时间不正确");
+                Reporter.log("判断预约状态不为空");
+                int enroll_status = jsonObject.getIntValue("enroll_status");
+                Assert.assertEquals(enroll_status==0||enroll_status==1,true,"预约状态不正确");
+                Reporter.log("判断预告简介不为空");
+                String introduce = jsonObject.getString("introduce");
+                Assert.assertEquals(introduce.equals(""),false,"预告简介不应为空");
+            }
+
+        }
+    }
+
+    /**
+     * 获取直播分类（根据apptype不同返回值不同，分类由后台管理端配置）
+     */
+    @Test
+    public void liveCategoryList() throws IOException {
+
+        HashMap<String, String> header = URLFiltration.addHeader(new HashMap<String, String>());
+        HashMap<String,String> params = new HashMap<>();
+        CloseableHttpResponse post = httpClient.post(liveCategoryList,params,header);
+        int statusCode = httpClient.getStatusCode(post);
+        JSONObject rs = httpClient.getResponseJson(post);
+        log.info(rs.toString());
+        Reporter.log(rs.toString());
+        Reporter.log("判断code=200\n" +
+                "msg=获取直播分类成功\n" +
+                "status=1");
+        Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"获取直播分类接口请求失败");
+        int status = rs.getIntValue("status");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"获取直播分类接口请求失败");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(msg,"获取直播分类成功","获取直播分类接口msg错误");
+        JSONArray data = rs.getJSONArray("data");
+        if (data.size()>0 && data != null){
+            JSONObject data_obj;
+            boolean isFollow = false;
+            for (int i = 0 ;i<data.size();i++){
+                Reporter.log("判断data["+i+"].cate_name不为空");
+                data_obj = (JSONObject) data.get(i);
+                String cate_name = data_obj.getString("cate_name");
+                if (cate_name.equals("") || cate_name == null){
+                    Assert.assertEquals(true,false,"分类名称不应为空cate_name");
+                }
+                if (cate_name.equals("关注")){
+                    isFollow = true;
+                }
+                Reporter.log("用例通过");
+                Reporter.log("判断data["+i+"].id不为空");
+                String id = data_obj.getString("id");
+                if(id.equals("") || id == null){
+                    Assert.assertEquals(true,false,"分类标识不应为空id");
+                }
+                Reporter.log("用例通过");
+                Reporter.log("封装键值对");
+                live_typeMap.add(id);
+            }
+            Reporter.log("判断返回值内包含“关注”");
+            Assert.assertEquals(isFollow,true,"");
+            Reporter.log("用例通过");
+        }
+    }
+
+    /**
+     * 直播预告关注列表
+     */
+    @Test(dependsOnMethods = { "createLiveNotice" })
+    public void liveNoticeFocuslist() throws IOException {
+        Reporter.log("检验token为空");
+        HashMap<String,String> params = new HashMap<>();
+        CloseableHttpResponse post = httpClient.post(liveNoticeFocuslist, params);
+        JSONObject rs = httpClient.getResponseJson(post);
+        Reporter.log(rs.toJSONString());
+        log.info(rs.toJSONString());
+        String msg = rs.getString("msg");
+        int status = rs.getIntValue("status");
+        Assert.assertEquals(status, Constants.RESPNSE_STATUS_CODE_Minus_1,"预告预约接口请求失败");
+        Assert.assertEquals(msg,"请登录","预告预约接口msg不正确");
+
+        while (true){
+            Reporter.log("校验code=200\n" +
+                    "status=1\n" +
+                    "msg=获取关注直播列表成功");
+            params.clear();
+            params.put("access_token",new_access_token);
+            params.put("page",page+"");
+            params.put("pagesize","10");
+            post = httpClient.post(liveNoticeFocuslist, params);
+            rs = httpClient.getResponseJson(post);
+            Reporter.log(rs.toJSONString());
+            log.info(rs.toJSONString());
+            msg = rs.getString("msg");
+            status = rs.getIntValue("status");
+            Assert.assertEquals(status, Constants.RESPNSE_STATUS_CODE_1,"预告预约接口请求失败");
+            Assert.assertEquals(msg,"获取推荐直播列表成功","预告预约接口msg不正确");
+            JSONObject data = rs.getJSONObject("data");
+
+            JSONObject pager = data.getJSONObject("pager");
+            JSONArray list = data.getJSONArray("list");
+            for(int i=0;i<list.size();i++){
+                Reporter.log("判断预告标题不为空");
+                JSONObject jsonObject = list.getJSONObject(i);
+                String live_title = jsonObject.getString("live_title");
+                Assert.assertEquals(live_title.equals(""),false,"预告标题不应为空");
+                Reporter.log("判断直播预告封面图可正确显示");
+                String live_cover = jsonObject.getString("live_cover");
+                Assert.assertEquals(live_cover.equals(""),false,"直播预告封面图不应为空");
+                int statusCode = httpClient.getStatusCode(httpClient.get(live_cover, new HashMap<>()));
+                Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"直播预告封面图不正确");
+                Reporter.log("判断开播时间不为空");
+                long live_start_time = jsonObject.getLongValue("live_start_time");
+                Assert.assertEquals(live_start_time>0,true,"开播时间不正确");
+                Reporter.log("判断预约状态不为空");
+                int enroll_status = jsonObject.getIntValue("enroll_status");
+                Assert.assertEquals(enroll_status==0||enroll_status==1,true,"预约状态不正确");
+                Reporter.log("判断预告简介不为空");
+                String introduce = jsonObject.getString("introduce");
+                Assert.assertEquals(introduce.equals(""),false,"预告简介不应为空");
+            }
+
+
+
+            Reporter.log("检测分页");
+            Assert.assertEquals(list.size()<=10,true,"分页不正确");
+            int pagesize= Integer.parseInt(pager.getString("pagesize"));
+            if (list.size()<pagesize){
+                page=1;
+                break;
+            }else {
+                page+=1;
+            }
+        }
+
+    }
+
+
 }
