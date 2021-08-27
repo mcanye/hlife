@@ -707,12 +707,35 @@ public class LiveNoticeList extends BaseApi{
     /**
      * 个人主页预告列表type=1
      */
+    @Test(dependsOnMethods = { "liveNoticeList" })
     public void liveNoticeList_mine(){
 
         //TODO 自己个人主页 待bug13469修复后编写
         //TODO 查看他人个人主页待bug13469修复后编写
     }
 
+    /**
+     * 删除预告
+     */
+    @Test(dependsOnMethods = { "liveNoticeList_mine" })
+    public void liveNoticeCancel() throws IOException {
+        Reporter.log("参数正确，判断code=200\n" +
+                "status=1\n" +
+                "msg=\"取消直播预告成功\"");
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",access_token);
+        params.put("notice_id",notice_id);
+        CloseableHttpResponse post = httpClient.post(liveNoticeCancel, params);
+        int statusCode = httpClient.getStatusCode(post);
+        Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"删除预告接口请求失败");
+        JSONObject rs = httpClient.getResponseJson(post);
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"删除预告接口请求失败");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(msg,"取消直播预告成功","删除预告接口msg不正确");
 
+    }
 
 }
