@@ -268,8 +268,6 @@ public class LiveList extends BaseApi {
         String msg = rs.getString("msg");
         Assert.assertEquals(msg,"请登录","返回msg不正确");
 
-
-
         Reporter.log("校验items为空");
         params.clear();
         params.put("access_token",access_token);
