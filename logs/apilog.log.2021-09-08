@@ -1,0 +1,216 @@
+2021-09-08 09:11:22 483 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-09-08 09:11:23 739 INFO  BaseApi:144 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$pTkZknXo0fzfyaCvYpJ9x.J8k7QsvBkE08QjmHzArGKeNqspnJL8.","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-09-08 09:11:28 747 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-09-08 09:11:29 589 INFO  BaseApi:144 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"qHvxty3hkoU7FnYIFWi7uGT3hR/J1DbMwpd1snUhchQ=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4062","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$y1lWdxiQNJjsSLHSexBXPOZ4xozGEVxqDYdJ9vQ3bSvHcWk5y9qGS","country_code":"86","user_pid":"0","phone":"17610733700","nickname":"用户102704","guid":"hsu6d65835c4fa5434382f5ef511dfcf511","id":"4062","switch_open":0,"username":"102704"},"status":1}
+2021-09-08 09:11:34 603 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/publics/advList/
+2021-09-08 09:11:34 762 INFO  LiveNoticeList:377 - {"msg":"广告类型不能为空","data":[],"status":1}
+2021-09-08 09:11:34 765 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/publics/advList/
+2021-09-08 09:11:34 926 INFO  LiveNoticeList:392 - {"msg":"广告位不存在","data":[],"status":1}
+2021-09-08 09:11:34 929 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/publics/advList/
+2021-09-08 09:11:35 090 INFO  LiveNoticeList:409 - {"msg":"获取广告列表成功","data":[],"status":1}
+2021-09-08 09:11:35 175 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/create/
+2021-09-08 09:11:35 403 INFO  LiveNoticeList:46 - {"msg":"请登录","data":{},"status":-1}
+2021-09-08 09:11:35 405 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/create/
+2021-09-08 09:11:35 596 INFO  LiveNoticeList:58 - {"msg":"直播封面不能为空","data":{},"status":0}
+2021-09-08 09:11:35 601 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/create/
+2021-09-08 09:11:35 763 INFO  LiveNoticeList:71 - {"msg":"直播封面类型错误","data":{},"status":0}
+2021-09-08 09:11:35 766 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/create/
+2021-09-08 09:11:35 923 INFO  LiveNoticeList:84 - {"msg":"直播类型id不能为空","data":{},"status":0}
+2021-09-08 09:11:35 925 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/create/
+2021-09-08 09:11:36 086 INFO  LiveNoticeList:98 - {"msg":"直播标题不能为空","data":{},"status":0}
+2021-09-08 09:11:36 089 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/create/
+2021-09-08 09:11:36 253 INFO  LiveNoticeList:114 - {"msg":"预告简介不能为空","data":{},"status":0}
+2021-09-08 09:11:36 258 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/create/
+2021-09-08 09:11:36 417 INFO  LiveNoticeList:130 - {"msg":"直播开始时间不能为空","data":{},"status":0}
+2021-09-08 09:11:36 419 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/create/
+2021-09-08 09:11:36 583 INFO  LiveNoticeList:147 - {"msg":"必须上传一张宣传图片或者视频","data":{},"status":0}
+2021-09-08 09:11:36 587 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/create/
+2021-09-08 09:11:37 580 INFO  LiveNoticeList:167 - {"msg":"发布成功","data":{"mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=583&access_token=%242y%2413%24pTkZknXo0fzfyaCvYpJ9x.J8k7QsvBkE08QjmHzArGKeNqspnJL8.&apptype=taiji"},"status":1}
+2021-09-08 09:11:37 581 INFO  LiveNoticeList:178 - 预告ID：583
+2021-09-08 09:11:37 703 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live/categoryList/
+2021-09-08 09:11:37 907 INFO  LiveNoticeList:527 - {"msg":"获取直播分类成功","data":[{"sub":[],"has_goods":"0","cate_name":"关注","live_type":"7","can_recommend":["mall","house"],"id":"50","show_types":["0","4"]},{"sub":[],"has_goods":"1","cate_name":"太极","live_type":"6","can_recommend":["mall","house"],"id":"5","show_types":["0","4"]},{"sub":[],"has_goods":"1","cate_name":"武术","live_type":"6","can_recommend":["mall","house"],"id":"7","show_types":["0","4"]},{"sub":[],"has_goods":"1","cate_name":"绿色食品","live_type":"6","can_recommend":["mall"],"id":"8","show_types":["0","4"]},{"sub":[],"has_goods":"1","cate_name":"养生","live_type":"6","can_recommend":["house","mall"],"id":"9","show_types":["0","4"]},{"sub":[],"has_goods":"0","cate_name":"旅游","live_type":"6","can_recommend":["mall","house","ship"],"id":"3","show_types":["0","4"]},{"sub":[],"has_goods":"1","cate_name":"租房售房","live_type":"6","can_recommend":["house"],"id":"16","show_types":["0","4"]},{"sub":[],"has_goods":"1","cate_name":"小说","live_type":"6","can_recommend":["house"],"id":"22","show_types":["0","4"]},{"sub":[],"has_goods":"1","cate_name":"需求发布会","live_type":"6","can_recommend":["house"],"id":"31","show_types":["0","4"]},{"sub":[],"has_goods":"0","cate_name":"股市直播","live_type":"6","can_recommend":["mall"],"id":"36","show_types":["0","4"]},{"sub":[],"has_goods":"0","cate_name":"行情解读","live_type":"6","can_recommend":["house"],"id":"37","show_types":["0","4"]},{"sub":[],"has_goods":"0","cate_name":"基金研究","live_type":"6","can_recommend":["mall"],"id":"38","show_types":["0","4"]},{"sub":[{"cate_name":"新房","house_cid":"1"},{"cate_name":"二手房","house_cid":"2"},{"cate_name":"租房","house_cid":"3"},{"cate_name":"别墅","house_cid":"4"},{"cate_name":"商铺写字楼","house_cid":"5"}],"has_goods":"1","cate_name":"租房售房","live_type":"6","can_recommend":["house"],"id":"51","show_types":["0","4"]},{"sub":[],"has_goods":"0","cate_name":"邮轮","live_type":"6","can_recommend":["ship"],"id":"60","show_types":["0","4"]}],"status":1}
+2021-09-08 09:11:37 930 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/detail/
+2021-09-08 09:11:38 087 INFO  LiveNoticeList:193 - {"msg":"预告ID不能为空","data":{},"status":0}
+2021-09-08 09:11:38 089 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/detail/
+2021-09-08 09:11:38 260 INFO  LiveNoticeList:207 - {"msg":"获取预告详情成功","data":{"live_start_time":"2021-09-08 11:11","images":["https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"],"if_self":0,"introduce":"这是预告简介","video":{},"content":"","show_type":"0","live_id":"6320","user_id":"4030","live_cover":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","cate_name":"太极","live_title":"这是预告标题","anchor_data":{"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"is_examination":1,"enroll_status":0,"id":"583","status":"0"},"status":1}
+2021-09-08 09:11:38 261 INFO  LiveNoticeList:223 - date:2021-09-08 11:11
+2021-09-08 09:11:38 261 INFO  LiveNoticeList:224 - live_start_time:2021-09-08 11:11
+2021-09-08 09:11:38 267 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/avatar.png
+2021-09-08 09:11:38 753 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg
+2021-09-08 09:11:38 979 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/focuslist/
+2021-09-08 09:11:39 133 INFO  LiveNoticeList:577 - {"msg":"请登录","data":{},"status":-1}
+2021-09-08 09:11:39 147 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/focuslist/
+2021-09-08 09:11:39 349 INFO  LiveNoticeList:594 - {"msg":"获取推荐直播列表成功","data":{"pager":{"pagecount":1,"count":"5","pagesize":"10","page":"1"},"list":[{"live_start_time":1631070660000,"images":["https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"],"introduce":"这是预告简介","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=583&access_token=%242y%2413%24y1lWdxiQNJjsSLHSexBXPOZ4xozGEVxqDYdJ9vQ3bSvHcWk5y9qGS&apptype=taiji","video":"0","content":"","live_cid":"5","show_type":"0","live_id":"6320","user_id":"4030","live_cover":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","is_recommend":"0","live_title":"这是预告标题","cate_name":"太极","is_examination":"1","enroll_status":0,"id":"583"},{"live_start_time":1631441700000,"images":["https://file.hishenghuo.com.cn/taiji/20210907/1631006147422328.jpg"],"introduce":"测试","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=581&access_token=%242y%2413%24y1lWdxiQNJjsSLHSexBXPOZ4xozGEVxqDYdJ9vQ3bSvHcWk5y9qGS&apptype=taiji","video":"0","content":"","live_cid":"3","show_type":"0","live_id":"6316","user_id":"3736","live_cover":"https://file.hishenghuo.com.cn/taiji/20210907/1631006126163578.jpg","is_recommend":"0","live_title":"测试","cate_name":"旅游","is_examination":"1","enroll_status":0,"id":"581"},{"live_start_time":1633014660000,"images":["https://file.hishenghuo.com.cn/taiji/20210907/1631005917020211.jpg"],"introduce":"测试","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=579&access_token=%242y%2413%24y1lWdxiQNJjsSLHSexBXPOZ4xozGEVxqDYdJ9vQ3bSvHcWk5y9qGS&apptype=taiji","video":"0","content":"","live_cid":"3","show_type":"0","live_id":"6312","user_id":"3736","live_cover":"https://file.hishenghuo.com.cn/taiji/20210907/1631005898731293.jpg","is_recommend":"0","live_title":"测试","cate_name":"旅游","is_examination":"1","enroll_status":0,"id":"579"},{"live_start_time":1631934000000,"images":["https://file.hishenghuo.com.cn/taiji/20210831/163037522844043.jpg"],"introduce":"测试","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=569&access_token=%242y%2413%24y1lWdxiQNJjsSLHSexBXPOZ4xozGEVxqDYdJ9vQ3bSvHcWk5y9qGS&apptype=taiji","video":"0","content":"","live_cid":"51","show_type":"0","live_id":"6028","user_id":"3736","live_cover":"https://file.hishenghuo.com.cn/taiji/20210831/1630375213905717.jpg","is_recommend":"1","live_title":"测试","cate_name":"租房售房","is_examination":"1","enroll_status":0,"id":"569"},{"live_start_time":1633102680000,"images":["https://file.hishenghuo.com.cn/taiji/20210831/08384760829.jpg"],"introduce":"需求越来越好","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=567&access_token=%242y%2413%24y1lWdxiQNJjsSLHSexBXPOZ4xozGEVxqDYdJ9vQ3bSvHcWk5y9qGS&apptype=taiji","video":"0","content":"","live_cid":"51","show_type":"0","live_id":"6017","user_id":"3736","live_cover":"https://file.hishenghuo.com.cn/taiji/20210831/08383561752.jpg","is_recommend":"1","live_title":"测试房产","cate_name":"租房售房","is_examination":"1","enroll_status":0,"id":"567"}]},"status":1}
+2021-09-08 09:11:39 352 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg
+2021-09-08 09:11:39 540 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210907/1631006126163578.jpg
+2021-09-08 09:11:39 850 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210907/1631005898731293.jpg
+2021-09-08 09:11:40 057 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210831/1630375213905717.jpg
+2021-09-08 09:11:40 280 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210831/08383561752.jpg
+2021-09-08 09:11:40 501 INFO  PropertiesUtils:169 - http://backtest.tjkongfu.com:4001/admin/live-notice/recommend?notice_id=583
+2021-09-08 09:11:40 809 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/enroll/
+2021-09-08 09:11:40 958 INFO  LiveNoticeList:258 - {"msg":"请登录","data":{},"status":-1}
+2021-09-08 09:11:43 960 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/enroll/
+2021-09-08 09:11:44 117 INFO  LiveNoticeList:270 - {"msg":"直播ID必须上传","data":{},"status":0}
+2021-09-08 09:11:47 120 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/enroll/
+2021-09-08 09:11:47 287 INFO  LiveNoticeList:283 - {"msg":"不能预约自己的预告","data":{},"status":0}
+2021-09-08 09:11:50 289 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/enroll/
+2021-09-08 09:11:50 454 INFO  LiveNoticeList:299 - {"msg":"预约成功，直播开始前十分钟将通过即信通知您观看","data":{"enroll_status":1},"status":1}
+2021-09-08 09:11:53 457 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/detail/
+2021-09-08 09:11:53 624 INFO  LiveNoticeList:314 - {"msg":"获取预告详情成功","data":{"live_start_time":"2021-09-08 11:11","images":["https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"],"if_self":0,"introduce":"这是预告简介","video":{},"content":"","show_type":"0","live_id":"6320","user_id":"4030","live_cover":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","cate_name":"太极","live_title":"这是预告标题","anchor_data":{"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"is_examination":1,"enroll_status":1,"id":"583","status":"0"},"status":1}
+2021-09-08 09:11:53 635 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:53 837 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":1,"count":"1","pagesize":"10","page":"1"},"list":[{"live_start_time":1631070660000,"images":["https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"],"anchor_id":"4030","introduce":"这是预告简介","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=583&access_token=%242y%2413%24pTkZknXo0fzfyaCvYpJ9x.J8k7QsvBkE08QjmHzArGKeNqspnJL8.&apptype=taiji","content":"","live_cid":"5","show_type":"0","live_id":"6320","live_cover":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","user_id":"4030","live_title":"这是预告标题","cate_name":"太极","enroll_status":0,"id":"583","live_status":1}]},"status":1}
+2021-09-08 09:11:53 846 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg
+2021-09-08 09:11:54 037 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:54 195 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":0,"count":"0","pagesize":"10","page":"1"},"list":[]},"status":1}
+2021-09-08 09:11:54 198 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:54 362 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":0,"count":"0","pagesize":"10","page":"1"},"list":[]},"status":1}
+2021-09-08 09:11:54 364 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:54 523 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":0,"count":"0","pagesize":"10","page":"1"},"list":[]},"status":1}
+2021-09-08 09:11:54 525 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:54 699 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":1,"count":"2","pagesize":"10","page":"1"},"list":[{"live_start_time":1633014660000,"images":["https://file.hishenghuo.com.cn/taiji/20210907/1631005917020211.jpg"],"anchor_id":"3736","introduce":"测试","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=579&access_token=%242y%2413%24pTkZknXo0fzfyaCvYpJ9x.J8k7QsvBkE08QjmHzArGKeNqspnJL8.&apptype=taiji","content":"","live_cid":"3","show_type":"0","live_id":"6312","live_cover":"https://file.hishenghuo.com.cn/taiji/20210907/1631005898731293.jpg","user_id":"3736","live_title":"测试","cate_name":"旅游","enroll_status":0,"id":"579","live_status":1},{"live_start_time":1631441700000,"images":["https://file.hishenghuo.com.cn/taiji/20210907/1631006147422328.jpg"],"anchor_id":"3736","introduce":"测试","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=581&access_token=%242y%2413%24pTkZknXo0fzfyaCvYpJ9x.J8k7QsvBkE08QjmHzArGKeNqspnJL8.&apptype=taiji","content":"","live_cid":"3","show_type":"0","live_id":"6316","live_cover":"https://file.hishenghuo.com.cn/taiji/20210907/1631006126163578.jpg","user_id":"3736","live_title":"测试","cate_name":"旅游","enroll_status":0,"id":"581","live_status":1}]},"status":1}
+2021-09-08 09:11:54 701 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210907/1631005898731293.jpg
+2021-09-08 09:11:54 888 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210907/1631006126163578.jpg
+2021-09-08 09:11:55 063 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:55 224 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":0,"count":"0","pagesize":"10","page":"1"},"list":[]},"status":1}
+2021-09-08 09:11:55 226 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:55 398 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":0,"count":"0","pagesize":"10","page":"1"},"list":[]},"status":1}
+2021-09-08 09:11:55 400 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:55 566 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":0,"count":"0","pagesize":"10","page":"1"},"list":[]},"status":1}
+2021-09-08 09:11:55 581 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:55 819 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":0,"count":"0","pagesize":"10","page":"1"},"list":[]},"status":1}
+2021-09-08 09:11:55 822 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:55 987 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":0,"count":"0","pagesize":"10","page":"1"},"list":[]},"status":1}
+2021-09-08 09:11:55 989 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:56 150 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":0,"count":"0","pagesize":"10","page":"1"},"list":[]},"status":1}
+2021-09-08 09:11:56 154 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:56 323 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":1,"count":"3","pagesize":"10","page":"1"},"list":[{"live_start_time":1633102380000,"images":["https://file.hishenghuo.com.cn/taiji/20210831/08324801962.jpg"],"anchor_id":"4233","introduce":"测试","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=566&access_token=%242y%2413%24pTkZknXo0fzfyaCvYpJ9x.J8k7QsvBkE08QjmHzArGKeNqspnJL8.&apptype=taiji","content":"","live_cid":"51","show_type":"0","live_id":"6012","live_cover":"https://file.hishenghuo.com.cn/taiji/20210831/0832432117.jpg","user_id":"4233","live_title":"测试","cate_name":"租房售房","enroll_status":0,"id":"566","live_status":1},{"live_start_time":1633102680000,"images":["https://file.hishenghuo.com.cn/taiji/20210831/08384760829.jpg"],"anchor_id":"3736","introduce":"需求越来越好","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=567&access_token=%242y%2413%24pTkZknXo0fzfyaCvYpJ9x.J8k7QsvBkE08QjmHzArGKeNqspnJL8.&apptype=taiji","content":"","live_cid":"51","show_type":"0","live_id":"6017","live_cover":"https://file.hishenghuo.com.cn/taiji/20210831/08383561752.jpg","user_id":"3736","live_title":"测试房产","cate_name":"租房售房","enroll_status":0,"id":"567","live_status":1},{"live_start_time":1631934000000,"images":["https://file.hishenghuo.com.cn/taiji/20210831/163037522844043.jpg"],"anchor_id":"3736","introduce":"测试","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/liveNotice?notice_id=569&access_token=%242y%2413%24pTkZknXo0fzfyaCvYpJ9x.J8k7QsvBkE08QjmHzArGKeNqspnJL8.&apptype=taiji","content":"","live_cid":"51","show_type":"0","live_id":"6028","live_cover":"https://file.hishenghuo.com.cn/taiji/20210831/1630375213905717.jpg","user_id":"3736","live_title":"测试","cate_name":"租房售房","enroll_status":0,"id":"569","live_status":1}]},"status":1}
+2021-09-08 09:11:56 325 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210831/0832432117.jpg
+2021-09-08 09:11:56 541 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210831/08383561752.jpg
+2021-09-08 09:11:56 709 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210831/1630375213905717.jpg
+2021-09-08 09:11:56 889 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/list/
+2021-09-08 09:11:57 056 INFO  LiveNoticeList:659 - {"msg":"获取直播预告列表成功","data":{"pager":{"pagecount":0,"count":"0","pagesize":"10","page":"1"},"list":[]},"status":1}
+2021-09-08 09:11:57 096 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/enroll/
+2021-09-08 09:11:57 253 INFO  LiveNoticeList:341 - {"msg":"取消预约成功","data":{"enroll_status":0},"status":1}
+2021-09-08 09:12:00 256 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/detail/
+2021-09-08 09:12:00 424 INFO  LiveNoticeList:356 - {"msg":"获取预告详情成功","data":{"live_start_time":"2021-09-08 11:11","images":["https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"],"if_self":0,"introduce":"这是预告简介","video":{},"content":"","show_type":"0","live_id":"6320","user_id":"4030","live_cover":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","cate_name":"太极","live_title":"这是预告标题","anchor_data":{"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"is_examination":1,"enroll_status":0,"id":"583","status":"0"},"status":1}
+2021-09-08 09:12:00 434 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/live-notice/cancel/
+2021-09-08 09:12:00 605 INFO  LiveNoticeList:732 - {"msg":"取消直播预告成功","data":{},"status":1}
+2021-09-08 09:12:01 291 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sysConfig.value  [in template "email.ftl" at line 18, column 47]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sysConfig.value}  [in template "email.ftl" at line 18, column 45]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:207)
+	at freemarker.core.Items.accept(Items.java:43)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:276)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.vimalselvam.testng.EmailReporter.flush(EmailReporter.java:56)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:247)
+	at com.aventstack.extentreports.Report.flush(Report.java:169)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:272)
+	at reporter.listener.MyExtentTestNgFormatter.generateReport(MyExtentTestNgFormatter.java:255)
+	at org.testng.TestNG.generateReports(TestNG.java:1097)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2021-09-08 14:24:08 908 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-09-08 14:24:09 990 INFO  BaseApi:153 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$7YIyGaka.KC1oUf5aJ8RiuuFeI8gks5aMoktX6h6KlyF13Fv7BDYa","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-09-08 14:24:14 996 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-09-08 14:24:15 825 INFO  BaseApi:153 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"qHvxty3hkoU7FnYIFWi7uGT3hR/J1DbMwpd1snUhchQ=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4062","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$y1lWdxiQNJjsSLHSexBXPOZ4xozGEVxqDYdJ9vQ3bSvHcWk5y9qGS","country_code":"86","user_pid":"0","phone":"17610733700","nickname":"用户102704","guid":"hsu6d65835c4fa5434382f5ef511dfcf511","id":"4062","switch_open":0,"username":"102704"},"status":1}
+2021-09-08 14:24:20 836 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/list/
+2021-09-08 14:24:20 992 INFO  Giftcard:47 - {"msg":"获取课程卡列表成功","data":{"pager":{"pagecount":1,"count":"9","pagesize":10,"page":1},"list":[{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png","theme":"测试测试测试测试测试测试测试测试测试测试","id":"8"},{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png","theme":"测试课程卡","id":"7"},{"img":"https://file.hishenghuo.com.cn/taiji/20210414/152228382227.jpg","theme":"精品推荐","id":"13"},{"img":"https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg","theme":"情侣卡","id":"11"},{"img":"http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg","theme":"陈式太极拳入门套路","id":"6"},{"img":"http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg","theme":"测试课程卡1","id":"5"},{"img":"http://file.hishenghuo.com.cn/taiji/20181217/191940868205.jpg","theme":"太极推手课程卡","id":"4"},{"img":"http://file.hishenghuo.com.cn/taiji/20181217/191748406850.png","theme":"太极至尊课程卡","id":"3"},{"img":"http://file.hishenghuo.com.cn/taiji/20181217/190955461583.png","theme":"陈式太极24式精品课程卡","id":"2"}]},"status":1}
+2021-09-08 14:24:20 995 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png
+2021-09-08 14:24:21 094 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png
+2021-09-08 14:24:21 253 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210414/152228382227.jpg
+2021-09-08 14:24:21 586 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg
+2021-09-08 14:24:21 848 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg
+2021-09-08 14:24:21 941 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg
+2021-09-08 14:24:22 034 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20181217/191940868205.jpg
+2021-09-08 14:24:22 203 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20181217/191748406850.png
+2021-09-08 14:24:22 387 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20181217/190955461583.png
+2021-09-08 15:53:40 923 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-09-08 15:53:42 008 INFO  BaseApi:153 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$7YIyGaka.KC1oUf5aJ8RiuuFeI8gks5aMoktX6h6KlyF13Fv7BDYa","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-09-08 15:53:47 014 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-09-08 15:54:02 981 INFO  BaseApi:153 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"qHvxty3hkoU7FnYIFWi7uGT3hR/J1DbMwpd1snUhchQ=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4062","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$y1lWdxiQNJjsSLHSexBXPOZ4xozGEVxqDYdJ9vQ3bSvHcWk5y9qGS","country_code":"86","user_pid":"0","phone":"17610733700","nickname":"用户102704","guid":"hsu6d65835c4fa5434382f5ef511dfcf511","id":"4062","switch_open":0,"username":"102704"},"status":1}
+2021-09-08 15:54:07 995 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/list/
+2021-09-08 15:54:14 375 INFO  Giftcard:47 - {"msg":"获取课程卡列表成功","data":{"pager":{"pagecount":1,"count":"9","pagesize":10,"page":1},"list":[{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png","theme":"测试测试测试测试测试测试测试测试测试测试","id":"8"},{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png","theme":"测试课程卡","id":"7"},{"img":"https://file.hishenghuo.com.cn/taiji/20210414/152228382227.jpg","theme":"精品推荐","id":"13"},{"img":"https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg","theme":"情侣卡","id":"11"},{"img":"http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg","theme":"陈式太极拳入门套路","id":"6"},{"img":"http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg","theme":"测试课程卡1","id":"5"},{"img":"http://file.hishenghuo.com.cn/taiji/20181217/191940868205.jpg","theme":"太极推手课程卡","id":"4"},{"img":"http://file.hishenghuo.com.cn/taiji/20181217/191748406850.png","theme":"太极至尊课程卡","id":"3"},{"img":"http://file.hishenghuo.com.cn/taiji/20181217/190955461583.png","theme":"陈式太极24式精品课程卡","id":"2"}]},"status":1}
+2021-09-08 15:54:14 380 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png
+2021-09-08 15:54:14 486 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png
+2021-09-08 15:54:14 664 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210414/152228382227.jpg
+2021-09-08 15:54:15 006 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg
+2021-09-08 15:54:15 220 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg
+2021-09-08 15:54:15 321 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg
+2021-09-08 15:54:15 413 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20181217/191940868205.jpg
+2021-09-08 15:54:15 573 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20181217/191748406850.png
+2021-09-08 15:54:15 684 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20181217/190955461583.png
+2021-09-08 15:54:15 901 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-08 15:54:16 076 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-08 15:54:18 171 INFO  Giftcard:109 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"36","cover":"https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200908/142635506023.mp4","width":"854","key":"taiji/20200908/142635506023.mp4","url":"https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O","height":"480"},"duration":"1","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/8?user_id=0&apptype=taiji&_t=1631087658","common":"","invoices_price":"0","price":"1000000.00","theme":"测试测试测试测试测试测试测试测试测试测试","id":"8","expiry":{"unit":"year","value":"1"},"nums":"1","guide":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n37\n38\n29\n30"},"status":1}
+2021-09-08 15:54:18 174 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png
+2021-09-08 15:54:18 266 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-08 15:54:18 520 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O
+2021-09-08 15:54:18 835 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O?vframe/jpg/offset/2
+2021-09-08 15:54:19 187 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-08 15:54:19 345 INFO  Giftcard:109 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"12","cover":"https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200904/115127944107.mp4","width":"960","key":"taiji/20200904/115127944107.mp4","url":"https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt","height":"544"},"duration":"30","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/7?user_id=0&apptype=taiji&_t=1631087659","common":"","invoices_price":"0","price":"88.00","theme":"测试课程卡","id":"7","expiry":{"unit":"month","value":"3"},"nums":"5","guide":"还让他就可以"},"status":1}
+2021-09-08 15:54:19 347 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png
+2021-09-08 15:54:19 430 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-08 15:54:19 623 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt
+2021-09-08 15:54:19 821 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt?vframe/jpg/offset/2
+2021-09-08 15:54:20 668 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-08 15:54:20 829 INFO  Giftcard:109 - {"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210414/152228382227.jpg","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"31","cover":"https://file.hishenghuo.com.cn/taiji/20210414/152237343063.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210414/152237343063.mp4","width":"512","key":"taiji/20210414/152237343063.mp4","url":"https://file.tjkongfu.com/taiji/20210414/152237343063.m3u8","height":"288"},"duration":"45","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/13?user_id=0&apptype=taiji&_t=1631087660","common":"","invoices_price":"0","price":"1000.00","theme":"精品推荐","id":"13","expiry":{"unit":"year","value":"1"},"nums":"365","guide":"1"},"status":1}
+2021-09-08 15:54:20 832 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210414/152228382227.jpg
+2021-09-08 15:54:21 027 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-08 15:54:21 216 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/taiji/20210414/152237343063.m3u8
+2021-09-08 15:54:21 460 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210414/152237343063.m3u8?vframe/jpg/offset/2
+2021-09-08 15:54:22 102 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-08 15:54:22 261 INFO  Giftcard:109 - {"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"85","cover":"https://file.hishenghuo.com.cn/taiji/20210303/172833413792.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210303/172833413792.mp4","width":"480","key":"taiji/20210303/172833413792.mp4","url":"https://file.tjkongfu.com/taiji/20210303/172833413792.m3u8","height":"270"},"duration":"30","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/11?user_id=0&apptype=taiji&_t=1631087662","common":"","invoices_price":"0","price":"2.00","theme":"情侣卡","id":"11","expiry":{"unit":"year","value":"4"},"nums":"40","guide":"请问retry"},"status":1}
+2021-09-08 15:54:22 264 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg
+2021-09-08 15:54:22 461 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-08 15:54:22 668 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/taiji/20210303/172833413792.m3u8
+2021-09-08 15:54:23 172 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210303/172833413792.m3u8?vframe/jpg/offset/2
+2021-09-08 15:54:23 725 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-08 15:54:23 881 INFO  Giftcard:109 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"59","cover":"https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200904/120559450848.mp4","width":"1000","key":"taiji/20200904/120559450848.mp4","url":"https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET","height":"418"},"duration":"30","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/6?user_id=0&apptype=taiji&_t=1631087664","common":"","invoices_price":"0","price":"1.00","theme":"陈式太极拳入门套路","id":"6","expiry":{"unit":"hour","value":"2"},"nums":"3","guide":"测试课程卡规则没有"},"status":1}
+2021-09-08 15:54:23 884 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg
+2021-09-08 15:54:23 966 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-08 15:54:24 149 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET
+2021-09-08 15:54:24 490 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET?vframe/jpg/offset/2
+2021-09-08 15:54:25 397 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-08 15:54:25 551 INFO  Giftcard:109 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{},"duration":"50","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/5?user_id=0&apptype=taiji&_t=1631087665","common":"","invoices_price":"0","price":"100.00","theme":"测试课程卡1","id":"5","expiry":{"unit":"year","value":"3"},"nums":"5","guide":"1、本卡包含陈式太极技击课25个课时（每节课时60分钟）一对一至尊太极课程；\r\n2、持卡人可在卡有效期内随时随地预约课程，上课时间和地点由用户自主决定，专业太极名师教练将提供上门教学服务；\r\n3、请于拟定上课时间48小时前进行线上课程预约，平台工作人员根据您预约的时间及地点就近为您指派私人教练；\r\n4、如对教练授课或其他原因不满意可联系平台工作人员进行反馈，可为您更换教练；\r\n5、本卡可作为礼品赠送给好友，持卡人开卡后仅限本人在太极功夫平台上使用；\r\n6、本卡有效期为自开卡之日起6个月；\r\n7、如需退卡请联系平台工作人员，平台将扣取一定费用；\r\n8、我司将严密保护您的个人隐私，如遇教练打探个人隐私信息等情况，请及时联系平台工作人员进行反馈；\r\n9、本卡不记名、不挂失；\r\n10、本卡最终解释权归上海太极功夫企业发展有限公司所有；\r\n如有疑问请致电 李女士：15255336587\r\n"},"status":1}
+2021-09-08 15:54:25 555 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg
+2021-09-08 15:54:25 636 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png

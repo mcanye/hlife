@@ -34,12 +34,16 @@ public class URLFiltration {
 	public static String addHost(String url) {
 		String BASEURL_API = PropertiesUtils.getEvnValue("BASEURL_API");
 		String BASEURL_4001 = PropertiesUtils.getEvnValue("BASEURL_4001");
+		String BASEURL_PASSPORT = PropertiesUtils.getEvnValue("BASEURL_PASSPORT");
 		if (!"".equals(url)) {
 			if (url.contains("union") == true) {
 				url = BASEURL_API + url ;
 			}
 			if(url.contains("admin") == true){
 				url = BASEURL_4001 + url ;
+			}
+			if(url.contains("v2")==true || url.contains("v1")==true){
+				url = BASEURL_PASSPORT + url ;
 			}
 		}
 		return url;
@@ -50,7 +54,13 @@ public class URLFiltration {
 	 */
 	public static HashMap<String,String> addHeader(HashMap<String,String> header){
 		String apptype = PropertiesUtils.getEvnValue("apptype");
+		String clientkey = PropertiesUtils.getParamValue("clientkey");
+		String sign = PropertiesUtils.getParamValue("sign");
+		String timestamp = PropertiesUtils.getParamValue("timestamp");
 		header.put("apptype",apptype);
+		header.put("clientkey",clientkey);
+		header.put("sign",sign);
+		header.put("timestamp",timestamp);
 		return header;
 	}
 

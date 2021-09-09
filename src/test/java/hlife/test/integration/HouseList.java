@@ -177,22 +177,22 @@ public class HouseList extends BaseApi{
                                Assert.assertEquals(true,false,"location_addr不应为空");
                            }
                            Reporter.log("校验location_addr用例通过");
-//                   Reporter.log("校验average_price");
-//                   String average_price = obj.getString("average_price");
-//                   if (average_price.equals("") || average_price == null){
-//                       Assert.assertEquals(true,false,"average_price不应为空");
-//                   }
-//
-//Reporter.log("校验average_price用例通过"); TODO: 2021/8/12 面积区间 待bug修复
+                           Reporter.log("校验average_price");
+                           String average_price = obj.getString("average_price");
+                           if (average_price.equals("") || average_price == null){
+                               Assert.assertEquals(true,false,"average_price不应为空");
+                           }
+                            Reporter.log("校验average_price用例通过");
+// //TODO: 2021/8/12 面积区间 待bug修复
 //                   Reporter.log("校验area_range");
 //                   String area_range = obj.getString("area_range");
 //                   if (area_range.equals("") || area_range == null){
 //                       Assert.assertEquals(true,false,"area_range不应为空");
 //                   }
 //                   Reporter.log("校验area_range用例通过");
-                           // TODO: 2021/8/12  价格区间 待bug修复
-                           //                   Reporter.log("校验price_range");
-//                   String area_range = obj.getString("price_range");
+//                   //TODO: 2021/8/12  价格区间 待bug修
+//                            Reporter.log("校验price_range");
+//                   String price_range = obj.getString("price_range");
 //                   if (price_range.equals("") || price_range == null){
 //                       Assert.assertEquals(true,false,"price_range不应为空");
 //                   }

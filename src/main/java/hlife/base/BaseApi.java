@@ -3,6 +3,7 @@ package hlife.base;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.http.client.ClientProtocolException;
+import org.bouncycastle.crypto.agreement.srp.SRP6Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
@@ -36,6 +37,8 @@ public class BaseApi {
 	//用户登录token
 	protected String access_token;
 	protected String new_access_token;
+
+
 
 	//登录接口
 	protected String verify;
@@ -80,6 +83,21 @@ public class BaseApi {
 	//删除直播预告
 	protected String liveNoticeCancel;
 
+	//礼品卡列表
+	protected String coursecardList;
+	//礼品卡详情
+	protected String coursecardDetail;
+	//课程卡合作单位
+	protected String coursecardCooperation;
+	//发票参数校验
+	protected String cardorderVerifyInvoice;
+	//发票抬头列表
+	protected String invoicesListtitle;
+	//创建发票抬头
+	protected String invoicesCreatetitle;
+	//删除发票抬头
+	protected String invoicesDeletetitle;
+
 	@BeforeClass
 	public void setUp() throws  IOException, InterruptedException {
 
@@ -123,6 +141,21 @@ public class BaseApi {
 		liveNoticeEnroll = URLFiltration.addHost(liveNoticeEnroll);
 		liveNoticeCancel = PropertiesUtils.getConfigValue("liveNoticeCancel");
 		liveNoticeCancel = URLFiltration.addHost(liveNoticeCancel);
+		coursecardList = PropertiesUtils.getConfigValue("coursecardList");
+		coursecardList = URLFiltration.addHost(coursecardList);
+		coursecardDetail = PropertiesUtils.getConfigValue("coursecardDetail");
+		coursecardDetail = URLFiltration.addHost(coursecardDetail);
+		coursecardCooperation = PropertiesUtils.getConfigValue("coursecardCooperation");
+		coursecardCooperation = URLFiltration.addHost(coursecardCooperation);
+		cardorderVerifyInvoice = PropertiesUtils.getConfigValue("cardorderVerifyInvoice");
+		cardorderVerifyInvoice = URLFiltration.addHost(cardorderVerifyInvoice);
+		invoicesListtitle = PropertiesUtils.getConfigValue("invoicesListtitle");
+		invoicesListtitle = URLFiltration.addHost(invoicesListtitle);
+		invoicesCreatetitle = PropertiesUtils.getConfigValue("invoicesCreatetitle");
+		invoicesCreatetitle = URLFiltration.addHost(invoicesCreatetitle);
+		invoicesDeletetitle = PropertiesUtils.getConfigValue("invoicesDeletetitle");
+		invoicesDeletetitle = URLFiltration.addHost(invoicesDeletetitle);
+
 		access_token = fast(verificationParameters.phone);
 		new_access_token = fast(verificationParameters.newPhone);
 	}
