@@ -106,6 +106,11 @@ public class BaseApi {
 	//删除订单
 	protected String cardorderDelete;
 
+	//个人主页相关
+	//生活服务页
+	protected String myServiceHome;
+
+
 	@BeforeClass
 	public void setUp() throws  IOException, InterruptedException {
 
@@ -171,6 +176,8 @@ public class BaseApi {
 		cardorderCancel = URLFiltration.addHost_BASEURL_API(cardorderCancel);
 		cardorderDelete = PropertiesUtils.getConfigValue("cardorderDelete");
 		cardorderDelete = URLFiltration.addHost_BASEURL_API(cardorderDelete);
+		myServiceHome = PropertiesUtils.getConfigValue("myServiceHome");
+		myServiceHome = URLFiltration.addHost_BASEURL_API(myServiceHome);
 
 		access_token = fast(verificationParameters.phone);
 		new_access_token = fast(verificationParameters.newPhone);

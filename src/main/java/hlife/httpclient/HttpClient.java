@@ -289,6 +289,8 @@ public class HttpClient {
 			return null;
 		} 
 	}
-	
-	
+
+
+    public <K, V> void getResponseJson(String myServiceHome, HashMap<K, V> kvHashMap, HashMap<String, String> header) {
+    }
 }
