@@ -29,7 +29,8 @@ public class Giftcard extends BaseApi{
     private int page=1;
     private List<String> idList = new ArrayList<>();
     private List<String> invoicesIdList = new ArrayList<>();
-
+    private boolean b = false;
+    private List<String> orderIdList = new ArrayList<>();
     /**
      * 礼品卡列表
      */
@@ -610,4 +611,129 @@ public class Giftcard extends BaseApi{
         Assert.assertEquals(invoicesIdList.size(),0,"删除失败");
     }
 
+    /**
+     * 创建礼品卡订单
+     */
+    @Test(dependsOnMethods = { "coursecardList" })
+    public void cardorderCreateOrder() throws IOException {
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",access_token);
+        params.put("card_id",idList.get(0));
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(cardorderCreateOrder, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"创建礼品卡订单访问失败");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(msg,"下单成功","接口返回msg不正确");
+    }
+
+    /**
+     * 我的卡包
+     */
+    @Test(dependsOnMethods = { "cardorderCreateOrder" })
+    public void cardorderList() throws IOException, InterruptedException {
+
+        HashMap<String,String> params = new HashMap<>();
+        while (true){
+            params.clear();
+            params.put("access_token",access_token);
+            params.put("page",page+"");
+            params.put("pagesize","10");
+            JSONObject rs = httpClient.getResponseJson(httpClient.post(cardorderList, params));
+            log.info(rs.toJSONString());
+            Reporter.log(rs.toJSONString());
+            int status = rs.getIntValue("status");
+            Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"我的卡包接口请求失败");
+            String msg = rs.getString("msg");
+            Assert.assertEquals(msg,"获取课程卡订单列表成功");
+            JSONObject data = rs.getJSONObject("data");
+            JSONObject pager = data.getJSONObject("pager");
+            JSONArray list = data.getJSONArray("list");
+            if(list.size()>0){
+                JSONObject listObj;
+                for(int i =0;i<list.size();i++){
+                    listObj = list.getJSONObject(i);
+                    String cardId = listObj.getString("cardId");
+                    if(cardId.equals(idList.get(0))){
+                        b = true;
+                    }
+                    String id = listObj.getString("id");
+                    orderIdList.add(id);
+                    Reporter.log("判断标题不为空");
+                    String theme = listObj.getString("theme");
+                    Assert.assertEquals(theme.equals(""),false,"标题不应为空");
+                    Reporter.log("判断日期不为空");
+                    String created_at = listObj.getString("created_at");
+                    Assert.assertEquals(created_at.equals(""),false,"日期不应为空");
+                    Reporter.log("面额不应为空");
+                    String price = listObj.getString("price");
+                    Assert.assertEquals(price.equals(""),false,"面额不应为空");
+                    Reporter.log("有效期不应为空");
+                    String expiry = listObj.getString("expiry");
+                    Assert.assertEquals(expiry.equals(""),false,"有效期不应为空");
+                    Reporter.log("订单状态不应为空");
+                    String status1 = listObj.getString("status");
+                    Assert.assertEquals(status1.equals("0"),true,"订单状态不应为空");
+                    Reporter.log("订单状态名称不应为空");
+                    String statusName = listObj.getString("statusName");
+                    Assert.assertEquals(statusName.equals("待支付"),true,"订单状态名称不应为空");
+                    Reporter.log("图片有效性");
+                    String img = listObj.getString("img");
+                    int statusCode = httpClient.getStatusCode(httpClient.get(img, new HashMap<>()));
+                    Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"图片异常");
+                }
+
+                Reporter.log("判断下预订单是否成功");
+                Assert.assertEquals(b,true,"下预订单失败");
+
+            }
+
+            int pagesize= Integer.parseInt(pager.getString("pagesize"));
+            if (list.size()<pagesize){
+                page=1;
+                break;
+            }else {
+                page+=1;
+            }
+        }
+    }
+
+    /**
+     * 取消订单
+     */
+    @Test(dependsOnMethods = { "cardorderList" })
+    public void cardorderCancel() throws IOException {
+        for (int i = 0 ; i< orderIdList.size();i++){
+            HashMap<String,String> params = new HashMap<>();
+            params.put("access_token",access_token);
+            cardorderCancel = cardorderCancel + orderIdList.get(i);
+            JSONObject rs = httpClient.getResponseJson(httpClient.post(cardorderCancel, params));
+            log.info(rs.toJSONString());
+            Reporter.log(rs.toJSONString());
+            int status = rs.getIntValue("status");
+            Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+            String msg = rs.getString("msg");
+            Assert.assertEquals(msg,"取消成功","接口返回msg不正确");
+        }
+    }
+
+    /**
+     * 删除订单
+     */
+    @Test(dependsOnMethods = { "cardorderCancel" })
+    public void cardorderDelete() throws IOException {
+        for (int i = 0 ; i< orderIdList.size();i++){
+            HashMap<String,String> params = new HashMap<>();
+            params.put("access_token",access_token);
+            cardorderDelete = cardorderDelete + orderIdList.get(i);
+            JSONObject rs = httpClient.getResponseJson(httpClient.post(cardorderDelete, params));
+            log.info(rs.toJSONString());
+            Reporter.log(rs.toJSONString());
+            int status = rs.getIntValue("status");
+            Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+            String msg = rs.getString("msg");
+            Assert.assertEquals(msg,"删除成功","接口返回msg不正确");
+        }
+    }
 }

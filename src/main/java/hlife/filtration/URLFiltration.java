@@ -26,25 +26,40 @@ import java.util.Map;
 public class URLFiltration {
 
 	/**
-	 * 过滤url 拼接对应服务器路径
-	 * 
+	 * 添加BASEURL_API域名
 	 * @param url
 	 * @return
 	 */
-	public static String addHost(String url) {
+	public static String addHost_BASEURL_API(String url) {
 		String BASEURL_API = PropertiesUtils.getEvnValue("BASEURL_API");
+		if (!"".equals(url)) {
+				url = BASEURL_API + url ;
+		}
+		return url;
+	}
+
+	/**
+	 * 添加BASEURL_4001域名
+	 * @param url
+	 * @return
+	 */
+	public static String addHost_BASEURL_4001(String url) {
 		String BASEURL_4001 = PropertiesUtils.getEvnValue("BASEURL_4001");
+		if (!"".equals(url)) {
+				url = BASEURL_4001 + url ;
+		}
+		return url;
+	}
+
+	/**
+	 * 添加BASEURL_PASSPORT域名
+	 * @param url
+	 * @return
+	 */
+	public static String addHost_BASEURL_PASSPORT(String url) {
 		String BASEURL_PASSPORT = PropertiesUtils.getEvnValue("BASEURL_PASSPORT");
 		if (!"".equals(url)) {
-			if (url.contains("union") == true) {
-				url = BASEURL_API + url ;
-			}
-			if(url.contains("admin") == true){
-				url = BASEURL_4001 + url ;
-			}
-			if(url.contains("v2")==true || url.contains("v1")==true){
 				url = BASEURL_PASSPORT + url ;
-			}
 		}
 		return url;
 	}

@@ -97,64 +97,80 @@ public class BaseApi {
 	protected String invoicesCreatetitle;
 	//删除发票抬头
 	protected String invoicesDeletetitle;
+	//我的卡包
+	protected String cardorderList;
+	//礼品卡下订单
+	protected String cardorderCreateOrder;
+	//取消订单
+	protected String cardorderCancel;
+	//删除订单
+	protected String cardorderDelete;
 
 	@BeforeClass
 	public void setUp() throws  IOException, InterruptedException {
 
 		verify = PropertiesUtils.getConfigValue("verify");
-		verify = URLFiltration.addHost(verify);
+		verify = URLFiltration.addHost_BASEURL_API(verify);
 		city = PropertiesUtils.getConfigValue("city");
-		city = URLFiltration.addHost(city);
+		city = URLFiltration.addHost_BASEURL_API(city);
 		house_list = PropertiesUtils.getConfigValue("house_list");
-		house_list = URLFiltration.addHost(house_list);
+		house_list = URLFiltration.addHost_BASEURL_API(house_list);
 		tagList = PropertiesUtils.getConfigValue("tagList");
-		tagList = URLFiltration.addHost(tagList);
+		tagList = URLFiltration.addHost_BASEURL_API(tagList);
 		brandList = PropertiesUtils.getConfigValue("brandList");
-		brandList = URLFiltration.addHost(brandList);
+		brandList = URLFiltration.addHost_BASEURL_API(brandList);
 		liveRecommend = PropertiesUtils.getConfigValue("liveRecommend");
-		liveRecommend = URLFiltration.addHost(liveRecommend);
+		liveRecommend = URLFiltration.addHost_BASEURL_API(liveRecommend);
 		liveCategoryList = PropertiesUtils.getConfigValue("liveCategoryList");
-		liveCategoryList = URLFiltration.addHost(liveCategoryList);
+		liveCategoryList = URLFiltration.addHost_BASEURL_API(liveCategoryList);
 		advList = PropertiesUtils.getConfigValue("advList");
-		advList = URLFiltration.addHost(advList);
+		advList = URLFiltration.addHost_BASEURL_API(advList);
 		liveRecommendlist = PropertiesUtils.getConfigValue("liveRecommendlist");
-		liveRecommendlist = URLFiltration.addHost(liveRecommendlist);
+		liveRecommendlist = URLFiltration.addHost_BASEURL_API(liveRecommendlist);
 		liveCategorySort = PropertiesUtils.getConfigValue("liveCategorySort");
-		liveCategorySort = URLFiltration.addHost(liveCategorySort);
+		liveCategorySort = URLFiltration.addHost_BASEURL_API(liveCategorySort);
 		liveFocuslist = PropertiesUtils.getConfigValue("liveFocuslist");
-		liveFocuslist = URLFiltration.addHost(liveFocuslist);
+		liveFocuslist = URLFiltration.addHost_BASEURL_API(liveFocuslist);
 		liveList = PropertiesUtils.getConfigValue("liveList");
-		liveList = URLFiltration.addHost(liveList);
+		liveList = URLFiltration.addHost_BASEURL_API(liveList);
 		createLiveNotice = PropertiesUtils.getConfigValue("createLiveNotice");
-		createLiveNotice = URLFiltration.addHost(createLiveNotice);
+		createLiveNotice = URLFiltration.addHost_BASEURL_API(createLiveNotice);
 		liveNoticeDet = PropertiesUtils.getConfigValue("liveNoticeDet");
-		liveNoticeDet = URLFiltration.addHost(liveNoticeDet);
+		liveNoticeDet = URLFiltration.addHost_BASEURL_API(liveNoticeDet);
 		setLiveNoticeRecommend = PropertiesUtils.getConfigValue("setLiveNoticeRecommend");
-		setLiveNoticeRecommend = URLFiltration.addHost(setLiveNoticeRecommend);
+		setLiveNoticeRecommend = URLFiltration.addHost_BASEURL_4001(setLiveNoticeRecommend);
 		liveNoticeRecommendList = PropertiesUtils.getConfigValue("liveNoticeRecommendList");
-		liveNoticeRecommendList = URLFiltration.addHost(liveNoticeRecommendList);
+		liveNoticeRecommendList = URLFiltration.addHost_BASEURL_API(liveNoticeRecommendList);
 		liveNoticeFocuslist = PropertiesUtils.getConfigValue("liveNoticeFocuslist");
-		liveNoticeFocuslist = URLFiltration.addHost(liveNoticeFocuslist);
+		liveNoticeFocuslist = URLFiltration.addHost_BASEURL_API(liveNoticeFocuslist);
 		liveNoticeList = PropertiesUtils.getConfigValue("liveNoticeList");
-		liveNoticeList = URLFiltration.addHost(liveNoticeList);
+		liveNoticeList = URLFiltration.addHost_BASEURL_API(liveNoticeList);
 		liveNoticeEnroll = PropertiesUtils.getConfigValue("liveNoticeEnroll");
-		liveNoticeEnroll = URLFiltration.addHost(liveNoticeEnroll);
+		liveNoticeEnroll = URLFiltration.addHost_BASEURL_API(liveNoticeEnroll);
 		liveNoticeCancel = PropertiesUtils.getConfigValue("liveNoticeCancel");
-		liveNoticeCancel = URLFiltration.addHost(liveNoticeCancel);
+		liveNoticeCancel = URLFiltration.addHost_BASEURL_API(liveNoticeCancel);
 		coursecardList = PropertiesUtils.getConfigValue("coursecardList");
-		coursecardList = URLFiltration.addHost(coursecardList);
+		coursecardList = URLFiltration.addHost_BASEURL_API(coursecardList);
 		coursecardDetail = PropertiesUtils.getConfigValue("coursecardDetail");
-		coursecardDetail = URLFiltration.addHost(coursecardDetail);
+		coursecardDetail = URLFiltration.addHost_BASEURL_API(coursecardDetail);
 		coursecardCooperation = PropertiesUtils.getConfigValue("coursecardCooperation");
-		coursecardCooperation = URLFiltration.addHost(coursecardCooperation);
+		coursecardCooperation = URLFiltration.addHost_BASEURL_API(coursecardCooperation);
 		cardorderVerifyInvoice = PropertiesUtils.getConfigValue("cardorderVerifyInvoice");
-		cardorderVerifyInvoice = URLFiltration.addHost(cardorderVerifyInvoice);
+		cardorderVerifyInvoice = URLFiltration.addHost_BASEURL_API(cardorderVerifyInvoice);
 		invoicesListtitle = PropertiesUtils.getConfigValue("invoicesListtitle");
-		invoicesListtitle = URLFiltration.addHost(invoicesListtitle);
+		invoicesListtitle = URLFiltration.addHost_BASEURL_PASSPORT(invoicesListtitle);
 		invoicesCreatetitle = PropertiesUtils.getConfigValue("invoicesCreatetitle");
-		invoicesCreatetitle = URLFiltration.addHost(invoicesCreatetitle);
+		invoicesCreatetitle = URLFiltration.addHost_BASEURL_PASSPORT(invoicesCreatetitle);
 		invoicesDeletetitle = PropertiesUtils.getConfigValue("invoicesDeletetitle");
-		invoicesDeletetitle = URLFiltration.addHost(invoicesDeletetitle);
+		invoicesDeletetitle = URLFiltration.addHost_BASEURL_PASSPORT(invoicesDeletetitle);
+		cardorderList = PropertiesUtils.getConfigValue("cardorderList");
+		cardorderList = URLFiltration.addHost_BASEURL_API(cardorderList);
+		cardorderCreateOrder = PropertiesUtils.getConfigValue("cardorderCreateOrder");
+		cardorderCreateOrder = URLFiltration.addHost_BASEURL_API(cardorderCreateOrder);
+		cardorderCancel = PropertiesUtils.getConfigValue("cardorderCancel");
+		cardorderCancel = URLFiltration.addHost_BASEURL_API(cardorderCancel);
+		cardorderDelete = PropertiesUtils.getConfigValue("cardorderDelete");
+		cardorderDelete = URLFiltration.addHost_BASEURL_API(cardorderDelete);
 
 		access_token = fast(verificationParameters.phone);
 		new_access_token = fast(verificationParameters.newPhone);
@@ -162,7 +178,7 @@ public class BaseApi {
 
 	
 
-	private String fast(String phone) throws IOException, InterruptedException {
+	protected String fast(String phone) throws IOException, InterruptedException {
 		HashMap<String, String> params = new HashMap<>();
 		params.put("type","1");
 		params.put("country_code","86");
