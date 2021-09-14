@@ -14,6 +14,7 @@ public class Constants {
 	public static final int RESPNSE_STATUS_CODE_500 = 500;
 	public static final int RESPNSE_STATUS_CODE_1 = 1;
 	public static final int RESPNSE_STATUS_CODE_Minus_1 = -1;
+	public static final int RESPNSE_STATUS_CODE_Minus_3 = -3;
 	public static final int RESPNSE_STATUS_CODE_0= 0;
 
 	//登录成功

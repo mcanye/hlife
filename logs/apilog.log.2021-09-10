@@ -1,0 +1,379 @@
+2021-09-10 16:22:37 553 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-09-10 16:22:39 710 INFO  BaseApi:193 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$3Pofbgy4y.Ar9MblUm2fiu2LWkt2x.d.4vyTDLQjY/OcnMBpKXyO2","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-09-10 16:22:44 731 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-09-10 16:22:45 620 INFO  BaseApi:193 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"qHvxty3hkoU7FnYIFWi7uGT3hR/J1DbMwpd1snUhchQ=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4062","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$y1lWdxiQNJjsSLHSexBXPOZ4xozGEVxqDYdJ9vQ3bSvHcWk5y9qGS","country_code":"86","user_pid":"0","phone":"17610733700","nickname":"用户102704","guid":"hsu6d65835c4fa5434382f5ef511dfcf511","id":"4062","switch_open":0,"username":"102704"},"status":1}
+2021-09-10 16:22:50 646 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:22:50 849 INFO  Giftcard:192 - {"msg":"名称不能为空","data":[],"status":0}
+2021-09-10 16:22:53 853 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:22:54 010 INFO  Giftcard:202 - {"msg":"邮箱不能为空","data":[],"status":0}
+2021-09-10 16:22:57 012 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:22:57 176 INFO  Giftcard:212 - {"msg":"企业索取增值税发票需填写纳税人识别号","data":{},"status":0}
+2021-09-10 16:23:00 180 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:23:00 350 INFO  Giftcard:222 - {"msg":"校验成功","data":[],"status":1}
+2021-09-10 16:23:03 354 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:23:03 522 INFO  Giftcard:239 - {"msg":"校验成功","data":[],"status":1}
+2021-09-10 16:23:06 527 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:23:06 700 INFO  Giftcard:265 - {"msg":"校验成功","data":[],"status":1}
+2021-09-10 16:23:06 815 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/cooperation/
+2021-09-10 16:23:07 032 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/list/
+2021-09-10 16:23:07 197 INFO  Giftcard:51 - {"msg":"获取课程卡列表成功","data":{"pager":{"pagecount":2,"count":"12","pagesize":"10","page":"1"},"list":[{"img":"https://file.hishenghuo.com.cn/taiji/20210902/162402966208.jpg","theme":"精品推荐","id":"14"},{"img":"https://file.hishenghuo.com.cn/taiji/20210329/213117164623.png","theme":"测试","id":"12"},{"img":"https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg","theme":"情侣卡","id":"11"},{"img":"http://file.hishenghuo.com.cn/taiji/20200919/095534676452.jpg","theme":"团建卡测试","id":"10"},{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110251406078.png","theme":"测试过期礼品卡","id":"9"},{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png","theme":"测试测试测试测试测试测试测试测试测试测试","id":"8"},{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png","theme":"测试课程卡","id":"7"},{"img":"http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg","theme":"陈式太极拳入门套路","id":"6"},{"img":"http://file.hishenghuo.com.cn/taiji/20181217/191940868205.jpg","theme":"太极推手课程卡","id":"4"},{"img":"http://file.hishenghuo.com.cn/taiji/20181217/191748406850.png","theme":"太极至尊课程卡","id":"3"}]},"status":1}
+2021-09-10 16:23:07 200 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210902/162402966208.jpg
+2021-09-10 16:23:07 845 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210329/213117164623.png
+2021-09-10 16:23:08 110 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg
+2021-09-10 16:23:08 320 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200919/095534676452.jpg
+2021-09-10 16:23:08 468 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110251406078.png
+2021-09-10 16:23:08 601 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png
+2021-09-10 16:23:08 724 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png
+2021-09-10 16:23:08 849 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg
+2021-09-10 16:23:08 937 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20181217/191940868205.jpg
+2021-09-10 16:23:09 049 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20181217/191748406850.png
+2021-09-10 16:23:09 183 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/list/
+2021-09-10 16:23:09 339 INFO  Giftcard:51 - {"msg":"获取课程卡列表成功","data":{"pager":{"pagecount":2,"count":"12","pagesize":"10","page":"2"},"list":[{"img":"http://file.hishenghuo.com.cn/taiji/20181217/190955461583.png","theme":"陈式太极24式精品课程卡","id":"2"},{"img":"http://file.hishenghuo.com.cn/taiji/20181217/190955461583.png","theme":"陈式太极24式精品课程卡","id":"1"}]},"status":1}
+2021-09-10 16:23:09 342 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20181217/190955461583.png
+2021-09-10 16:23:09 465 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20181217/190955461583.png
+2021-09-10 16:23:09 561 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:09 726 INFO  Giftcard:396 - {"msg":"名称不能为空","data":{},"status":0}
+2021-09-10 16:23:09 729 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:09 888 INFO  Giftcard:406 - {"msg":"发票类型不能为空","data":{},"status":0}
+2021-09-10 16:23:09 891 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:10 049 INFO  Giftcard:416 - {"msg":"发票抬头类型不能为空","data":{},"status":0}
+2021-09-10 16:23:10 053 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:10 210 INFO  Giftcard:426 - {"msg":"纳税人识别号或统一信用代码不能为空","data":{},"status":0}
+2021-09-10 16:23:10 212 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:10 382 INFO  Giftcard:436 - {"msg":"添加成功","status":1}
+2021-09-10 16:23:10 384 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:10 541 INFO  Giftcard:449 - {"msg":"名称不能为空","data":{},"status":0}
+2021-09-10 16:23:10 544 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:10 710 INFO  Giftcard:459 - {"msg":"发票类型不能为空","data":{},"status":0}
+2021-09-10 16:23:10 713 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:10 864 INFO  Giftcard:469 - {"msg":"发票抬头类型不能为空","data":{},"status":0}
+2021-09-10 16:23:10 866 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:11 027 INFO  Giftcard:479 - {"msg":"纳税人识别号或统一信用代码不能为空","data":{},"status":0}
+2021-09-10 16:23:11 029 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:11 187 INFO  Giftcard:489 - {"msg":"单位地址不能为空","data":{},"status":0}
+2021-09-10 16:23:11 191 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:11 350 INFO  Giftcard:499 - {"msg":"座机号码不能为空","data":{},"status":0}
+2021-09-10 16:23:11 352 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:11 514 INFO  Giftcard:509 - {"msg":"座机号码不能为空","data":{},"status":0}
+2021-09-10 16:23:11 517 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:11 679 INFO  Giftcard:519 - {"msg":"开户银行不能为空","data":{},"status":0}
+2021-09-10 16:23:11 681 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:11 839 INFO  Giftcard:529 - {"msg":"银行账户不能为空","data":{},"status":0}
+2021-09-10 16:23:11 842 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:12 008 INFO  Giftcard:539 - {"msg":"添加成功","status":1}
+2021-09-10 16:23:12 010 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:12 164 INFO  Giftcard:551 - {"msg":"名称不能为空","data":{},"status":0}
+2021-09-10 16:23:12 166 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:12 321 INFO  Giftcard:561 - {"msg":"发票类型不能为空","data":{},"status":0}
+2021-09-10 16:23:12 323 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:12 478 INFO  Giftcard:571 - {"msg":"发票抬头类型不能为空","data":{},"status":0}
+2021-09-10 16:23:12 480 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:23:12 660 INFO  Giftcard:581 - {"msg":"添加成功","status":1}
+2021-09-10 16:23:12 684 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/createOrder/
+2021-09-10 16:23:12 861 INFO  Giftcard:623 - {"msg":"下单成功","data":{"payUrl":"http://paytest.tjkongfu.com:8111/mspay/","params":"{\"merchGuid\":\"tjmv1calq8d6xtevrex6hip8p65umzkxqlt\",\"userGuid\":\"hsu17937a5b0988477ba4185d5cc9bac5ec\",\"outTradeNo\":\"20210910162313495054481631262193\",\"subject\":\"\\u5065\\u5eb7\\u793c\\u54c1\\u5361\\u81f3\\u5c0a\\u5361\",\"body\":\"\\u7cbe\\u54c1\\u63a8\\u8350\",\"tranType\":\"24\",\"totalFee\":1,\"spbillCreateIp\":\"140.240.12.63\",\"frontUrl\":\"http:\\/\\/apitest.tjkongfu.com:4000\\/\\/notify\\/order\\/\"}"},"status":1}
+2021-09-10 16:23:12 864 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:23:13 026 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:23:13 189 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210902/162402966208.jpg","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"31","cover":"https://file.hishenghuo.com.cn/taiji/20210414/152346475172.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210414/152346475172.mp4","width":"512","key":"taiji/20210414/152346475172.mp4","url":"https://file.tjkongfu.com/taiji/20210414/152346475172.m3u8","height":"288"},"duration":"45","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/14?user_id=0&apptype=taiji&_t=1631262193","common":"","invoices_price":"0","price":"1000.00","theme":"精品推荐","id":"14","expiry":{"unit":"year","value":"1"},"nums":"365","guide":"11"},"status":1}
+2021-09-10 16:23:13 191 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210902/162402966208.jpg
+2021-09-10 16:23:13 368 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:23:13 668 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/taiji/20210414/152346475172.m3u8
+2021-09-10 16:23:14 179 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210414/152346475172.m3u8?vframe/jpg/offset/2
+2021-09-10 16:23:14 616 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:23:14 781 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210329/213117164623.png","discount_price":"0.02","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"36","cover":"https://file.hishenghuo.com.cn/taiji/20210329/213133924617.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210329/213133924617.mp4","width":"854","key":"taiji/20210329/213133924617.mp4","url":"https://file.tjkongfu.com/taiji/20210329/213133924617.m3u8","height":"480"},"duration":"90","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/12?user_id=0&apptype=taiji&_t=1631262195","common":"","invoices_price":"0","price":"9999999.99","theme":"测试","id":"12","expiry":{"unit":"year","value":"3"},"nums":"1","guide":"1111"},"status":1}
+2021-09-10 16:23:14 785 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210329/213117164623.png
+2021-09-10 16:23:14 963 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:23:15 148 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/taiji/20210329/213133924617.m3u8
+2021-09-10 16:23:15 510 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210329/213133924617.m3u8?vframe/jpg/offset/2
+2021-09-10 16:23:16 329 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:23:16 497 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"85","cover":"https://file.hishenghuo.com.cn/taiji/20210303/172833413792.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210303/172833413792.mp4","width":"480","key":"taiji/20210303/172833413792.mp4","url":"https://file.tjkongfu.com/taiji/20210303/172833413792.m3u8","height":"270"},"duration":"30","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/11?user_id=0&apptype=taiji&_t=1631262196","common":"","invoices_price":"0","price":"2.00","theme":"情侣卡","id":"11","expiry":{"unit":"year","value":"4"},"nums":"40","guide":"请问retry"},"status":1}
+2021-09-10 16:23:16 499 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg
+2021-09-10 16:23:16 676 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:23:16 859 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/taiji/20210303/172833413792.m3u8
+2021-09-10 16:23:17 068 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210303/172833413792.m3u8?vframe/jpg/offset/2
+2021-09-10 16:23:17 251 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:23:17 420 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20200919/095534676452.jpg","discount_price":"8888.00","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"12","cover":"https://file.hishenghuo.com.cn/taiji/20200919/095540778652.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200919/095540778652.mp4","width":"960","key":"taiji/20200919/095540778652.mp4","url":"https://file.tjkongfu.com/taiji/20200919/095540778652.m3u8","height":"544"},"duration":"30","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/10?user_id=0&apptype=taiji&_t=1631262197","common":"","invoices_price":"0","price":"8888.00","theme":"团建卡测试","id":"10","expiry":{"unit":"year","value":"8"},"nums":"99","guide":"看看看看\n\n看看\n看看\n看看看看看看\nv看看看看\n\n看看\n看看v\nv看看看看\n看看\n看看v\n\n\n\n看看看看\n\n\n\n\n看看看看\n\n\n\n看看看看\n\n\n看看看看看看\n\n\n\n看看看看"},"status":1}
+2021-09-10 16:23:17 426 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200919/095534676452.jpg
+2021-09-10 16:23:17 507 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:23:17 708 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/taiji/20200919/095540778652.m3u8
+2021-09-10 16:23:18 232 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20200919/095540778652.m3u8?vframe/jpg/offset/2
+2021-09-10 16:23:18 831 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:23:18 988 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110251406078.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"36","cover":"https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200909/225254209560.mp4","width":"854","key":"taiji/20200909/225254209560.mp4","url":"https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O","height":"480"},"duration":"1","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/9?user_id=0&apptype=taiji&_t=1631262199","common":"","invoices_price":"0","price":"2.00","theme":"测试过期礼品卡","id":"9","expiry":{"unit":"month","value":"1"},"nums":"1","guide":"1"},"status":1}
+2021-09-10 16:23:18 992 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110251406078.png
+2021-09-10 16:23:19 077 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:23:19 255 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O
+2021-09-10 16:23:19 459 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O?vframe/jpg/offset/2
+2021-09-10 16:23:19 699 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:23:19 863 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"36","cover":"https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200908/142635506023.mp4","width":"854","key":"taiji/20200908/142635506023.mp4","url":"https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O","height":"480"},"duration":"1","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/8?user_id=0&apptype=taiji&_t=1631262200","common":"","invoices_price":"0","price":"1000000.00","theme":"测试测试测试测试测试测试测试测试测试测试","id":"8","expiry":{"unit":"year","value":"1"},"nums":"1","guide":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n37\n38\n29\n30"},"status":1}
+2021-09-10 16:23:19 865 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png
+2021-09-10 16:23:19 949 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:23:20 146 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O
+2021-09-10 16:23:20 329 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O?vframe/jpg/offset/2
+2021-09-10 16:23:20 511 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:23:20 670 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"12","cover":"https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200904/115127944107.mp4","width":"960","key":"taiji/20200904/115127944107.mp4","url":"https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt","height":"544"},"duration":"30","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/7?user_id=0&apptype=taiji&_t=1631262200","common":"","invoices_price":"0","price":"88.00","theme":"测试课程卡","id":"7","expiry":{"unit":"month","value":"3"},"nums":"5","guide":"还让他就可以"},"status":1}
+2021-09-10 16:23:20 672 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png
+2021-09-10 16:23:20 760 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:23:20 946 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt
+2021-09-10 16:23:21 143 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt?vframe/jpg/offset/2
+2021-09-10 16:23:21 401 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:23:21 560 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"59","cover":"https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200904/120559450848.mp4","width":"1000","key":"taiji/20200904/120559450848.mp4","url":"https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET","height":"418"},"duration":"30","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/6?user_id=0&apptype=taiji&_t=1631262201","common":"","invoices_price":"0","price":"1.00","theme":"陈式太极拳入门套路","id":"6","expiry":{"unit":"hour","value":"2"},"nums":"3","guide":"测试课程卡规则没有"},"status":1}
+2021-09-10 16:23:21 562 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg
+2021-09-10 16:23:21 650 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:23:21 835 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET
+2021-09-10 16:23:22 011 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET?vframe/jpg/offset/2
+2021-09-10 16:23:22 202 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:23:22 361 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20181217/191940868205.jpg","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{},"duration":"45","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/4?user_id=0&apptype=taiji&_t=1631262202","common":"","invoices_price":"0","price":"420.00","theme":"太极推手课程卡","id":"4","expiry":{"unit":"month","value":"6"},"nums":"12","guide":"1、仅限持卡人本人使用\n2、本卡仅限预约太极推手课程\n3、本卡有效期为购买后6个月，过期作废"},"status":1}
+2021-09-10 16:23:22 363 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20181217/191940868205.jpg
+2021-09-10 16:23:22 453 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:23:22 699 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/listtitle/
+2021-09-10 16:23:22 860 INFO  Giftcard:284 - {"msg":"获取成功","data":{"general_self":[{"open_bank":"","phone":"","invoice_type":"1","id":"104","title":"名称","type":"1","company_address":"","bank_account":""}],"added_tax":[{"open_bank":"开户银行","phone":"0427-1234567","invoice_type":"2","id":"103","title":"名称","type":"3","taxnumber":"111111111111111111","company_address":"单位地址","bank_account":"55555555555555555555"}],"general_company":[{"open_bank":"","phone":"","invoice_type":"1","id":"102","title":"名称","type":"3","taxnumber":"111111111111111111","company_address":"","bank_account":""}]},"status":1}
+2021-09-10 16:23:22 870 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/list/
+2021-09-10 16:23:23 050 INFO  Giftcard:644 - {"msg":"获取课程卡订单列表成功","data":{"pager":{"pagecount":1,"count":"1","pagesize":"10","page":"1"},"list":[{"img":"https://file.hishenghuo.com.cn/taiji/20210902/162402966208.jpg","is_fp":1,"code":"","orderNo":"2021091016231349505448","created_at":"2021-09-10 16:23:13","promise":{"province_id":"","area_id":"","guide":"特别说明\r\n\r\n本卡含365次高级私教课程，本次操作作为第1次课程预约。预约成功后平台将在第一时间联系您并为您指派高级教练和确定课程。\r\n\r\n首次预约请确定选择的授课城市，之后预约不可更换，详细地址可变动。","city_id":""},"cardNo":"610910163031","qrcode_pic":"","useNum":"0","invoices_price":"0","price":"1000","cardId":"14","statusName":"待支付","shippingAddress":"","theme":"精品推荐","id":"808","expiry":"2022-09-10","nums":"365","guide":"11","is_entity":0,"status":"0"}]},"status":1}
+2021-09-10 16:23:23 081 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v1/invoices/deletetitle/
+2021-09-10 16:23:23 257 INFO  Giftcard:602 - {"msg":"删除成功","status":1}
+2021-09-10 16:23:23 259 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v1/invoices/deletetitle/
+2021-09-10 16:23:23 423 INFO  Giftcard:602 - {"msg":"删除成功","status":1}
+2021-09-10 16:23:23 425 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v1/invoices/deletetitle/
+2021-09-10 16:23:23 591 INFO  Giftcard:602 - {"msg":"删除成功","status":1}
+2021-09-10 16:23:23 594 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/listtitle/
+2021-09-10 16:23:23 758 INFO  Giftcard:284 - {"msg":"暂时没有发票抬头","data":[],"status":1}
+2021-09-10 16:23:24 527 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sysConfig.value  [in template "email.ftl" at line 18, column 47]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sysConfig.value}  [in template "email.ftl" at line 18, column 45]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:207)
+	at freemarker.core.Items.accept(Items.java:43)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:276)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.vimalselvam.testng.EmailReporter.flush(EmailReporter.java:56)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:247)
+	at com.aventstack.extentreports.Report.flush(Report.java:169)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:272)
+	at reporter.listener.MyExtentTestNgFormatter.generateReport(MyExtentTestNgFormatter.java:255)
+	at org.testng.TestNG.generateReports(TestNG.java:1097)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+2021-09-10 16:37:21 984 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-09-10 16:37:23 085 INFO  BaseApi:193 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$3Pofbgy4y.Ar9MblUm2fiu2LWkt2x.d.4vyTDLQjY/OcnMBpKXyO2","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}
+2021-09-10 16:37:28 093 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/login/verify/
+2021-09-10 16:37:28 926 INFO  BaseApi:193 - {"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"qHvxty3hkoU7FnYIFWi7uGT3hR/J1DbMwpd1snUhchQ=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4062","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$y1lWdxiQNJjsSLHSexBXPOZ4xozGEVxqDYdJ9vQ3bSvHcWk5y9qGS","country_code":"86","user_pid":"0","phone":"17610733700","nickname":"用户102704","guid":"hsu6d65835c4fa5434382f5ef511dfcf511","id":"4062","switch_open":0,"username":"102704"},"status":1}
+2021-09-10 16:37:33 940 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:37:34 122 INFO  Giftcard:192 - {"msg":"名称不能为空","data":[],"status":0}
+2021-09-10 16:37:37 124 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:37:37 288 INFO  Giftcard:202 - {"msg":"邮箱不能为空","data":[],"status":0}
+2021-09-10 16:37:40 291 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:37:40 455 INFO  Giftcard:212 - {"msg":"企业索取增值税发票需填写纳税人识别号","data":{},"status":0}
+2021-09-10 16:37:43 459 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:37:43 624 INFO  Giftcard:222 - {"msg":"校验成功","data":[],"status":1}
+2021-09-10 16:37:46 627 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:37:46 786 INFO  Giftcard:239 - {"msg":"校验成功","data":[],"status":1}
+2021-09-10 16:37:49 790 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/
+2021-09-10 16:37:49 953 INFO  Giftcard:265 - {"msg":"校验成功","data":[],"status":1}
+2021-09-10 16:37:49 986 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/list/
+2021-09-10 16:37:50 148 INFO  Giftcard:51 - {"msg":"获取课程卡列表成功","data":{"pager":{"pagecount":1,"count":"8","pagesize":10,"page":1},"list":[{"img":"https://file.hishenghuo.com.cn/taiji/20210902/162402966208.jpg","theme":"精品推荐","id":"14"},{"img":"https://file.hishenghuo.com.cn/taiji/20210329/213117164623.png","theme":"测试","id":"12"},{"img":"https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg","theme":"情侣卡","id":"11"},{"img":"http://file.hishenghuo.com.cn/taiji/20200919/095534676452.jpg","theme":"团建卡测试","id":"10"},{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110251406078.png","theme":"测试过期礼品卡","id":"9"},{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png","theme":"测试测试测试测试测试测试测试测试测试测试","id":"8"},{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png","theme":"测试课程卡","id":"7"},{"img":"http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg","theme":"陈式太极拳入门套路","id":"6"}]},"status":1}
+2021-09-10 16:37:50 153 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210902/162402966208.jpg
+2021-09-10 16:37:50 489 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210329/213117164623.png
+2021-09-10 16:37:50 734 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg
+2021-09-10 16:37:50 988 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200919/095534676452.jpg
+2021-09-10 16:37:51 132 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110251406078.png
+2021-09-10 16:37:51 286 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png
+2021-09-10 16:37:51 424 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png
+2021-09-10 16:37:51 537 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg
+2021-09-10 16:37:51 635 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:51 799 INFO  Giftcard:396 - {"msg":"名称不能为空","data":{},"status":0}
+2021-09-10 16:37:51 801 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:51 959 INFO  Giftcard:406 - {"msg":"发票类型不能为空","data":{},"status":0}
+2021-09-10 16:37:51 975 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:52 128 INFO  Giftcard:416 - {"msg":"发票抬头类型不能为空","data":{},"status":0}
+2021-09-10 16:37:52 130 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:52 285 INFO  Giftcard:426 - {"msg":"纳税人识别号或统一信用代码不能为空","data":{},"status":0}
+2021-09-10 16:37:52 288 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:52 457 INFO  Giftcard:436 - {"msg":"添加成功","status":1}
+2021-09-10 16:37:52 461 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:52 619 INFO  Giftcard:449 - {"msg":"名称不能为空","data":{},"status":0}
+2021-09-10 16:37:52 621 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:52 780 INFO  Giftcard:459 - {"msg":"发票类型不能为空","data":{},"status":0}
+2021-09-10 16:37:52 784 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:52 937 INFO  Giftcard:469 - {"msg":"发票抬头类型不能为空","data":{},"status":0}
+2021-09-10 16:37:52 939 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:53 097 INFO  Giftcard:479 - {"msg":"纳税人识别号或统一信用代码不能为空","data":{},"status":0}
+2021-09-10 16:37:53 099 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:53 251 INFO  Giftcard:489 - {"msg":"单位地址不能为空","data":{},"status":0}
+2021-09-10 16:37:53 255 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:53 416 INFO  Giftcard:499 - {"msg":"座机号码不能为空","data":{},"status":0}
+2021-09-10 16:37:53 419 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:53 573 INFO  Giftcard:509 - {"msg":"座机号码不能为空","data":{},"status":0}
+2021-09-10 16:37:53 576 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:53 729 INFO  Giftcard:519 - {"msg":"开户银行不能为空","data":{},"status":0}
+2021-09-10 16:37:53 731 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:53 892 INFO  Giftcard:529 - {"msg":"银行账户不能为空","data":{},"status":0}
+2021-09-10 16:37:53 895 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:54 062 INFO  Giftcard:539 - {"msg":"添加成功","status":1}
+2021-09-10 16:37:54 064 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:54 223 INFO  Giftcard:551 - {"msg":"名称不能为空","data":{},"status":0}
+2021-09-10 16:37:54 226 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:54 379 INFO  Giftcard:561 - {"msg":"发票类型不能为空","data":{},"status":0}
+2021-09-10 16:37:54 381 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:54 536 INFO  Giftcard:571 - {"msg":"发票抬头类型不能为空","data":{},"status":0}
+2021-09-10 16:37:54 539 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/
+2021-09-10 16:37:54 707 INFO  Giftcard:581 - {"msg":"添加成功","status":1}
+2021-09-10 16:37:54 732 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/cooperation/
+2021-09-10 16:37:54 897 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/createOrder/
+2021-09-10 16:37:55 080 INFO  Giftcard:623 - {"msg":"下单成功","data":{"payUrl":"http://paytest.tjkongfu.com:8111/mspay/","params":"{\"merchGuid\":\"tjmv1calq8d6xtevrex6hip8p65umzkxqlt\",\"userGuid\":\"hsu17937a5b0988477ba4185d5cc9bac5ec\",\"outTradeNo\":\"20210910163755515397101631263075\",\"subject\":\"\\u5065\\u5eb7\\u793c\\u54c1\\u5361\\u81f3\\u5c0a\\u5361\",\"body\":\"\\u7cbe\\u54c1\\u63a8\\u8350\",\"tranType\":\"24\",\"totalFee\":1,\"spbillCreateIp\":\"140.240.12.63\",\"frontUrl\":\"http:\\/\\/apitest.tjkongfu.com:4000\\/\\/notify\\/order\\/\"}"},"status":1}
+2021-09-10 16:37:55 086 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:37:55 247 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:37:55 405 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210902/162402966208.jpg","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"31","cover":"https://file.hishenghuo.com.cn/taiji/20210414/152346475172.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210414/152346475172.mp4","width":"512","key":"taiji/20210414/152346475172.mp4","url":"https://file.tjkongfu.com/taiji/20210414/152346475172.m3u8","height":"288"},"duration":"45","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/14?user_id=0&apptype=taiji&_t=1631263075","common":"","invoices_price":"0","price":"1000.00","theme":"精品推荐","id":"14","expiry":{"unit":"year","value":"1"},"nums":"365","guide":"11"},"status":1}
+2021-09-10 16:37:55 407 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210902/162402966208.jpg
+2021-09-10 16:37:55 589 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:37:55 830 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/taiji/20210414/152346475172.m3u8
+2021-09-10 16:37:56 002 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210414/152346475172.m3u8?vframe/jpg/offset/2
+2021-09-10 16:37:56 204 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:37:56 361 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210329/213117164623.png","discount_price":"0.02","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"36","cover":"https://file.hishenghuo.com.cn/taiji/20210329/213133924617.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210329/213133924617.mp4","width":"854","key":"taiji/20210329/213133924617.mp4","url":"https://file.tjkongfu.com/taiji/20210329/213133924617.m3u8","height":"480"},"duration":"90","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/12?user_id=0&apptype=taiji&_t=1631263076","common":"","invoices_price":"0","price":"9999999.99","theme":"测试","id":"12","expiry":{"unit":"year","value":"3"},"nums":"1","guide":"1111"},"status":1}
+2021-09-10 16:37:56 363 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210329/213117164623.png
+2021-09-10 16:37:56 550 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:37:56 723 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/taiji/20210329/213133924617.m3u8
+2021-09-10 16:37:56 902 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210329/213133924617.m3u8?vframe/jpg/offset/2
+2021-09-10 16:37:57 131 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:37:57 290 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"85","cover":"https://file.hishenghuo.com.cn/taiji/20210303/172833413792.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210303/172833413792.mp4","width":"480","key":"taiji/20210303/172833413792.mp4","url":"https://file.tjkongfu.com/taiji/20210303/172833413792.m3u8","height":"270"},"duration":"30","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/11?user_id=0&apptype=taiji&_t=1631263077","common":"","invoices_price":"0","price":"2.00","theme":"情侣卡","id":"11","expiry":{"unit":"year","value":"4"},"nums":"40","guide":"请问retry"},"status":1}
+2021-09-10 16:37:57 292 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210303/172814870867.jpg
+2021-09-10 16:37:57 471 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:37:57 649 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/taiji/20210303/172833413792.m3u8
+2021-09-10 16:37:57 829 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210303/172833413792.m3u8?vframe/jpg/offset/2
+2021-09-10 16:37:58 010 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:37:58 166 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20200919/095534676452.jpg","discount_price":"8888.00","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"12","cover":"https://file.hishenghuo.com.cn/taiji/20200919/095540778652.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200919/095540778652.mp4","width":"960","key":"taiji/20200919/095540778652.mp4","url":"https://file.tjkongfu.com/taiji/20200919/095540778652.m3u8","height":"544"},"duration":"30","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/10?user_id=0&apptype=taiji&_t=1631263078","common":"","invoices_price":"0","price":"8888.00","theme":"团建卡测试","id":"10","expiry":{"unit":"year","value":"8"},"nums":"99","guide":"看看看看\n\n看看\n看看\n看看看看看看\nv看看看看\n\n看看\n看看v\nv看看看看\n看看\n看看v\n\n\n\n看看看看\n\n\n\n\n看看看看\n\n\n\n看看看看\n\n\n看看看看看看\n\n\n\n看看看看"},"status":1}
+2021-09-10 16:37:58 168 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200919/095534676452.jpg
+2021-09-10 16:37:58 259 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:37:58 434 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/taiji/20200919/095540778652.m3u8
+2021-09-10 16:37:58 655 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20200919/095540778652.m3u8?vframe/jpg/offset/2
+2021-09-10 16:37:58 856 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:37:59 040 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110251406078.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"36","cover":"https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200909/225254209560.mp4","width":"854","key":"taiji/20200909/225254209560.mp4","url":"https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O","height":"480"},"duration":"1","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/9?user_id=0&apptype=taiji&_t=1631263079","common":"","invoices_price":"0","price":"2.00","theme":"测试过期礼品卡","id":"9","expiry":{"unit":"month","value":"1"},"nums":"1","guide":"1"},"status":1}
+2021-09-10 16:37:59 042 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110251406078.png
+2021-09-10 16:37:59 126 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:37:59 299 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O
+2021-09-10 16:37:59 499 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O?vframe/jpg/offset/2
+2021-09-10 16:37:59 706 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:37:59 885 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"36","cover":"https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200908/142635506023.mp4","width":"854","key":"taiji/20200908/142635506023.mp4","url":"https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O","height":"480"},"duration":"1","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/8?user_id=0&apptype=taiji&_t=1631263080","common":"","invoices_price":"0","price":"1000000.00","theme":"测试测试测试测试测试测试测试测试测试测试","id":"8","expiry":{"unit":"year","value":"1"},"nums":"1","guide":"1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n37\n38\n29\n30"},"status":1}
+2021-09-10 16:37:59 888 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110258265434.png
+2021-09-10 16:37:59 976 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:38:00 171 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O
+2021-09-10 16:38:00 335 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqHVKRMONmEDt9pR6Bd-b083QK3O?vframe/jpg/offset/2
+2021-09-10 16:38:00 530 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:38:00 709 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"12","cover":"https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200904/115127944107.mp4","width":"960","key":"taiji/20200904/115127944107.mp4","url":"https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt","height":"544"},"duration":"30","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/7?user_id=0&apptype=taiji&_t=1631263081","common":"","invoices_price":"0","price":"88.00","theme":"测试课程卡","id":"7","expiry":{"unit":"month","value":"3"},"nums":"5","guide":"还让他就可以"},"status":1}
+2021-09-10 16:38:00 711 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20200910/110324853652.png
+2021-09-10 16:38:00 810 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:38:00 979 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt
+2021-09-10 16:38:01 153 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/FvemEe31BjJ8qejPCNkaZsl9AQYt?vframe/jpg/offset/2
+2021-09-10 16:38:01 405 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/
+2021-09-10 16:38:01 573 INFO  Giftcard:113 - {"msg":"获取课程卡详情成功","data":{"img":"http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","video":{"duration":"59","cover":"https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20200904/120559450848.mp4","width":"1000","key":"taiji/20200904/120559450848.mp4","url":"https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET","height":"418"},"duration":"30","share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/6?user_id=0&apptype=taiji&_t=1631263081","common":"","invoices_price":"0","price":"1.00","theme":"陈式太极拳入门套路","id":"6","expiry":{"unit":"hour","value":"2"},"nums":"3","guide":"测试课程卡规则没有"},"status":1}
+2021-09-10 16:38:01 575 INFO  PropertiesUtils:68 - http://file.hishenghuo.com.cn/taiji/20190513/143116267625.jpg
+2021-09-10 16:38:01 658 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/4567897654567890987.png
+2021-09-10 16:38:01 840 INFO  PropertiesUtils:68 - https://file.tjkongfu.com/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET
+2021-09-10 16:38:02 017 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/ugzoe8zyThL_chbB_i_4elxVlO0=/lqBUtboqhrtze4Zog7FJLOlxmEET?vframe/jpg/offset/2
+2021-09-10 16:38:02 235 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/listtitle/
+2021-09-10 16:38:02 405 INFO  Giftcard:284 - {"msg":"获取成功","data":{"general_self":[{"open_bank":"","phone":"","invoice_type":"1","id":"107","title":"名称","type":"1","company_address":"","bank_account":""}],"added_tax":[{"open_bank":"开户银行","phone":"0427-1234567","invoice_type":"2","id":"106","title":"名称","type":"3","taxnumber":"111111111111111111","company_address":"单位地址","bank_account":"55555555555555555555"}],"general_company":[{"open_bank":"","phone":"","invoice_type":"1","id":"105","title":"名称","type":"3","taxnumber":"111111111111111111","company_address":"","bank_account":""}]},"status":1}
+2021-09-10 16:38:02 414 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/union/cardorder/list/
+2021-09-10 16:38:02 583 INFO  Giftcard:644 - {"msg":"获取课程卡订单列表成功","data":{"pager":{"pagecount":1,"count":"1","pagesize":"10","page":"1"},"list":[{"img":"https://file.hishenghuo.com.cn/taiji/20210902/162402966208.jpg","is_fp":1,"code":"","orderNo":"2021091016375551539710","created_at":"2021-09-10 16:37:55","promise":{"province_id":"","area_id":"","guide":"特别说明\r\n\r\n本卡含365次高级私教课程，本次操作作为第1次课程预约。预约成功后平台将在第一时间联系您并为您指派高级教练和确定课程。\r\n\r\n首次预约请确定选择的授课城市，之后预约不可更换，详细地址可变动。","city_id":""},"cardNo":"610910162820","qrcode_pic":"","useNum":"0","invoices_price":"0","price":"1000","cardId":"14","statusName":"待支付","shippingAddress":"","theme":"精品推荐","id":"809","expiry":"2022-09-10","nums":"365","guide":"11","is_entity":0,"status":"0"}]},"status":1}
+2021-09-10 16:38:02 585 INFO  PropertiesUtils:68 - https://file.hishenghuo.com.cn/taiji/20210902/162402966208.jpg
+2021-09-10 16:38:02 774 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v1/invoices/deletetitle/
+2021-09-10 16:38:02 936 INFO  Giftcard:602 - {"msg":"删除成功","status":1}
+2021-09-10 16:38:02 938 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v1/invoices/deletetitle/
+2021-09-10 16:38:03 107 INFO  Giftcard:602 - {"msg":"删除成功","status":1}
+2021-09-10 16:38:03 109 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v1/invoices/deletetitle/
+2021-09-10 16:38:03 281 INFO  Giftcard:602 - {"msg":"删除成功","status":1}
+2021-09-10 16:38:03 284 INFO  PropertiesUtils:169 - http://apitest.passport.tjkongfu.com:3999/v2/invoices/listtitle/
+2021-09-10 16:38:03 454 INFO  Giftcard:284 - {"msg":"暂时没有发票抬头","data":[],"status":1}
+2021-09-10 16:38:03 462 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/v2/cardorder/cancel/809
+2021-09-10 16:38:03 628 INFO  Giftcard:712 - {"msg":"取消成功","status":1}
+2021-09-10 16:38:03 632 INFO  PropertiesUtils:169 - http://apitest.hishenghuo.com.cn:4000/v2/cardorder/delete/809
+2021-09-10 16:38:03 805 INFO  Giftcard:731 - {"msg":"删除成功","status":1}
+2021-09-10 16:38:04 450 ERROR runtime:60 - Error executing FreeMarker template
+FreeMarker template error:
+The following has evaluated to null or missing:
+==> sysConfig.value  [in template "email.ftl" at line 18, column 47]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${sysConfig.value}  [in template "email.ftl" at line 18, column 45]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core.InvalidReferenceException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:131)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:355)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.loopForItemsElement(IteratorBlock.java:207)
+	at freemarker.core.Items.accept(Items.java:43)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:276)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at freemarker.template.Template.process(Template.java:325)
+	at com.vimalselvam.testng.EmailReporter.flush(EmailReporter.java:56)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:247)
+	at com.aventstack.extentreports.Report.flush(Report.java:169)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:272)
+	at reporter.listener.MyExtentTestNgFormatter.generateReport(MyExtentTestNgFormatter.java:255)
+	at org.testng.TestNG.generateReports(TestNG.java:1097)
+	at org.testng.TestNG.run(TestNG.java:1022)
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)

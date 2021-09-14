@@ -69,8 +69,9 @@ public class LiveList extends BaseApi {
     @Test
     public void liveCategoryList() throws IOException {
 
-        HashMap<String, String> header = URLFiltration.addHeader(new HashMap<String, String>());
+        HashMap<String, String> header = URLFiltration.addHeader(new HashMap<>());
         HashMap<String,String> params = new HashMap<>();
+        params.put("is_hidden","0");
         CloseableHttpResponse post = httpClient.post(liveCategoryList,params,header);
         int statusCode = httpClient.getStatusCode(post);
         JSONObject rs = httpClient.getResponseJson(post);

@@ -36,7 +36,7 @@ public class MinePage extends BaseApi{
         String msg = rs.getString("msg");
         Assert.assertEquals(status, Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
         Assert.assertEquals(msg,"获取用户信息成功","接口返回msg失败");
-        
+
 
     }
 

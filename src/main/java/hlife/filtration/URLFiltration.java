@@ -5,6 +5,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.google.common.annotations.VisibleForTesting;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.message.BasicNameValuePair;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 import hlife.base.Constants;
 import hlife.httpclient.HttpClient;
@@ -15,6 +17,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -76,6 +79,13 @@ public class URLFiltration {
 		header.put("clientkey",clientkey);
 		header.put("sign",sign);
 		header.put("timestamp",timestamp);
+		Iterator iterator = header.entrySet().iterator();
+		while(iterator.hasNext()){
+			Map.Entry<String,String> elem = (Map.Entry<String, String>) iterator.next();
+			System.out.println(elem.getKey()+":"+elem.getValue());
+			Reporter.log(elem.getKey()+":"+elem.getValue());
+			Reporter.log("--------header--------");
+		}
 		return header;
 	}
 

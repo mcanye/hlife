@@ -111,6 +111,33 @@ public class BaseApi {
 	protected String myServiceHome;
 
 
+	//直播间相关
+	//创建直播间
+	protected String liveCreate;
+	//获取直播间信息 加入直播间
+	protected String liveDetail;
+	//能否创建直播
+	protected String liveAppCreate;
+	//开播，关播，继续直播
+	protected String liveOpera;
+	//是否允许进入直播间
+	protected String liveStatus;
+	//粉丝团详情
+	protected String fansGroupDetail;
+	//修改粉丝团信息
+	protected String fansGroupApply;
+	//进入粉丝群
+	protected String chatEnter;
+	//获取聊天记录
+	protected String chatRecordList;
+	//粉丝群详情
+	protected String chatEnterInfo;
+	//退群
+	protected String chatQuit;
+	//加入群聊
+	protected String charJoin;
+
+
 	@BeforeClass
 	public void setUp() throws  IOException, InterruptedException {
 
@@ -178,9 +205,33 @@ public class BaseApi {
 		cardorderDelete = URLFiltration.addHost_BASEURL_API(cardorderDelete);
 		myServiceHome = PropertiesUtils.getConfigValue("myServiceHome");
 		myServiceHome = URLFiltration.addHost_BASEURL_API(myServiceHome);
-
+		liveCreate = PropertiesUtils.getConfigValue("liveCreate");
+		liveCreate = URLFiltration.addHost_BASEURL_API(liveCreate);
+		liveDetail = PropertiesUtils.getConfigValue("liveDetail");
+		liveDetail = URLFiltration.addHost_BASEURL_API(liveDetail);
+		liveAppCreate = PropertiesUtils.getConfigValue("liveAppCreate");
+		liveAppCreate = URLFiltration.addHost_BASEURL_API(liveAppCreate);
+		liveOpera = PropertiesUtils.getConfigValue("liveOpera");
+		liveOpera = URLFiltration.addHost_BASEURL_API(liveOpera);
+		liveStatus = PropertiesUtils.getConfigValue("liveStatus");
+		liveStatus = URLFiltration.addHost_BASEURL_API(liveStatus);
+		fansGroupDetail = PropertiesUtils.getConfigValue("fansGroupDetail");
+		fansGroupDetail = URLFiltration.addHost_BASEURL_API(fansGroupDetail);
+		fansGroupApply = PropertiesUtils.getConfigValue("fansGroupApply");
+		fansGroupApply = URLFiltration.addHost_BASEURL_API(fansGroupApply);
+		chatEnter = PropertiesUtils.getConfigValue("chatEnter");
+		chatEnter = URLFiltration.addHost_BASEURL_PASSPORT(chatEnter);
+		chatRecordList = PropertiesUtils.getConfigValue("chatRecordList");
+		chatRecordList = URLFiltration.addHost_BASEURL_PASSPORT(chatRecordList);
+		chatEnterInfo = PropertiesUtils.getConfigValue("chatEnterInfo");
+		chatEnterInfo = URLFiltration.addHost_BASEURL_PASSPORT(chatEnterInfo);
+		chatQuit = PropertiesUtils.getConfigValue("chatQuit");
+		chatQuit = URLFiltration.addHost_BASEURL_PASSPORT(chatQuit);
+		charJoin = PropertiesUtils.getConfigValue("charJoin");
+		charJoin = URLFiltration.addHost_BASEURL_PASSPORT(charJoin);
 		access_token = fast(verificationParameters.phone);
 		new_access_token = fast(verificationParameters.newPhone);
+
 	}
 
 	
@@ -204,8 +255,6 @@ public class BaseApi {
 		Assert.assertEquals(rs.getString("msg"), "登录成功","验证码登录接口访问失败");
 		Thread.sleep(5000);
 		return rs.getJSONObject("data").getString("access_token");
-
-
 
 	}
 
