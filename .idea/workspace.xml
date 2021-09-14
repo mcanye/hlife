@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05317c89-b5df-4710-82ef-91eb2dab91c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hlife/base/BaseApi.class" afterPath="$PROJECT_DIR$/target/classes/hlife/base/BaseApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hlife/base/Constants.class" afterPath="$PROJECT_DIR$/target/classes/hlife/base/Constants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hlife/filtration/URLFiltration.class" afterPath="$PROJECT_DIR$/target/classes/hlife/filtration/URLFiltration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hlife/httpclient/HttpClient.class" afterPath="$PROJECT_DIR$/target/classes/hlife/httpclient/HttpClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveList.class" afterPath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/apilog.log" afterPath="$PROJECT_DIR$/logs/apilog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/filters/first-debug.properties" afterPath="$PROJECT_DIR$/src/main/filters/first-debug.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" afterPath="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hlife/base/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/hlife/base/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java" afterPath="$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config.properties" afterPath="$PROJECT_DIR$/target/classes/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/evn.properties" afterPath="$PROJECT_DIR$/target/classes/evn.properties" />
-    </list>
+    <list default="true" id="05317c89-b5df-4710-82ef-91eb2dab91c1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LiveRoom.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LiveRoom.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-313">
@@ -89,6 +72,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="liveRoom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveRoom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="VerificationParameters.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hlife/parameters/VerificationParameters.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,16 +109,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25">
               <caret line="150" column="9" lean-forward="false" selection-start-line="144" selection-start-column="8" selection-end-line="150" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/Constants.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -259,6 +242,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/liveRoom.xml" />
       </list>
     </option>
   </component>
@@ -275,7 +259,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="81" />
     <option name="y" value="26" />
     <option name="width" value="1200" />
@@ -514,15 +498,11 @@
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/src/1" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\hlife\src\main\resources\testng\api\integration" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="hlife" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\project\hlife\hlife\src\main\resources\testng\api\integration" />
-      <recent name="E:\project\hlife\src\main\filters" />
-      <recent name="E:\project\hlife\src\main\resources\testng\api\single" />
-      <recent name="E:\project\hlife\src\main\resources\testng\api\integration" />
-      <recent name="E:\project\hlife\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="hlife.utils.md5" />
@@ -531,8 +511,12 @@
       <recent name="hlife.parameters" />
       <recent name="hlife.httpclient" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\hlife\hlife\src\main\resources\testng\api\integration" />
+      <recent name="E:\project\hlife\src\main\filters" />
+      <recent name="E:\project\hlife\src\main\resources\testng\api\single" />
       <recent name="E:\project\hlife\src\main\resources\testng\api\integration" />
+      <recent name="E:\project\hlife\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -862,7 +846,7 @@
       <workItem from="1631237880110" duration="16618000" />
       <workItem from="1631493357380" duration="25628000" />
       <workItem from="1631529259950" duration="50000" />
-      <workItem from="1631579717976" duration="20402000" />
+      <workItem from="1631579717976" duration="20522000" />
     </task>
     <servers />
   </component>
@@ -899,7 +883,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316074000" />
+    <option name="totallyTimeSpent" value="316194000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -911,7 +895,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14827017" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -922,7 +907,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42339373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42339373" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -956,13 +941,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/param.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="650">
@@ -1404,6 +1382,14 @@
             <element signature="docComment;method#getUser_id#0;class#LiveRoom#0" expanded="false" />
             <element signature="method#getUser_id#0;class#LiveRoom#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveRoom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
