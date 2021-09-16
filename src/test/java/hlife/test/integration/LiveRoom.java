@@ -25,8 +25,8 @@ public class LiveRoom extends BaseApi{
 
     private HttpClient httpClient = new HttpClient();
     private static Logger log = LoggerFactory.getLogger(LiveRoom.class);
-    private List<String> live_typeList = new ArrayList<>();
-    private String liveId;
+    public List<String> live_typeList = new ArrayList<>();
+    public String liveId;
     private String uuid ="00000000-258c-468d-ffff-ffffef05ac4a";
     private int in_group;
     private String group_tag;

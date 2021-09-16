@@ -28,7 +28,7 @@ public class LiveList extends BaseApi {
     private HttpClient httpClient = new HttpClient();
     private VerificationParameters verParameters = new VerificationParameters();
     private static Logger log = LoggerFactory.getLogger(LiveList.class);
-    private List<String> live_typeMap = new ArrayList<>();
+    public List<String> live_typeMap = new ArrayList<>();
     private List<String> liveRecommendIdList = new ArrayList<>();
     private List<String> after_liveRecommendIdList = new ArrayList<>();
     private int page = 1;

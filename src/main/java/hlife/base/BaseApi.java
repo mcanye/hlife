@@ -136,7 +136,16 @@ public class BaseApi {
 	protected String chatQuit;
 	//加入群聊
 	protected String charJoin;
-
+	//引导送礼物弹窗
+	protected String liveGiftPopInfo;
+	//礼物列表
+	protected String liveGiftList;
+	//赠送礼物
+	protected String liveGiftSend;
+	//打赏榜
+	protected String liveGiftUser;
+	//充值页面
+	protected String payCopperRechargePackage;
 
 	@BeforeClass
 	public void setUp() throws  IOException, InterruptedException {
@@ -229,6 +238,18 @@ public class BaseApi {
 		chatQuit = URLFiltration.addHost_BASEURL_PASSPORT(chatQuit);
 		charJoin = PropertiesUtils.getConfigValue("charJoin");
 		charJoin = URLFiltration.addHost_BASEURL_PASSPORT(charJoin);
+		liveGiftPopInfo = PropertiesUtils.getConfigValue("liveGiftPopInfo");
+		liveGiftPopInfo = URLFiltration.addHost_BASEURL_API(liveGiftPopInfo);
+		liveGiftList = PropertiesUtils.getConfigValue("liveGiftList");
+		liveGiftList = URLFiltration.addHost_BASEURL_API(liveGiftList);
+		liveGiftSend = PropertiesUtils.getConfigValue("liveGiftSend");
+		liveGiftSend = URLFiltration.addHost_BASEURL_API(liveGiftSend);
+		liveGiftUser = PropertiesUtils.getConfigValue("liveGiftUser");
+		liveGiftUser = URLFiltration.addHost_BASEURL_API(liveGiftUser);
+		payCopperRechargePackage = PropertiesUtils.getConfigValue("payCopperRechargePackage");
+		payCopperRechargePackage = URLFiltration.addHost_BASEURL_API(payCopperRechargePackage);
+		
+
 		access_token = fast(verificationParameters.phone);
 		new_access_token = fast(verificationParameters.newPhone);
 
