@@ -32,6 +32,7 @@ public class LiveRoom extends BaseApi{
     private String group_tag;
     private String target_id;
     private String group_name;
+    private int is_follow;
 
     /**
      * 获取直播分类（根据apptype不同返回值不同，分类由后台管理端配置）
@@ -597,8 +598,6 @@ public class LiveRoom extends BaseApi{
     }
 
 
-
-
     /**
      * 根据in_group判断执行
      * 1 执行退群
@@ -627,6 +626,74 @@ public class LiveRoom extends BaseApi{
         }
     }
 
+    /**
+     * 用户信息
+     */
+    @Test(dependsOnMethods = { "liveCreate" })
+    public void liveUserInfo() throws IOException, InterruptedException {
+        String user_id = getUser_id("17611111111");
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",new_access_token);
+        params.put("live_id",liveId);
+        params.put("user_id",user_id);
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(liveUserInfo, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        Assert.assertEquals(msg,"获取直播间用户信息成功","接口返回失败");
+        JSONObject data = rs.getJSONObject("data");
+        Reporter.log("封装是否关注");
+        is_follow = data.getIntValue("is_follow");
+        Reporter.log("判断用户可用性");
+        String avatar = data.getString("avatar");
+        int statusCode = httpClient.getStatusCode(httpClient.get(avatar, new HashMap<>()));
+        Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"用户头像显示异常");
+        Reporter.log("判断用户昵称是否显示");
+        String nick_name = data.getString("nick_name");
+        Assert.assertEquals(nick_name.equals(""),false,"用户昵称不应为空");
+
+    }
+
+    /**
+     * 关注/取消关注
+     */
+    @Test(dependsOnMethods = { "liveUserInfo" })
+    public void followIndex() throws IOException, InterruptedException {
+        String user_id = getUser_id("17611111111");
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",new_access_token);
+        params.put("follow_who",user_id);
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(followIndex, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        int old_is_follw = is_follow;
+        liveUserInfo();
+        switch(old_is_follw){
+            case 0:
+                Assert.assertEquals(msg,"关注成功","接口请求失败");
+                Assert.assertEquals(is_follow,2,"状态变更不正确");
+                break;
+            case 1:
+                Assert.assertEquals(msg,"关注成功","接口请求失败");
+                Assert.assertEquals(is_follow,3,"状态变更不正确");
+                break;
+            case 2:
+                Assert.assertEquals(msg,"取消关注成功","接口请求失败");
+                Assert.assertEquals(is_follow,0,"状态变更不正确");
+                break;
+            case 3:
+                Assert.assertEquals(msg,"取消关注成功","接口请求失败");
+                Assert.assertEquals(is_follow,1,"状态变更不正确");
+                break;
+        }
+
+
+    }
 
     /**
      * 进入粉丝群
@@ -748,6 +815,12 @@ public class LiveRoom extends BaseApi{
         Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
         Assert.assertEquals(msg,"加入群聊成功！","接口返回msg不正确");
     }
+
+    /**
+     *
+     */
+
+
 
     /**
      * 获取用户ID

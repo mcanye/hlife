@@ -61,21 +61,8 @@ public class EncryptUtil {
 	
 	@Test
 	public void test111() throws UnsupportedEncodingException {
-		//String s  = "GluZWNsYXNzLmtMTBPSDRmQT0=VodWFhcHAuY29tL2VfYWRWaWRlbzE1Njc0OTIxMjk4ODgubXA0P2U9MTU3MTMwMDE3NSZ0b2tlbj0tNlZlb1VEc2MyVFRJdEpQMjZFR2dBWjVsNHY2YzJkN1VvRWhzbWVEOnZBckZMRkxMVnFha3ZTNHYycUQaHR0cDovL29ub";
-	//	String s = "7,8,5";
-		//String decrypt = EncryptUtil.getDecryptKey(s);
-//		byte[] b = s.getBytes();
-//		String encrypt = aes.encrypt(b);
-//		String urlString = URLEncoder.encode("7,8,5", "utf-8");
-//		System.out.println(urlString);
-//		long l = System.currentTimeMillis();
-//		l = l+7200000;
-//		Date d = new Date(l);
-//		SimpleDateFormat sbf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-//		System.out.println(sbf.format(d));
-		String s = "\\u8bbe\\u4e3a\\u63a8\\u8350\\u6210\\u529f";
-		String s1 = unicodeToString(s);
-		System.out.println(s1);
+		long i =1 ;
+		System.out.println((int)(i*10*0.3));
 	}
 
 	/**

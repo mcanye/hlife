@@ -35,117 +35,129 @@ public class BaseApi {
 	private static Logger log = LoggerFactory.getLogger(BaseApi.class);
 	private VerificationParameters verificationParameters = new VerificationParameters();
 	//用户登录token
-	protected String access_token;
-	protected String new_access_token;
+	public String access_token;
+	public String new_access_token;
 
 
 
 	//登录接口
-	protected String verify;
+	public String verify;
 	//获取全部城市接口
-	protected String city;
+	public String city;
 	//房产列表
-	protected String house_list;
+	public String house_list;
 	//房产标签接口
-	protected String tagList;
+	public String tagList;
 	//房产品牌接口
-	protected String brandList;
+	public String brandList;
 
 	//判断是否有正在直播的直播间
-	protected String liveRecommend;
+	public String liveRecommend;
 	//获取直播分类（根据apptype不同返回值不同，分类由后台管理端配置）
-	protected String liveCategoryList;
+	public String liveCategoryList;
 	//广告列表
-	protected String advList;
+	public String advList;
 	//获取直播推荐列表
-	protected String liveRecommendlist;
+	public String liveRecommendlist;
 	//更改直播排序
-	protected String liveCategorySort;
+	public String liveCategorySort;
 	//直播关注列表接口
-	protected String liveFocuslist;
+	public String liveFocuslist;
 	//直播列表
-	protected String liveList;
+	public String liveList;
 
 	//发布预告
-	protected String createLiveNotice;
+	public String createLiveNotice;
 	//预告详情
-	protected String liveNoticeDet;
+	public String liveNoticeDet;
 	//推荐预告
-	protected String setLiveNoticeRecommend;
+	public String setLiveNoticeRecommend;
 	//获取推荐直播预告列表
-	protected String liveNoticeRecommendList;
+	public String liveNoticeRecommendList;
 	//直播预告关注列表
-	protected String liveNoticeFocuslist;
+	public String liveNoticeFocuslist;
 	//直播预告列表根据live_cid区分类型
-	protected String liveNoticeList;
+	public String liveNoticeList;
 	//预告预约
-	protected String liveNoticeEnroll;
+	public String liveNoticeEnroll;
 	//删除直播预告
-	protected String liveNoticeCancel;
+	public String liveNoticeCancel;
 
 	//礼品卡列表
-	protected String coursecardList;
+	public String coursecardList;
 	//礼品卡详情
-	protected String coursecardDetail;
+	public String coursecardDetail;
 	//课程卡合作单位
-	protected String coursecardCooperation;
+	public String coursecardCooperation;
 	//发票参数校验
-	protected String cardorderVerifyInvoice;
+	public String cardorderVerifyInvoice;
 	//发票抬头列表
-	protected String invoicesListtitle;
+	public String invoicesListtitle;
 	//创建发票抬头
-	protected String invoicesCreatetitle;
+	public String invoicesCreatetitle;
 	//删除发票抬头
-	protected String invoicesDeletetitle;
+	public String invoicesDeletetitle;
 	//我的卡包
-	protected String cardorderList;
+	public String cardorderList;
 	//礼品卡下订单
-	protected String cardorderCreateOrder;
+	public String cardorderCreateOrder;
 	//取消订单
-	protected String cardorderCancel;
+	public String cardorderCancel;
 	//删除订单
-	protected String cardorderDelete;
+	public String cardorderDelete;
 
 	//个人主页相关
 	//生活服务页
-	protected String myServiceHome;
+	public String myServiceHome;
 
 
 	//直播间相关
 	//创建直播间
-	protected String liveCreate;
+	public String liveCreate;
 	//获取直播间信息 加入直播间
-	protected String liveDetail;
+	public String liveDetail;
 	//能否创建直播
-	protected String liveAppCreate;
+	public String liveAppCreate;
 	//开播，关播，继续直播
-	protected String liveOpera;
+	public String liveOpera;
 	//是否允许进入直播间
-	protected String liveStatus;
+	public String liveStatus;
 	//粉丝团详情
-	protected String fansGroupDetail;
+	public String fansGroupDetail;
 	//修改粉丝团信息
-	protected String fansGroupApply;
+	public String fansGroupApply;
 	//进入粉丝群
-	protected String chatEnter;
+	public String chatEnter;
 	//获取聊天记录
-	protected String chatRecordList;
+	public String chatRecordList;
 	//粉丝群详情
-	protected String chatEnterInfo;
+	public String chatEnterInfo;
 	//退群
-	protected String chatQuit;
+	public String chatQuit;
 	//加入群聊
-	protected String charJoin;
+	public String charJoin;
 	//引导送礼物弹窗
-	protected String liveGiftPopInfo;
+	public String liveGiftPopInfo;
 	//礼物列表
-	protected String liveGiftList;
+	public String liveGiftList;
 	//赠送礼物
-	protected String liveGiftSend;
+	public String liveGiftSend;
 	//打赏榜
-	protected String liveGiftUser;
+	public String liveGiftUser;
 	//充值页面
-	protected String payCopperRechargePackage;
+	public String payCopperRechargePackage;
+	//用户信息
+	public String liveUserInfo;
+	//关注/取消关注
+	protected String followIndex;
+	//在线用户列表
+	protected String liveOnlineUser;
+	//用户离开直播间
+	protected String liveQuit;
+	//用户加入直播间
+	protected String liveJoin;
+
+
 
 	@BeforeClass
 	public void setUp() throws  IOException, InterruptedException {
@@ -248,7 +260,16 @@ public class BaseApi {
 		liveGiftUser = URLFiltration.addHost_BASEURL_API(liveGiftUser);
 		payCopperRechargePackage = PropertiesUtils.getConfigValue("payCopperRechargePackage");
 		payCopperRechargePackage = URLFiltration.addHost_BASEURL_API(payCopperRechargePackage);
-		
+		liveUserInfo = PropertiesUtils.getConfigValue("liveUserInfo");
+		liveUserInfo = URLFiltration.addHost_BASEURL_API(liveUserInfo);
+		followIndex = PropertiesUtils.getConfigValue("followIndex");
+		followIndex = URLFiltration.addHost_BASEURL_API(followIndex);
+		liveOnlineUser = PropertiesUtils.getConfigValue("liveOnlineUser");
+		liveOnlineUser = URLFiltration.addHost_BASEURL_API(liveOnlineUser);
+		liveQuit = PropertiesUtils.getConfigValue("liveQuit");
+		liveQuit = URLFiltration.addHost_BASEURL_API(liveQuit);
+		liveJoin = PropertiesUtils.getConfigValue("liveJoin");
+		liveJoin = URLFiltration.addHost_BASEURL_API(liveJoin);
 
 		access_token = fast(verificationParameters.phone);
 		new_access_token = fast(verificationParameters.newPhone);
@@ -257,7 +278,7 @@ public class BaseApi {
 
 	
 
-	protected String fast(String phone) throws IOException, InterruptedException {
+	public String fast(String phone) throws IOException, InterruptedException {
 		HashMap<String, String> params = new HashMap<>();
 		params.put("type","1");
 		params.put("country_code","86");
@@ -283,7 +304,7 @@ public class BaseApi {
 	 * 获取日期
 	 * @return 年-月-日 时:分
 	 */
-	protected String getDate(long l){
+	public String getDate(long l){
 		Date d = new Date(System.currentTimeMillis()+l);
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 		String format = dateFormat.format(d);
