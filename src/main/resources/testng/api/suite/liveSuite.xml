@@ -10,7 +10,7 @@
         <suite-file path="src/main/resources/testng/api/integration/liveGift.xml"></suite-file>
         <suite-file path="src/main/resources/testng/api/integration/liveNoticeList.xml"></suite-file>
         <suite-file path="src/main/resources/testng/api/integration/LiveRoom.xml"></suite-file>
-
+       <suite-file path="src/main/resources/testng/api/integration/LiveRTC.xml"></suite-file>
     </suite-files>
 
     <listeners>
