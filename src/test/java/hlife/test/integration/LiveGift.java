@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * 直播间礼物相关
  */
-@Test
+@Test(groups = "LiveGift")
 public class LiveGift extends BaseApi{
     private HttpClient httpClient = new HttpClient();
     private static Logger log = LoggerFactory.getLogger(LiveGift.class);

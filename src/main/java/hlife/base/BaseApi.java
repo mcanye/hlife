@@ -1,21 +1,16 @@
 package hlife.base;
 
-import com.alibaba.fastjson.JSONArray;
+
 import com.alibaba.fastjson.JSONObject;
-import org.apache.http.client.ClientProtocolException;
-import org.bouncycastle.crypto.agreement.srp.SRP6Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.Reporter;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import hlife.filtration.URLFiltration;
 import hlife.httpclient.HttpClient;
 import hlife.parameters.VerificationParameters;
-import hlife.utils.Arith;
 import hlife.utils.PropertiesUtils;
-
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -35,119 +30,117 @@ public class BaseApi {
 	private static Logger log = LoggerFactory.getLogger(BaseApi.class);
 	private VerificationParameters verificationParameters = new VerificationParameters();
 	//用户登录token
-	public String access_token;
-	public String new_access_token;
-
-
+	protected String access_token;
+	protected String new_access_token;
 
 	//登录接口
-	public String verify;
+	protected String verify;
 	//获取全部城市接口
-	public String city;
+	protected String city;
 	//房产列表
-	public String house_list;
+	protected String house_list;
 	//房产标签接口
-	public String tagList;
+	protected String tagList;
 	//房产品牌接口
-	public String brandList;
+	protected String brandList;
 
 	//判断是否有正在直播的直播间
-	public String liveRecommend;
+	protected String liveRecommend;
 	//获取直播分类（根据apptype不同返回值不同，分类由后台管理端配置）
-	public String liveCategoryList;
+	protected String liveCategoryList;
 	//广告列表
 	public String advList;
 	//获取直播推荐列表
-	public String liveRecommendlist;
+	protected String liveRecommendlist;
 	//更改直播排序
-	public String liveCategorySort;
+	protected String liveCategorySort;
 	//直播关注列表接口
-	public String liveFocuslist;
+	protected String liveFocuslist;
 	//直播列表
-	public String liveList;
+	protected String liveList;
 
 	//发布预告
-	public String createLiveNotice;
+	protected String createLiveNotice;
 	//预告详情
-	public String liveNoticeDet;
+	protected String liveNoticeDet;
 	//推荐预告
-	public String setLiveNoticeRecommend;
+	protected String setLiveNoticeRecommend;
 	//获取推荐直播预告列表
-	public String liveNoticeRecommendList;
+	protected String liveNoticeRecommendList;
 	//直播预告关注列表
-	public String liveNoticeFocuslist;
+	protected String liveNoticeFocuslist;
 	//直播预告列表根据live_cid区分类型
-	public String liveNoticeList;
+	protected String liveNoticeList;
 	//预告预约
-	public String liveNoticeEnroll;
+	protected String liveNoticeEnroll;
 	//删除直播预告
-	public String liveNoticeCancel;
+	protected String liveNoticeCancel;
 
 	//礼品卡列表
-	public String coursecardList;
+	protected String coursecardList;
 	//礼品卡详情
-	public String coursecardDetail;
+	protected String coursecardDetail;
 	//课程卡合作单位
-	public String coursecardCooperation;
+	protected String coursecardCooperation;
 	//发票参数校验
-	public String cardorderVerifyInvoice;
+	protected String cardorderVerifyInvoice;
 	//发票抬头列表
-	public String invoicesListtitle;
+	protected String invoicesListtitle;
 	//创建发票抬头
-	public String invoicesCreatetitle;
+	protected String invoicesCreatetitle;
 	//删除发票抬头
-	public String invoicesDeletetitle;
+	protected String invoicesDeletetitle;
 	//我的卡包
-	public String cardorderList;
+	protected String cardorderList;
 	//礼品卡下订单
-	public String cardorderCreateOrder;
+	protected String cardorderCreateOrder;
 	//取消订单
-	public String cardorderCancel;
+	protected String cardorderCancel;
 	//删除订单
-	public String cardorderDelete;
+	protected String cardorderDelete;
 
 	//个人主页相关
 	//生活服务页
-	public String myServiceHome;
+	protected String myServiceHome;
 
 
 	//直播间相关
 	//创建直播间
-	public String liveCreate;
+	protected String liveCreate;
 	//获取直播间信息 加入直播间
-	public String liveDetail;
+	protected String liveDetail;
 	//能否创建直播
-	public String liveAppCreate;
+	protected String liveAppCreate;
 	//开播，关播，继续直播
-	public String liveOpera;
+	protected String liveOpera;
 	//是否允许进入直播间
-	public String liveStatus;
+	protected String liveStatus;
 	//粉丝团详情
-	public String fansGroupDetail;
+	protected String fansGroupDetail;
 	//修改粉丝团信息
-	public String fansGroupApply;
+	protected String fansGroupApply;
 	//进入粉丝群
-	public String chatEnter;
+	protected String chatEnter;
 	//获取聊天记录
-	public String chatRecordList;
+	protected String chatRecordList;
 	//粉丝群详情
-	public String chatEnterInfo;
+	protected String chatEnterInfo;
 	//退群
-	public String chatQuit;
+	protected String chatQuit;
 	//加入群聊
-	public String charJoin;
+	protected String charJoin;
 	//引导送礼物弹窗
-	public String liveGiftPopInfo;
+	protected String liveGiftPopInfo;
 	//礼物列表
-	public String liveGiftList;
+	protected String liveGiftList;
 	//赠送礼物
-	public String liveGiftSend;
+	protected String liveGiftSend;
 	//打赏榜
-	public String liveGiftUser;
+	protected String liveGiftUser;
 	//充值页面
-	public String payCopperRechargePackage;
+	protected String payCopperRechargePackage;
 	//用户信息
-	public String liveUserInfo;
+	protected String liveUserInfo;
 	//关注/取消关注
 	protected String followIndex;
 	//在线用户列表
@@ -156,7 +149,30 @@ public class BaseApi {
 	protected String liveQuit;
 	//用户加入直播间
 	protected String liveJoin;
-
+	//主播开启聊天室
+	protected String liveOpenRtcFunc;
+	//观众申请连麦
+	protected String chatroomApply;
+	//主播查看申请连麦用户列表
+	protected String chatroomApplyList;
+	//查看邀请连麦列表
+	protected String chatroomInviteList;
+	//邀请连麦
+	protected String chatroomInvite;
+	//同意连麦
+	protected String chatroomUserAgree;
+	//管理连麦列表
+	protected String chatroomManagement;
+	//管理用户
+	protected String chatroomManage;
+	//全员静音，解除静音
+	protected String chatroomMuteAll;
+	//主播同意连麦申请
+	protected String chatroomAgree;
+	//关闭连麦权限
+	protected String chatroomUserCloseMute;
+	//关闭聊天室
+	protected String liveCloseRtcFunc;
 
 
 	@BeforeClass
@@ -270,6 +286,31 @@ public class BaseApi {
 		liveQuit = URLFiltration.addHost_BASEURL_API(liveQuit);
 		liveJoin = PropertiesUtils.getConfigValue("liveJoin");
 		liveJoin = URLFiltration.addHost_BASEURL_API(liveJoin);
+		liveOpenRtcFunc = PropertiesUtils.getConfigValue("liveOpenRtcFunc");
+		liveOpenRtcFunc = URLFiltration.addHost_BASEURL_API(liveOpenRtcFunc);
+		chatroomApply = PropertiesUtils.getConfigValue("chatroomApply");
+		chatroomApply = URLFiltration.addHost_BASEURL_API(chatroomApply);
+		chatroomApplyList = PropertiesUtils.getConfigValue("chatroomApplyList");
+		chatroomApplyList = URLFiltration.addHost_BASEURL_API(chatroomApplyList);
+		chatroomInviteList = PropertiesUtils.getConfigValue("chatroomInviteList");
+		chatroomInviteList = URLFiltration.addHost_BASEURL_API(chatroomInviteList);
+		chatroomInvite = PropertiesUtils.getConfigValue("chatroomInvite");
+		chatroomInvite = URLFiltration.addHost_BASEURL_API(chatroomInvite);
+		chatroomUserAgree = PropertiesUtils.getConfigValue("chatroomUserAgree");
+		chatroomUserAgree = URLFiltration.addHost_BASEURL_API(chatroomUserAgree);
+		chatroomManagement = PropertiesUtils.getConfigValue("chatroomManagement");
+		chatroomManagement = URLFiltration.addHost_BASEURL_API(chatroomManagement);
+		chatroomManage = PropertiesUtils.getConfigValue("chatroomManage");
+		chatroomManage = URLFiltration.addHost_BASEURL_API(chatroomManage);
+		chatroomMuteAll = PropertiesUtils.getConfigValue("chatroomMuteAll");
+		chatroomMuteAll = URLFiltration.addHost_BASEURL_API(chatroomMuteAll);
+		chatroomAgree = PropertiesUtils.getConfigValue("chatroomAgree");
+		chatroomAgree = URLFiltration.addHost_BASEURL_API(chatroomAgree);
+		chatroomUserCloseMute = PropertiesUtils.getConfigValue("chatroomUserCloseMute");
+		chatroomUserCloseMute = URLFiltration.addHost_BASEURL_API(chatroomUserCloseMute);
+		liveCloseRtcFunc = PropertiesUtils.getConfigValue("liveCloseRtcFunc");
+		liveCloseRtcFunc = URLFiltration.addHost_BASEURL_API(liveCloseRtcFunc);
+
 
 		access_token = fast(verificationParameters.phone);
 		new_access_token = fast(verificationParameters.newPhone);
@@ -312,5 +353,7 @@ public class BaseApi {
 		return format;
 	}
 
-	
+	public void loading() throws InterruptedException {
+		Thread.sleep(3000);
+	}
 }

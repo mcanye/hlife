@@ -361,7 +361,6 @@ public class LiveRoom extends BaseApi{
         Thread.sleep(3000);
     }
 
-
     /**
      *是否允许进入直播间
      */
