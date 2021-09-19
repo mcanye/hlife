@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="05317c89-b5df-4710-82ef-91eb2dab91c1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/apilog.log" afterPath="$PROJECT_DIR$/logs/apilog.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/report.html" afterPath="$PROJECT_DIR$/test-output/report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,13 +27,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LiveRoom.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LiveRoom.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="816" column="0" lean-forward="false" selection-start-line="816" selection-start-column="0" selection-end-line="816" selection-end-column="0" />
+            <state relative-caret-position="-350">
+              <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="docComment;method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
                 <element signature="method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
                 <element signature="method#liveCreate#0;class#LiveRoom#0" expanded="false" />
@@ -84,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="154" column="20" lean-forward="false" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="47" />
+            <state relative-caret-position="124">
+              <caret line="157" column="8" lean-forward="false" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -264,9 +261,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/suite/liveSuite.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/liveRTC.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/liveGift.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java" />
       </list>
     </option>
   </component>
@@ -449,6 +446,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/src/1" />
+    <property name="SearchEverywhereHistoryKey" value="com.sun.xml.internal.bind.v2&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -805,7 +803,7 @@
       <workItem from="1631789295250" duration="268000" />
       <workItem from="1631839690662" duration="23981000" />
       <workItem from="1631925731946" duration="9397000" />
-      <workItem from="1632036738291" duration="599000" />
+      <workItem from="1632036738291" duration="948000" />
     </task>
     <servers />
   </component>
@@ -842,7 +840,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="394833000" />
+    <option name="totallyTimeSpent" value="395182000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1298,49 +1296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="816" column="0" lean-forward="false" selection-start-line="816" selection-start-column="0" selection-end-line="816" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveCreate#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#liveDetail#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveDetail#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#liveAppCreate#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveAppCreate#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#liveAppCreate1#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveAppCreate1#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#liveStatus#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveStatus#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#liveOpera#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveOpera#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#fansGroupApply#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#fansGroupApply#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#fansGroupDetail#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#fansGroupDetail#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#QuitOrJoin#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#QuitOrJoin#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveUserInfo#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#followIndex#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#chatEnter#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#chatEnter#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#chatRecordList#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#chatRecordList#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#chatEnterInfo#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#chatEnterInfo#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#chatQuit#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#chatQuit#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#charJoin#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#charJoin#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#getUser_id#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#getUser_id#0;class#LiveRoom#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1222">
@@ -1382,9 +1337,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="154" column="20" lean-forward="false" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="47" />
+        <state relative-caret-position="124">
+          <caret line="157" column="8" lean-forward="false" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding>
+            <element signature="docComment;method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveCreate#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#liveDetail#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveDetail#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#liveAppCreate#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveAppCreate#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#liveAppCreate1#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveAppCreate1#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#liveStatus#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveStatus#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#liveOpera#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveOpera#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#fansGroupApply#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#fansGroupApply#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#fansGroupDetail#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#fansGroupDetail#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#QuitOrJoin#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#QuitOrJoin#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveUserInfo#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#followIndex#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#chatEnter#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#chatEnter#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#chatRecordList#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#chatRecordList#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#chatEnterInfo#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#chatEnterInfo#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#chatQuit#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#chatQuit#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#charJoin#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#charJoin#0;class#LiveRoom#0" expanded="false" />
+            <element signature="docComment;method#getUser_id#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#getUser_id#0;class#LiveRoom#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

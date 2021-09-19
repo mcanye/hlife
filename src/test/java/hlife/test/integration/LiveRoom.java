@@ -3,7 +3,6 @@ package hlife.test.integration;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.sun.xml.internal.bind.v2.TODO;
 import hlife.base.BaseApi;
 import hlife.base.Constants;
 import hlife.filtration.URLFiltration;
@@ -420,7 +419,6 @@ public class LiveRoom extends BaseApi{
     /**
      * 关闭直播
      */
-    //TODO 最后调用
     @Test(dependsOnMethods = { "liveStatus" })
     public void liveOpera() throws IOException {
         Reporter.log("请登录");
