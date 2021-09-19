@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05317c89-b5df-4710-82ef-91eb2dab91c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/apilog.log" afterPath="$PROJECT_DIR$/logs/apilog.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,22 +29,18 @@
       <file leaf-file-name="LiveRoom.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-350">
-              <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+            <state relative-caret-position="106">
+              <caret line="427" column="15" lean-forward="false" selection-start-line="427" selection-start-column="15" selection-end-line="427" selection-end-column="15" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="docComment;method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
                 <element signature="method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
-                <element signature="method#liveCreate#0;class#LiveRoom#0" expanded="false" />
-                <element signature="docComment;method#liveDetail#0;class#LiveRoom#0" expanded="false" />
-                <element signature="method#liveDetail#0;class#LiveRoom#0" expanded="false" />
                 <element signature="docComment;method#liveAppCreate#0;class#LiveRoom#0" expanded="false" />
                 <element signature="method#liveAppCreate#0;class#LiveRoom#0" expanded="false" />
-                <element signature="docComment;method#liveAppCreate1#0;class#LiveRoom#0" expanded="false" />
-                <element signature="method#liveAppCreate1#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#liveDetail#0;class#LiveRoom#0" expanded="false" />
                 <element signature="docComment;method#liveStatus#0;class#LiveRoom#0" expanded="false" />
                 <element signature="method#liveStatus#0;class#LiveRoom#0" expanded="false" />
                 <element signature="docComment;method#liveOpera#0;class#LiveRoom#0" expanded="false" />
-                <element signature="method#liveOpera#0;class#LiveRoom#0" expanded="false" />
                 <element signature="docComment;method#fansGroupApply#0;class#LiveRoom#0" expanded="false" />
                 <element signature="method#fansGroupApply#0;class#LiveRoom#0" expanded="false" />
                 <element signature="docComment;method#fansGroupDetail#0;class#LiveRoom#0" expanded="false" />
@@ -67,6 +62,16 @@
                 <element signature="docComment;method#getUser_id#0;class#LiveRoom#0" expanded="false" />
                 <element signature="method#getUser_id#0;class#LiveRoom#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="URLFiltration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,16 +115,6 @@
       </file>
       <file leaf-file-name="liveNoticeList.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveNoticeList.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="liveList.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveList.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
@@ -184,6 +179,7 @@
       <find>liveRoom.liveId</find>
       <find>giftPriceList</find>
       <find>isin</find>
+      <find>顶号</find>
     </findStrings>
     <replaceStrings>
       <replace>hlife</replace>
@@ -482,7 +478,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/suite/liveSuite.xml">
+  <component name="RunManager" selected="TestNG.LiveRoom">
     <configuration name="E:/project/hlife/hlife/src/main/resources/testng/api/suite/liveSuite.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="hlife" />
@@ -749,10 +745,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/suite/liveSuite.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.LiveRtcFunc" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/suite/suite.xml" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.LiveRoom" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.LiveRoom" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/suite/liveSuite.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.LiveRtcFunc" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/suite/suite.xml" />
         <item index="4" class="java.lang.String" itemvalue="TestNG.LiveGift" />
       </list>
     </recent_temporary>
@@ -803,7 +799,7 @@
       <workItem from="1631789295250" duration="268000" />
       <workItem from="1631839690662" duration="23981000" />
       <workItem from="1631925731946" duration="9397000" />
-      <workItem from="1632036738291" duration="948000" />
+      <workItem from="1632036738291" duration="2923000" />
     </task>
     <servers />
   </component>
@@ -811,20 +807,20 @@
     <history-entry file="E__project_hlife_hlife_src_main_resources_testng_api_suite_liveSuite_xml - 2021.09.19 at 15h 39m 26s.xml">
       <configuration name="E:/project/hlife/hlife/src/main/resources/testng/api/suite/liveSuite.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LiveRtcFunc - 2021.09.18 at 10h 46m 14s.xml">
-      <configuration name="LiveRtcFunc" configurationId="TestNG" />
+    <history-entry file="LiveRoom - 2021.09.19 at 16h 10m 14s.xml">
+      <configuration name="LiveRoom" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LiveRtcFunc - 2021.09.18 at 10h 52m 40s.xml">
-      <configuration name="LiveRtcFunc" configurationId="TestNG" />
+    <history-entry file="LiveRoom - 2021.09.19 at 16h 13m 39s.xml">
+      <configuration name="LiveRoom" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LiveRtcFunc - 2021.09.18 at 10h 54m 40s.xml">
-      <configuration name="LiveRtcFunc" configurationId="TestNG" />
+    <history-entry file="LiveRoom - 2021.09.19 at 16h 14m 11s.xml">
+      <configuration name="LiveRoom" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LiveRtcFunc - 2021.09.18 at 10h 56m 15s.xml">
-      <configuration name="LiveRtcFunc" configurationId="TestNG" />
+    <history-entry file="LiveRoom - 2021.09.19 at 16h 19m 20s.xml">
+      <configuration name="LiveRoom" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LiveRtcFunc - 2021.09.18 at 10h 59m 50s.xml">
-      <configuration name="LiveRtcFunc" configurationId="TestNG" />
+    <history-entry file="LiveRoom - 2021.09.19 at 16h 25m 18s.xml">
+      <configuration name="LiveRoom" configurationId="TestNG" />
     </history-entry>
     <history-entry file="LiveRtcFunc - 2021.09.18 at 11h 01m 28s.xml">
       <configuration name="LiveRtcFunc" configurationId="TestNG" />
@@ -840,7 +836,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="395182000" />
+    <option name="totallyTimeSpent" value="397157000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -853,7 +849,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14827017" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -864,11 +859,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32454696" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4151565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28971255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28971255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1098,13 +1093,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="86" column="48" lean-forward="false" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1343,24 +1331,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        <state relative-caret-position="106">
+          <caret line="427" column="15" lean-forward="false" selection-start-line="427" selection-start-column="15" selection-end-line="427" selection-end-column="15" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
             <element signature="method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveCreate#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#liveDetail#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveDetail#0;class#LiveRoom#0" expanded="false" />
             <element signature="docComment;method#liveAppCreate#0;class#LiveRoom#0" expanded="false" />
             <element signature="method#liveAppCreate#0;class#LiveRoom#0" expanded="false" />
-            <element signature="docComment;method#liveAppCreate1#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveAppCreate1#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveDetail#0;class#LiveRoom#0" expanded="false" />
             <element signature="docComment;method#liveStatus#0;class#LiveRoom#0" expanded="false" />
             <element signature="method#liveStatus#0;class#LiveRoom#0" expanded="false" />
             <element signature="docComment;method#liveOpera#0;class#LiveRoom#0" expanded="false" />
-            <element signature="method#liveOpera#0;class#LiveRoom#0" expanded="false" />
             <element signature="docComment;method#fansGroupApply#0;class#LiveRoom#0" expanded="false" />
             <element signature="method#fansGroupApply#0;class#LiveRoom#0" expanded="false" />
             <element signature="docComment;method#fansGroupDetail#0;class#LiveRoom#0" expanded="false" />

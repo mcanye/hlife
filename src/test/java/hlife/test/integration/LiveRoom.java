@@ -12,6 +12,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterGroups;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -85,6 +87,46 @@ public class LiveRoom extends BaseApi{
         }
     }
 
+    /**
+     * 判断能否开播
+     */
+    @Test(dependsOnMethods = { "liveCategoryList" })
+    public void liveAppCreate() throws IOException, InterruptedException {
+        //不能开播，需要实名
+        //可以开播，获取信息
+        HashMap<String,String> header = URLFiltration.addHeader(new HashMap<>());
+        header.put("uuid",uuid);
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",new_access_token);
+        JSONObject rs;
+        if(!liveAppCreate.contains("api")){
+            rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params, header));
+            log.info(rs.toJSONString());
+            Reporter.log(rs.toJSONString());
+            int status = rs.getIntValue("status");
+            Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_Minus_3,"接口请求失败");
+            String msg = rs.getString("msg");
+            Assert.assertEquals(msg,"抱歉，暂时无法开播！\\r\\n根据国家政策要求，直播要求实名认证和人脸识别","接口返回msg异常");
+            JSONObject data = rs.getJSONObject("data");
+            String button_text = data.getString("button_text");
+            Assert.assertEquals(button_text.equals("前往认证"),true,"认证入口文案不正确");
+        }
+        Thread.sleep(3000);
+
+        Reporter.log("创建直播成功");
+        params.clear();
+        params.put("access_token",access_token);
+        rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params, header));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(msg,"创建直播成功","接口返回msg不正确");
+        Thread.sleep(3000);
+
+
+    }
     /**
      * 创建直播间
      */
@@ -204,6 +246,47 @@ public class LiveRoom extends BaseApi{
     }
 
     /**
+     * 异常退出
+     * @throws IOException
+     */
+    @Test(dependsOnMethods = { "liveCreate" })
+    public void liveAppCreate1() throws IOException, InterruptedException {
+        //异常退出，已开播，继续直播
+        //顶号登录，已开播，观看直播
+        Reporter.log("顶号登录，已开播，观看直播");
+        HashMap<String, String> header = URLFiltration.addHeader(new HashMap<>());
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",access_token);
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params,header));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_Minus_3,"接口请求失败");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(msg,"您已有其他直播正在直播中","接口返回msg不正确");
+        JSONObject data = rs.getJSONObject("data");
+        String button_text = data.getString("button_text");
+        Assert.assertEquals(button_text.equals("观看直播"),true,"提示文案不正确");
+        Thread.sleep(3000);
+
+        Reporter.log("异常退出，已开播，继续直播");
+        header.put("uuid",uuid);
+        rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params,header));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status1 = rs.getIntValue("status");
+        log.info(status1+"------------------");
+        Assert.assertEquals(status1,Constants.RESPNSE_STATUS_CODE_Minus_3,"接口请求失败");
+        msg = rs.getString("msg");
+        Assert.assertEquals(msg,"您已有其他直播正在直播中","接口返回msg不正确");
+        data = rs.getJSONObject("data");
+        button_text = data.getString("button_text");
+        Assert.assertEquals(button_text.equals("继续直播"),true,"提示文案不正确");
+        Thread.sleep(3000);
+    }
+
+
+    /**
      * 获取直播间信息 加入直播间
      */
     @Test(dependsOnMethods = { "liveCreate"})
@@ -279,86 +362,9 @@ public class LiveRoom extends BaseApi{
 
     }
 
-    /**
-     * 判断能否开播
-     */
-    @Test(dependsOnMethods = { "liveCategoryList" })
-    public void liveAppCreate() throws IOException, InterruptedException {
-        //不能开播，需要实名
-        //可以开播，获取信息
-        HashMap<String,String> header = URLFiltration.addHeader(new HashMap<>());
-        header.put("uuid",uuid);
-        HashMap<String,String> params = new HashMap<>();
-        params.put("access_token",new_access_token);
-        JSONObject rs;
-        if(!liveAppCreate.contains("api")){
-            rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params, header));
-            log.info(rs.toJSONString());
-            Reporter.log(rs.toJSONString());
-            int status = rs.getIntValue("status");
-            Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_Minus_3,"接口请求失败");
-            String msg = rs.getString("msg");
-            Assert.assertEquals(msg,"抱歉，暂时无法开播！\\r\\n根据国家政策要求，直播要求实名认证和人脸识别","接口返回msg异常");
-            JSONObject data = rs.getJSONObject("data");
-            String button_text = data.getString("button_text");
-            Assert.assertEquals(button_text.equals("前往认证"),true,"认证入口文案不正确");
-        }
-        Thread.sleep(3000);
-
-        Reporter.log("创建直播成功");
-        params.clear();
-        params.put("access_token",access_token);
-        rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params, header));
-        log.info(rs.toJSONString());
-        Reporter.log(rs.toJSONString());
-        int status = rs.getIntValue("status");
-        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
-        String msg = rs.getString("msg");
-        Assert.assertEquals(msg,"创建直播成功","接口返回msg不正确");
-        Thread.sleep(3000);
 
 
-    }
 
-    /**
-     * 异常退出
-     * @throws IOException
-     */
-    @Test(dependsOnMethods = { "liveCreate" })
-    public void liveAppCreate1() throws IOException, InterruptedException {
-        //异常退出，已开播，继续直播
-        //顶号登录，已开播，观看直播
-        Reporter.log("顶号登录，已开播，观看直播");
-        HashMap<String,String> params = new HashMap<>();
-        params.put("access_token",access_token);
-        JSONObject rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params));
-        log.info(rs.toJSONString());
-        Reporter.log(rs.toJSONString());
-        int status = rs.getIntValue("status");
-        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_Minus_3,"接口请求失败");
-        String msg = rs.getString("msg");
-        Assert.assertEquals(msg,"您已有其他直播正在直播中","接口返回msg不正确");
-        JSONObject data = rs.getJSONObject("data");
-        String button_text = data.getString("button_text");
-        Assert.assertEquals(button_text.equals("观看直播"),true,"提示文案不正确");
-        Thread.sleep(3000);
-
-        Reporter.log("异常退出，已开播，继续直播");
-        HashMap<String, String> header = URLFiltration.addHeader(new HashMap<>());
-        header.put("uuid",uuid);
-        rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params,header));
-        log.info(rs.toJSONString());
-        Reporter.log(rs.toJSONString());
-        int status1 = rs.getIntValue("status");
-        log.info(status1+"------------------");
-        Assert.assertEquals(status1,Constants.RESPNSE_STATUS_CODE_Minus_3,"接口请求失败");
-        msg = rs.getString("msg");
-        Assert.assertEquals(msg,"您已有其他直播正在直播中","接口返回msg不正确");
-        data = rs.getJSONObject("data");
-        button_text = data.getString("button_text");
-        Assert.assertEquals(button_text.equals("继续直播"),true,"提示文案不正确");
-        Thread.sleep(3000);
-    }
 
     /**
      *是否允许进入直播间
@@ -419,7 +425,7 @@ public class LiveRoom extends BaseApi{
     /**
      * 关闭直播
      */
-    @Test(dependsOnMethods = { "liveStatus" })
+    @AfterClass
     public void liveOpera() throws IOException {
         Reporter.log("请登录");
         HashMap<String,String> params = new HashMap<>();
