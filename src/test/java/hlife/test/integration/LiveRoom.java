@@ -816,12 +816,6 @@ public class LiveRoom extends BaseApi{
     }
 
     /**
-     *
-     */
-
-
-
-    /**
      * 获取用户ID
      * @param phone
      * @return
