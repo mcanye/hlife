@@ -404,6 +404,7 @@ public class LiveList extends BaseApi {
             while (true){
                 HashMap<String,String> params = new HashMap<>();
                 params.clear();
+                params.put("access_token",access_token);
                 params.put("live_cid",live_cid);
                 params.put("pagesize","10");
                 params.put("live_process","1");
