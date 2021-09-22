@@ -170,9 +170,6 @@ public class Fast extends BaseApi {
         Assert.assertEquals(rs.getString("msg"), "登陆失败，账号不存在！","手机号错误，密码正确，返回msg不正确");
         Thread.sleep(5000);
 
-        //手机号为空，密码正确
-        // TODO: 2021/8/10 待缺陷修复后 完善逻辑
-
         Reporter.log("执行手机号正确，密码错误用例");
         params.clear();
         params.put("type","3");

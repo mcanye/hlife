@@ -284,8 +284,7 @@ public class LiveNoticeList extends BaseApi{
         msg = rs.getString("msg");
         status = rs.getIntValue("status");
         Assert.assertEquals(status, Constants.RESPNSE_STATUS_CODE_0,"预告预约接口请求失败");
-        //TODO 待缺陷13429修复后释放注释
-        //Assert.assertEquals(msg,"不能预约自己的预告","预告预约接口msg不正确");
+        Assert.assertEquals(msg,"不能预约自己的预告","预告预约接口msg不正确");
         Thread.sleep(3000);
         Reporter.log("校验code=200\n" +
                 "status=1\n" +
@@ -442,7 +441,7 @@ public class LiveNoticeList extends BaseApi{
      */
     @Test(dependsOnMethods = { "createLiveNotice" })
     public void setLiveNoticeRecommend() throws IOException {
-        HashMap<String,String> header = new HashMap<>();
+/*        HashMap<String,String> header = new HashMap<>();
         header.put("Cookie","backend_csrftoken=a9991e44fc121542e6f26815014197a2fc3fc2b0be734f492d6f20ea47e50878a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22backend_csrftoken%22%3Bi%3A1%3Bs%3A32%3A%226KwX4UuE9wsieI08UQyO3JbSRdwgS35O%22%3B%7D; advanced-backend=5a4amu6jtdch5ldme43djgv5uj");
         header.put("Connection","keep-alive");
         setLiveNoticeRecommend=setLiveNoticeRecommend+"?notice_id="+notice_id;
@@ -455,7 +454,8 @@ public class LiveNoticeList extends BaseApi{
         String msg = rs.getString("msg");
         int status = rs.getIntValue("status");
         Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"推荐预告接口请求失败");
-        Assert.assertEquals(msg,"设为推荐成功","推荐预告接口msg不正确");
+        Assert.assertEquals(msg,"设为推荐成功","推荐预告接口msg不正确");*/
+        // TODO 待管理端接口优化后编写
 
     }
 
@@ -480,37 +480,40 @@ public class LiveNoticeList extends BaseApi{
         String msg = rs.getString("msg");
         Assert.assertEquals(msg,"获取推荐直播列表成功","预告推荐列表返回msg不正确");
         JSONArray data = rs.getJSONArray("data");
-        for(int i = 0; i<data.size();i++){
-            JSONObject dataObj = data.getJSONObject(i);
-            JSONArray list = dataObj.getJSONArray("list");
-            Reporter.log("判断每个分类推荐的直播间满足（0,5]条件");
-            Assert.assertEquals(list.size()>0 && list.size()<=5,true,"每个分类推荐的直播间不满足（0,5]条件");
-            Reporter.log("判断分类名称不为空");
-            String live_cname = dataObj.getString("live_cname");
-            Assert.assertEquals(live_cname.equals(""),false,"分类名称不应为空");
+        if(data.size()>0){
+            for(int i = 0; i<data.size();i++){
+                JSONObject dataObj = data.getJSONObject(i);
+                JSONArray list = dataObj.getJSONArray("list");
+                Reporter.log("判断每个分类推荐的直播间满足（0,5]条件");
+                Assert.assertEquals(list.size()>0 && list.size()<=5,true,"每个分类推荐的直播间不满足（0,5]条件");
+                Reporter.log("判断分类名称不为空");
+                String live_cname = dataObj.getString("live_cname");
+                Assert.assertEquals(live_cname.equals(""),false,"分类名称不应为空");
 
-            for (int j = 0;j<list.size();j++){
-                Reporter.log("判断预告标题不为空");
-                JSONObject jsonObject = list.getJSONObject(j);
-                String live_title = jsonObject.getString("live_title");
-                Assert.assertEquals(live_title.equals(""),false,"预告标题不应为空");
-                Reporter.log("判断直播预告封面图可正确显示");
-                String live_cover = jsonObject.getString("live_cover");
-                Assert.assertEquals(live_cover.equals(""),false,"直播预告封面图不应为空");
-                statusCode = httpClient.getStatusCode(httpClient.get(live_cover, new HashMap<>()));
-                Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"直播预告封面图不正确");
-                Reporter.log("判断开播时间不为空");
-                long live_start_time = jsonObject.getLongValue("live_start_time");
-                Assert.assertEquals(live_start_time>0,true,"开播时间不正确");
-                Reporter.log("判断预约状态不为空");
-                int enroll_status = jsonObject.getIntValue("enroll_status");
-                Assert.assertEquals(enroll_status==0||enroll_status==1,true,"预约状态不正确");
-                Reporter.log("判断预告简介不为空");
-                String introduce = jsonObject.getString("introduce");
-                Assert.assertEquals(introduce.equals(""),false,"预告简介不应为空");
+                for (int j = 0;j<list.size();j++){
+                    Reporter.log("判断预告标题不为空");
+                    JSONObject jsonObject = list.getJSONObject(j);
+                    String live_title = jsonObject.getString("live_title");
+                    Assert.assertEquals(live_title.equals(""),false,"预告标题不应为空");
+                    Reporter.log("判断直播预告封面图可正确显示");
+                    String live_cover = jsonObject.getString("live_cover");
+                    Assert.assertEquals(live_cover.equals(""),false,"直播预告封面图不应为空");
+                    statusCode = httpClient.getStatusCode(httpClient.get(live_cover, new HashMap<>()));
+                    Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"直播预告封面图不正确");
+                    Reporter.log("判断开播时间不为空");
+                    long live_start_time = jsonObject.getLongValue("live_start_time");
+                    Assert.assertEquals(live_start_time>0,true,"开播时间不正确");
+                    Reporter.log("判断预约状态不为空");
+                    int enroll_status = jsonObject.getIntValue("enroll_status");
+                    Assert.assertEquals(enroll_status==0||enroll_status==1,true,"预约状态不正确");
+                    Reporter.log("判断预告简介不为空");
+                    String introduce = jsonObject.getString("introduce");
+                    Assert.assertEquals(introduce.equals(""),false,"预告简介不应为空");
+                }
+
             }
-
         }
+
     }
 
     /**
@@ -640,7 +643,6 @@ public class LiveNoticeList extends BaseApi{
     @Test(dependsOnMethods = { "liveCategoryList" })
     public void liveNoticeList() throws IOException {
         for(int i = 1;i<live_typeMap.size();i++){
-
             while (true){
                 Reporter.log("校验code=200\n" +
                         "status=1\n" +
@@ -696,22 +698,119 @@ public class LiveNoticeList extends BaseApi{
                     page+=1;
                 }
             }
-
-
         }
-
-
-
     }
 
     /**
      * 个人主页预告列表type=1
      */
     @Test(dependsOnMethods = { "liveNoticeList" })
-    public void liveNoticeList_mine(){
+    public void liveNoticeList_mine() throws IOException, InterruptedException {
+        while (true){
+            HashMap<String,String> params = new HashMap<>();
+            params.put("access_token",access_token);
+            params.put("type","1");
+            params.put("page",page+"");
+            params.put("pagesize","10");
+            JSONObject rs = httpClient.getResponseJson(httpClient.post(liveNoticeList, params));
+            log.info(rs.toJSONString());
+            Reporter.log(rs.toJSONString());
+            int status = rs.getIntValue("status");
+            String msg = rs.getString("msg");
+            Reporter.log("校验code=200\n" +
+                    "status=1\n" +
+                    "msg=获取直播预告列表成功");
+            Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+            Assert.assertEquals(msg,"获取直播预告列表成功","接口返回msg不正确");
+            JSONObject data = rs.getJSONObject("data");
+            JSONObject pager = data.getJSONObject("pager");
+            JSONArray list = data.getJSONArray("list");
+            if(list.size()>0){
+                JSONObject jsonObject;
+                for(int i = 0;i<list.size();i++){
+                    jsonObject = list.getJSONObject(i);
+                    Reporter.log("判断预告标题不为空");
+                    String live_title = jsonObject.getString("live_title");
+                    Assert.assertEquals(live_title.equals(""),false,"预告标题不应为空");
+                    Reporter.log("判断直播预告封面图可正确显示");
+                    String live_cover = jsonObject.getString("live_cover");
+                    Assert.assertEquals(live_cover.equals(""),false,"直播预告封面图不应为空");
+                    int statusCode = httpClient.getStatusCode(httpClient.get(live_cover, new HashMap<>()));
+                    Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"直播预告封面图不正确");
+                    Reporter.log("判断开播时间不为空");
+                    long live_start_time = jsonObject.getLongValue("live_start_time");
+                    Assert.assertEquals(live_start_time>0,true,"开播时间不正确");
+                    Reporter.log("判断预约状态不为空");
+                    int enroll_status = jsonObject.getIntValue("enroll_status");
+                    Assert.assertEquals(enroll_status==0||enroll_status==1,true,"预约状态不正确");
+                    Reporter.log("判断预告简介不为空");
+                    String introduce = jsonObject.getString("introduce");
+                    Assert.assertEquals(introduce.equals(""),false,"预告简介不应为空");
+                }
+            }
 
-        //TODO 自己个人主页 待bug13469修复后编写
-        //TODO 查看他人个人主页待bug13469修复后编写
+            int pagesize= Integer.parseInt(pager.getString("pagesize"));
+            if (list.size()<pagesize){
+                page=1;
+                break;
+            }else {
+                page+=1;
+            }
+        }
+
+        String user_id = getUser_id("17610733700");
+        while (true){
+            HashMap<String,String> params = new HashMap<>();
+            params.put("access_token",access_token);
+            params.put("type","1");
+            params.put("page",page+"");
+            params.put("pagesize","10");
+            params.put("to_user_id",user_id);
+            JSONObject rs = httpClient.getResponseJson(httpClient.post(liveNoticeList, params));
+            log.info(rs.toJSONString());
+            Reporter.log(rs.toJSONString());
+            int status = rs.getIntValue("status");
+            String msg = rs.getString("msg");
+            Reporter.log("校验code=200\n" +
+                    "status=1\n" +
+                    "msg=获取直播预告列表成功");
+            Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+            Assert.assertEquals(msg,"获取直播预告列表成功","接口返回msg不正确");
+            JSONObject data = rs.getJSONObject("data");
+            JSONObject pager = data.getJSONObject("pager");
+            JSONArray list = data.getJSONArray("list");
+            if(list.size()>0){
+                JSONObject jsonObject;
+                for(int i = 0;i<list.size();i++){
+                    jsonObject = list.getJSONObject(i);
+                    Reporter.log("判断预告标题不为空");
+                    String live_title = jsonObject.getString("live_title");
+                    Assert.assertEquals(live_title.equals(""),false,"预告标题不应为空");
+                    Reporter.log("判断直播预告封面图可正确显示");
+                    String live_cover = jsonObject.getString("live_cover");
+                    Assert.assertEquals(live_cover.equals(""),false,"直播预告封面图不应为空");
+                    int statusCode = httpClient.getStatusCode(httpClient.get(live_cover, new HashMap<>()));
+                    Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"直播预告封面图不正确");
+                    Reporter.log("判断开播时间不为空");
+                    long live_start_time = jsonObject.getLongValue("live_start_time");
+                    Assert.assertEquals(live_start_time>0,true,"开播时间不正确");
+                    Reporter.log("判断预约状态不为空");
+                    int enroll_status = jsonObject.getIntValue("enroll_status");
+                    Assert.assertEquals(enroll_status==0||enroll_status==1,true,"预约状态不正确");
+                    Reporter.log("判断预告简介不为空");
+                    String introduce = jsonObject.getString("introduce");
+                    Assert.assertEquals(introduce.equals(""),false,"预告简介不应为空");
+                }
+            }
+
+            int pagesize= Integer.parseInt(pager.getString("pagesize"));
+            if (list.size()<pagesize){
+                page=1;
+                break;
+            }else {
+                page+=1;
+            }
+        }
     }
 
     /**
@@ -738,4 +837,31 @@ public class LiveNoticeList extends BaseApi{
 
     }
 
+    /**
+     * 获取用户ID
+     * @param phone
+     * @return
+     * @throws IOException
+     * @throws InterruptedException
+     */
+    private String getUser_id(String phone) throws IOException, InterruptedException {
+        HashMap<String, String> params = new HashMap<>();
+        params.put("type","1");
+        params.put("country_code","86");
+        params.put("uuid","00000000-53a8-ae41-ffff-ffffef05ac4a");
+        params.put("platform","taiji");
+        params.put("username",phone);
+        params.put("password","9999");
+
+        HashMap<String, String> header = new HashMap<>();
+        header = URLFiltration.addHeader(header);
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(verify,params,header));
+        log.info(rs.toString());
+        Reporter.log(rs.toString());
+        //check登录成功msg与token是否成功返回
+        Assert.assertEquals(rs.getIntValue("status"), Constants.RESPNSE_STATUS_CODE_1,"验证码登录接口访问失败");
+        Assert.assertEquals(rs.getString("msg"), "登录成功","验证码登录接口访问失败");
+        Thread.sleep(5000);
+        return rs.getJSONObject("data").getString("id");
+    }
 }
