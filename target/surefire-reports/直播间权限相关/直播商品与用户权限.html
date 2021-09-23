@@ -1,0 +1,519 @@
+<html>
+<head>
+<title>TestNG:  直播商品与用户权限</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>直播商品与用户权限</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 23 18:05:18 CST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38165 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='hlife.test.integration.LivePower.houseDefaultCity()'><b>houseDefaultCity</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-456821109" onClick='toggleBox("Output-456821109", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-456821109" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-456821109">
+http://apitest.hishenghuo.com.cn:4000/union/house/defaultCity/<br/>
+{"msg":"获取默认城市成功","data":{"city_name":"三亚","city_id":"1111"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.house_list()'><b>house_list</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-442282675" onClick='toggleBox("Output-442282675", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-442282675" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-442282675">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+type:recommend<br/>
+house_cid:1<br/>
+city_id:1111<br/>
+http://apitest.hishenghuo.com.cn:4000/union/house/list/<br/>
+{"msg":"获取房产列表成功","data":{"pager":{"pagecount":1,"count":"3","pagesize":10,"page":1},"permission":"house_adviser","list":[{"user_upgrade":1,"discount_price":"200000.00","house_view":"56","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%2412aCHYsluE%2FywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6&apptype=taiji","house_pic":"https://wwwtest.tjkongfu.com:4002/house/housepic/167","price_range":"3000-6000","house_video":{"duration":"36","cover":"https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg?imageMogr2/thumbnail/1080x1080>","width":"854","key":"taiji/news/20210915/6141c3da29687.mp4","url":"https://file.hishenghuo.com.cn/taiji/news/20210915/6141c3da29687.m3u8","height":"480"},"house_purpose":["普通住宅","车位"],"cate_unit":"总价","price_range_unit":"万元/套","distribute_tip":"升级超级会员赚佣金","house_name":"华悦海棠品质洋房","business_district":"XX商圈","location_addr":"三亚-吉阳区","id":"167","house_unit":"套","discount_info":{"price_text":"¥19.00万元/套","label":{"font_color":"#ffffff","back_color":"#F04F52","text":"券后价"},"suffix":"","discount_type":"coupon"},"total_price":"","status_name":"上架中","average_price":"20000元/平","house_price":"600000.00","price_text":"20.00万元/套","total_unit":"","price_unit":"","house_subtitle":"不限购的楼盘、艺术元索楼盘不限购的楼盘艺","purchase_price":"100000.00","area_range":"30-200㎡","re_live_id":"0","status":"2"},{"user_upgrade":0,"discount_price":"15000.00","house_view":"453","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=114&access_token=%242y%2413%2412aCHYsluE%2FywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6&apptype=taiji","house_pic":"https://wwwtest.tjkongfu.com:4002/house/housepic/114","price_range":"","house_video":{"duration":"36","cover":"https://file.hishenghuo.com.cn/taiji/20210301/141808249030.png?imageMogr2/thumbnail/1080x1080>","width":"854","key":"taiji/news/20210301/603c87188be3f.mp4","url":"https://file.hishenghuo.com.cn/taiji/news/20210301/603c87188be3f.m3u8","height":"480"},"house_purpose":[],"cate_unit":"总价","price_range_unit":"","distribute_tip":"","house_name":"测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格","business_district":"","location_addr":"三亚-吉阳区","id":"114","house_unit":"套","discount_info":{"price_text":"¥15000.00元/套","label":{"font_color":"#DE6A67","back_color":"#FFE6E3","text":"优惠价"},"suffix":"","discount_type":"discount"},"total_price":"","status_name":"上架中","average_price":"120万元/平","house_price":"30000.00","price_text":"30000.00元/套","total_unit":"","price_unit":"","house_subtitle":"1","purchase_price":"4000.00","area_range":"","re_live_id":"0","status":"2"},{"user_upgrade":0,"discount_price":"40000000.00","house_view":"339","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=151&access_token=%242y%2413%2412aCHYsluE%2FywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6&apptype=taiji","house_pic":"https://wwwtest.tjkongfu.com:4002/house/housepic/151","price_range":"3000-5000","house_video":{"duration":"15","cover":"https://file.hishenghuo.com.cn/taiji/20210622/090806627517.jpg?imageMogr2/thumbnail/1080x1080>","width":"960","key":"taiji/news/20210622/60d137ece17b6.mp4","url":"https://file.hishenghuo.com.cn/taiji/news/20210622/60d137ece17b6.m3u8","height":"540"},"house_purpose":["普通住宅"],"cate_unit":"总价","price_range_unit":"万元/套","distribute_tip":"","house_name":"天之极","business_district":"无","location_addr":"三亚-海棠区","id":"151","house_unit":"套","discount_info":{"price_text":"¥4000.00万元/套","label":{"font_color":"#DE6A67","back_color":"#FFE6E3","text":"优惠价"},"suffix":"","discount_type":"discount"},"total_price":"","status_name":"上架中","average_price":"120万元/平","house_price":"50000000.00","price_text":"5000.00万元/套","total_unit":"","price_unit":"","house_subtitle":"临海","purchase_price":"30000000.00","area_range":"1200-1500㎡","re_live_id":"0","status":"2"}]},"status":1}<br/>
+判断房产名称不为空<br/>
+判断房产封面图可正常显示<br/>
+https://wwwtest.tjkongfu.com:4002/house/housepic/167<br/>
+判断价格是否显示<br/>
+判断房产名称不为空<br/>
+判断房产封面图可正常显示<br/>
+https://wwwtest.tjkongfu.com:4002/house/housepic/114<br/>
+判断价格是否显示<br/>
+判断房产名称不为空<br/>
+判断房产封面图可正常显示<br/>
+https://wwwtest.tjkongfu.com:4002/house/housepic/151<br/>
+判断价格是否显示<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.liveBan()'><b>liveBan</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-410174165" onClick='toggleBox("Output-410174165", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-410174165" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-410174165">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+user_id:4062<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/ban/<br/>
+{"msg":"禁言用户成功","data":{},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9180<br/>
+auto:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/detail/<br/>
+{"msg":"获取直播信息成功","data":{"comment_count":0,"notice_jianhuang_status":"0","app_type":"hilife","channel":"tj_prod_9180","resolution":"","converter_id":"5FA452AF5844272778B0D8BAAAE626C7","switch_time":"0","stream_name":"614c517a3e4a94030","video_more":"0","live_title":"自动化测试直播","anchor_data":{"is_follow":2,"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","passport_id":"2672"},"view_time":0,"id":"9180","live_area":"0","live_price":"0.00","is_pushing":"1","live_charge":"0","re_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji","is_manage":"0","push_url":"rtmp://push.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","live_cname":"测试测试测试","live_source":"0","chat_room_status":"0","live_mode":"1","is_recommend":"0","live_povince":"0","status":"1","live_tag":"1","auto_confirm_time":"1632434746","is_lu":"0","is_block":"0","live_lat":"0.000000","goods_count":"0","mike_interactive":"0","gift_num":"0","live_long_time":"0","pull_url":"rtmp://pull.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","anchor_start_time":"1632391546","share":{"image":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","name":"我正在观看176****1111的直播","url":"https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9180","content":"自动化测试直播"},"current_time":1632391551,"is_send":"0","live_address":"0","anchor_id":"4030","copper_price":0,"status_name":"直播中","gift_pop":1,"live_cid":"75","mike_status":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"converter_sequence":"0","view_count":617,"wg_num":"0","re_data":{"price_unit":"券后价","image":"https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg","re_id":167,"re_type":"house","subtitle":"三亚-吉阳区-","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji&share_code=614ae21b9a2ed","price_text":"19.00万元/套","title":"华悦海棠品质洋房","status":"2"},"msg":"","goods_data":{},"uuid":"00000000-258c-468d-ffff-ffffef05ac4a","online_count":"1","has_activity":1,"re_type":"house","anchor_end_time":"0","live_direction":"0","video_request_id":"","play_count":"0","show_type":"0","start_time":"0","close_converter":"0","online_data":[{"user_id":"4062","nick_name":"用户102704","ranking":0,"avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"}],"anchor_pause_time":"0","support_num":"0本场点赞","video_duration":"0","video_height":"0","live_city":"0","if_self":0,"close_mike":"0","video_width":"0","live_role":"normal","auto_end_time":1632435346,"re_id":"167,114,151","video_url":"","is_ban":"1","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"sw_accessToken":"0064864e2786c98440b8563d83799591cfeIADqsvPQWClU/qx5VRfABWrSNmq6dSP1/07BQum5c/SQTiSnP3XmANSoEAA67AAA+qJNYQEAAQD6RVBh","roomRtcInfo":{"manageInfo":{"muteAll":"0"},"liveFunc":0},"live_lng":"0.000000","all_mute":"0","re_count":"3","sort_order":"0","target_id":"2021092318054697535057","free_time":0,"activity_data":{"activity_name":"风景大厦","re_id":"162?type=6&share_code=60ec0f352700a","activity_url":"","fold_time":60,"cover_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg","re_type":"mall","fold_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047415015bca.jpg","created_at":"2021-01-30 10:34:44","id":"11"},"re_show_id":"0","is_show":"1","play_time":0,"has_goods":"0","live_city_name":"","forbid_expire":"0","push_forbid":"0"},"status":1}<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/banUser/<br/>
+{"msg":"获取禁言用户列表成功","data":[{"user_id":"4062","nick_name":"用户102704","expire_time":"2021-10-23 18:05:50","id":"4062","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"}],"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.liveBlock()'><b>liveBlock</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-565816769" onClick='toggleBox("Output-565816769", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-565816769" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-565816769">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+user_id:4062<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/block/<br/>
+{"msg":"禁封用户成功","data":{},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9180<br/>
+auto:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/detail/<br/>
+{"msg":"获取直播信息成功","data":{"comment_count":0,"notice_jianhuang_status":"0","app_type":"hilife","channel":"tj_prod_9180","resolution":"","converter_id":"5FA452AF5844272778B0D8BAAAE626C7","switch_time":"0","stream_name":"614c517a3e4a94030","video_more":"0","live_title":"自动化测试直播","anchor_data":{"is_follow":2,"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","passport_id":"2672"},"view_time":0,"id":"9180","live_area":"0","live_price":"0.00","is_pushing":"1","live_charge":"0","re_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji","is_manage":"0","push_url":"rtmp://push.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","live_cname":"测试测试测试","live_source":"0","chat_room_status":"0","live_mode":"1","is_recommend":"0","live_povince":"0","status":"1","live_tag":"1","auto_confirm_time":"1632434746","is_lu":"0","is_block":"1","live_lat":"0.000000","goods_count":"0","mike_interactive":"0","gift_num":"0","live_long_time":"0","pull_url":"rtmp://pull.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","anchor_start_time":"1632391546","share":{"image":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","name":"我正在观看176****1111的直播","url":"https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9180","content":"自动化测试直播"},"current_time":1632391551,"is_send":"0","live_address":"0","anchor_id":"4030","copper_price":0,"status_name":"直播中","gift_pop":1,"live_cid":"75","mike_status":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"converter_sequence":"1","view_count":617,"wg_num":"0","re_data":{"price_unit":"券后价","image":"https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg","re_id":167,"re_type":"house","subtitle":"三亚-吉阳区-","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji&share_code=614ae21b9a2ed","price_text":"19.00万元/套","title":"华悦海棠品质洋房","status":"2"},"msg":"","goods_data":{},"uuid":"00000000-258c-468d-ffff-ffffef05ac4a","online_count":"0","has_activity":1,"re_type":"house","anchor_end_time":"0","live_direction":"0","video_request_id":"","play_count":"0","show_type":"0","start_time":"0","close_converter":"0","online_data":[],"anchor_pause_time":"0","support_num":"0本场点赞","video_duration":"0","video_height":"0","live_city":"0","if_self":0,"close_mike":"0","video_width":"0","live_role":"normal","auto_end_time":1632435346,"re_id":"167,114,151","video_url":"","is_ban":"1","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"sw_accessToken":"0064864e2786c98440b8563d83799591cfeIADqsvPQWClU/qx5VRfABWrSNmq6dSP1/07BQum5c/SQTiSnP3XmANSoEAA67AAA+qJNYQEAAQD6RVBh","roomRtcInfo":{"manageInfo":{"muteAll":"0"},"liveFunc":0},"live_lng":"0.000000","all_mute":"0","re_count":"3","sort_order":"0","target_id":"2021092318054697535057","free_time":0,"activity_data":{"activity_name":"风景大厦","re_id":"162?type=6&share_code=60ec0f352700a","activity_url":"","fold_time":60,"cover_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg","re_type":"mall","fold_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047415015bca.jpg","created_at":"2021-01-30 10:34:44","id":"11"},"re_show_id":"0","is_show":"1","play_time":0,"has_goods":"0","live_city_name":"","forbid_expire":"0","push_forbid":"0"},"status":1}<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/blockUser/<br/>
+{"msg":"获取拉黑用户列表成功","data":[{"user_id":"4062","nick_name":"用户102704","expire_time":"2021-10-23 18:05:51","id":"4062","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"}],"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9180<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/status/<br/>
+{"msg":"获取直播状态信息成功","data":{"msg":"抱歉，您无法进入当前直播间","anchor_nick_name":"176****1111","copper_price":0,"push_url":"rtmp://push.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","target_id":"2021092318054697535057","can_join":0,"house_target_id":"","live_id":"9180","pull_url":"http://pull.tjkongfu.com/live/614c517a3e4a94030.flv?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","video_url":"","anchor_avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","anchor":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"live_code":0,"live_price":"0.00","status":"1"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.liveCategoryList()'><b>liveCategoryList</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-415904037" onClick='toggleBox("Output-415904037", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-415904037" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-415904037">
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+is_hidden:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/categoryList/<br/>
+{"msg":"获取直播分类成功","data":[{"sub":[],"has_goods":"0","cate_name":"测试测试测试","live_type":"7","can_recommend":["mall","house"],"id":"75","show_types":["0","2","4"]},{"sub":[{"cate_name":"新房","house_cid":"1"},{"cate_name":"二手房","house_cid":"2"},{"cate_name":"租房","house_cid":"3"},{"cate_name":"别墅","house_cid":"4"},{"cate_name":"商铺写字楼","house_cid":"5"},{"cate_name":"海南新房","house_cid":"12"}],"has_goods":"1","cate_name":"租房售房","live_type":"6","can_recommend":["house"],"id":"51","show_types":["0","2","4"]},{"sub":[],"has_goods":"0","cate_name":"邮轮","live_type":"6","can_recommend":["ship"],"id":"60","show_types":["0","2","4"]}],"status":1}<br/>
+判断code=200
+msg=获取直播分类成功
+status=1<br/>
+判断data[0].cate_name不为空<br/>
+用例通过<br/>
+判断data[0].id不为空<br/>
+用例通过<br/>
+封装键值对<br/>
+判断data[1].cate_name不为空<br/>
+用例通过<br/>
+判断data[1].id不为空<br/>
+用例通过<br/>
+封装键值对<br/>
+判断data[2].cate_name不为空<br/>
+用例通过<br/>
+判断data[2].id不为空<br/>
+用例通过<br/>
+封装键值对<br/>
+判断返回值内包含“关注”<br/>
+用例通过<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.liveCreate()'><b>liveCreate</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-1669982099" onClick='toggleBox("Output-1669982099", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1669982099" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1669982099">
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+判断跳转登录<br/>
+re_id:167,114,151<br/>
+re_type:house<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"请登录","data":{},"status":-1}<br/>
+直播封面不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+re_id:167,114,151<br/>
+re_type:house<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"直播封面不能为空","data":{},"status":0}<br/>
+直播类型id不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+re_id:167,114,151<br/>
+live_cover:taiji/20210823/1629685787500825.jpg<br/>
+re_type:house<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"直播类型id不能为空","data":{},"status":0}<br/>
+直播标题不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+re_id:167,114,151<br/>
+live_cover:taiji/20210823/1629685787500825.jpg<br/>
+re_type:house<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+live_cid:75<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"直播标题不能为空","data":{},"status":0}<br/>
+创建直播成功<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+re_id:167,114,151<br/>
+live_cover:taiji/20210823/1629685787500825.jpg<br/>
+re_type:house<br/>
+live_title:自动化测试直播<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+live_cid:75<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"创建直播成功","data":{"comment_count":0,"notice_jianhuang_status":"0","app_type":"hilife","channel":"tj_prod_9180","resolution":"","converter_id":"5FA452AF5844272778B0D8BAAAE626C7","switch_time":"0","live_admin_url":"http://www.tjkongfu.com/live/#/login","stream_name":"614c517a3e4a94030","video_more":"0","live_title":"自动化测试直播","anchor_data":{"is_follow":0,"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","passport_id":"2672"},"view_time":0,"id":"9180","live_area":"0","live_price":"0.00","is_pushing":"0","live_charge":"0","re_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%2412aCHYsluE%2FywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6&apptype=taiji","is_manage":"0","push_url":"rtmp://push.tjkongfu.com/live/","live_cname":"测试测试测试","live_source":"0","chat_room_status":"0","live_mode":"1","live_povince":"0","is_recommend":"0","status":"1","live_tag":"1","auto_confirm_time":"1632434746","is_lu":"0","is_block":"0","live_lat":"0.000000","goods_count":"0","mike_interactive":"0","gift_num":"0","live_long_time":"0","pull_url":"rtmp://pull.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","anchor_start_time":"1632391546","share":{"image":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","name":"我正在观看176****1111的直播","url":"https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9180","content":"自动化测试直播"},"current_time":1632391547,"live_address":"0","is_send":"0","anchor_id":"4030","copper_price":0,"status_name":"直播中","gift_pop":0,"live_cid":"75","url_key":"auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","mike_status":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"view_count":616,"converter_sequence":"0","wg_num":"0","re_data":{"price_unit":"券后价","image":"https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg","re_id":167,"re_type":"house","subtitle":"三亚-吉阳区-","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%2412aCHYsluE%2FywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6&apptype=taiji&share_code=614584556ea67","price_text":"19.00万元/套","title":"华悦海棠品质洋房","status":"2"},"msg":"","goods_data":{},"uuid":"00000000-258c-468d-ffff-ffffef05ac4a","online_count":"0","has_activity":1,"re_type":"house","anchor_end_time":"0","live_direction":"0","video_request_id":"","play_count":"0","start_time":"0","show_type":"0","close_converter":"0","online_data":[],"anchor_pause_time":"0","support_num":"0本场点赞","video_height":"0","video_duration":"0","live_city":"0","if_self":1,"close_mike":"0","video_width":"0","live_role":"anchor","auto_end_time":1632435346,"re_id":"167,114,151","video_url":"","is_ban":"0","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"sw_accessToken":"0064864e2786c98440b8563d83799591cfeIADqsvPQWClU/qx5VRfABWrSNmq6dSP1/07BQum5c/SQTiSnP3XmANSoEAA67AAA+qJNYQEAAQD6RVBh","roomRtcInfo":{"manageInfo":{"muteAll":"0"},"liveFunc":0},"live_lng":"0.000000","all_mute":"0","re_count":"3","sort_order":"0","target_id":"2021092318054697535057","free_time":0,"activity_data":{"activity_name":"风景大厦","re_id":"162?type=6&share_code=60ec0f352700a","activity_url":"","fold_time":60,"cover_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg","re_type":"mall","fold_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047415015bca.jpg","created_at":"2021-01-30 10:34:44","id":"11"},"re_show_id":"0","is_show":"1","play_time":0,"has_goods":"0","live_city_name":"","forbid_expire":"0","push_forbid":"0"},"status":1}<br/>
+封装直播ID<br/>
+判断用户信息<br/>
+https://file.hishenghuo.com.cn/taiji/avatar.png<br/>
+判断在线用户<br/>
+判断活动信息<br/>
+https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg<br/>
+判断分享信息<br/>
+https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9180<br/>
+https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg<br/>
+您已有其他直播正在直播中<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+re_id:167,114,151<br/>
+live_cover:taiji/20210823/1629685787500825.jpg<br/>
+re_type:house<br/>
+live_title:自动化测试直播<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+live_cid:75<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"您已有其他直播正在直播中","data":{},"status":0}<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.liveJoin()'><b>liveJoin</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-333719676" onClick='toggleBox("Output-333719676", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-333719676" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-333719676">
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9180<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/join/<br/>
+{"msg":"进入直播间成功","data":{"is_ban":"0","is_block":"0","is_manage":"0","live_role":"normal"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.liveManageAdd()'><b>liveManageAdd</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-158019636" onClick='toggleBox("Output-158019636", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-158019636" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-158019636">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+user_id:4062<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/manageAdd/<br/>
+{"msg":"添加成功","data":{},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9180<br/>
+auto:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/detail/<br/>
+{"msg":"获取直播信息成功","data":{"comment_count":0,"notice_jianhuang_status":"0","app_type":"hilife","channel":"tj_prod_9180","resolution":"","converter_id":"5FA452AF5844272778B0D8BAAAE626C7","switch_time":"0","stream_name":"614c517a3e4a94030","video_more":"0","live_title":"自动化测试直播","anchor_data":{"is_follow":2,"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","passport_id":"2672"},"view_time":0,"id":"9180","live_area":"0","live_price":"0.00","is_pushing":"1","live_charge":"0","re_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji","is_manage":"1","push_url":"rtmp://push.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","live_cname":"测试测试测试","live_source":"0","chat_room_status":"0","live_mode":"1","is_recommend":"0","live_povince":"0","status":"1","live_tag":"1","auto_confirm_time":"1632434746","is_lu":"0","is_block":"1","live_lat":"0.000000","goods_count":"0","mike_interactive":"0","gift_num":"0","live_long_time":"0","pull_url":"rtmp://pull.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","anchor_start_time":"1632391546","share":{"image":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","name":"我正在观看176****1111的直播","url":"https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9180","content":"自动化测试直播"},"current_time":1632391553,"is_send":"0","live_address":"0","anchor_id":"4030","copper_price":0,"status_name":"直播中","gift_pop":1,"live_cid":"75","mike_status":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"converter_sequence":"1","view_count":617,"wg_num":"0","re_data":{"price_unit":"券后价","image":"https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg","re_id":167,"re_type":"house","subtitle":"三亚-吉阳区-","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji&share_code=614ae21b9a2ed","price_text":"19.00万元/套","title":"华悦海棠品质洋房","status":"2"},"msg":"","goods_data":{},"uuid":"00000000-258c-468d-ffff-ffffef05ac4a","online_count":"0","has_activity":1,"re_type":"house","anchor_end_time":"0","live_direction":"0","video_request_id":"","play_count":"0","show_type":"0","start_time":"0","close_converter":"0","online_data":[],"anchor_pause_time":"0","support_num":"0本场点赞","video_duration":"0","video_height":"0","live_city":"0","if_self":0,"close_mike":"0","video_width":"0","live_role":"manage","auto_end_time":1632435346,"re_id":"167,114,151","video_url":"","is_ban":"1","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"sw_accessToken":"0064864e2786c98440b8563d83799591cfeIADqsvPQWClU/qx5VRfABWrSNmq6dSP1/07BQum5c/SQTiSnP3XmANSoEAA67AAA+qJNYQEAAQD6RVBh","roomRtcInfo":{"manageInfo":{"muteAll":"0"},"liveFunc":0},"live_lng":"0.000000","all_mute":"0","re_count":"3","sort_order":"0","target_id":"2021092318054697535057","free_time":0,"activity_data":{"activity_name":"风景大厦","re_id":"162?type=6&share_code=60ec0f352700a","activity_url":"","fold_time":60,"cover_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg","re_type":"mall","fold_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047415015bca.jpg","created_at":"2021-01-30 10:34:44","id":"11"},"re_show_id":"0","is_show":"1","play_time":0,"has_goods":"0","live_city_name":"","forbid_expire":"0","push_forbid":"0"},"status":1}<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/manageUser/<br/>
+{"msg":"获取管理员用户列表成功","data":[{"user_id":"4062","nick_name":"用户102704","id":"537","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"}],"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.liveManageDel()'><b>liveManageDel</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-821618866" onClick='toggleBox("Output-821618866", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-821618866" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-821618866">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+user_id:4062<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/manageDel/<br/>
+{"msg":"移除成功","data":{},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9180<br/>
+auto:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/detail/<br/>
+{"msg":"获取直播信息成功","data":{"comment_count":0,"notice_jianhuang_status":"0","app_type":"hilife","channel":"tj_prod_9180","resolution":"","converter_id":"5FA452AF5844272778B0D8BAAAE626C7","switch_time":"0","stream_name":"614c517a3e4a94030","video_more":"0","live_title":"自动化测试直播","anchor_data":{"is_follow":2,"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","passport_id":"2672"},"view_time":0,"id":"9180","live_area":"0","live_price":"0.00","is_pushing":"1","live_charge":"0","re_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji","is_manage":"0","push_url":"rtmp://push.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","live_cname":"测试测试测试","live_source":"0","chat_room_status":"0","live_mode":"1","is_recommend":"0","live_povince":"0","status":"1","live_tag":"1","auto_confirm_time":"1632434746","is_lu":"0","is_block":"1","live_lat":"0.000000","goods_count":"0","mike_interactive":"0","gift_num":"0","live_long_time":"0","pull_url":"rtmp://pull.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","anchor_start_time":"1632391546","share":{"image":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","name":"我正在观看176****1111的直播","url":"https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9180","content":"自动化测试直播"},"current_time":1632391554,"is_send":"0","live_address":"0","anchor_id":"4030","copper_price":0,"status_name":"直播中","gift_pop":1,"live_cid":"75","mike_status":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"converter_sequence":"1","view_count":617,"wg_num":"0","re_data":{"price_unit":"券后价","image":"https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg","re_id":167,"re_type":"house","subtitle":"三亚-吉阳区-","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji&share_code=614ae21b11879","price_text":"19.00万元/套","title":"华悦海棠品质洋房","status":"2"},"msg":"","goods_data":{},"uuid":"00000000-258c-468d-ffff-ffffef05ac4a","online_count":"0","has_activity":1,"re_type":"house","anchor_end_time":"0","live_direction":"0","video_request_id":"","play_count":"0","show_type":"0","start_time":"0","close_converter":"0","online_data":[],"anchor_pause_time":"0","support_num":"0本场点赞","video_duration":"0","video_height":"0","live_city":"0","if_self":0,"close_mike":"0","video_width":"0","live_role":"normal","auto_end_time":1632435346,"re_id":"167,114,151","video_url":"","is_ban":"1","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"sw_accessToken":"0064864e2786c98440b8563d83799591cfeIADqsvPQWClU/qx5VRfABWrSNmq6dSP1/07BQum5c/SQTiSnP3XmANSoEAA67AAA+qJNYQEAAQD6RVBh","roomRtcInfo":{"manageInfo":{"muteAll":"0"},"liveFunc":0},"live_lng":"0.000000","all_mute":"0","re_count":"3","sort_order":"0","target_id":"2021092318054697535057","free_time":0,"activity_data":{"activity_name":"风景大厦","re_id":"162?type=6&share_code=60ec0f352700a","activity_url":"","fold_time":60,"cover_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg","re_type":"mall","fold_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047415015bca.jpg","created_at":"2021-01-30 10:34:44","id":"11"},"re_show_id":"167","is_show":"1","play_time":0,"has_goods":"0","live_city_name":"","forbid_expire":"0","push_forbid":"0"},"status":1}<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/manageUser/<br/>
+{"msg":"获取管理员用户列表成功","data":[],"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.liveReHide()'><b>liveReHide</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-721842760" onClick='toggleBox("Output-721842760", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-721842760" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-721842760">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+re_show_id:167<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/reHide/<br/>
+{"msg":"取消讲解成功","data":{},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9180<br/>
+auto:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/detail/<br/>
+{"msg":"获取直播信息成功","data":{"comment_count":0,"notice_jianhuang_status":"0","app_type":"hilife","channel":"tj_prod_9180","resolution":"","converter_id":"5FA452AF5844272778B0D8BAAAE626C7","switch_time":"0","stream_name":"614c517a3e4a94030","video_more":"0","live_title":"自动化测试直播","anchor_data":{"is_follow":2,"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","passport_id":"2672"},"view_time":0,"id":"9180","live_area":"0","live_price":"0.00","is_pushing":"1","live_charge":"0","re_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji","is_manage":"0","push_url":"rtmp://push.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","live_cname":"测试测试测试","live_source":"0","chat_room_status":"0","live_mode":"1","live_povince":"0","is_recommend":"0","status":"1","live_tag":"1","auto_confirm_time":"1632434746","is_lu":"0","is_block":"0","live_lat":"0.000000","goods_count":"0","mike_interactive":"0","gift_num":"0","live_long_time":"0","pull_url":"rtmp://pull.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","anchor_start_time":"1632391546","share":{"image":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","name":"我正在观看176****1111的直播","url":"https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9180","content":"自动化测试直播"},"current_time":1632391556,"live_address":"0","is_send":"0","anchor_id":"4030","copper_price":0,"status_name":"直播中","gift_pop":1,"live_cid":"75","mike_status":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"view_count":617,"converter_sequence":"1","wg_num":"0","re_data":{"price_unit":"券后价","image":"https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg","re_id":167,"re_type":"house","subtitle":"三亚-吉阳区-","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji&share_code=614ae21b9a2ed","price_text":"19.00万元/套","title":"华悦海棠品质洋房","status":"2"},"msg":"","goods_data":{},"uuid":"00000000-258c-468d-ffff-ffffef05ac4a","online_count":"0","has_activity":1,"re_type":"house","anchor_end_time":"0","live_direction":"0","video_request_id":"","play_count":"0","start_time":"0","show_type":"0","close_converter":"0","online_data":[],"anchor_pause_time":"0","support_num":"0本场点赞","video_height":"0","video_duration":"0","live_city":"0","if_self":0,"close_mike":"0","video_width":"0","live_role":"normal","auto_end_time":1632435346,"re_id":"167,114,151","video_url":"","is_ban":"0","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"sw_accessToken":"0064864e2786c98440b8563d83799591cfeIADqsvPQWClU/qx5VRfABWrSNmq6dSP1/07BQum5c/SQTiSnP3XmANSoEAA67AAA+qJNYQEAAQD6RVBh","roomRtcInfo":{"manageInfo":{"muteAll":"0"},"liveFunc":0},"live_lng":"0.000000","all_mute":"0","re_count":"3","sort_order":"0","target_id":"2021092318054697535057","free_time":0,"activity_data":{"activity_name":"风景大厦","re_id":"162?type=6&share_code=60ec0f352700a","activity_url":"","fold_time":60,"cover_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg","re_type":"mall","fold_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047415015bca.jpg","created_at":"2021-01-30 10:34:44","id":"11"},"re_show_id":"0","is_show":"1","play_time":0,"has_goods":"0","live_city_name":"","forbid_expire":"0","push_forbid":"0"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.liveReShow()'><b>liveReShow</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-27226489" onClick='toggleBox("Output-27226489", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-27226489" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-27226489">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+re_show_id:167<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/reShow/<br/>
+{"msg":"设置为讲解成功","data":{},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9180<br/>
+auto:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/detail/<br/>
+{"msg":"获取直播信息成功","data":{"comment_count":0,"notice_jianhuang_status":"0","app_type":"hilife","channel":"tj_prod_9180","resolution":"","converter_id":"5FA452AF5844272778B0D8BAAAE626C7","switch_time":"0","stream_name":"614c517a3e4a94030","video_more":"0","live_title":"自动化测试直播","anchor_data":{"is_follow":2,"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","passport_id":"2672"},"view_time":0,"id":"9180","live_area":"0","live_price":"0.00","is_pushing":"1","live_charge":"0","re_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji","is_manage":"1","push_url":"rtmp://push.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","live_cname":"测试测试测试","live_source":"0","chat_room_status":"0","live_mode":"1","live_povince":"0","is_recommend":"0","status":"1","live_tag":"1","auto_confirm_time":"1632434746","is_lu":"0","is_block":"1","live_lat":"0.000000","goods_count":"0","mike_interactive":"0","gift_num":"0","live_long_time":"0","pull_url":"rtmp://pull.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","anchor_start_time":"1632391546","share":{"image":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","name":"我正在观看176****1111的直播","url":"https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9180","content":"自动化测试直播"},"current_time":1632391553,"live_address":"0","is_send":"0","anchor_id":"4030","copper_price":0,"status_name":"直播中","gift_pop":1,"live_cid":"75","mike_status":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"view_count":617,"converter_sequence":"1","wg_num":"0","re_data":{"price_unit":"券后价","image":"https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg","re_id":167,"re_type":"house","subtitle":"三亚-吉阳区-","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji&share_code=614ae21b11879","price_text":"19.00万元/套","title":"华悦海棠品质洋房","status":"2"},"msg":"","goods_data":{},"uuid":"00000000-258c-468d-ffff-ffffef05ac4a","online_count":"0","has_activity":1,"re_type":"house","anchor_end_time":"0","live_direction":"0","video_request_id":"","play_count":"0","start_time":"0","show_type":"0","close_converter":"0","online_data":[],"anchor_pause_time":"0","support_num":"0本场点赞","video_height":"0","video_duration":"0","live_city":"0","if_self":0,"close_mike":"0","video_width":"0","live_role":"manage","auto_end_time":1632435346,"re_id":"167,114,151","video_url":"","is_ban":"1","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"sw_accessToken":"0064864e2786c98440b8563d83799591cfeIADqsvPQWClU/qx5VRfABWrSNmq6dSP1/07BQum5c/SQTiSnP3XmANSoEAA67AAA+qJNYQEAAQD6RVBh","roomRtcInfo":{"manageInfo":{"muteAll":"0"},"liveFunc":0},"live_lng":"0.000000","all_mute":"0","re_count":"3","sort_order":"0","target_id":"2021092318054697535057","free_time":0,"activity_data":{"activity_name":"风景大厦","re_id":"162?type=6&share_code=60ec0f352700a","activity_url":"","fold_time":60,"cover_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg","re_type":"mall","fold_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047415015bca.jpg","created_at":"2021-01-30 10:34:44","id":"11"},"re_show_id":"167","is_show":"1","play_time":0,"has_goods":"0","live_city_name":"","forbid_expire":"0","push_forbid":"0"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.liveUnBan()'><b>liveUnBan</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-914571389" onClick='toggleBox("Output-914571389", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-914571389" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-914571389">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+user_id:4062<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/unBan/<br/>
+{"msg":"取消禁言成功","data":{},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9180<br/>
+auto:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/detail/<br/>
+{"msg":"获取直播信息成功","data":{"comment_count":0,"notice_jianhuang_status":"0","app_type":"hilife","channel":"tj_prod_9180","resolution":"","converter_id":"5FA452AF5844272778B0D8BAAAE626C7","switch_time":"0","stream_name":"614c517a3e4a94030","video_more":"0","live_title":"自动化测试直播","anchor_data":{"is_follow":2,"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","passport_id":"2672"},"view_time":0,"id":"9180","live_area":"0","live_price":"0.00","is_pushing":"1","live_charge":"0","re_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji","is_manage":"0","push_url":"rtmp://push.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","live_cname":"测试测试测试","live_source":"0","chat_room_status":"0","live_mode":"1","is_recommend":"0","live_povince":"0","status":"1","live_tag":"1","auto_confirm_time":"1632434746","is_lu":"0","is_block":"1","live_lat":"0.000000","goods_count":"0","mike_interactive":"0","gift_num":"0","live_long_time":"0","pull_url":"rtmp://pull.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","anchor_start_time":"1632391546","share":{"image":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","name":"我正在观看176****1111的直播","url":"https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9180","content":"自动化测试直播"},"current_time":1632391555,"is_send":"0","live_address":"0","anchor_id":"4030","copper_price":0,"status_name":"直播中","gift_pop":1,"live_cid":"75","mike_status":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"converter_sequence":"1","view_count":617,"wg_num":"0","re_data":{"price_unit":"券后价","image":"https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg","re_id":167,"re_type":"house","subtitle":"三亚-吉阳区-","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji&share_code=614ae21b11879","price_text":"19.00万元/套","title":"华悦海棠品质洋房","status":"2"},"msg":"","goods_data":{},"uuid":"00000000-258c-468d-ffff-ffffef05ac4a","online_count":"0","has_activity":1,"re_type":"house","anchor_end_time":"0","live_direction":"0","video_request_id":"","play_count":"0","show_type":"0","start_time":"0","close_converter":"0","online_data":[],"anchor_pause_time":"0","support_num":"0本场点赞","video_duration":"0","video_height":"0","live_city":"0","if_self":0,"close_mike":"0","video_width":"0","live_role":"normal","auto_end_time":1632435346,"re_id":"167,114,151","video_url":"","is_ban":"0","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"sw_accessToken":"0064864e2786c98440b8563d83799591cfeIADqsvPQWClU/qx5VRfABWrSNmq6dSP1/07BQum5c/SQTiSnP3XmANSoEAA67AAA+qJNYQEAAQD6RVBh","roomRtcInfo":{"manageInfo":{"muteAll":"0"},"liveFunc":0},"live_lng":"0.000000","all_mute":"0","re_count":"3","sort_order":"0","target_id":"2021092318054697535057","free_time":0,"activity_data":{"activity_name":"风景大厦","re_id":"162?type=6&share_code=60ec0f352700a","activity_url":"","fold_time":60,"cover_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg","re_type":"mall","fold_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047415015bca.jpg","created_at":"2021-01-30 10:34:44","id":"11"},"re_show_id":"167","is_show":"1","play_time":0,"has_goods":"0","live_city_name":"","forbid_expire":"0","push_forbid":"0"},"status":1}<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/banUser/<br/>
+{"msg":"获取禁言用户列表成功","data":[],"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.liveUnBlock()'><b>liveUnBlock</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-228776912" onClick='toggleBox("Output-228776912", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-228776912" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-228776912">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+user_id:4062<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/unBlock/<br/>
+{"msg":"取消禁封成功","data":{},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9180<br/>
+auto:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/detail/<br/>
+{"msg":"获取直播信息成功","data":{"comment_count":0,"notice_jianhuang_status":"0","app_type":"hilife","channel":"tj_prod_9180","resolution":"","converter_id":"5FA452AF5844272778B0D8BAAAE626C7","switch_time":"0","stream_name":"614c517a3e4a94030","video_more":"0","live_title":"自动化测试直播","anchor_data":{"is_follow":2,"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","passport_id":"2672"},"view_time":0,"id":"9180","live_area":"0","live_price":"0.00","is_pushing":"1","live_charge":"0","re_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji","is_manage":"0","push_url":"rtmp://push.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","live_cname":"测试测试测试","live_source":"0","chat_room_status":"0","live_mode":"1","is_recommend":"0","live_povince":"0","status":"1","live_tag":"1","auto_confirm_time":"1632434746","is_lu":"0","is_block":"0","live_lat":"0.000000","goods_count":"0","mike_interactive":"0","gift_num":"0","live_long_time":"0","pull_url":"rtmp://pull.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","anchor_start_time":"1632391546","share":{"image":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","name":"我正在观看176****1111的直播","url":"https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9180","content":"自动化测试直播"},"current_time":1632391555,"is_send":"0","live_address":"0","anchor_id":"4030","copper_price":0,"status_name":"直播中","gift_pop":1,"live_cid":"75","mike_status":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"converter_sequence":"1","view_count":617,"wg_num":"0","re_data":{"price_unit":"券后价","image":"https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg","re_id":167,"re_type":"house","subtitle":"三亚-吉阳区-","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%24m12yynupQTd8nd93N%2F67ceuQav1daTc30Wj20RzQF7%2FbIw3sWoWfa&apptype=taiji&share_code=614ae21b11879","price_text":"19.00万元/套","title":"华悦海棠品质洋房","status":"2"},"msg":"","goods_data":{},"uuid":"00000000-258c-468d-ffff-ffffef05ac4a","online_count":"0","has_activity":1,"re_type":"house","anchor_end_time":"0","live_direction":"0","video_request_id":"","play_count":"0","show_type":"0","start_time":"0","close_converter":"0","online_data":[],"anchor_pause_time":"0","support_num":"0本场点赞","video_duration":"0","video_height":"0","live_city":"0","if_self":0,"close_mike":"0","video_width":"0","live_role":"normal","auto_end_time":1632435346,"re_id":"167,114,151","video_url":"","is_ban":"0","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"sw_accessToken":"0064864e2786c98440b8563d83799591cfeIADqsvPQWClU/qx5VRfABWrSNmq6dSP1/07BQum5c/SQTiSnP3XmANSoEAA67AAA+qJNYQEAAQD6RVBh","roomRtcInfo":{"manageInfo":{"muteAll":"0"},"liveFunc":0},"live_lng":"0.000000","all_mute":"0","re_count":"3","sort_order":"0","target_id":"2021092318054697535057","free_time":0,"activity_data":{"activity_name":"风景大厦","re_id":"162?type=6&share_code=60ec0f352700a","activity_url":"","fold_time":60,"cover_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg","re_type":"mall","fold_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047415015bca.jpg","created_at":"2021-01-30 10:34:44","id":"11"},"re_show_id":"167","is_show":"1","play_time":0,"has_goods":"0","live_city_name":"","forbid_expire":"0","push_forbid":"0"},"status":1}<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9180<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/blockUser/<br/>
+{"msg":"获取拉黑用户列表成功","data":[],"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9180<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/status/<br/>
+{"msg":"获取直播状态信息成功","data":{"msg":"","anchor_nick_name":"176****1111","copper_price":0,"push_url":"rtmp://push.tjkongfu.com/live/614c517a3e4a94030?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","target_id":"2021092318054697535057","can_join":1,"house_target_id":"","live_id":"9180","pull_url":"http://pull.tjkongfu.com/live/614c517a3e4a94030.flv?auth_info=UlkDhbJmxefVgn43ezQqy%2Fn34tIny%2FFtVY4jYK4VSab%2Bh6w39h2t7kxYmJRf0ViI.384f4168466442416952764b62535550","video_url":"","anchor_avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","anchor":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"live_code":0,"live_price":"0.00","status":"1"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.publicReDataEdit()'><b>publicReDataEdit</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-159970517" onClick='toggleBox("Output-159970517", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-159970517" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-159970517">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+re_id:167,114,151<br/>
+re_type:house<br/>
+original_type:live<br/>
+original_id:9180<br/>
+http://apitest.hishenghuo.com.cn:4000/union/publics/reDataEdit/<br/>
+{"msg":"编辑推广关联信息成功","data":{},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+<tr>
+<td title='hlife.test.integration.LivePower.publicReDataList()'><b>publicReDataList</b><br>Test class: hlife.test.integration.LivePower<br/>
+<a href="#Output-1913274111" onClick='toggleBox("Output-1913274111", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1913274111" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1913274111">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+re_id:167,114,151<br/>
+re_type:house<br/>
+pagesize:10<br/>
+original_type:live<br/>
+page:1<br/>
+original_id:9180<br/>
+userId:4030<br/>
+http://apitest.hishenghuo.com.cn:4000/union/publics/reDataList/<br/>
+{"msg":"获取推广关联信息列表成功","data":{"pager":{"pagecount":1,"count":3,"pagesize":"10","start":0,"page":"1"},"list":[{"price_unit":"券后价","image":"https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg","re_id":167,"re_type":"house","subtitle":"三亚-吉阳区-","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%2412aCHYsluE%2FywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6&apptype=taiji&share_code=61458489412b2","price_text":"19.00万元/套","title":"华悦海棠品质洋房","status":"2"},{"price_unit":"优惠价","image":"https://file.hishenghuo.com.cn/taiji/20210301/141808249030.png","re_id":114,"re_type":"house","subtitle":"三亚-吉阳区-亚朵酒店","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=114&access_token=%242y%2413%2412aCHYsluE%2FywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6&apptype=taiji&share_code=6145848943419","price_text":"15000.00元/套","title":"测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格测试价格","status":"2"},{"price_unit":"优惠价","image":"https://file.hishenghuo.com.cn/taiji/20210622/090806627517.jpg","re_id":151,"re_type":"house","subtitle":"三亚-海棠区-","mobile_url":"https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=151&access_token=%242y%2413%2412aCHYsluE%2FywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6&apptype=taiji&share_code=61458489447b6","price_text":"4000.00万元/套","title":"天之极","status":"2"}]},"status":1}<br/>
+判断商品图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210915/175845269609.jpg<br/>
+判断商品标题显示正常<br/>
+判断价格显示正常<br/>
+判断详情链接可用性<br/>
+https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=167&access_token=%242y%2413%2412aCHYsluE%2FywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6&apptype=taiji&share_code=61458489412b2<br/>
+判断商品图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210301/141808249030.png<br/>
+判断商品标题显示正常<br/>
+判断价格显示正常<br/>
+判断详情链接可用性<br/>
+https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=114&access_token=%242y%2413%2412aCHYsluE%2FywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6&apptype=taiji&share_code=6145848943419<br/>
+判断商品图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210622/090806627517.jpg<br/>
+判断商品标题显示正常<br/>
+判断价格显示正常<br/>
+判断详情链接可用性<br/>
+https://wwwtest.tjkongfu.com:4002/h5/#/propertyDetails?house_id=151&access_token=%242y%2413%2412aCHYsluE%2FywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6&apptype=taiji&share_code=61458489447b6<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>hlife.test.integration.LivePower@38364841</td></tr>
+</table><p>
+</body>
+</html>

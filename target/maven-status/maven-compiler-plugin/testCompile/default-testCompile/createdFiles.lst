@@ -1,3 +1,10 @@
 hlife\test\integration\Fast.class
-hlife\test\integration\HouseList.class
+hlife\test\integration\LiveNoticeList.class
+hlife\test\integration\LiveGift.class
+hlife\test\integration\Giftcard.class
+hlife\test\integration\LivePower.class
 hlife\test\integration\LiveList.class
+hlife\test\integration\MinePage.class
+hlife\test\integration\LiveRoom.class
+hlife\test\integration\HouseList.class
+hlife\test\integration\LiveRtcFunc.class

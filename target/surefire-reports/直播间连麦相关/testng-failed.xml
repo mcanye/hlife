@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [直播间连麦相关]">
+  <parameter name="system.info" value="reporter.config.MySystemInfo"/>
+  <parameter name="report.config" value="src/main/resources/config/report/extent-config.xml"/>
+  <listeners>
+    <listener class-name="reporter.listener.MyExtentTestNgFormatter"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="直播连麦(failed)">
+    <classes>
+      <class name="hlife.test.integration.LiveRtcFunc">
+        <methods>
+          <include name="liveOpera"/>
+          <include name="chatroomApply"/>
+          <include name="chatroomApplyList"/>
+          <include name="chatroomAgree"/>
+          <include name="chatroomInvite"/>
+          <include name="liveCategoryList"/>
+          <include name="chatroomUserAgree"/>
+          <include name="liveJoin"/>
+          <include name="setUp"/>
+          <include name="chatroomManage"/>
+          <include name="chatroomManage_getout"/>
+          <include name="liveOpenRtcFunc"/>
+          <include name="liveCreate"/>
+          <include name="chatroomUserCloseMute"/>
+          <include name="chatroomMuteAll"/>
+          <include name="liveCloseRtcFunc"/>
+        </methods>
+      </class> <!-- hlife.test.integration.LiveRtcFunc -->
+    </classes>
+  </test> <!-- 直播连麦(failed) -->
+</suite> <!-- Failed suite [直播间连麦相关] -->

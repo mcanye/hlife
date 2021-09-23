@@ -1,0 +1,701 @@
+<html>
+<head>
+<title>TestNG:  礼品卡相关</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>礼品卡相关</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 23 18:05:56 CST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>54 seconds (54613 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='hlife.test.integration.Giftcard.cardorderCancel()'><b>cardorderCancel</b><br>Test class: hlife.test.integration.Giftcard<br/>
+<a href="#Output-1544226292" onClick='toggleBox("Output-1544226292", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1544226292" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1544226292">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/cardorder/cancel/835<br/>
+{"msg":"取消成功","status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.Giftcard@78a2da20</td></tr>
+<tr>
+<td title='hlife.test.integration.Giftcard.cardorderCreateOrder()'><b>cardorderCreateOrder</b><br>Test class: hlife.test.integration.Giftcard<br/>
+<a href="#Output-705382416" onClick='toggleBox("Output-705382416", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-705382416" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-705382416">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+card_id:35<br/>
+http://apitest.hishenghuo.com.cn:4000/union/cardorder/createOrder/<br/>
+{"msg":"下单成功","data":{"payUrl":"http://paytest.tjkongfu.com:8111/mspay/","params":"{\"merchGuid\":\"tjmv1calq8d6xtevrex6hip8p65umzkxqlt\",\"userGuid\":\"hsu17937a5b0988477ba4185d5cc9bac5ec\",\"outTradeNo\":\"20210923180642501015741632391602\",\"subject\":\"\\u5065\\u5eb7\\u793c\\u54c1\\u5361\\u81f3\\u5c0a\\u5361\",\"body\":\"\\u6d4b\\u8bd5\",\"tranType\":\"24\",\"totalFee\":10000,\"spbillCreateIp\":\"140.240.0.78\",\"frontUrl\":\"http:\\/\\/apitest.tjkongfu.com:4000\\/\\/notify\\/order\\/\"}"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.Giftcard@78a2da20</td></tr>
+<tr>
+<td title='hlife.test.integration.Giftcard.cardorderDelete()'><b>cardorderDelete</b><br>Test class: hlife.test.integration.Giftcard<br/>
+<a href="#Output-696606344" onClick='toggleBox("Output-696606344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-696606344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-696606344">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/cardorder/delete/835<br/>
+{"msg":"删除成功","status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.Giftcard@78a2da20</td></tr>
+<tr>
+<td title='hlife.test.integration.Giftcard.cardorderList()'><b>cardorderList</b><br>Test class: hlife.test.integration.Giftcard<br/>
+<a href="#Output-1619816112" onClick='toggleBox("Output-1619816112", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1619816112" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1619816112">
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+pagesize:10<br/>
+page:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/cardorder/list/<br/>
+{"msg":"获取课程卡订单列表成功","data":{"pager":{"pagecount":1,"count":"1","pagesize":"10","page":"1"},"list":[{"img":"https://file.hishenghuo.com.cn/taiji/20210923/145000796674.jpg","is_fp":1,"code":"","orderNo":"2021092318064250101574","created_at":"2021-09-23 18:06:42","promise":{"province_id":"","area_id":"","guide":"特别说明\r\n\r\n本卡含9次高级私教课程，本次操作作为第1次课程预约。预约成功后平台将在第一时间联系您并为您指派高级教练和确定课程。\r\n\r\n首次预约请确定选择的授课城市，之后预约不可更换，详细地址可变动。","city_id":""},"cardNo":"610923183543","qrcode_pic":"","useNum":"0","invoices_price":"0","price":"1000","cardId":"35","statusName":"待支付","shippingAddress":"","theme":"测试","id":"835","expiry":"2024-09-23","nums":"9","guide":"1\n32\n1\n32\n13\n21\n3\n1\n23\n1\n23\n12\n3\n2\n1\n32\n1\n3\n21\n1","is_entity":0,"status":"0"}]},"status":1}<br/>
+判断标题不为空<br/>
+判断日期不为空<br/>
+面额不应为空<br/>
+有效期不应为空<br/>
+订单状态不应为空<br/>
+订单状态名称不应为空<br/>
+图片有效性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/145000796674.jpg<br/>
+判断下预订单是否成功<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.Giftcard@78a2da20</td></tr>
+<tr>
+<td title='hlife.test.integration.Giftcard.cardorderVerifyInvoice()'><b>cardorderVerifyInvoice</b><br>Test class: hlife.test.integration.Giftcard<br/>
+<a href="#Output-1909750912" onClick='toggleBox("Output-1909750912", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1909750912" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1909750912">
+单位，电子普通发票type:3
+invoice_type:1<br/>
+校验名称不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:1<br/>
+type:3<br/>
+http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/<br/>
+{"msg":"名称不能为空","data":[],"status":0}<br/>
+判断邮箱不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:1<br/>
+type:3<br/>
+title:测试标题<br/>
+http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/<br/>
+{"msg":"邮箱不能为空","data":[],"status":0}<br/>
+判断企业索取增值税发票需填写纳税人识别号不为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:1<br/>
+type:3<br/>
+title:测试标题<br/>
+email:11@163.com<br/>
+http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/<br/>
+{"msg":"企业索取增值税发票需填写纳税人识别号","data":{},"status":0}<br/>
+判断校验成功<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:1<br/>
+type:3<br/>
+title:测试标题<br/>
+taxnumber:123456789012345678<br/>
+email:11@163.com<br/>
+http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/<br/>
+{"msg":"校验成功","data":[],"status":1}<br/>
+个人，普通电子发票invoice_type=1，type=1<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:1<br/>
+type:1<br/>
+title:测试标题<br/>
+email:11@163.com<br/>
+http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/<br/>
+{"msg":"校验成功","data":[],"status":1}<br/>
+单位，增值税专用发票invoice_type=2，type=3<br/>
+area:37<br/>
+address:单位地址<br/>
+addressee_address:收货地址<br/>
+city:3537<br/>
+mobile:0427-1234567<br/>
+addressee_phone:17611111111<br/>
+type:3<br/>
+title:测试标题<br/>
+pro:2<br/>
+taxnumber:123456789012345678<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+open_bank:开户银行<br/>
+addressee_name:收货人姓名<br/>
+invoice_type:2<br/>
+bank_account:1111111111<br/>
+http://apitest.hishenghuo.com.cn:4000/union/cardorder/verifyInvoice/<br/>
+{"msg":"校验成功","data":[],"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>hlife.test.integration.Giftcard@78a2da20</td></tr>
+<tr>
+<td title='hlife.test.integration.Giftcard.coursecardCooperation()'><b>coursecardCooperation</b><br>Test class: hlife.test.integration.Giftcard<br/>
+<a href="#Output-233065232" onClick='toggleBox("Output-233065232", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-233065232" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-233065232">
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/cooperation/<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.Giftcard@78a2da20</td></tr>
+<tr>
+<td title='hlife.test.integration.Giftcard.coursecardDetail()'><b>coursecardDetail</b><br>Test class: hlife.test.integration.Giftcard<br/>
+<a href="#Output-887157971" onClick='toggleBox("Output-887157971", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-887157971" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-887157971">
+判断id必传<br/>
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/<br/>
+card_id:35<br/>
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/<br/>
+{"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210923/145000796674.jpg","discount_price":"100.00","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","img_list":["https://file.hishenghuo.com.cn/taiji/20210923/145000796674.jpg","https://file.hishenghuo.com.cn/taiji/20210923/145002461589.png","https://file.hishenghuo.com.cn/taiji/20210923/145005215701.jpg","https://file.hishenghuo.com.cn/taiji/20210923/145008396800.jpg","https://file.hishenghuo.com.cn/taiji/20210923/145009528700.jpg","https://file.hishenghuo.com.cn/taiji/20210923/145011949740.jpg","https://file.hishenghuo.com.cn/taiji/20210923/145013965581.jpg","https://file.hishenghuo.com.cn/taiji/20210923/145015707530.jpg","https://file.hishenghuo.com.cn/taiji/20210923/145017602592.jpg","https://file.hishenghuo.com.cn/taiji/20210923/145020642523.jpg"],"video":{"duration":"36","cover":"https://file.hishenghuo.com.cn/taiji/20210923/144958340674.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210923/144958340674.mp4","width":"854","key":"taiji/20210923/144958340674.mp4","url":"https://file.tjkongfu.com/taiji/20210923/144958340674.m3u8","height":"480"},"duration":"120","user_role":"register","can_import":0,"share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/35?user_id=0&apptype=taiji&_t=1632391603","common":"","invoices_price":"0","price":"1000.00","tui_url":"https://wwwtest.tjkongfu.com:4002/mobile/cardPromotion/?id=35&type=12&apptype=taiji","share_desc":[{"cover":"","download":"","width":0,"type":"text","content":"<p>1</p><p>32</p><p>1</p><p>3</p><p>213</p><p>21</p><p>3</p><p>12</p><p>443</p>\n入口：\nhttps://wwwtest.tjkongfu.com:4002/share/courseCard/?id=35&type=12&apptype=taiji","key":"","height":0},{"cover":"","download":"https://wwwtest.tjkongfu.com:4002/coursecard/downloadpic/35?user_id=0&apptype=taiji&pic_url=https%3A%2F%2Ffile.hishenghuo.com.cn%2Ftaiji%2F20210923%2F614c404d5b58c.jpg","width":"600","type":"image","content":"https://file.hishenghuo.com.cn/taiji/20210923/614c404d5b58c.jpg","key":"taiji/20210923/614c404d5b58c.jpg","height":"336"},{"cover":"","download":"","width":0,"type":"text","content":"<p>1132</p>","key":"","height":0},{"cover":"","download":"https://wwwtest.tjkongfu.com:4002/coursecard/downloadpic/35?user_id=0&apptype=taiji&pic_url=https%3A%2F%2Ffile.hishenghuo.com.cn%2Ftaiji%2F20210923%2F614c405605831.jpg","width":"600","type":"image","content":"https://file.hishenghuo.com.cn/taiji/20210923/614c405605831.jpg","key":"taiji/20210923/614c405605831.jpg","height":"336"},{"cover":"https://file.hishenghuo.com.cn/taiji/20210923/614c405eb9879.m3u8?vframe/jpg/offset/2","download":"https://file.hishenghuo.com.cn/taiji/20210923/614c405eb9879.mp4","width":"854","type":"video","content":"https://file.hishenghuo.com.cn/taiji/20210923/614c405eb9879.m3u8","key":"taiji/20210923/614c405eb9879.mp4","height":"480"}],"theme":"测试","id":"35","expiry":{"unit":"year","value":"3"},"nums":"9","guide":"1\n32\n1\n32\n13\n21\n3\n1\n23\n1\n23\n12\n3\n2\n1\n32\n1\n3\n21\n1","distribute_amount":"","is_share":"1","friend_desc":[{"cover":"","download":"","width":0,"type":"text","content":"<p>432332345</p>\n入口：\nhttps://wwwtest.tjkongfu.com:4002/share/courseCard/?id=35&type=12&apptype=taiji","key":"","height":0},{"cover":"","download":"","width":0,"type":"image-group","content":[{"cover":"","download":"https://wwwtest.tjkongfu.com:4002/coursecard/downloadpic/35?user_id=0&apptype=taiji&pic_url=https%3A%2F%2Ffile.hishenghuo.com.cn%2Ftaiji%2F20210923%2F165249962819.jpg","width":"600","content":"https://file.hishenghuo.com.cn/taiji/20210923/165249962819.jpg","key":"taiji/20210923/165249962819.jpg","height":"336"},{"cover":"","download":"https://wwwtest.tjkongfu.com:4002/coursecard/downloadpic/35?user_id=0&apptype=taiji&pic_url=https%3A%2F%2Ffile.hishenghuo.com.cn%2Ftaiji%2F20210923%2F165249259823.jpg","width":"600","content":"https://file.hishenghuo.com.cn/taiji/20210923/165249259823.jpg","key":"taiji/20210923/165249259823.jpg","height":"336"},{"cover":"","download":"https://wwwtest.tjkongfu.com:4002/coursecard/downloadpic/35?user_id=0&apptype=taiji&pic_url=https%3A%2F%2Ffile.hishenghuo.com.cn%2Ftaiji%2F20210923%2F165249392521.jpg","width":"600","content":"https://file.hishenghuo.com.cn/taiji/20210923/165249392521.jpg","key":"taiji/20210923/165249392521.jpg","height":"336"},{"cover":"","download":"https://wwwtest.tjkongfu.com:4002/coursecard/downloadpic/35?user_id=0&apptype=taiji&pic_url=https%3A%2F%2Ffile.hishenghuo.com.cn%2Ftaiji%2F20210923%2F165250562869.png","width":"600","content":"https://file.hishenghuo.com.cn/taiji/20210923/165250562869.png","key":"taiji/20210923/165250562869.png","height":"336"},{"cover":"","download":"https://wwwtest.tjkongfu.com:4002/coursecard/downloadpic/35?user_id=0&apptype=taiji&pic_url=https%3A%2F%2Ffile.hishenghuo.com.cn%2Ftaiji%2F20210923%2F165250785631.jpg","width":"600","content":"https://file.hishenghuo.com.cn/taiji/20210923/165250785631.jpg","key":"taiji/20210923/165250785631.jpg","height":"336"},{"cover":"","download":"https://wwwtest.tjkongfu.com:4002/coursecard/downloadpic/35?user_id=0&apptype=taiji&pic_url=https%3A%2F%2Ffile.hishenghuo.com.cn%2Ftaiji%2F20210923%2F165250348525.jpg","width":"600","content":"https://file.hishenghuo.com.cn/taiji/20210923/165250348525.jpg","key":"taiji/20210923/165250348525.jpg","height":"336"},{"cover":"","download":"https://wwwtest.tjkongfu.com:4002/coursecard/downloadpic/35?user_id=0&apptype=taiji&pic_url=https%3A%2F%2Ffile.hishenghuo.com.cn%2Ftaiji%2F20210923%2F165250208341.jpg","width":"600","content":"https://file.hishenghuo.com.cn/taiji/20210923/165250208341.jpg","key":"taiji/20210923/165250208341.jpg","height":"336"},{"cover":"","download":"https://wwwtest.tjkongfu.com:4002/coursecard/downloadpic/35?user_id=0&apptype=taiji&pic_url=https%3A%2F%2Ffile.hishenghuo.com.cn%2Ftaiji%2F20210923%2F165250558561.jpg","width":"600","content":"https://file.hishenghuo.com.cn/taiji/20210923/165250558561.jpg","key":"taiji/20210923/165250558561.jpg","height":"336"},{"cover":"","download":"https://wwwtest.tjkongfu.com:4002/coursecard/downloadpic/35?user_id=0&apptype=taiji&pic_url=https%3A%2F%2Ffile.hishenghuo.com.cn%2Ftaiji%2F20210923%2F165251621915.jpg","width":"600","content":"https://file.hishenghuo.com.cn/taiji/20210923/165251621915.jpg","key":"taiji/20210923/165251621915.jpg","height":"336"}],"key":"","height":0}],"card_type":"supremacy","seller_data":{"nick_name":"礼品卡","id":0,"avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"tui_pic":"https://file.tjkongfu.com/bianzu1213.png","desc_interval":2},"status":1}<br/>
+判断id是否一致<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/145000796674.jpg<br/>
+判断原价不为空<br/>
+判断优惠价不为空<br/>
+判断课程卡次数不为空<br/>
+判断单节课时长不为空<br/>
+判断赠送好友图片可用性<br/>
+https://file.tjkongfu.com/4567897654567890987.png<br/>
+判断视频属性<br/>
+https://file.tjkongfu.com/taiji/20210923/144958340674.m3u8<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/144958340674.m3u8?vframe/jpg/offset/2<br/>
+判断课程卡有效期<br/>
+card_id:34<br/>
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/<br/>
+{"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210923/150403320116.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","img_list":["https://file.hishenghuo.com.cn/taiji/20210923/150403320116.png","https://file.hishenghuo.com.cn/taiji/20210923/150410392262.png","https://file.hishenghuo.com.cn/taiji/20210923/150416276156.png","https://file.hishenghuo.com.cn/taiji/20210923/150420890420.png","https://file.hishenghuo.com.cn/taiji/20210923/150424418089.png"],"video":{"duration":"10","cover":"https://file.hishenghuo.com.cn/taiji/20210923/142428440556.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210923/142428440556.mp4","width":"576","key":"taiji/20210923/142428440556.mp4","url":"https://file.tjkongfu.com/taiji/20210923/142428440556.m3u8","height":"1280"},"duration":"45","user_role":"register","can_import":0,"share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/34?user_id=0&apptype=taiji&_t=1632391604","common":"","invoices_price":"0","price":"10.00","tui_url":"https://wwwtest.tjkongfu.com:4002/mobile/cardPromotion/?id=34&type=12&apptype=taiji","share_desc":[],"theme":"1","id":"34","expiry":{"unit":"month","value":"1"},"nums":"10","guide":"111","distribute_amount":"","is_share":"0","friend_desc":[],"card_type":"supremacy","seller_data":{"nick_name":"礼品卡","id":0,"avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"tui_pic":"https://file.tjkongfu.com/bianzu1213.png","desc_interval":2},"status":1}<br/>
+判断id是否一致<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/150403320116.png<br/>
+判断原价不为空<br/>
+判断优惠价不为空<br/>
+判断课程卡次数不为空<br/>
+判断单节课时长不为空<br/>
+判断赠送好友图片可用性<br/>
+https://file.tjkongfu.com/4567897654567890987.png<br/>
+判断视频属性<br/>
+https://file.tjkongfu.com/taiji/20210923/142428440556.m3u8<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/142428440556.m3u8?vframe/jpg/offset/2<br/>
+判断课程卡有效期<br/>
+card_id:33<br/>
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/<br/>
+{"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210923/114656511758.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","img_list":["https://file.hishenghuo.com.cn/taiji/20210923/114656511758.png","https://file.hishenghuo.com.cn/taiji/20210923/114731580638.png"],"video":{"duration":"15","cover":"https://file.hishenghuo.com.cn/taiji/20210923/114851594064.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210923/114851594064.mp4","width":"576","key":"taiji/20210923/114851594064.mp4","url":"https://file.tjkongfu.com/taiji/20210923/114851594064.m3u8","height":"1280"},"duration":"10","user_role":"register","can_import":0,"share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/33?user_id=0&apptype=taiji&_t=1632391605","common":"","invoices_price":"0","price":"1.00","tui_url":"https://wwwtest.tjkongfu.com:4002/mobile/cardPromotion/?id=33&type=12&apptype=taiji","share_desc":[],"theme":"礼品卡名称测试测啛啛喳喳错错错错错错错错错错错啛啛喳喳错错错错错错错","id":"33","expiry":{"unit":"month","value":"1"},"nums":"1","guide":"测试","distribute_amount":"","is_share":"0","friend_desc":[],"card_type":"supremacy","seller_data":{"nick_name":"礼品卡","id":0,"avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"tui_pic":"https://file.tjkongfu.com/bianzu1213.png","desc_interval":2},"status":1}<br/>
+判断id是否一致<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/114656511758.png<br/>
+判断原价不为空<br/>
+判断优惠价不为空<br/>
+判断课程卡次数不为空<br/>
+判断单节课时长不为空<br/>
+判断赠送好友图片可用性<br/>
+https://file.tjkongfu.com/4567897654567890987.png<br/>
+判断视频属性<br/>
+https://file.tjkongfu.com/taiji/20210923/114851594064.m3u8<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/114851594064.m3u8?vframe/jpg/offset/2<br/>
+判断课程卡有效期<br/>
+card_id:27<br/>
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/<br/>
+{"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210923/144113515640.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","img_list":["https://file.hishenghuo.com.cn/taiji/20210923/144113515640.png"],"video":{"duration":"15","cover":"https://file.hishenghuo.com.cn/taiji/20210923/101821487644.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210923/101821487644.mp4","width":"1088","key":"taiji/20210923/101821487644.mp4","url":"https://file.tjkongfu.com/taiji/20210923/101821487644.m3u8","height":"1920"},"duration":"45","user_role":"register","can_import":0,"share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/27?user_id=0&apptype=taiji&_t=1632391605","common":"","invoices_price":"0","price":"10.00","tui_url":"https://wwwtest.tjkongfu.com:4002/mobile/cardPromotion/?id=27&type=12&apptype=taiji","share_desc":[],"theme":"养生礼品卡五","id":"27","expiry":{"unit":"month","value":"1"},"nums":"10","guide":"养生礼品卡五\n养生礼品卡五\n养生礼品卡五\n养生礼品卡五\n养生礼品卡五养生礼品卡五\n养生礼品卡五养生礼品卡五\n","distribute_amount":"","is_share":"0","friend_desc":[],"card_type":"supremacy","seller_data":{"nick_name":"礼品卡","id":0,"avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"tui_pic":"https://file.tjkongfu.com/bianzu1213.png","desc_interval":2},"status":1}<br/>
+判断id是否一致<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/144113515640.png<br/>
+判断原价不为空<br/>
+判断优惠价不为空<br/>
+判断课程卡次数不为空<br/>
+判断单节课时长不为空<br/>
+判断赠送好友图片可用性<br/>
+https://file.tjkongfu.com/4567897654567890987.png<br/>
+判断视频属性<br/>
+https://file.tjkongfu.com/taiji/20210923/101821487644.m3u8<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/101821487644.m3u8?vframe/jpg/offset/2<br/>
+判断课程卡有效期<br/>
+card_id:26<br/>
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/<br/>
+{"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210923/144106250263.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","img_list":["https://file.hishenghuo.com.cn/taiji/20210923/144106250263.png"],"video":{"duration":"18","cover":"https://file.hishenghuo.com.cn/taiji/20210923/101654227857.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210923/101654227857.mp4","width":"1080","key":"taiji/20210923/101654227857.mp4","url":"https://file.tjkongfu.com/taiji/20210923/101654227857.m3u8","height":"1920"},"duration":"45","user_role":"register","can_import":0,"share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/26?user_id=0&apptype=taiji&_t=1632391606","common":"","invoices_price":"0","price":"10.00","tui_url":"https://wwwtest.tjkongfu.com:4002/mobile/cardPromotion/?id=26&type=12&apptype=taiji","share_desc":[],"theme":"养生礼品卡四","id":"26","expiry":{"unit":"month","value":"1"},"nums":"10","guide":"养生礼品卡四\n养生礼品卡四\n养生礼品卡四\n养生礼品卡四\n养生礼品卡四\n养生礼品卡四\n养生礼品卡四","distribute_amount":"","is_share":"0","friend_desc":[],"card_type":"supremacy","seller_data":{"nick_name":"礼品卡","id":0,"avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"tui_pic":"https://file.tjkongfu.com/bianzu1213.png","desc_interval":2},"status":1}<br/>
+判断id是否一致<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/144106250263.png<br/>
+判断原价不为空<br/>
+判断优惠价不为空<br/>
+判断课程卡次数不为空<br/>
+判断单节课时长不为空<br/>
+判断赠送好友图片可用性<br/>
+https://file.tjkongfu.com/4567897654567890987.png<br/>
+判断视频属性<br/>
+https://file.tjkongfu.com/taiji/20210923/101654227857.m3u8<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/101654227857.m3u8?vframe/jpg/offset/2<br/>
+判断课程卡有效期<br/>
+card_id:25<br/>
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/<br/>
+{"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210923/144057961153.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","img_list":["https://file.hishenghuo.com.cn/taiji/20210923/144057961153.png"],"video":{"duration":"18","cover":"https://file.hishenghuo.com.cn/taiji/20210923/101632949859.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210923/101632949859.mp4","width":"1080","key":"taiji/20210923/101632949859.mp4","url":"https://file.tjkongfu.com/taiji/20210923/101632949859.m3u8","height":"1920"},"duration":"45","user_role":"register","can_import":0,"share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/25?user_id=0&apptype=taiji&_t=1632391607","common":"","invoices_price":"0","price":"10.00","tui_url":"https://wwwtest.tjkongfu.com:4002/mobile/cardPromotion/?id=25&type=12&apptype=taiji","share_desc":[],"theme":"养生礼品卡三","id":"25","expiry":{"unit":"month","value":"1"},"nums":"10","guide":"养生礼品卡三\n养生礼品卡三\n养生礼品卡三\n养生礼品卡三\n养生礼品卡三\n养生礼品卡三\n养生礼品卡三\n养生礼品卡三","distribute_amount":"","is_share":"0","friend_desc":[],"card_type":"supremacy","seller_data":{"nick_name":"礼品卡","id":0,"avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"tui_pic":"https://file.tjkongfu.com/bianzu1213.png","desc_interval":2},"status":1}<br/>
+判断id是否一致<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/144057961153.png<br/>
+判断原价不为空<br/>
+判断优惠价不为空<br/>
+判断课程卡次数不为空<br/>
+判断单节课时长不为空<br/>
+判断赠送好友图片可用性<br/>
+https://file.tjkongfu.com/4567897654567890987.png<br/>
+判断视频属性<br/>
+https://file.tjkongfu.com/taiji/20210923/101632949859.m3u8<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/101632949859.m3u8?vframe/jpg/offset/2<br/>
+判断课程卡有效期<br/>
+card_id:24<br/>
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/<br/>
+{"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210923/144045295127.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","img_list":["https://file.hishenghuo.com.cn/taiji/20210923/144045295127.png"],"video":{"duration":"20","cover":"https://file.hishenghuo.com.cn/taiji/20210923/101507952642.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210923/101507952642.mp4","width":"1080","key":"taiji/20210923/101507952642.mp4","url":"https://file.tjkongfu.com/taiji/20210923/101507952642.m3u8","height":"1920"},"duration":"45","user_role":"register","can_import":0,"share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/24?user_id=0&apptype=taiji&_t=1632391608","common":"","invoices_price":"0","price":"10.00","tui_url":"https://wwwtest.tjkongfu.com:4002/mobile/cardPromotion/?id=24&type=12&apptype=taiji","share_desc":[{"cover":"","download":"","width":0,"type":"text","content":"<p>测试</p>\n入口：\nhttps://wwwtest.tjkongfu.com:4002/share/courseCard/?id=24&type=12&apptype=taiji","key":"","height":0}],"theme":"养生礼品卡二","id":"24","expiry":{"unit":"month","value":"1"},"nums":"10","guide":"养生礼品卡二\n养生礼品卡二\n养生礼品卡二\n养生礼品卡二\n养生礼品卡二\n养生礼品卡二\n养生礼品卡二\n养生礼品卡二\n","distribute_amount":"","is_share":"1","friend_desc":[{"cover":"","download":"","width":0,"type":"text","content":"<p>测试</p>\n入口：\nhttps://wwwtest.tjkongfu.com:4002/share/courseCard/?id=24&type=12&apptype=taiji","key":"","height":0}],"card_type":"supremacy","seller_data":{"nick_name":"礼品卡","id":0,"avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"tui_pic":"https://file.tjkongfu.com/bianzu1213.png","desc_interval":2},"status":1}<br/>
+判断id是否一致<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/144045295127.png<br/>
+判断原价不为空<br/>
+判断优惠价不为空<br/>
+判断课程卡次数不为空<br/>
+判断单节课时长不为空<br/>
+判断赠送好友图片可用性<br/>
+https://file.tjkongfu.com/4567897654567890987.png<br/>
+判断视频属性<br/>
+https://file.tjkongfu.com/taiji/20210923/101507952642.m3u8<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/101507952642.m3u8?vframe/jpg/offset/2<br/>
+判断课程卡有效期<br/>
+card_id:23<br/>
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/<br/>
+{"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210923/144034181949.png","discount_price":"10.00","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","img_list":["https://file.hishenghuo.com.cn/taiji/20210923/144034181949.png"],"video":{"duration":"20","cover":"https://file.hishenghuo.com.cn/taiji/20210923/101405871785.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210923/101405871785.mp4","width":"1080","key":"taiji/20210923/101405871785.mp4","url":"https://file.tjkongfu.com/taiji/20210923/101405871785.m3u8","height":"1920"},"duration":"45","user_role":"register","can_import":0,"share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/23?user_id=0&apptype=taiji&_t=1632391609","common":"","invoices_price":"0","price":"11.00","tui_url":"https://wwwtest.tjkongfu.com:4002/mobile/cardPromotion/?id=23&type=12&apptype=taiji","share_desc":[{"cover":"","download":"","width":0,"type":"text","content":"<p style=\"text-align: justify;\">测试仪一</p>\n入口：\nhttps://wwwtest.tjkongfu.com:4002/share/courseCard/?id=23&type=12&apptype=taiji","key":"","height":0}],"theme":"养生礼品卡一","id":"23","expiry":{"unit":"year","value":"1"},"nums":"10","guide":"养生礼品卡一\n养生礼品卡一\n养生礼品卡一\n养生礼品卡一\n养生礼品卡一\n养生礼品卡一\n养生礼品卡一\n养生礼品卡一\n养生礼品卡一\n养生礼品卡一","distribute_amount":"","is_share":"1","friend_desc":[{"cover":"","download":"","width":0,"type":"text","content":"<p>测试仪一</p>\n入口：\nhttps://wwwtest.tjkongfu.com:4002/share/courseCard/?id=23&type=12&apptype=taiji","key":"","height":0}],"card_type":"supremacy","seller_data":{"nick_name":"礼品卡","id":0,"avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"tui_pic":"https://file.tjkongfu.com/bianzu1213.png","desc_interval":2},"status":1}<br/>
+判断id是否一致<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/144034181949.png<br/>
+判断原价不为空<br/>
+判断优惠价不为空<br/>
+判断课程卡次数不为空<br/>
+判断单节课时长不为空<br/>
+判断赠送好友图片可用性<br/>
+https://file.tjkongfu.com/4567897654567890987.png<br/>
+判断视频属性<br/>
+https://file.tjkongfu.com/taiji/20210923/101405871785.m3u8<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/101405871785.m3u8?vframe/jpg/offset/2<br/>
+判断课程卡有效期<br/>
+card_id:22<br/>
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/detail/<br/>
+{"msg":"获取课程卡详情成功","data":{"img":"https://file.hishenghuo.com.cn/taiji/20210923/094905748408.png","discount_price":"0.01","guide_pic":"https://file.tjkongfu.com/4567897654567890987.png","img_list":["https://file.hishenghuo.com.cn/taiji/20210923/094905748408.png","https://file.hishenghuo.com.cn/taiji/20210923/094911915797.png","https://file.hishenghuo.com.cn/taiji/20210923/094914683878.png"],"video":{"duration":"10","cover":"https://file.hishenghuo.com.cn/taiji/20210923/095013822342.m3u8?vframe/jpg/offset/2","download":"https://file.tjkongfu.com/taiji/20210923/095013822342.mp4","width":"592","key":"taiji/20210923/095013822342.mp4","url":"https://file.tjkongfu.com/taiji/20210923/095013822342.m3u8","height":"1280"},"duration":"30","user_role":"register","can_import":0,"share_pic":"https://wwwtest.tjkongfu.com:4002/coursecard/sharepic/22?user_id=0&apptype=taiji&_t=1632391610","common":"","invoices_price":"0","price":"2.00","tui_url":"https://wwwtest.tjkongfu.com:4002/mobile/cardPromotion/?id=22&type=12&apptype=taiji","share_desc":[],"theme":"养生","id":"22","expiry":{"unit":"month","value":"1"},"nums":"3","guide":"测试测试","distribute_amount":"","is_share":"0","friend_desc":[],"card_type":"supremacy","seller_data":{"nick_name":"礼品卡","id":0,"avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png"},"tui_pic":"https://file.tjkongfu.com/bianzu1213.png","desc_interval":2},"status":1}<br/>
+判断id是否一致<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/094905748408.png<br/>
+判断原价不为空<br/>
+判断优惠价不为空<br/>
+判断课程卡次数不为空<br/>
+判断单节课时长不为空<br/>
+判断赠送好友图片可用性<br/>
+https://file.tjkongfu.com/4567897654567890987.png<br/>
+判断视频属性<br/>
+https://file.tjkongfu.com/taiji/20210923/095013822342.m3u8<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/095013822342.m3u8?vframe/jpg/offset/2<br/>
+判断课程卡有效期<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>hlife.test.integration.Giftcard@78a2da20</td></tr>
+<tr>
+<td title='hlife.test.integration.Giftcard.coursecardList()'><b>coursecardList</b><br>Test class: hlife.test.integration.Giftcard<br/>
+<a href="#Output-1863253333" onClick='toggleBox("Output-1863253333", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1863253333" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1863253333">
+判断200,1，msg=获取课程卡列表成功<br/>
+pagesize:10<br/>
+page:1<br/>
+card_type:supremacy<br/>
+http://apitest.hishenghuo.com.cn:4000/union/coursecard/list/<br/>
+{"msg":"获取课程卡列表成功","data":{"pager":{"pagecount":1,"count":"9","pagesize":"10","page":"1"},"list":[{"img":"https://file.hishenghuo.com.cn/taiji/20210923/145000796674.jpg","theme":"测试","id":"35"},{"img":"https://file.hishenghuo.com.cn/taiji/20210923/150403320116.png","theme":"1","id":"34"},{"img":"https://file.hishenghuo.com.cn/taiji/20210923/114656511758.png","theme":"礼品卡名称测试测啛啛喳喳错错错错错错错错错错错啛啛喳喳错错错错错错错","id":"33"},{"img":"https://file.hishenghuo.com.cn/taiji/20210923/144113515640.png","theme":"养生礼品卡五","id":"27"},{"img":"https://file.hishenghuo.com.cn/taiji/20210923/144106250263.png","theme":"养生礼品卡四","id":"26"},{"img":"https://file.hishenghuo.com.cn/taiji/20210923/144057961153.png","theme":"养生礼品卡三","id":"25"},{"img":"https://file.hishenghuo.com.cn/taiji/20210923/144045295127.png","theme":"养生礼品卡二","id":"24"},{"img":"https://file.hishenghuo.com.cn/taiji/20210923/144034181949.png","theme":"养生礼品卡一","id":"23"},{"img":"https://file.hishenghuo.com.cn/taiji/20210923/094905748408.png","theme":"养生","id":"22"}]},"status":1}<br/>
+判断ID不为空<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/145000796674.jpg<br/>
+判断ID不为空<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/150403320116.png<br/>
+判断ID不为空<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/114656511758.png<br/>
+判断ID不为空<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/144113515640.png<br/>
+判断ID不为空<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/144106250263.png<br/>
+判断ID不为空<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/144057961153.png<br/>
+判断ID不为空<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/144045295127.png<br/>
+判断ID不为空<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/144034181949.png<br/>
+判断ID不为空<br/>
+判断标题不为空<br/>
+判断图片可用性<br/>
+https://file.hishenghuo.com.cn/taiji/20210923/094905748408.png<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>hlife.test.integration.Giftcard@78a2da20</td></tr>
+<tr>
+<td title='hlife.test.integration.Giftcard.invoicesCreatetitle()'><b>invoicesCreatetitle</b><br>Test class: hlife.test.integration.Giftcard<br/>
+<a href="#Output-450260125" onClick='toggleBox("Output-450260125", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-450260125" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-450260125">
+单位，电子普通发票<br/>
+判断title不能为空<br/>
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"名称不能为空","data":{},"status":0}<br/>
+判断发票类型不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+title:名称<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"发票类型不能为空","data":{},"status":0}<br/>
+判断发票抬头类型不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+title:名称<br/>
+type:3<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"发票抬头类型不能为空","data":{},"status":0}<br/>
+邮箱不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:1<br/>
+title:名称<br/>
+type:3<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"邮箱不能为空","data":{},"status":0}<br/>
+纳税人识别号或统一信用代码不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:1<br/>
+title:名称<br/>
+type:3<br/>
+email:aa@qq.com<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"纳税人识别号或统一信用代码不能为空","data":{},"status":0}<br/>
+添加成功<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:1<br/>
+title:名称<br/>
+type:3<br/>
+taxnumber:111111111111111111<br/>
+email:aa@qq.com<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"添加成功","status":1}<br/>
+单位，增值税专用发票<br/>
+判断title不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"名称不能为空","data":{},"status":0}<br/>
+判断发票类型不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+title:名称<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"发票类型不能为空","data":{},"status":0}<br/>
+判断发票抬头类型不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+title:名称<br/>
+type:3<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"发票抬头类型不能为空","data":{},"status":0}<br/>
+纳税人识别号或统一信用代码不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:2<br/>
+title:名称<br/>
+type:3<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"纳税人识别号或统一信用代码不能为空","data":{},"status":0}<br/>
+单位地址不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:2<br/>
+title:名称<br/>
+type:3<br/>
+taxnumber:111111111111111111<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"单位地址不能为空","data":{},"status":0}<br/>
+座机号码不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:2<br/>
+title:名称<br/>
+type:3<br/>
+taxnumber:111111111111111111<br/>
+company_address:单位地址<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"座机号码不能为空","data":{},"status":0}<br/>
+座机号码不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:2<br/>
+title:名称<br/>
+type:3<br/>
+taxnumber:111111111111111111<br/>
+company_address:单位地址<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"座机号码不能为空","data":{},"status":0}<br/>
+开户银行不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+phone:0427-1234567<br/>
+invoice_type:2<br/>
+title:名称<br/>
+type:3<br/>
+taxnumber:111111111111111111<br/>
+company_address:单位地址<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"开户银行不能为空","data":{},"status":0}<br/>
+银行账户不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+open_bank:开户银行<br/>
+phone:0427-1234567<br/>
+invoice_type:2<br/>
+title:名称<br/>
+type:3<br/>
+taxnumber:111111111111111111<br/>
+company_address:单位地址<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"银行账户不能为空","data":{},"status":0}<br/>
+添加成功<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+open_bank:开户银行<br/>
+phone:0427-1234567<br/>
+invoice_type:2<br/>
+title:名称<br/>
+type:3<br/>
+taxnumber:111111111111111111<br/>
+company_address:单位地址<br/>
+bank_account:55555555555555555555<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"添加成功","status":1}<br/>
+个人，电子普通发票<br/>
+判断title不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"名称不能为空","data":{},"status":0}<br/>
+判断发票类型不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+title:名称<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"发票类型不能为空","data":{},"status":0}<br/>
+判断发票抬头类型不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+title:名称<br/>
+type:1<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"发票抬头类型不能为空","data":{},"status":0}<br/>
+邮箱不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:1<br/>
+title:名称<br/>
+type:1<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"邮箱不能为空","data":{},"status":0}<br/>
+添加成功<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+invoice_type:1<br/>
+title:名称<br/>
+type:1<br/>
+email:qq@qq.com<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/createtitle/<br/>
+{"msg":"添加成功","status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>hlife.test.integration.Giftcard@78a2da20</td></tr>
+<tr>
+<td title='hlife.test.integration.Giftcard.invoicesDeletetitle()'><b>invoicesDeletetitle</b><br>Test class: hlife.test.integration.Giftcard<br/>
+<a href="#Output-995913454" onClick='toggleBox("Output-995913454", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-995913454" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-995913454">
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+id:155<br/>
+http://apitest.passport.tjkongfu.com:3999/v1/invoices/deletetitle/<br/>
+{"msg":"删除成功","status":1}<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+id:156<br/>
+http://apitest.passport.tjkongfu.com:3999/v1/invoices/deletetitle/<br/>
+{"msg":"删除成功","status":1}<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+id:157<br/>
+http://apitest.passport.tjkongfu.com:3999/v1/invoices/deletetitle/<br/>
+{"msg":"删除成功","status":1}<br/>
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/listtitle/<br/>
+{"msg":"暂时没有发票抬头","data":[],"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.Giftcard@78a2da20</td></tr>
+<tr>
+<td title='hlife.test.integration.Giftcard.invoicesListtitle()'><b>invoicesListtitle</b><br>Test class: hlife.test.integration.Giftcard<br/>
+<a href="#Output-876159048" onClick='toggleBox("Output-876159048", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-876159048" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-876159048">
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/invoices/listtitle/<br/>
+{"msg":"获取成功","data":{"general_self":[{"open_bank":"","phone":"","invoice_type":"1","id":"157","title":"名称","type":"1","company_address":"","email":"qq@qq.com","bank_account":""}],"added_tax":[{"open_bank":"开户银行","phone":"0427-1234567","invoice_type":"2","id":"156","title":"名称","type":"3","taxnumber":"111111111111111111","company_address":"单位地址","email":"","bank_account":"55555555555555555555"}],"general_company":[{"open_bank":"","phone":"","invoice_type":"1","id":"155","title":"名称","type":"3","taxnumber":"111111111111111111","company_address":"","email":"aa@qq.com","bank_account":""}]},"status":1}<br/>
+判断ID不为空<br/>
+判断title不为空<br/>
+判断type不为空<br/>
+判断taxnumber不为空<br/>
+判断invoice_type不为空<br/>
+判断ID不为空<br/>
+判断title不为空<br/>
+判断type不为空<br/>
+判断taxnumber不为空<br/>
+判断invoice_type不为空<br/>
+判断open_bank不为空<br/>
+判断company_address不为空<br/>
+判断phone不为空<br/>
+判断bank_account不为空<br/>
+判断ID不为空<br/>
+判断title不为空<br/>
+判断type不为空<br/>
+判断invoice_type不为空<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.Giftcard@78a2da20</td></tr>
+</table><p>
+</body>
+</html>

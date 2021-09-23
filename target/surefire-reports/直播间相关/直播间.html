@@ -1,0 +1,569 @@
+<html>
+<head>
+<title>TestNG:  直播间</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>直播间</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Sep 23 18:02:35 CST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>96 seconds (96485 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='hlife.test.integration.LiveRoom.QuitOrJoin()'><b>QuitOrJoin</b><br>Test class: hlife.test.integration.LiveRoom<br/>
+<a href="#Output-1590351968" onClick='toggleBox("Output-1590351968", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1590351968" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1590351968">
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+channel_name:taiji<br/>
+target_id:2021070715111652574910<br/>
+http://apitest.passport.tjkongfu.com:3999/union/chat/recordList/<br/>
+{"msg":"获取聊天记录列表","data":{"pager":{"pagecount":1,"count":"2","pagesize":20,"page":1},"list":[{"room_id":"12006","chat_type":"0","message_content":{"operatorUserId":"4030","data":{"operatorNickname":"176****1111","targetGroupName":"纨绔丶夜的粉丝团"},"isIncludeSender":1,"message":"","operation":"Rename"},"message_time":"1632391387202","object_name":"RC:GrpNtf","id":"469484","msg_uid":"BS28-DTGG-JRED-LDMN","from_user_id":"4030","chat_name":""},{"room_id":"12006","chat_type":"0","message_content":{"operatorUserId":"4062","data":{"extra":"[{\"id\":\"4062\",\"nick_name\":\"\\u7528\\u6237102704\",\"avatar\":\"http:\\/\\/file.hishenghuo.com.cn\\/taiji\\/avatar.png\",\"msg\":\"\\u7fa4\\u804a\\u53c2\\u4e0e\\u4eba\\u8fd8\\u6709\\uff1a\\u4e09\\u5200\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u3001\\u7528\\u6237102831\\u3001\\u7528\\u6237102868\\u3001\\u6d41\\u5e74\\u4f3c\\u6c34\\u5609\\u5e74\\u534e\\u3001\\u9a91\\u4e0a\\u6211\\u5fc3\\u7231\\u7684\\u5c0f\\u6469\\u6258~\\u3001176****1111\"}]","operatorNickname":"用户102704"},"isIncludeSender":1,"extra":"[{\"id\":\"4062\",\"nick_name\":\"\\u7528\\u6237102704\",\"avatar\":\"http:\\/\\/file.hishenghuo.com.cn\\/taiji\\/avatar.png\",\"msg\":\"\\u7fa4\\u804a\\u53c2\\u4e0e\\u4eba\\u8fd8\\u6709\\uff1a\\u4e09\\u5200\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u5207\\u3001\\u7528\\u6237102831\\u3001\\u7528\\u6237102868\\u3001\\u6d41\\u5e74\\u4f3c\\u6c34\\u5609\\u5e74\\u534e\\u3001\\u9a91\\u4e0a\\u6211\\u5fc3\\u7231\\u7684\\u5c0f\\u6469\\u6258~\\u3001176****1111\"}]","message":"","operation":"Add"},"message_time":"1632390241283","object_name":"RC:GrpNtf","id":"469398","msg_uid":"BS28-55O0-RG6D-LDMN","from_user_id":"4062","chat_name":""}]},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+channel_name:taiji<br/>
+target_id:2021070715111652574910<br/>
+http://apitest.passport.tjkongfu.com:3999/union/chat/enterInfo/<br/>
+{"msg":"获取成功","data":{"channel_name":"taiji","in_group":1,"question_list":[],"num":7,"target_id":"2021070715111652574910","permission":["invite","quit"],"hotelId":"0","users":[{"nick_name":"176****1111","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","id":"4030","mark":1},{"nick_name":"骑上我心爱的小摩托~","avatar":"https://file.hishenghuo.com.cn/taiji/20210812/1628735784107345.jpg","id":"3541","mark":0},{"nick_name":"流年似水嘉年华","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","id":"4218","mark":0},{"nick_name":"用户102868","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","id":"4254","mark":0},{"nick_name":"用户102831","avatar":"https://file.hishenghuo.com.cn/taiji/20210909/16385361613.jpg","id":"4217","mark":0},{"nick_name":"三刀切切切切切切切切切切切切切切切切切","avatar":"https://file.hishenghuo.com.cn/taiji/20210917/16360082615.jpg","id":"3736","mark":0},{"nick_name":"用户102704","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","id":"4062","mark":0}],"is_top":"0","welcome_content":"","func":{"idFiles":1,"isAlbum":1,"isBusinessCard":1,"isPosition":1,"isRedPacket":1,"isPhotograph":1},"is_reveal":"1","nick_name":"用户102704","name":"纨绔丶夜的粉丝团","is_disturb":"0","id":"12006","is_addr_book":"1","mark":0,"chat_remark":"","notice":""},"status":1}<br/>
+http://file.hishenghuo.com.cn/taiji/avatar.png<br/>
+https://file.hishenghuo.com.cn/taiji/20210812/1628735784107345.jpg<br/>
+https://file.hishenghuo.com.cn/taiji/avatar.png<br/>
+https://file.hishenghuo.com.cn/taiji/avatar.png<br/>
+https://file.hishenghuo.com.cn/taiji/20210909/16385361613.jpg<br/>
+https://file.hishenghuo.com.cn/taiji/20210917/16360082615.jpg<br/>
+http://file.hishenghuo.com.cn/taiji/avatar.png<br/>
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+country_code:86<br/>
+password:9999<br/>
+type:1<br/>
+uuid:00000000-53a8-ae41-ffff-ffffef05ac4a<br/>
+platform:taiji<br/>
+username:17610733700<br/>
+http://apitest.hishenghuo.com.cn:4000/union/login/verify/<br/>
+{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"qHvxty3hkoU7FnYIFWi7uGT3hR/J1DbMwpd1snUhchQ=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4062","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa","country_code":"86","user_pid":"0","phone":"17610733700","nickname":"用户102704","guid":"hsu6d65835c4fa5434382f5ef511dfcf511","id":"4062","switch_open":0,"username":"102704"},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+target_id:2021070715111652574910<br/>
+quit_id:4062<br/>
+http://apitest.passport.tjkongfu.com:3999/v2/chat/quit/<br/>
+{"msg":"退群成功","data":{},"status":1}<br/>
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+country_code:86<br/>
+password:9999<br/>
+type:1<br/>
+uuid:00000000-53a8-ae41-ffff-ffffef05ac4a<br/>
+platform:taiji<br/>
+username:17611111111<br/>
+http://apitest.hishenghuo.com.cn:4000/union/login/verify/<br/>
+{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+user_id:4030<br/>
+http://apitest.hishenghuo.com.cn:4000/union/publics/fansGroupDetail/<br/>
+{"msg":"获取粉丝团信息成功","data":{"room_id":"12006","join_type":"1","in_group":0,"group_name":"纨绔丶夜的粉丝团","num":6,"target_id":"2021070715111652574910","group_tag":"哈哈哈","join_price":"0.00","users":[{"nick_name":"176****1111","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","id":"4030","mark":1},{"nick_name":"骑上我心爱的小摩托~","avatar":"https://file.hishenghuo.com.cn/taiji/20210812/1628735784107345.jpg","id":"3541","mark":0},{"nick_name":"流年似水嘉年华","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","id":"4218","mark":0},{"nick_name":"用户102868","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","id":"4254","mark":0},{"nick_name":"用户102831","avatar":"https://file.hishenghuo.com.cn/taiji/20210909/16385361613.jpg","id":"4217","mark":0},{"nick_name":"三刀切切切切切切切切切切切切切切切切切","avatar":"https://file.hishenghuo.com.cn/taiji/20210917/16360082615.jpg","id":"3736","mark":0}],"status":"2"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>hlife.test.integration.LiveRoom@3444d69d</td></tr>
+<tr>
+<td title='hlife.test.integration.LiveRoom.fansGroupApply()'><b>fansGroupApply</b><br>Test class: hlife.test.integration.LiveRoom<br/>
+<a href="#Output-1083938514" onClick='toggleBox("Output-1083938514", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1083938514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1083938514">
+{
+    "status": 0,
+    "msg": "粉丝团勋章最多3个字",
+    "data": {}
+}<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+group_tag:哈哈哈哈<br/>
+http://apitest.hishenghuo.com.cn:4000/union/publics/fansGroupApply/<br/>
+{"msg":"粉丝团勋章最多3个字","data":{},"status":0}<br/>
+粉丝团群名称最多15个字<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+group_name:纨绔丶夜的粉丝团对对对鼎折覆餗放松放松<br/>
+http://apitest.hishenghuo.com.cn:4000/union/publics/fansGroupApply/<br/>
+{"msg":"粉丝团群名称最多15个字","data":{},"status":0}<br/>
+{
+    "status": 1,
+    "msg": "修改成功",
+    "data": {}
+}<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+join_type:1<br/>
+group_name:纨绔丶夜的粉丝团<br/>
+group_tag:哈哈哈<br/>
+http://apitest.hishenghuo.com.cn:4000/union/publics/fansGroupApply/<br/>
+{"msg":"修改成功","data":{},"status":1}<br/>
+查看修改后结果是否一致<br/>
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+country_code:86<br/>
+password:9999<br/>
+type:1<br/>
+uuid:00000000-53a8-ae41-ffff-ffffef05ac4a<br/>
+platform:taiji<br/>
+username:17611111111<br/>
+http://apitest.hishenghuo.com.cn:4000/union/login/verify/<br/>
+{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+user_id:4030<br/>
+http://apitest.hishenghuo.com.cn:4000/union/publics/fansGroupDetail/<br/>
+{"msg":"获取粉丝团信息成功","data":{"room_id":"12006","join_type":"1","in_group":1,"group_name":"纨绔丶夜的粉丝团","num":7,"target_id":"2021070715111652574910","group_tag":"哈哈哈","join_price":"0.00","users":[{"nick_name":"176****1111","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","id":"4030","mark":1},{"nick_name":"骑上我心爱的小摩托~","avatar":"https://file.hishenghuo.com.cn/taiji/20210812/1628735784107345.jpg","id":"3541","mark":0},{"nick_name":"流年似水嘉年华","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","id":"4218","mark":0},{"nick_name":"用户102868","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","id":"4254","mark":0},{"nick_name":"用户102831","avatar":"https://file.hishenghuo.com.cn/taiji/20210909/16385361613.jpg","id":"4217","mark":0},{"nick_name":"三刀切切切切切切切切切切切切切切切切切","avatar":"https://file.hishenghuo.com.cn/taiji/20210917/16360082615.jpg","id":"3736","mark":0},{"nick_name":"用户102704","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","id":"4062","mark":0}],"status":"2"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>hlife.test.integration.LiveRoom@3444d69d</td></tr>
+<tr>
+<td title='hlife.test.integration.LiveRoom.fansGroupDetail()'><b>fansGroupDetail</b><br>Test class: hlife.test.integration.LiveRoom<br/>
+<a href="#Output-432304387" onClick='toggleBox("Output-432304387", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-432304387" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-432304387">
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+country_code:86<br/>
+password:9999<br/>
+type:1<br/>
+uuid:00000000-53a8-ae41-ffff-ffffef05ac4a<br/>
+platform:taiji<br/>
+username:17611111111<br/>
+http://apitest.hishenghuo.com.cn:4000/union/login/verify/<br/>
+{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+user_id:4030<br/>
+http://apitest.hishenghuo.com.cn:4000/union/publics/fansGroupDetail/<br/>
+{"msg":"获取粉丝团信息成功","data":{"room_id":"12006","join_type":"1","in_group":1,"group_name":"纨绔丶夜的粉丝团","num":7,"target_id":"2021070715111652574910","group_tag":"哈哈哈","join_price":"0.00","users":[{"nick_name":"176****1111","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","id":"4030","mark":1},{"nick_name":"骑上我心爱的小摩托~","avatar":"https://file.hishenghuo.com.cn/taiji/20210812/1628735784107345.jpg","id":"3541","mark":0},{"nick_name":"流年似水嘉年华","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","id":"4218","mark":0},{"nick_name":"用户102868","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","id":"4254","mark":0},{"nick_name":"用户102831","avatar":"https://file.hishenghuo.com.cn/taiji/20210909/16385361613.jpg","id":"4217","mark":0},{"nick_name":"三刀切切切切切切切切切切切切切切切切切","avatar":"https://file.hishenghuo.com.cn/taiji/20210917/16360082615.jpg","id":"3736","mark":0},{"nick_name":"用户102704","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","id":"4062","mark":0}],"status":"2"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>hlife.test.integration.LiveRoom@3444d69d</td></tr>
+<tr>
+<td title='hlife.test.integration.LiveRoom.followIndex()'><b>followIndex</b><br>Test class: hlife.test.integration.LiveRoom<br/>
+<a href="#Output-1834860344" onClick='toggleBox("Output-1834860344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1834860344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1834860344">
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+country_code:86<br/>
+password:9999<br/>
+type:1<br/>
+uuid:00000000-53a8-ae41-ffff-ffffef05ac4a<br/>
+platform:taiji<br/>
+username:17611111111<br/>
+http://apitest.hishenghuo.com.cn:4000/union/login/verify/<br/>
+{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+follow_who:4030<br/>
+http://apitest.hishenghuo.com.cn:4000/union/follow/index/<br/>
+{"msg":"关注成功","data":{},"status":1}<br/>
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+country_code:86<br/>
+password:9999<br/>
+type:1<br/>
+uuid:00000000-53a8-ae41-ffff-ffffef05ac4a<br/>
+platform:taiji<br/>
+username:17611111111<br/>
+http://apitest.hishenghuo.com.cn:4000/union/login/verify/<br/>
+{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9178<br/>
+user_id:4030<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/userInfo/<br/>
+{"msg":"获取直播间用户信息成功","data":{"birthday":"","address":"","is_follow":2,"is_block":"0","sex":"0","is_manage":"0","live_role":"anchor","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","fans_count":"399","is_ban":"0","self_intro":"","follow_count":"9","nick_name":"176****1111","id":"4030","age":0,"username":"102672"},"status":1}<br/>
+封装是否关注<br/>
+判断用户可用性<br/>
+https://file.hishenghuo.com.cn/taiji/avatar.png<br/>
+判断用户昵称是否显示<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>hlife.test.integration.LiveRoom@3444d69d</td></tr>
+<tr>
+<td title='hlife.test.integration.LiveRoom.liveAppCreate()'><b>liveAppCreate</b><br>Test class: hlife.test.integration.LiveRoom<br/>
+<a href="#Output-1684692598" onClick='toggleBox("Output-1684692598", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1684692598" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1684692598">
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+创建直播成功<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/appCreate/<br/>
+{"msg":"创建直播成功","data":{"show_type":"0","live_tag":"1","live_charge":"0","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"live_mode":"1","live_title":"自动化测试直播","can_recommend":["mall","house"],"id":1,"live_cname":"测试测试测试","live_code":"","live_cid":"75","live_price":"0.00"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>hlife.test.integration.LiveRoom@3444d69d</td></tr>
+<tr>
+<td title='hlife.test.integration.LiveRoom.liveAppCreate1()'><b>liveAppCreate1</b><br>Test class: hlife.test.integration.LiveRoom<br/>
+<a href="#Output-330849841" onClick='toggleBox("Output-330849841", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-330849841" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-330849841">
+顶号登录，已开播，观看直播<br/>
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/appCreate/<br/>
+{"msg":"您已有其他直播正在直播中","data":{"event_id":"9178","event_type":"view","button_text":"观看直播"},"status":-3}<br/>
+异常退出，已开播，继续直播<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+http://apitest.hishenghuo.com.cn:4000/v2/live/appCreate/<br/>
+{"msg":"您已有其他直播正在直播中","data":{"event_id":"9178","event_type":"continue","button_text":"继续直播"},"status":-3}<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>hlife.test.integration.LiveRoom@3444d69d</td></tr>
+<tr>
+<td title='hlife.test.integration.LiveRoom.liveCategoryList()'><b>liveCategoryList</b><br>Test class: hlife.test.integration.LiveRoom<br/>
+<a href="#Output-1014366187" onClick='toggleBox("Output-1014366187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1014366187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1014366187">
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+is_hidden:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/categoryList/<br/>
+{"msg":"获取直播分类成功","data":[{"sub":[],"has_goods":"0","cate_name":"测试测试测试","live_type":"7","can_recommend":["mall","house"],"id":"75","show_types":["0","2","4"]},{"sub":[{"cate_name":"新房","house_cid":"1"},{"cate_name":"二手房","house_cid":"2"},{"cate_name":"租房","house_cid":"3"},{"cate_name":"别墅","house_cid":"4"},{"cate_name":"商铺写字楼","house_cid":"5"},{"cate_name":"海南新房","house_cid":"12"}],"has_goods":"1","cate_name":"租房售房","live_type":"6","can_recommend":["house"],"id":"51","show_types":["0","2","4"]},{"sub":[],"has_goods":"0","cate_name":"邮轮","live_type":"6","can_recommend":["ship"],"id":"60","show_types":["0","2","4"]}],"status":1}<br/>
+判断code=200
+msg=获取直播分类成功
+status=1<br/>
+判断data[0].cate_name不为空<br/>
+用例通过<br/>
+判断data[0].id不为空<br/>
+用例通过<br/>
+封装键值对<br/>
+判断data[1].cate_name不为空<br/>
+用例通过<br/>
+判断data[1].id不为空<br/>
+用例通过<br/>
+封装键值对<br/>
+判断data[2].cate_name不为空<br/>
+用例通过<br/>
+判断data[2].id不为空<br/>
+用例通过<br/>
+封装键值对<br/>
+判断返回值内包含“关注”<br/>
+用例通过<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LiveRoom@3444d69d</td></tr>
+<tr>
+<td title='hlife.test.integration.LiveRoom.liveCreate()'><b>liveCreate</b><br>Test class: hlife.test.integration.LiveRoom<br/>
+<a href="#Output-46019500" onClick='toggleBox("Output-46019500", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-46019500" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-46019500">
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+判断跳转登录<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"请登录","data":{},"status":-1}<br/>
+直播封面不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"直播封面不能为空","data":{},"status":0}<br/>
+直播类型id不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_cover:taiji/20210823/1629685787500825.jpg<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"直播类型id不能为空","data":{},"status":0}<br/>
+直播标题不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_cover:taiji/20210823/1629685787500825.jpg<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+live_cid:75<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"直播标题不能为空","data":{},"status":0}<br/>
+创建直播成功<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_cover:taiji/20210823/1629685787500825.jpg<br/>
+live_title:自动化测试直播<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+live_cid:75<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"创建直播成功","data":{"comment_count":0,"notice_jianhuang_status":"0","app_type":"hilife","channel":"tj_prod_9178","resolution":"","converter_id":"27475200D3423F5F258267A5E5AF9808","switch_time":"0","live_admin_url":"http://www.tjkongfu.com/live/#/login","stream_name":"614c5100129814030","video_more":"0","live_title":"自动化测试直播","anchor_data":{"is_follow":0,"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","passport_id":"2672"},"view_time":0,"id":"9178","live_area":"0","live_price":"0.00","is_pushing":"0","live_charge":"0","re_url":"","is_manage":"0","push_url":"rtmp://push.tjkongfu.com/live/","live_cname":"测试测试测试","live_source":"0","chat_room_status":"0","live_mode":"1","live_povince":"0","is_recommend":"0","status":"1","live_tag":"1","auto_confirm_time":"1632434624","is_lu":"0","is_block":"0","live_lat":"0.000000","goods_count":"0","mike_interactive":"0","gift_num":"0","live_long_time":"0","pull_url":"rtmp://pull.tjkongfu.com/live/614c5100129814030?auth_info=5pg%2Bxdt6fsmwdvUxe4yufhBT06fHDau5Q7%2BmehruDVtDv3fOOBqphTm6A%2FyKoYxb.45686b776561556c626d67644f427561","anchor_start_time":"1632391424","share":{"image":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","name":"我正在观看176****1111的直播","url":"https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9178","content":"自动化测试直播"},"current_time":1632391424,"live_address":"0","is_send":"0","anchor_id":"4030","copper_price":0,"status_name":"直播中","gift_pop":0,"live_cid":"75","url_key":"auth_info=5pg%2Bxdt6fsmwdvUxe4yufhBT06fHDau5Q7%2BmehruDVtDv3fOOBqphTm6A%2FyKoYxb.45686b776561556c626d67644f427561","mike_status":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"view_count":917,"converter_sequence":"0","wg_num":"0","re_data":{},"msg":"","goods_data":{},"uuid":"00000000-258c-468d-ffff-ffffef05ac4a","online_count":"0","has_activity":1,"re_type":"","anchor_end_time":"0","live_direction":"0","video_request_id":"","play_count":"0","start_time":"0","show_type":"0","close_converter":"0","online_data":[],"anchor_pause_time":"0","support_num":"0本场点赞","video_height":"0","video_duration":"0","live_city":"0","if_self":1,"close_mike":"0","video_width":"0","live_role":"anchor","auto_end_time":1632435224,"re_id":"0","video_url":"","is_ban":"0","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"sw_accessToken":"0064864e2786c98440b8563d83799591cfeIACR1OwdQsd3zkCoGTRWWAg2talJg3k5w+G3imhvlDIrgtkzfPzmANSoEACizwAAgKJNYQEAAQCARVBh","roomRtcInfo":{"manageInfo":{"muteAll":"0"},"liveFunc":0},"live_lng":"0.000000","all_mute":"0","re_count":0,"sort_order":"0","target_id":"2021092318034448505755","free_time":0,"activity_data":{"activity_name":"风景大厦","re_id":"162?type=6&share_code=60ec0f352700a","activity_url":"","fold_time":60,"cover_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg","re_type":"mall","fold_pic":"https://file.hishenghuo.com.cn/taiji/20210309/6047415015bca.jpg","created_at":"2021-01-30 10:34:44","id":"11"},"re_show_id":"0","is_show":"1","play_time":0,"has_goods":"0","live_city_name":"","forbid_expire":"0","push_forbid":"0"},"status":1}<br/>
+封装直播ID<br/>
+判断用户信息<br/>
+https://file.hishenghuo.com.cn/taiji/avatar.png<br/>
+判断在线用户<br/>
+判断活动信息<br/>
+https://file.hishenghuo.com.cn/taiji/20210309/6047414d1bb83.jpg<br/>
+判断分享信息<br/>
+https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9178<br/>
+https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg<br/>
+您已有其他直播正在直播中<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_cover:taiji/20210823/1629685787500825.jpg<br/>
+live_title:自动化测试直播<br/>
+live_setting:{"BeautyVideoFx":{"Strength":50,"Whitening":50},"captureDevicePosition":"front","isMirror":1,"is_lu":0,"is_send":1,"resolution":"普清360p"}<br/>
+live_cid:75<br/>
+auto_start:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/create/<br/>
+{"msg":"您已有其他直播正在直播中","data":{},"status":0}<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>hlife.test.integration.LiveRoom@3444d69d</td></tr>
+<tr>
+<td title='hlife.test.integration.LiveRoom.liveDetail()'><b>liveDetail</b><br>Test class: hlife.test.integration.LiveRoom<br/>
+<a href="#Output-1096149085" onClick='toggleBox("Output-1096149085", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1096149085" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1096149085">
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+直播id不能为空<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+auto:1<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/detail/<br/>
+{"msg":"直播id不能为空","data":{},"status":0}<br/>
+获取直播信息成功<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+auto:1<br/>
+live_id:9178<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/detail/<br/>
+{"msg":"获取直播信息成功","data":{"comment_count":0,"notice_jianhuang_status":"0","app_type":"hilife","channel":"tj_prod_9178","resolution":"","converter_id":"27475200D3423F5F258267A5E5AF9808","switch_time":"0","stream_name":"614c5100129814030","video_more":"0","live_title":"自动化测试直播","anchor_data":{"is_follow":0,"nick_name":"176****1111","id":"4030","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","passport_id":"2672"},"view_time":0,"id":"9178","live_area":"0","live_price":"0.00","is_pushing":"1","live_charge":"0","re_url":"","is_manage":"0","push_url":"rtmp://push.tjkongfu.com/live/614c5100129814030?auth_info=5pg%2Bxdt6fsmwdvUxe4yufhBT06fHDau5Q7%2BmehruDVtDv3fOOBqphTm6A%2FyKoYxb.45686b776561556c626d67644f427561","live_cname":"测试测试测试","live_source":"0","chat_room_status":"0","live_mode":"1","is_recommend":"0","live_povince":"0","status":"1","live_tag":"1","auto_confirm_time":"1632434624","is_lu":"0","is_block":"0","live_lat":"0.000000","goods_count":"0","mike_interactive":"0","gift_num":"0","live_long_time":"0","pull_url":"rtmp://pull.tjkongfu.com/live/614c5100129814030?auth_info=5pg%2Bxdt6fsmwdvUxe4yufhBT06fHDau5Q7%2BmehruDVtDv3fOOBqphTm6A%2FyKoYxb.45686b776561556c626d67644f427561","anchor_start_time":"1632391424","share":{"image":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg","name":"我正在观看176****1111的直播","url":"https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9178","content":"自动化测试直播"},"current_time":1632391432,"is_send":"0","live_address":"0","anchor_id":"4030","copper_price":0,"status_name":"直播中","gift_pop":0,"live_cid":"75","mike_status":"0","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"converter_sequence":"0","view_count":917,"wg_num":"0","re_data":{},"msg":"","goods_data":{},"uuid":"00000000-258c-468d-ffff-ffffef05ac4a","online_count":"0","has_activity":1,"re_type":"","anchor_end_time":"0","live_direction":"0","video_request_id":"","play_count":"0","show_type":"0","start_time":"0","close_converter":"0","online_data":[],"anchor_pause_time":"0","support_num":"0本场点赞","video_duration":"0","video_height":"0","live_city":"0","if_self":1,"close_mike":"0","video_width":"0","live_role":"anchor","auto_end_time":1632435224,"re_id":"0","video_url":"","is_ban":"0","live_cover":{"key":"taiji/20210823/1629685787500825.jpg","url":"https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg"},"sw_accessToken":"0064864e2786c98440b8563d83799591cfeIACR1OwdQsd3zkCoGTRWWAg2talJg3k5w+G3imhvlDIrgtkzfPzmANSoEACizwAAgKJNYQEAAQCARVBh","roomRtcInfo":{"manageInfo":{"muteAll":"0"},"liveFunc":0},"live_lng":"0.000000","all_mute":"0","re_count":0,"sort_order":"0","target_id":"2021092318034448505755","free_time":0,"activity_data":{"activity_name":"测试活动名称1","re_id":"0","activity_url":"https://blog.csdn.net/qq_37028216/article/details/88310634","fold_time":60,"cover_pic":"https://file.hishenghuo.com.cn/taiji/20210713/60ed49fe5690c.jpg","re_type":"url","fold_pic":"https://file.hishenghuo.com.cn/taiji/20210713/60ed4a0254409.jpg","created_at":"2021-07-13 16:09:12","id":"15"},"re_show_id":"0","is_show":"1","play_time":0,"has_goods":"0","live_city_name":"","forbid_expire":"0","push_forbid":"0"},"status":1}<br/>
+判断用户信息<br/>
+https://file.hishenghuo.com.cn/taiji/avatar.png<br/>
+判断在线用户<br/>
+判断活动信息<br/>
+https://file.hishenghuo.com.cn/taiji/20210713/60ed49fe5690c.jpg<br/>
+判断分享信息<br/>
+https://wwwtest.tjkongfu.com:4002/share/liveVideo/?id=9178<br/>
+https://file.hishenghuo.com.cn/taiji/20210823/1629685787500825.jpg<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>hlife.test.integration.LiveRoom@3444d69d</td></tr>
+<tr>
+<td title='hlife.test.integration.LiveRoom.liveStatus()'><b>liveStatus</b><br>Test class: hlife.test.integration.LiveRoom<br/>
+<a href="#Output-497662301" onClick='toggleBox("Output-497662301", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-497662301" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-497662301">
+{
+    "status": -1,
+    "msg": "请登录",
+    "data": {}
+}<br/>
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/status/<br/>
+{"msg":"请登录","data":{},"status":-1}<br/>
+{
+    "status": 0,
+    "msg": "直播id不能为空",
+    "data": {}
+}<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/status/<br/>
+{"msg":"直播id不能为空","data":{},"status":0}<br/>
+获取直播状态信息成功<br/>
+access_token:$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6<br/>
+live_id:9178<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/status/<br/>
+{"msg":"获取直播状态信息成功","data":{"msg":"","anchor_nick_name":"176****1111","copper_price":0,"push_url":"rtmp://push.tjkongfu.com/live/614c5100129814030?auth_info=5pg%2Bxdt6fsmwdvUxe4yufhBT06fHDau5Q7%2BmehruDVtDv3fOOBqphTm6A%2FyKoYxb.45686b776561556c626d67644f427561","target_id":"2021092318034448505755","can_join":1,"house_target_id":"","live_id":"9178","pull_url":"http://pull.tjkongfu.com/live/614c5100129814030.flv?auth_info=5pg%2Bxdt6fsmwdvUxe4yufhBT06fHDau5Q7%2BmehruDVtDv3fOOBqphTm6A%2FyKoYxb.45686b776561556c626d67644f427561","video_url":"","anchor_avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","anchor":"1","live_setting":{"captureDevicePosition":"front","is_send":1,"isMirror":1,"is_lu":0,"filterType":"","BeautyVideoFx":{"Whitening":50,"Strength":50},"resolution":"普清360p"},"live_code":0,"live_price":"0.00","status":"1"},"status":1}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>hlife.test.integration.LiveRoom@3444d69d</td></tr>
+<tr>
+<td title='hlife.test.integration.LiveRoom.liveUserInfo()'><b>liveUserInfo</b><br>Test class: hlife.test.integration.LiveRoom<br/>
+<a href="#Output-1491620702" onClick='toggleBox("Output-1491620702", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1491620702" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1491620702">
+clientkey:d0a1e446478f17fcf38b83ee92f672f8<br/>
+--------header--------<br/>
+apptype:hilife<br/>
+--------header--------<br/>
+sign:45BF3A06028B5BCF5C8A691D141D3DA7<br/>
+--------header--------<br/>
+timestamp:1631096964<br/>
+--------header--------<br/>
+country_code:86<br/>
+password:9999<br/>
+type:1<br/>
+uuid:00000000-53a8-ae41-ffff-ffffef05ac4a<br/>
+platform:taiji<br/>
+username:17611111111<br/>
+http://apitest.hishenghuo.com.cn:4000/union/login/verify/<br/>
+{"msg":"登录成功","data":{"is_bind_phone":1,"is_new":0,"rong_token":"rTXn/90+dWQ7FnYIFWi7uASvkYGdp6ez8fkyEVk1Z/M=@03h7.cn.rongnav.com;03h7.cn.rongcfg.com","rong_id":"4030","avatar":"http://file.hishenghuo.com.cn/taiji/avatar.png","isset_pswd":1,"access_token":"$2y$13$12aCHYsluE/ywtDKXmgb0.mom.OpSlGAfJei2rUCXxoIp5CA6yoi6","country_code":"86","user_pid":"0","phone":"17611111111","nickname":"176****1111","guid":"hsu17937a5b0988477ba4185d5cc9bac5ec","id":"4030","switch_open":0,"username":"102672"},"status":1}<br/>
+access_token:$2y$13$m12yynupQTd8nd93N/67ceuQav1daTc30Wj20RzQF7/bIw3sWoWfa<br/>
+live_id:9178<br/>
+user_id:4030<br/>
+http://apitest.hishenghuo.com.cn:4000/union/live/userInfo/<br/>
+{"msg":"获取直播间用户信息成功","data":{"birthday":"","address":"","is_follow":0,"is_block":"0","sex":"0","is_manage":"0","live_role":"anchor","avatar":"https://file.hishenghuo.com.cn/taiji/avatar.png","fans_count":"398","is_ban":"0","self_intro":"","follow_count":"9","nick_name":"176****1111","id":"4030","age":0,"username":"102672"},"status":1}<br/>
+封装是否关注<br/>
+判断用户可用性<br/>
+https://file.hishenghuo.com.cn/taiji/avatar.png<br/>
+判断用户昵称是否显示<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>hlife.test.integration.LiveRoom@3444d69d</td></tr>
+</table><p>
+</body>
+</html>
