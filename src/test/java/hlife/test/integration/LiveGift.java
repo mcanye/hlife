@@ -266,7 +266,7 @@ public class LiveGift extends BaseApi{
     /**
      * 执行关播
      */
-    @AfterClass
+    @Test(dependsOnMethods = { "liveGiftPopInfo"})
     public void liveOpera() throws IOException {
         HashMap<String,String> params = new HashMap<>();
         params.put("access_token",access_token);
