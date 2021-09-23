@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -265,7 +266,7 @@ public class LiveGift extends BaseApi{
     /**
      * 执行关播
      */
-    @Test(dependsOnMethods = { "liveGiftPopInfo"})
+    @AfterClass
     public void liveOpera() throws IOException {
         HashMap<String,String> params = new HashMap<>();
         params.put("access_token",access_token);

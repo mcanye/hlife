@@ -1,10 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="直播间连麦相关" verbose="1" preserve-order="true">
+<suite name="直播间权限相关" verbose="1" preserve-order="true">
     <parameter name="report.config" value="src/main/resources/config/report/extent-config.xml"/>
     <parameter name="system.info" value="reporter.config.MySystemInfo"/>
 
-    <test name = "直播连麦" preserve-order="true">
+    <test name = "直播商品与用户权限" preserve-order="true">
         <classes>
             <class name="hlife.test.integration.LivePower"/>
         </classes>

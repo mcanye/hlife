@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -613,7 +614,7 @@ public class LiveRtcFunc extends BaseApi{
     /**
      * 关闭直播
      */
-    @Test(dependsOnMethods = { "liveCloseRtcFunc" })
+    @AfterClass
     public void liveOpera() throws IOException {
         Reporter.log("请登录");
         HashMap<String,String> params = new HashMap<>();

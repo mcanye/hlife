@@ -420,8 +420,19 @@ public class Giftcard extends BaseApi{
         msg = rs.getString("msg");
         Assert.assertEquals(msg,"发票抬头类型不能为空","接口请求msg不正确");
 
-        Reporter.log("纳税人识别号或统一信用代码不能为空");
+
+        Reporter.log("邮箱不能为空");
         params.put("invoice_type","1");
+        rs = httpClient.getResponseJson(httpClient.post(invoicesCreatetitle, params, header));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        status = rs.getIntValue("status");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_0,"接口请求失败");
+        msg = rs.getString("msg");
+        Assert.assertEquals(msg,"邮箱不能为空","接口请求msg不正确");
+
+        Reporter.log("纳税人识别号或统一信用代码不能为空");
+        params.put("email","aa@qq.com");
         rs = httpClient.getResponseJson(httpClient.post(invoicesCreatetitle, params, header));
         log.info(rs.toJSONString());
         Reporter.log(rs.toJSONString());
@@ -575,8 +586,18 @@ public class Giftcard extends BaseApi{
         msg = rs.getString("msg");
         Assert.assertEquals(msg,"发票抬头类型不能为空","接口请求msg不正确");
 
-        Reporter.log("添加成功");
+        Reporter.log("邮箱不能为空");
         params.put("invoice_type","1");
+        rs = httpClient.getResponseJson(httpClient.post(invoicesCreatetitle, params, header));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        status = rs.getIntValue("status");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_0,"接口请求失败");
+        msg = rs.getString("msg");
+        Assert.assertEquals(msg,"邮箱不能为空","接口请求msg不正确");
+
+        Reporter.log("添加成功");
+        params.put("email","qq@qq.com");
         rs = httpClient.getResponseJson(httpClient.post(invoicesCreatetitle, params, header));
         log.info(rs.toJSONString());
         Reporter.log(rs.toJSONString());
@@ -674,10 +695,10 @@ public class Giftcard extends BaseApi{
                     Assert.assertEquals(expiry.equals(""),false,"有效期不应为空");
                     Reporter.log("订单状态不应为空");
                     String status1 = listObj.getString("status");
-                    Assert.assertEquals(status1.equals("0"),true,"订单状态不应为空");
+                    Assert.assertEquals(status1.equals(""),false,"订单状态不应为空");
                     Reporter.log("订单状态名称不应为空");
                     String statusName = listObj.getString("statusName");
-                    Assert.assertEquals(statusName.equals("待支付"),true,"订单状态名称不应为空");
+                    Assert.assertEquals(statusName.equals(""),false,"订单状态名称不应为空");
                     Reporter.log("图片有效性");
                     String img = listObj.getString("img");
                     int statusCode = httpClient.getStatusCode(httpClient.get(img, new HashMap<>()));
@@ -707,8 +728,8 @@ public class Giftcard extends BaseApi{
         for (int i = 0 ; i< orderIdList.size();i++){
             HashMap<String,String> params = new HashMap<>();
             params.put("access_token",access_token);
-            cardorderCancel = cardorderCancel + orderIdList.get(i);
-            JSONObject rs = httpClient.getResponseJson(httpClient.post(cardorderCancel, params));
+            String new_cardorderCancel = cardorderCancel + orderIdList.get(i);
+            JSONObject rs = httpClient.getResponseJson(httpClient.post(new_cardorderCancel, params));
             log.info(rs.toJSONString());
             Reporter.log(rs.toJSONString());
             int status = rs.getIntValue("status");
@@ -726,8 +747,8 @@ public class Giftcard extends BaseApi{
         for (int i = 0 ; i< orderIdList.size();i++){
             HashMap<String,String> params = new HashMap<>();
             params.put("access_token",access_token);
-            cardorderDelete = cardorderDelete + orderIdList.get(i);
-            JSONObject rs = httpClient.getResponseJson(httpClient.post(cardorderDelete, params));
+            String new_cardorderDelete = cardorderDelete + orderIdList.get(i);
+            JSONObject rs = httpClient.getResponseJson(httpClient.post(new_cardorderDelete, params));
             log.info(rs.toJSONString());
             Reporter.log(rs.toJSONString());
             int status = rs.getIntValue("status");
