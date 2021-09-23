@@ -32,6 +32,8 @@ public class BaseApi {
 	//用户登录token
 	protected String access_token;
 	protected String new_access_token;
+	protected String userIdA;
+	protected String userIdB;
 
 	//登录接口
 	protected String verify;
@@ -173,6 +175,35 @@ public class BaseApi {
 	protected String chatroomUserCloseMute;
 	//关闭聊天室
 	protected String liveCloseRtcFunc;
+	//获取默认城市
+	protected String houseDefaultCity;
+	//直播商品列表
+	protected String publicReDataList;
+	//设置讲解
+	protected String liveReShow;
+	//取消讲解
+	protected String liveReHide;
+	//编辑推广信息
+	protected String publicReDataEdit;
+	//主播禁言用户
+	protected String liveBan;
+	//禁言用户列表
+	protected String liveBanUser;
+	//解除禁言
+	protected String liveUnBan;
+	//设置管理员
+	protected String liveManageAdd;
+	//管理员列表
+	protected String liveManageUser;
+	//撤销管理员
+	protected String liveManageDel;
+	//踢出直播间
+	protected String liveBlock;
+	//封禁用户列表
+	protected String liveBlockUser;
+	//取消封禁
+	protected String liveUnBlock;
+
 
 
 	@BeforeClass
@@ -310,11 +341,40 @@ public class BaseApi {
 		chatroomUserCloseMute = URLFiltration.addHost_BASEURL_API(chatroomUserCloseMute);
 		liveCloseRtcFunc = PropertiesUtils.getConfigValue("liveCloseRtcFunc");
 		liveCloseRtcFunc = URLFiltration.addHost_BASEURL_API(liveCloseRtcFunc);
+		houseDefaultCity = PropertiesUtils.getConfigValue("houseDefaultCity");
+		houseDefaultCity = URLFiltration.addHost_BASEURL_API(houseDefaultCity);
+		publicReDataList = PropertiesUtils.getConfigValue("publicReDataList");
+		publicReDataList = URLFiltration.addHost_BASEURL_API(publicReDataList);
+		liveReShow = PropertiesUtils.getConfigValue("liveReShow");
+		liveReShow = URLFiltration.addHost_BASEURL_API(liveReShow);
+		liveReHide = PropertiesUtils.getConfigValue("liveReHide");
+		liveReHide = URLFiltration.addHost_BASEURL_API(liveReHide);
+		publicReDataEdit = PropertiesUtils.getConfigValue("publicReDataEdit");
+		publicReDataEdit = URLFiltration.addHost_BASEURL_API(publicReDataEdit);
+		liveBan = PropertiesUtils.getConfigValue("liveBan");
+		liveBan = URLFiltration.addHost_BASEURL_API(liveBan);
+		liveBanUser = PropertiesUtils.getConfigValue("liveBanUser");
+		liveBanUser = URLFiltration.addHost_BASEURL_API(liveBanUser);
+		liveUnBan = PropertiesUtils.getConfigValue("liveUnBan");
+		liveUnBan = URLFiltration.addHost_BASEURL_API(liveUnBan);
+		liveManageAdd = PropertiesUtils.getConfigValue("liveManageAdd");
+		liveManageAdd = URLFiltration.addHost_BASEURL_API(liveManageAdd);
+		liveManageUser = PropertiesUtils.getConfigValue("liveManageUser");
+		liveManageUser = URLFiltration.addHost_BASEURL_API(liveManageUser);
+		liveManageDel = PropertiesUtils.getConfigValue("liveManageDel");
+		liveManageDel = URLFiltration.addHost_BASEURL_API(liveManageDel);
+		liveBlock = PropertiesUtils.getConfigValue("liveBlock");
+		liveBlock = URLFiltration.addHost_BASEURL_API(liveBlock);
+		liveBlockUser = PropertiesUtils.getConfigValue("liveBlockUser");
+		liveBlockUser = URLFiltration.addHost_BASEURL_API(liveBlockUser);
+		liveUnBlock = PropertiesUtils.getConfigValue("liveUnBlock");
+		liveUnBlock = URLFiltration.addHost_BASEURL_API(liveUnBlock);
 
 
 		access_token = fast(verificationParameters.phone);
 		new_access_token = fast(verificationParameters.newPhone);
-
+		userIdA = getUser_id(verificationParameters.phone);
+		userIdB = getUser_id(verificationParameters.newPhone);
 	}
 
 	
@@ -339,6 +399,27 @@ public class BaseApi {
 		Thread.sleep(5000);
 		return rs.getJSONObject("data").getString("access_token");
 
+	}
+
+	private String getUser_id(String phone) throws IOException, InterruptedException {
+		HashMap<String, String> params = new HashMap<>();
+		params.put("type","1");
+		params.put("country_code","86");
+		params.put("uuid","00000000-53a8-ae41-ffff-ffffef05ac4a");
+		params.put("platform","taiji");
+		params.put("username",phone);
+		params.put("password","9999");
+
+		HashMap<String, String> header = new HashMap<>();
+		header = URLFiltration.addHeader(header);
+		JSONObject rs = httpClient.getResponseJson(httpClient.post(verify,params,header));
+		log.info(rs.toString());
+		Reporter.log(rs.toString());
+		//check登录成功msg与token是否成功返回
+		Assert.assertEquals(rs.getIntValue("status"), Constants.RESPNSE_STATUS_CODE_1,"验证码登录接口访问失败");
+		Assert.assertEquals(rs.getString("msg"), "登录成功","验证码登录接口访问失败");
+		Thread.sleep(5000);
+		return rs.getJSONObject("data").getString("id");
 	}
 
 	/**
