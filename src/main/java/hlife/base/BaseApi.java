@@ -104,6 +104,14 @@ public class BaseApi {
 	//个人主页相关
 	//生活服务页
 	protected String myServiceHome;
+	//用户主页信息
+	protected String friendHome;
+	//粉丝关注列表
+	protected String followList;
+	//修改用户信息
+	protected String myModifymyinfo;
+
+
 
 
 	//直播间相关
@@ -203,6 +211,22 @@ public class BaseApi {
 	protected String liveBlockUser;
 	//取消封禁
 	protected String liveUnBlock;
+	//个人主页栏目统一接口
+	protected String friendMenuInfo;
+	//个人主页咨询接口
+	protected String newsList;
+	//个人主页侧边栏
+	protected String myHome;
+	//我的资产
+	protected String payQueryActBalance;
+	//会员攻略
+	protected String distributeUpgradeStrategy;
+	//会员信息
+	protected String distributeMemberInfo;
+	//我的粉丝团
+	protected String chatGroupinfo;
+	//我的联系人
+	protected String myContacts;
 
 
 
@@ -273,6 +297,32 @@ public class BaseApi {
 		cardorderDelete = URLFiltration.addHost_BASEURL_API(cardorderDelete);
 		myServiceHome = PropertiesUtils.getConfigValue("myServiceHome");
 		myServiceHome = URLFiltration.addHost_BASEURL_API(myServiceHome);
+		friendHome = PropertiesUtils.getConfigValue("friendHome");
+		friendHome = URLFiltration.addHost_BASEURL_API(friendHome);
+		followList = PropertiesUtils.getConfigValue("followList");
+		followList = URLFiltration.addHost_BASEURL_API(followList);
+		myModifymyinfo = PropertiesUtils.getConfigValue("myModifymyinfo");
+		myModifymyinfo = URLFiltration.addHost_BASEURL_API(myModifymyinfo);
+		friendMenuInfo = PropertiesUtils.getConfigValue("friendMenuInfo");
+		friendMenuInfo = URLFiltration.addHost_BASEURL_API(friendMenuInfo);
+		newsList = PropertiesUtils.getConfigValue("newsList");
+		newsList = URLFiltration.addHost_BASEURL_API(newsList);
+		myHome = PropertiesUtils.getConfigValue("myHome");
+		myHome = URLFiltration.addHost_BASEURL_API(myHome);
+		payQueryActBalance = PropertiesUtils.getConfigValue("payQueryActBalance");
+		payQueryActBalance = URLFiltration.addHost_BASEURL_API(payQueryActBalance);
+		distributeUpgradeStrategy = PropertiesUtils.getConfigValue("distributeUpgradeStrategy");
+		distributeUpgradeStrategy = URLFiltration.addHost_BASEURL_API(distributeUpgradeStrategy);
+		distributeMemberInfo = PropertiesUtils.getConfigValue("distributeMemberInfo");
+		distributeMemberInfo = URLFiltration.addHost_BASEURL_API(distributeMemberInfo);
+		chatGroupinfo = PropertiesUtils.getConfigValue("chatGroupinfo");
+		chatGroupinfo = URLFiltration.addHost_BASEURL_API(chatGroupinfo);
+		myContacts = PropertiesUtils.getConfigValue("myContacts");
+		myContacts = URLFiltration.addHost_BASEURL_API(myContacts);
+
+
+
+
 		liveCreate = PropertiesUtils.getConfigValue("liveCreate");
 		liveCreate = URLFiltration.addHost_BASEURL_API(liveCreate);
 		liveDetail = PropertiesUtils.getConfigValue("liveDetail");

@@ -6,6 +6,7 @@ import hlife.base.BaseApi;
 import hlife.base.Constants;
 import hlife.filtration.URLFiltration;
 import hlife.httpclient.HttpClient;
+import org.apache.commons.codec.language.bm.Lang;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,6 +35,7 @@ public class LiveGift extends BaseApi{
     private List<String> giftIdList = new ArrayList<>();
     private List<String> giftPriceList = new ArrayList<>();
     private int page = 1 ;
+    private boolean istrue;
 
     /**
      * 获取直播分类（根据apptype不同返回值不同，分类由后台管理端配置）
@@ -301,6 +303,44 @@ public class LiveGift extends BaseApi{
     }
 
     /**
+     * 强制关播
+     * @throws IOException
+     */
+    @AfterClass
+    public void liveOpera1() throws IOException {
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",access_token);
+        params.put("oprea_type","end");
+        params.put("live_id",liveId);
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(liveOpera, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        Assert.assertEquals(msg,"更新直播状态成功","接口返回msg不正确");
+
+        Reporter.log("通过判断能否进入直播间接口确认是否关播成功");
+        HashMap<String, String> header = URLFiltration.addHeader(new HashMap<>());
+        header.put("uuid",uuid);
+        params.clear();
+        params.put("access_token",access_token);
+        params.put("live_id",liveId);
+        rs = httpClient.getResponseJson(httpClient.post(liveStatus, params, header));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        status = rs.getIntValue("status");
+        msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        Assert.assertEquals(msg,"获取直播状态信息成功","接口返回msg不正确");
+        JSONObject data = rs.getJSONObject("data");
+        int can_join = data.getIntValue("can_join");
+        Assert.assertEquals(can_join,Constants.RESPNSE_STATUS_CODE_0,"关闭直播间失败");
+
+
+    }
+
+    /**
      * 再次开播确认变更状态
      */
     @Test(dependsOnMethods = { "liveOpera"})
@@ -404,8 +444,9 @@ public class LiveGift extends BaseApi{
             Assert.assertEquals(msg,"给主播送礼物成功","接口返回msg不正确");
             JSONObject data = rs.getJSONObject("data");
             Reporter.log("判断铜币余额是否正确");
+            long l = payQueryActBalance();
             long copperBalance_after = data.getLongValue("copperBalance");
-            Assert.assertEquals(copperBalance_after,copperBalance-1,"送出礼物后铜币数不正确");
+            Assert.assertEquals(copperBalance_after,l,"送出礼物后铜币数不正确");
             Reporter.log("判断礼物ID是否一致");
             String gift_id = data.getString("gift_id");
             Assert.assertEquals(gift_id,giftIdList.get(0),"礼物ID不正确");
@@ -416,7 +457,24 @@ public class LiveGift extends BaseApi{
             String gift_icon = data.getString("gift_icon");
             int statusCode = httpClient.getStatusCode(httpClient.get(gift_icon, new HashMap<>()));
             Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"礼物图标显示异常");
+            liveGiftUser();
+            Assert.assertEquals(istrue,true,"打赏榜没有找到用户");
         }
+    }
+
+    private long payQueryActBalance() throws IOException {
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",new_access_token);
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(payQueryActBalance, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        Assert.assertEquals(msg,"获取铜币充值金额套餐成功","接口返回msg不正确");
+        JSONObject data = rs.getJSONObject("data");
+        long copperBalance_after = data.getLongValue("copperBalance");
+        return copperBalance_after;
     }
 
     /**
@@ -445,8 +503,13 @@ public class LiveGift extends BaseApi{
                 switch(i)
                 {
                     case 0 :
-                        Assert.assertEquals(copper_price,"1","铜币数不正确");
-                        Assert.assertEquals(cash_price,"0.10","现金不正确");
+                        if(payCopperRechargePackage.contains("api.")){
+                            Assert.assertEquals(copper_price,"60","铜币数不正确");
+                            Assert.assertEquals(cash_price,"6.00","现金不正确");
+                        }else {
+                            Assert.assertEquals(copper_price,"1","铜币数不正确");
+                            Assert.assertEquals(cash_price,"0.10","现金不正确");
+                        }
                         break;
                     case 1 :
                         Assert.assertEquals(copper_price,"120","铜币数不正确");
@@ -480,8 +543,8 @@ public class LiveGift extends BaseApi{
     /**
      * 打赏榜
      */
-    @Test(dependsOnMethods = { "liveGiftSend"})
-    public void liveGiftUser() throws IOException, InterruptedException {
+
+    private void liveGiftUser() throws IOException, InterruptedException {
         HashMap<String,String> params = new HashMap<>();
         params.put("access_token",access_token);
         params.put("live_id",liveId);
@@ -497,7 +560,7 @@ public class LiveGift extends BaseApi{
         JSONArray list = data.getJSONArray("list");
         JSONObject listObj;
         String user_id1 = getUser_id("17610733700");
-        boolean istrue = false;
+        istrue = false;
         for(int i =0 ; i<list.size();i++){
             listObj= list.getJSONObject(i);
             String user_id = listObj.getString("user_id");
@@ -511,7 +574,6 @@ public class LiveGift extends BaseApi{
                 Assert.assertEquals(silver_amount,j,"铜钱换算银票不正确");
             }
         }
-        Assert.assertEquals(istrue,true,"列表没有找到打赏的用户信息");
 
         //执行关播
         Reporter.log("执行关播");

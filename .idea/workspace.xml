@@ -2,33 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05317c89-b5df-4710-82ef-91eb2dab91c1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-hlife.test.integration.Fast.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/登录相关/classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/登录相关/groups.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/登录相关/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/登录相关/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/登录相关/methods-alphabetical.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/登录相关/methods-not-run.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/登录相关/methods.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/登录相关/reporter-output.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/登录相关/testng.xml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/登录相关/toc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/old/登录相关/我的页面.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/登录相关/testng-failed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/登录相关/我的页面.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/登录相关/我的页面.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hlife/base/BaseApi.class" afterPath="$PROJECT_DIR$/target/classes/hlife/base/BaseApi.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/hlife/httpclient/HttpClient.class" afterPath="$PROJECT_DIR$/target/classes/hlife/httpclient/HttpClient.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveGift.class" afterPath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveGift.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveNoticeList.class" afterPath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveNoticeList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveRoom.class" afterPath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/LiveRoom.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/MinePage.class" afterPath="$PROJECT_DIR$/target/test-classes/hlife/test/integration/MinePage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/apilog.log" afterPath="$PROJECT_DIR$/logs/apilog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" afterPath="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hlife/httpclient/HttpClient.java" afterPath="$PROJECT_DIR$/src/main/java/hlife/httpclient/HttpClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveGift.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveGift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config.properties" afterPath="$PROJECT_DIR$/target/classes/config.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/report.html" afterPath="$PROJECT_DIR$/test-output/report.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,83 +31,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HouseList.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/HouseList.java">
+      <file leaf-file-name="SuiteRunnerWorker.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/SuiteRunnerWorker.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2925">
-              <caret line="192" column="21" lean-forward="false" selection-start-line="192" selection-start-column="21" selection-end-line="192" selection-end-column="21" />
+            <state relative-caret-position="0">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LiveRoom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="547" column="48" lean-forward="false" selection-start-line="547" selection-start-column="48" selection-end-line="547" selection-end-column="48" />
               <folding>
-                <element signature="method#tagList#0;class#HouseList#0" expanded="false" />
-                <element signature="method#city#0;class#HouseList#0" expanded="false" />
-                <element signature="method#brandList#0;class#HouseList#0" expanded="false" />
+                <element signature="method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#liveAppCreate#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#liveCreate#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#liveAppCreate1#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#liveDetail#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#liveStatus#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#fansGroupApply#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#QuitOrJoin#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#liveUserInfo#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#followIndex#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#getUser_id#0;class#LiveRoom#0" expanded="false" />
+                <element signature="method#liveOpera#0;class#LiveRoom#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Suite.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/Suite.xml">
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="-285">
+              <caret line="112" column="33" lean-forward="true" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SuiteRunner.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/SuiteRunner.class">
+      <file leaf-file-name="BaseApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13500">
-              <caret line="628" column="0" lean-forward="false" selection-start-line="628" selection-start-column="0" selection-end-line="628" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="liveGift.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveGift.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LiveGift.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveGift.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="268" column="47" lean-forward="false" selection-start-line="268" selection-start-column="47" selection-end-line="268" selection-end-column="47" />
+            <state relative-caret-position="163">
+              <caret line="320" column="18" lean-forward="false" selection-start-line="320" selection-start-column="8" selection-end-line="320" selection-end-column="18" />
               <folding>
-                <element signature="docComment;method#liveCategoryList#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#liveCategoryList#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#liveCreate#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#liveDetail#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#liveGiftPopInfo#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#againCreate#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#liveGiftList#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#liveGiftSend#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#payCopperRechargePackage#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#liveGiftUser#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#liveJoin#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#liveOnlineUser#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#liveQuit#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#isDel#0;class#LiveGift#0" expanded="false" />
-                <element signature="docComment;method#getUser_id#0;class#LiveGift#0" expanded="false" />
-                <element signature="method#getUser_id#0;class#LiveGift#0" expanded="false" />
+                <element signature="method#fast#0;class#BaseApi#0" expanded="false" />
+                <element signature="method#getUser_id#0;class#BaseApi#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="liveSuite.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/liveSuite.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -126,46 +90,30 @@
       <file leaf-file-name="MinePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="116">
+              <caret line="604" column="0" lean-forward="true" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+              <folding>
+                <element signature="method#myServiceHome#0;class#MinePage#0" expanded="false" />
+                <element signature="method#friendHome#0;class#MinePage#0" expanded="false" />
+                <element signature="method#myModifymyinfo#0;class#MinePage#0" expanded="false" />
+                <element signature="method#friendMenuInfo#0;class#MinePage#0" expanded="false" />
+                <element signature="method#newsList#0;class#MinePage#0" expanded="false" />
+                <element signature="method#myHome#0;class#MinePage#0" expanded="false" />
+                <element signature="method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
+                <element signature="method#myContacts#0;class#MinePage#0" expanded="false" />
+                <element signature="docComment;method#followList#0;class#MinePage#0" expanded="false" />
+                <element signature="method#followList#0;class#MinePage#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="156" column="16" lean-forward="false" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
+            <state relative-caret-position="249">
+              <caret line="187" column="25" lean-forward="false" selection-start-line="187" selection-start-column="25" selection-end-line="187" selection-end-column="25" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Giftcard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/Giftcard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12275">
-              <caret line="752" column="44" lean-forward="false" selection-start-line="752" selection-start-column="44" selection-end-line="752" selection-end-column="44" />
-              <folding>
-                <element signature="method#coursecardList#0;class#Giftcard#0" expanded="false" />
-                <element signature="method#coursecardDetail#0;class#Giftcard#0" expanded="false" />
-                <element signature="method#coursecardCooperation#0;class#Giftcard#0" expanded="false" />
-                <element signature="method#cardorderVerifyInvoice#0;class#Giftcard#0" expanded="false" />
-                <element signature="method#invoicesDeletetitle#0;class#Giftcard#0" expanded="false" />
-                <element signature="method#cardorderCreateOrder#0;class#Giftcard#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -198,6 +146,7 @@
       <find>isin</find>
       <find>顶号</find>
       <find>/union/live/status/</find>
+      <find>houseIdList_s</find>
     </findStrings>
     <replaceStrings>
       <replace>hlife</replace>
@@ -252,23 +201,17 @@
         <option value="$PROJECT_DIR$/src/main/filters/hlife_online.properties" />
         <option value="$PROJECT_DIR$/src/main/filters/taiji_online.properties" />
         <option value="$PROJECT_DIR$/src/main/filters/house_online.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/hlife/httpclient/HttpClient.java" />
         <option value="$PROJECT_DIR$/src/main/filters/first-debug.properties" />
         <option value="$PROJECT_DIR$/src/main/java/hlife/base/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/java/hlife/filtration/URLFiltration.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/liveRoom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/hlife/utils/md5/EncryptUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/suite/suite.xml" />
         <option value="$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/TestClass.class" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/liveRTC.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/liveGift.xml" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java" />
-        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java" />
-        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LivePower.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/livePower.xml" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRtcFunc.java" />
@@ -276,8 +219,14 @@
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/HouseList.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/suite/liveSuite.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/suite/Suite.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveGift.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hlife/httpclient/HttpClient.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveGift.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java" />
       </list>
     </option>
   </component>
@@ -337,6 +286,8 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -344,13 +295,137 @@
               <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
               <item name="hlife" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="filters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="testng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="testng" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="testng" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="testng" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="suite" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hlife" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hlife" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,61 +473,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.Unnamed">
-    <configuration name="E:/project/hlife/hlife/src/main/resources/testng/api/integration/houseList.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="hlife" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng/api/integration/houseList.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="E:/project/hlife/hlife/src/main/resources/testng/api/suite/Suite.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="hlife" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testng/api/suite/Suite.xml" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
+  <component name="RunManager" selected="TestNG.MinePage.distributeMemberInfo">
     <configuration name="E:/project/hlife/hlife/src/main/resources/testng/api/suite/liveSuite.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="hlife" />
@@ -480,7 +501,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Giftcard" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LiveGift" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="hlife.test.integration.*" />
@@ -492,7 +513,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="hlife.test.integration" />
-      <option name="MAIN_CLASS_NAME" value="hlife.test.integration.Giftcard" />
+      <option name="MAIN_CLASS_NAME" value="hlife.test.integration.LiveGift" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -512,7 +533,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="Giftcard.invoicesCreatetitle" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LivePower" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="hlife.test.integration.*" />
@@ -524,8 +545,72 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="hlife.test.integration" />
-      <option name="MAIN_CLASS_NAME" value="hlife.test.integration.Giftcard" />
-      <option name="METHOD_NAME" value="invoicesCreatetitle" />
+      <option name="MAIN_CLASS_NAME" value="hlife.test.integration.LivePower" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="MinePage.distributeMemberInfo" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="hlife.test.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hlife" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="hlife.test.integration" />
+      <option name="MAIN_CLASS_NAME" value="hlife.test.integration.MinePage" />
+      <option name="METHOD_NAME" value="distributeMemberInfo" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="MinePage.myHome" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="hlife.test.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="hlife" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="hlife.test.integration" />
+      <option name="MAIN_CLASS_NAME" value="hlife.test.integration.MinePage" />
+      <option name="METHOD_NAME" value="myHome" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -652,19 +737,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Maven.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/suite/liveSuite.xml" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.Giftcard" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.Giftcard.invoicesCreatetitle" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/integration/houseList.xml" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/suite/Suite.xml" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.LivePower" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.MinePage.myHome" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/suite/liveSuite.xml" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.LiveGift" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.MinePage.distributeMemberInfo" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/suite/Suite.xml" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/integration/houseList.xml" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.Giftcard" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.Giftcard.invoicesCreatetitle" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/suite/liveSuite.xml" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.MinePage.distributeMemberInfo" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.LiveGift" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.E:/project/hlife/hlife/src/main/resources/testng/api/suite/liveSuite.xml" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.MinePage.myHome" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.LivePower" />
       </list>
     </recent_temporary>
   </component>
@@ -717,44 +802,47 @@
       <workItem from="1632036738291" duration="3988000" />
       <workItem from="1632271150628" duration="24630000" />
       <workItem from="1632357781126" duration="16994000" />
-      <workItem from="1632389505856" duration="2272000" />
+      <workItem from="1632389505856" duration="3142000" />
+      <workItem from="1632443704644" duration="18730000" />
+      <workItem from="1632616796184" duration="22090000" />
+      <workItem from="1632705481063" duration="16680000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="E__project_hlife_hlife_src_main_resources_testng_api_integration_houseList_xml - 2021.09.23 at 15h 23m 45s.xml">
-      <configuration name="E:/project/hlife/hlife/src/main/resources/testng/api/integration/houseList.xml" configurationId="TestNG" />
+    <history-entry file="E__project_hlife_hlife_src_main_resources_testng_api_suite_liveSuite_xml - 2021.09.27 at 10h 31m 50s.xml">
+      <configuration name="E:/project/hlife/hlife/src/main/resources/testng/api/suite/liveSuite.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__project_hlife_hlife_src_main_resources_testng_api_integration_houseList_xml - 2021.09.23 at 16h 49m 18s.xml">
-      <configuration name="E:/project/hlife/hlife/src/main/resources/testng/api/integration/houseList.xml" configurationId="TestNG" />
+    <history-entry file="LiveGift - 2021.09.27 at 14h 32m 53s.xml">
+      <configuration name="LiveGift" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__project_hlife_hlife_src_main_resources_testng_api_integration_houseList_xml - 2021.09.23 at 16h 52m 42s.xml">
-      <configuration name="E:/project/hlife/hlife/src/main/resources/testng/api/integration/houseList.xml" configurationId="TestNG" />
+    <history-entry file="LiveGift - 2021.09.27 at 14h 43m 02s.xml">
+      <configuration name="LiveGift" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="E__project_hlife_hlife_src_main_resources_testng_api_suite_Suite_xml - 2021.09.23 at 17h 05m 20s.xml">
-      <configuration name="E:/project/hlife/hlife/src/main/resources/testng/api/suite/Suite.xml" configurationId="TestNG" />
+    <history-entry file="LiveRoom - 2021.09.26 at 16h 35m 17s.xml">
+      <configuration name="LiveRoom" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Giftcard - 2021.09.23 at 14h 51m 35s.xml">
-      <configuration name="Giftcard" configurationId="TestNG" />
+    <history-entry file="LiveRoom - 2021.09.26 at 16h 39m 03s.xml">
+      <configuration name="LiveRoom" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Giftcard - 2021.09.23 at 14h 55m 44s.xml">
-      <configuration name="Giftcard" configurationId="TestNG" />
+    <history-entry file="LiveRoom - 2021.09.26 at 16h 42m 07s.xml">
+      <configuration name="LiveRoom" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Giftcard - 2021.09.23 at 14h 58m 45s.xml">
-      <configuration name="Giftcard" configurationId="TestNG" />
+    <history-entry file="LiveRoom - 2021.09.26 at 16h 57m 44s.xml">
+      <configuration name="LiveRoom" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Giftcard - 2021.09.23 at 14h 59m 59s.xml">
-      <configuration name="Giftcard" configurationId="TestNG" />
+    <history-entry file="MinePage_distributeMemberInfo - 2021.09.27 at 16h 14m 33s.xml">
+      <configuration name="MinePage.distributeMemberInfo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Giftcard - 2021.09.23 at 15h 08m 56s.xml">
-      <configuration name="Giftcard" configurationId="TestNG" />
+    <history-entry file="MinePage_distributeMemberInfo - 2021.09.27 at 16h 16m 01s.xml">
+      <configuration name="MinePage.distributeMemberInfo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Giftcard - 2021.09.23 at 15h 12m 18s.xml">
-      <configuration name="Giftcard" configurationId="TestNG" />
+    <history-entry file="MinePage_myHome - 2021.09.27 at 10h 18m 16s.xml">
+      <configuration name="MinePage.myHome" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="442118000" />
+    <option name="totallyTimeSpent" value="500488000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -767,21 +855,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2306425" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8665568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31466228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22995462" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24130106" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5673534" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -792,10 +883,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5673534" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -806,18 +895,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/Java/jdk1.7/src.zip!/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22800">
-          <caret line="949" column="18" lean-forward="false" selection-start-line="949" selection-start-column="18" selection-end-line="949" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/software/JDK1.8/src.zip!/java/awt/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1375">
@@ -903,41 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/filters/first-debug.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/filters/taiji_online.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/filters/house_online.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/evn.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -987,13 +1034,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/httpclient/HttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4250">
-          <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveRTC.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1022,22 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveNoticeList.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveRoom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1071,54 +1095,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="376" column="60" lean-forward="false" selection-start-line="376" selection-start-column="60" selection-end-line="376" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="457" column="11" lean-forward="false" selection-start-line="457" selection-start-column="11" selection-end-line="457" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LivePower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="685" column="54" lean-forward="false" selection-start-line="685" selection-start-column="54" selection-end-line="685" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="424" column="0" lean-forward="false" selection-start-line="424" selection-start-column="0" selection-end-line="504" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRtcFunc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="616" column="15" lean-forward="false" selection-start-line="616" selection-start-column="15" selection-end-line="616" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="37" column="56" lean-forward="false" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1157,19 +1137,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/Suite.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/SuiteRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13500">
           <caret line="628" column="0" lean-forward="false" selection-start-line="628" selection-start-column="0" selection-end-line="628" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveNoticeList.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="15" lean-forward="false" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/evn.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/house_online.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/taiji_online.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/first-debug.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="53" lean-forward="false" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/httpclient/HttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3600">
+          <caret line="166" column="68" lean-forward="false" selection-start-line="166" selection-start-column="68" selection-end-line="166" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveNoticeList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9700">
+          <caret line="648" column="0" lean-forward="false" selection-start-line="648" selection-start-column="0" selection-end-line="648" selection-end-column="0" />
+          <folding>
+            <element signature="method#advList#0;class#LiveNoticeList#0" expanded="false" />
+            <element signature="method#setLiveNoticeRecommend#0;class#LiveNoticeList#0" expanded="false" />
+            <element signature="method#liveNoticeRecommendList#0;class#LiveNoticeList#0" expanded="false" />
+            <element signature="method#liveCategoryList#0;class#LiveNoticeList#0" expanded="false" />
+            <element signature="method#liveNoticeFocuslist#0;class#LiveNoticeList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LivePower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1950">
+          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+          <folding>
+            <element signature="method#houseDefaultCity#0;class#LivePower#0" expanded="false" />
+            <element signature="method#liveReShow#0;class#LivePower#0" expanded="false" />
+            <element signature="method#liveReHide#0;class#LivePower#0" expanded="false" />
+            <element signature="method#liveDetail#0;class#LivePower#0" expanded="false" />
+            <element signature="method#liveStatus#0;class#LivePower#0" expanded="false" />
+            <element signature="method#liveBlockUser#0;class#LivePower#0" expanded="false" />
+            <element signature="method#liveBanUser#0;class#LivePower#0" expanded="false" />
+            <element signature="method#liveManageUser#0;class#LivePower#0" expanded="false" />
+            <element signature="method#liveOpera#0;class#LivePower#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1181,21 +1238,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="187" column="25" lean-forward="false" selection-start-line="187" selection-start-column="25" selection-end-line="187" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="320" column="18" lean-forward="false" selection-start-line="320" selection-start-column="8" selection-end-line="320" selection-end-column="18" />
+          <folding>
+            <element signature="method#fast#0;class#BaseApi#0" expanded="false" />
+            <element signature="method#getUser_id#0;class#BaseApi#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveRoom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="604" column="0" lean-forward="true" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+          <folding>
+            <element signature="method#myServiceHome#0;class#MinePage#0" expanded="false" />
+            <element signature="method#friendHome#0;class#MinePage#0" expanded="false" />
+            <element signature="method#myModifymyinfo#0;class#MinePage#0" expanded="false" />
+            <element signature="method#friendMenuInfo#0;class#MinePage#0" expanded="false" />
+            <element signature="method#newsList#0;class#MinePage#0" expanded="false" />
+            <element signature="method#myHome#0;class#MinePage#0" expanded="false" />
+            <element signature="method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
+            <element signature="method#myContacts#0;class#MinePage#0" expanded="false" />
+            <element signature="docComment;method#followList#0;class#MinePage#0" expanded="false" />
+            <element signature="method#followList#0;class#MinePage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveGift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="268" column="47" lean-forward="false" selection-start-line="268" selection-start-column="47" selection-end-line="268" selection-end-column="47" />
+        <state relative-caret-position="3124">
+          <caret line="466" column="50" lean-forward="false" selection-start-line="466" selection-start-column="50" selection-end-line="466" selection-end-column="50" />
           <folding>
             <element signature="docComment;method#liveCategoryList#0;class#LiveGift#0" expanded="false" />
             <element signature="method#liveCategoryList#0;class#LiveGift#0" expanded="false" />
             <element signature="method#liveCreate#0;class#LiveGift#0" expanded="false" />
             <element signature="method#liveDetail#0;class#LiveGift#0" expanded="false" />
             <element signature="method#liveGiftPopInfo#0;class#LiveGift#0" expanded="false" />
+            <element signature="method#liveOpera#0;class#LiveGift#0" expanded="false" />
+            <element signature="method#liveOpera1#0;class#LiveGift#0" expanded="false" />
             <element signature="method#againCreate#0;class#LiveGift#0" expanded="false" />
             <element signature="method#liveGiftList#0;class#LiveGift#0" expanded="false" />
-            <element signature="method#liveGiftSend#0;class#LiveGift#0" expanded="false" />
-            <element signature="method#payCopperRechargePackage#0;class#LiveGift#0" expanded="false" />
-            <element signature="method#liveGiftUser#0;class#LiveGift#0" expanded="false" />
             <element signature="method#liveJoin#0;class#LiveGift#0" expanded="false" />
             <element signature="method#liveOnlineUser#0;class#LiveGift#0" expanded="false" />
             <element signature="method#liveQuit#0;class#LiveGift#0" expanded="false" />
@@ -1206,10 +1308,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.2/testng-6.14.2.jar!/org/testng/SuiteRunnerWorker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="156" column="16" lean-forward="false" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/Suite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="547" column="48" lean-forward="false" selection-start-line="547" selection-start-column="48" selection-end-line="547" selection-end-column="48" />
+          <folding>
+            <element signature="method#liveCategoryList#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveAppCreate#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveCreate#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveAppCreate1#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveDetail#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveStatus#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#fansGroupApply#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#QuitOrJoin#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveUserInfo#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#followIndex#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#getUser_id#0;class#LiveRoom#0" expanded="false" />
+            <element signature="method#liveOpera#0;class#LiveRoom#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="112" column="33" lean-forward="true" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
           <folding />
         </state>
       </provider>

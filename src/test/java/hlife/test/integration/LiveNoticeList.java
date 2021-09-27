@@ -32,6 +32,8 @@ public class LiveNoticeList extends BaseApi{
     private List<String> live_typeMap = new ArrayList<>();
     private String date = getDate(7200000);
     private int page = 1;
+    //预约人数
+    private int enroll_num;
     /**
      * 发布直播预告
      */
@@ -242,6 +244,8 @@ public class LiveNoticeList extends BaseApi{
         Assert.assertEquals(is_examination,Constants.RESPNSE_STATUS_CODE_1,"审核状态不正确，应为1");
         live_id = data.getString("live_id");
         Assert.assertEquals(live_id.equals(""),false,"live_id不应为空");
+        enroll_num = data.getIntValue("enroll_num");
+
     }
 
     /**
@@ -318,6 +322,9 @@ public class LiveNoticeList extends BaseApi{
         data = rs.getJSONObject("data");
         int enroll_status1 = data.getIntValue("enroll_status");
         Assert.assertEquals(enroll_status,enroll_status1,"预约失败");
+        int enroll_num_before = enroll_num;
+        liveNoticeDet();
+        Assert.assertEquals(enroll_num_before<enroll_num,true,"预约人数没有增加");
     }
 
     /**
@@ -360,6 +367,9 @@ public class LiveNoticeList extends BaseApi{
         data = rs.getJSONObject("data");
         int enroll_status1 = data.getIntValue("enroll_status");
         Assert.assertEquals(enroll_status,enroll_status1,"预约失败");
+        int enroll_num_before = enroll_num;
+        liveNoticeDet();
+        Assert.assertEquals(enroll_num_before>enroll_num,true,"预约人数没有减少");
     }
 
     /**
@@ -812,6 +822,7 @@ public class LiveNoticeList extends BaseApi{
             }
         }
     }
+
 
     /**
      * 删除预告

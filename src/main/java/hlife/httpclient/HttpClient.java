@@ -163,6 +163,8 @@ public class HttpClient {
 			if (headers != null && headers.size() > 0) {
 				for (Map.Entry<String, String> entry : headers.entrySet()) {
 					httppost.addHeader(entry.getKey(), entry.getValue());
+					log.info(entry.getKey()+":"+entry.getValue());
+					Reporter.log(entry.getKey()+":"+entry.getValue());
 				}
 			}
 			Reporter.log(url);

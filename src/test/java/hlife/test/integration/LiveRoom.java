@@ -116,7 +116,8 @@ public class LiveRoom extends BaseApi{
         Reporter.log("创建直播成功");
         params.clear();
         params.put("access_token",access_token);
-        rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params, header));
+        //rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params, header));
+        rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params));
         log.info(rs.toJSONString());
         Reporter.log(rs.toJSONString());
         int status = rs.getIntValue("status");
@@ -255,8 +256,10 @@ public class LiveRoom extends BaseApi{
         //顶号登录，已开播，观看直播
         Reporter.log("顶号登录，已开播，观看直播");
         HashMap<String, String> header = URLFiltration.addHeader(new HashMap<>());
+        header.put("uuid","00000000-123c-468d-ffff-ffffef05ac4a");
         HashMap<String,String> params = new HashMap<>();
         params.put("access_token",access_token);
+        //JSONObject rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params,header));
         JSONObject rs = httpClient.getResponseJson(httpClient.post(liveAppCreate, params,header));
         log.info(rs.toJSONString());
         Reporter.log(rs.toJSONString());
@@ -422,87 +425,7 @@ public class LiveRoom extends BaseApi{
 
     }
 
-    /**
-     * 关闭直播
-     */
-    @AfterClass
-    public void liveOpera() throws IOException {
-        Reporter.log("请登录");
-        HashMap<String,String> params = new HashMap<>();
-        JSONObject rs = httpClient.getResponseJson(httpClient.post(liveOpera, params));
-        log.info(rs.toJSONString());
-        Reporter.log(rs.toJSONString());
-        int status = rs.getIntValue("status");
-        String msg = rs.getString("msg");
-        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_Minus_1,"接口请求失败");
-        Assert.assertEquals(msg,"请登录","接口返回msg不正确");
 
-        Reporter.log("操作类型错误");
-        params.put("access_token",access_token);
-        rs = httpClient.getResponseJson(httpClient.post(liveOpera, params));
-        log.info(rs.toJSONString());
-        Reporter.log(rs.toJSONString());
-        status = rs.getIntValue("status");
-        msg = rs.getString("msg");
-        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_0,"接口请求失败");
-        Assert.assertEquals(msg,"操作类型错误","接口返回msg不正确");
-
-        Reporter.log("直播id不能为空");
-        params.put("oprea_type","end");
-        rs = httpClient.getResponseJson(httpClient.post(liveOpera, params));
-        log.info(rs.toJSONString());
-        Reporter.log(rs.toJSONString());
-        status = rs.getIntValue("status");
-        msg = rs.getString("msg");
-        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_0,"接口请求失败");
-        Assert.assertEquals(msg,"直播id不能为空","接口返回msg不正确");
-
-        Reporter.log("更新直播状态成功");
-        params.put("live_id",liveId);
-        rs = httpClient.getResponseJson(httpClient.post(liveOpera, params));
-        log.info(rs.toJSONString());
-        Reporter.log(rs.toJSONString());
-        status = rs.getIntValue("status");
-        msg = rs.getString("msg");
-        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
-        Assert.assertEquals(msg,"更新直播状态成功","接口返回msg不正确");
-
-        Reporter.log("直播时长不应为空");
-        JSONObject data = rs.getJSONObject("data");
-        String times = data.getString("times");
-        Assert.assertEquals(times.equals(""),false,"直播时长不应为空");
-        Reporter.log("anchor_nick_name不应为空");
-        String anchor_nick_name = data.getString("anchor_nick_name");
-        Assert.assertEquals(anchor_nick_name.equals(""),false,"anchor_nick_name不应为空");
-        Reporter.log("anchor_avatar不应为空，且可访问");
-        String anchor_avatar = data.getString("anchor_avatar");
-        int statusCode = httpClient.getStatusCode(httpClient.get(anchor_avatar, new HashMap<>()));
-        Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"anchor_avatar头像请求异常");
-        Reporter.log("view_count不应为空");
-        String view_count = data.getString("view_count");
-        Assert.assertEquals(view_count.equals(""),false,"view_count不应为空");
-        Reporter.log("look_num不应为空");
-        String look_num = data.getString("look_num");
-        Assert.assertEquals(look_num.equals(""),false,"look_num不应为空");
-
-
-        Reporter.log("通过判断能否进入直播间接口确认是否关播成功");
-        HashMap<String, String> header = URLFiltration.addHeader(new HashMap<>());
-        header.put("uuid",uuid);
-        params.clear();
-        params.put("access_token",access_token);
-        params.put("live_id",liveId);
-        rs = httpClient.getResponseJson(httpClient.post(liveStatus, params, header));
-        log.info(rs.toJSONString());
-        Reporter.log(rs.toJSONString());
-        status = rs.getIntValue("status");
-        msg = rs.getString("msg");
-        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
-        Assert.assertEquals(msg,"获取直播状态信息成功","接口返回msg不正确");
-        data = rs.getJSONObject("data");
-        int can_join = data.getIntValue("can_join");
-        Assert.assertEquals(can_join,Constants.RESPNSE_STATUS_CODE_0,"关闭直播间失败");
-    }
 
     /**
      * 修改粉丝团信息
@@ -598,6 +521,32 @@ public class LiveRoom extends BaseApi{
         target_id = data.getString("target_id");
         group_name = data.getString("group_name");
         Assert.assertEquals(group_name.equals(""),false,"粉丝团名称不能为空");
+    }
+
+    /**
+     * 我的粉丝团
+     */
+    @Test(dependsOnMethods = { "fansGroupDetail" })
+    public void chatGroupinfo() throws IOException {
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",access_token);
+        params.put("target_id",target_id);
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(chatGroupinfo, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        Assert.assertEquals(msg,"获取成功","接口返回msg不正确");
+        JSONObject data = rs.getJSONObject("data");
+        Reporter.log("判断粉丝名");
+        String name = data.getString("name");
+        Assert.assertEquals(name.equals(""),false,"粉丝团名称不能为空");
+        Reporter.log("统计人数是否正确");
+        JSONArray user = data.getJSONArray("user");
+        int num = data.getIntValue("num");
+        Assert.assertEquals(num,user.size(),"粉丝团人数不正确");
+
     }
 
 
@@ -846,5 +795,85 @@ public class LiveRoom extends BaseApi{
         Thread.sleep(5000);
         return rs.getJSONObject("data").getString("id");
     }
+    /**
+     * 关闭直播
+     */
+    @AfterClass
+    public void liveOpera() throws IOException {
+        Reporter.log("请登录");
+        HashMap<String,String> params = new HashMap<>();
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(liveOpera, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_Minus_1,"接口请求失败");
+        Assert.assertEquals(msg,"请登录","接口返回msg不正确");
 
+        Reporter.log("操作类型错误");
+        params.put("access_token",access_token);
+        rs = httpClient.getResponseJson(httpClient.post(liveOpera, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        status = rs.getIntValue("status");
+        msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_0,"接口请求失败");
+        Assert.assertEquals(msg,"操作类型错误","接口返回msg不正确");
+
+        Reporter.log("直播id不能为空");
+        params.put("oprea_type","end");
+        rs = httpClient.getResponseJson(httpClient.post(liveOpera, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        status = rs.getIntValue("status");
+        msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_0,"接口请求失败");
+        Assert.assertEquals(msg,"直播id不能为空","接口返回msg不正确");
+
+        Reporter.log("更新直播状态成功");
+        params.put("live_id",liveId);
+        rs = httpClient.getResponseJson(httpClient.post(liveOpera, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        status = rs.getIntValue("status");
+        msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        Assert.assertEquals(msg,"更新直播状态成功","接口返回msg不正确");
+
+        Reporter.log("直播时长不应为空");
+        JSONObject data = rs.getJSONObject("data");
+        String times = data.getString("times");
+        Assert.assertEquals(times.equals(""),false,"直播时长不应为空");
+        Reporter.log("anchor_nick_name不应为空");
+        String anchor_nick_name = data.getString("anchor_nick_name");
+        Assert.assertEquals(anchor_nick_name.equals(""),false,"anchor_nick_name不应为空");
+        Reporter.log("anchor_avatar不应为空，且可访问");
+        String anchor_avatar = data.getString("anchor_avatar");
+        int statusCode = httpClient.getStatusCode(httpClient.get(anchor_avatar, new HashMap<>()));
+        Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"anchor_avatar头像请求异常");
+        Reporter.log("view_count不应为空");
+        String view_count = data.getString("view_count");
+        Assert.assertEquals(view_count.equals(""),false,"view_count不应为空");
+        Reporter.log("look_num不应为空");
+        String look_num = data.getString("look_num");
+        Assert.assertEquals(look_num.equals(""),false,"look_num不应为空");
+
+
+        Reporter.log("通过判断能否进入直播间接口确认是否关播成功");
+        HashMap<String, String> header = URLFiltration.addHeader(new HashMap<>());
+        header.put("uuid",uuid);
+        params.clear();
+        params.put("access_token",access_token);
+        params.put("live_id",liveId);
+        rs = httpClient.getResponseJson(httpClient.post(liveStatus, params, header));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        status = rs.getIntValue("status");
+        msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        Assert.assertEquals(msg,"获取直播状态信息成功","接口返回msg不正确");
+        data = rs.getJSONObject("data");
+        int can_join = data.getIntValue("can_join");
+        Assert.assertEquals(can_join,Constants.RESPNSE_STATUS_CODE_0,"关闭直播间失败");
+    }
 }
