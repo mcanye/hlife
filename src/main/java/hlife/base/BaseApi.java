@@ -227,6 +227,20 @@ public class BaseApi {
 	protected String chatGroupinfo;
 	//我的联系人
 	protected String myContacts;
+	//收藏即信聊天
+	protected String chatRecordcollect;
+	//收藏列表
+	protected String myfavorite;
+	//删除收藏即信
+	protected String chatRecordnocollect;
+	//小视频列表
+	protected String videoList;
+	//统一收藏接口
+	protected String publicsFavorite;
+	//自修课列表
+	protected String courseSelfStudyList;
+	//自修课详情
+	protected String courseSelfStudyDetail;
 
 
 
@@ -319,7 +333,20 @@ public class BaseApi {
 		chatGroupinfo = URLFiltration.addHost_BASEURL_API(chatGroupinfo);
 		myContacts = PropertiesUtils.getConfigValue("myContacts");
 		myContacts = URLFiltration.addHost_BASEURL_API(myContacts);
-
+		chatRecordcollect = PropertiesUtils.getConfigValue("chatRecordcollect");
+		chatRecordcollect = URLFiltration.addHost_BASEURL_API(chatRecordcollect);
+		myfavorite = PropertiesUtils.getConfigValue("myfavorite");
+		myfavorite = URLFiltration.addHost_BASEURL_API(myfavorite);
+		chatRecordnocollect = PropertiesUtils.getConfigValue("chatRecordnocollect");
+		chatRecordnocollect = URLFiltration.addHost_BASEURL_API(chatRecordnocollect);
+		videoList = PropertiesUtils.getConfigValue("videoList");
+		videoList = URLFiltration.addHost_BASEURL_API(videoList);
+		publicsFavorite = PropertiesUtils.getConfigValue("publicsFavorite");
+		publicsFavorite = URLFiltration.addHost_BASEURL_API(publicsFavorite);
+		courseSelfStudyList = PropertiesUtils.getConfigValue("courseSelfStudyList");
+		courseSelfStudyList = URLFiltration.addHost_BASEURL_API(courseSelfStudyList);
+		courseSelfStudyDetail = PropertiesUtils.getConfigValue("courseSelfStudyDetail");
+		courseSelfStudyDetail = URLFiltration.addHost_BASEURL_API(courseSelfStudyDetail);
 
 
 
