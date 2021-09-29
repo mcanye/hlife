@@ -181,8 +181,15 @@ public class HouseList extends BaseApi{
                            String average_price = obj.getString("average_price");
                            if (average_price.equals("") || average_price == null){
                                Assert.assertEquals(true,false,"average_price不应为空");
+                               Assert.assertEquals(average_price.contains("均价"),true,"没有添加均价文案");
                            }
                             Reporter.log("校验average_price用例通过");
+                           Reporter.log("判断总价");
+                           String price_range_unit = obj.getString("price_range_unit");
+                           Assert.assertEquals(price_range_unit.contains("总价"),true,"没有添加总价文案");
+                           Reporter.log("校验price_range_unit用例通过");
+
+
 //                  TODO: 2021/8/12 面积区间 待bug修复
 //                   Reporter.log("校验area_range");
 //                   String area_range = obj.getString("area_range");

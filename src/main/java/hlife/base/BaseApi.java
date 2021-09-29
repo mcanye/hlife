@@ -241,7 +241,14 @@ public class BaseApi {
 	protected String courseSelfStudyList;
 	//自修课详情
 	protected String courseSelfStudyDetail;
-
+	//可报备楼盘
+	protected String houseStoreShareList;
+	//获取下级信息
+	protected String houseSubMembers;
+	//报备
+	protected String houseReport;
+	//房产报备我的客户列表
+	protected String houseReportList;
 
 
 	@BeforeClass
@@ -347,6 +354,14 @@ public class BaseApi {
 		courseSelfStudyList = URLFiltration.addHost_BASEURL_API(courseSelfStudyList);
 		courseSelfStudyDetail = PropertiesUtils.getConfigValue("courseSelfStudyDetail");
 		courseSelfStudyDetail = URLFiltration.addHost_BASEURL_API(courseSelfStudyDetail);
+		houseStoreShareList = PropertiesUtils.getConfigValue("houseStoreShareList");
+		houseStoreShareList = URLFiltration.addHost_BASEURL_API(houseStoreShareList);
+		houseSubMembers = PropertiesUtils.getConfigValue("houseSubMembers");
+		houseSubMembers = URLFiltration.addHost_BASEURL_API(houseSubMembers);
+		houseReport = PropertiesUtils.getConfigValue("houseReport");
+		houseReport = URLFiltration.addHost_BASEURL_API(houseReport);
+		houseReportList = PropertiesUtils.getConfigValue("houseReportList");
+		houseReportList = URLFiltration.addHost_BASEURL_API(houseReportList);
 
 
 

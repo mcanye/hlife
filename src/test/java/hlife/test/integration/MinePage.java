@@ -27,6 +27,10 @@ public class MinePage extends BaseApi {
     private static Logger log = LoggerFactory.getLogger(MinePage.class);
     private String sex;
     private List<String> menu_type_list = new ArrayList<>();
+    private String house_id;
+    private String nick_name;
+    private String phone;
+    private String date = getDate(432000000);
 
     /**
      * 生活服务页
@@ -386,7 +390,7 @@ public class MinePage extends BaseApi {
                     Reporter.log("判断封面图");
                     String image = list_obj.getString("image");
                     int statusCode = httpClient.getStatusCode(httpClient.get(image, new HashMap<>()));
-                    Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_1,"封面图不能为空");
+                    Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"封面图不能为空");
                     Reporter.log("判断标题正常显示");
                     String title = list_obj.getString("title");
                     Assert.assertEquals(title.equals(""),false,"标题不能为空");
@@ -602,6 +606,110 @@ public class MinePage extends BaseApi {
         }
     }
 
+
+    /**
+     * 可报备楼盘
+     */
+    @Test
+    public void houseStoreShareList() throws IOException {
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",access_token);
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(houseStoreShareList, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        Assert.assertEquals(msg,"获取可报备楼盘列表","接口返回msg不正确");
+        JSONObject data = rs.getJSONObject("data");
+        if(data.size()>0){
+            JSONArray list = data.getJSONArray("list");
+            if(list.size()>0){
+                house_id = list.getJSONObject(0).getString("id");
+            }
+        }
+    }
+
+    /**
+     * 获取下级信息
+     */
+    @Test(dependsOnMethods = { "houseStoreShareList"})
+    public void houseSubMembers() throws IOException {
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",access_token);
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(houseSubMembers, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        Assert.assertEquals(msg,"获取经纪人下级会员成功","接口返回msg不正确");
+        JSONObject data = rs.getJSONObject("data");
+        JSONArray list = data.getJSONArray("list");
+        JSONObject jsonObject = list.getJSONObject(0);
+        nick_name = jsonObject.getString("nick_name");
+        phone = jsonObject.getString("phone");
+    }
+
+    /**
+     * 房产报备
+     */
+    @Test(dependsOnMethods = { "houseSubMembers"})
+    public void houseReport() throws IOException {
+        String currentTime= System.currentTimeMillis()+"";
+        String substring = currentTime.substring(currentTime.length() - 8);
+        JSONObject user = new JSONObject();
+        user.put("phone","176"+substring);
+        user.put("true_name","哈哈哈");
+        String userlist = "["+user.toJSONString()+"]";
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",access_token);
+        params.put("user_list",userlist);
+        params.put("house_id",house_id);
+        params.put("house_time",date);
+        params.put("user_permission","house_sales");
+        params.put("arrive_name","111");
+        params.put("arrive_phone","17612345678");
+        params.put("remarks","JJ5了快");
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(houseReport, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        Assert.assertEquals(msg,"报备信息已提交成功","接口返回msg不正确");
+
+    }
+
+    /**
+     * 房产我的客户列表
+     */
+    public void houseReportList() throws IOException {
+        HashMap<String,String> params = new HashMap<>();
+        params.put("access_token",access_token);
+        params.put("type","sales");
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(houseReportList, params));
+        log.info(rs.toJSONString());
+        Reporter.log(rs.toJSONString());
+        int status = rs.getIntValue("status");
+        String msg = rs.getString("msg");
+        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
+        Assert.assertEquals(msg,"获取房产报备列表成功","接口返回msg不正确");
+        JSONObject data = rs.getJSONObject("data");
+        JSONArray list = data.getJSONArray("list");
+        JSONObject list_obj;
+        boolean isin =false;
+        for(int i =0;i<list.size();i++){
+            list_obj = list.getJSONObject(i);
+            String house_time = list_obj.getString("house_time");
+            if(house_time.equals(data)){
+                isin = true;
+                break;
+            }
+        }
+
+        Assert.assertEquals(isin,true,"报备添加失败");
+    }
 
     /**
      * 粉丝/关注列表
