@@ -7,6 +7,7 @@
    <suite-files>
 
 		<suite-file path="src/main/resources/testng/api/suite/liveSuite.xml"></suite-file>
+       <suite-file path="src/main/resources/testng/api/suite/myPage.xml"></suite-file>
         <suite-file path="src/main/resources/testng/api/integration/giftcard.xml"></suite-file>
        <suite-file path="src/main/resources/testng/api/integration/houseList.xml"></suite-file>
     </suite-files>

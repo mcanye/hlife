@@ -74,7 +74,7 @@ public class Collection extends BaseApi{
         Assert.assertEquals(msg,"获取聊天记录列表","接口返回msg不正确");
         JSONObject data = rs.getJSONObject("data");
         JSONArray list = data.getJSONArray("list");
-        JSONObject jsonObject = list.getJSONObject(0);
+        JSONObject jsonObject = list.getJSONObject(3);
         msg_uid = jsonObject.getString("jsonObject");
         JSONObject message_content = jsonObject.getJSONObject("message_content");
         text = message_content.getString("content");

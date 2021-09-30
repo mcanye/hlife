@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="我的主页" verbose="1" preserve-order="true">
+    <parameter name="report.config" value="src/main/resources/config/report/extent-config.xml"/>
+    <parameter name="system.info" value="reporter.config.MySystemInfo"/>
+
+   <suite-files>
+
+		<suite-file path="src/main/resources/testng/api/integration/myPage.xml"></suite-file>
+        <suite-file path="src/main/resources/testng/api/integration/Collection.xml"></suite-file>
+
+    </suite-files>
+
+    <listeners>
+        <listener class-name="reporter.listener.MyExtentTestNgFormatter"/>
+    </listeners>
+</suite>

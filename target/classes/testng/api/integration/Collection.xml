@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="我的收藏" verbose="1" preserve-order="true">
+    <parameter name="report.config" value="src/main/resources/config/report/extent-config.xml"/>
+    <parameter name="system.info" value="reporter.config.MySystemInfo"/>
+
+    <test name = "我的收藏" preserve-order="true">
+        <classes>
+            <class name="hlife.test.integration.Collection"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="reporter.listener.MyExtentTestNgFormatter"/>
+        <!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"/>-->
+    </listeners>
+</suite>
