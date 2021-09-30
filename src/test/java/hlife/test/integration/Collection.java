@@ -255,7 +255,6 @@ public class Collection extends BaseApi{
     private boolean myfavorite(String type) throws IOException {
         boolean isin = false;
         HashMap<String,String> params = new HashMap<>();
-
         params.put("access_token",access_token);
         params.put("type",type);
         JSONObject rs = httpClient.getResponseJson(httpClient.post(myfavorite, params));

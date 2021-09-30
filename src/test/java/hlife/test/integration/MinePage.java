@@ -119,24 +119,24 @@ public class MinePage extends BaseApi {
                 Assert.assertEquals(statusCode1, Constants.RESPNSE_STATUS_CODE_200, "子分类图片显示异常：" + menu_name);
             }
         }
-        Reporter.log("判断旅游频道");
-        JSONObject travel_channel = data.getJSONObject("travel_channel");
-        if (travel_channel.size() > 0) {
-            String menu_name1 = travel_channel.getString("menu_name");
-            Assert.assertEquals(menu_name1.equals("旅游频道"), true, "健康频道名称不正确");
-            JSONArray sub_list = travel_channel.getJSONArray("sub_list");
-            JSONObject sub_list_obj;
-            for (int i = 0; i < sub_list.size(); i++) {
-                sub_list_obj = sub_list.getJSONObject(i);
-                Reporter.log("判断子分类名称不为空");
-                String menu_name = sub_list_obj.getString("menu_name");
-                Assert.assertEquals(menu_name.equals(""), false, "");
-                Reporter.log("子分类图片可用性");
-                String menu_icon = sub_list_obj.getString("menu_icon");
-                int statusCode1 = httpClient.getStatusCode(httpClient.get(menu_icon, new HashMap<>()));
-                Assert.assertEquals(statusCode1, Constants.RESPNSE_STATUS_CODE_200, "子分类图片显示异常：" + menu_name);
-            }
-        }
+//        Reporter.log("判断旅游频道");
+//        JSONObject travel_channel = data.getJSONObject("travel_channel");
+//        if (travel_channel.size() > 0) {
+//            String menu_name1 = travel_channel.getString("menu_name");
+//            Assert.assertEquals(menu_name1.equals("旅游频道"), true, "健康频道名称不正确");
+//            JSONArray sub_list = travel_channel.getJSONArray("sub_list");
+//            JSONObject sub_list_obj;
+//            for (int i = 0; i < sub_list.size(); i++) {
+//                sub_list_obj = sub_list.getJSONObject(i);
+//                Reporter.log("判断子分类名称不为空");
+//                String menu_name = sub_list_obj.getString("menu_name");
+//                Assert.assertEquals(menu_name.equals(""), false, "");
+//                Reporter.log("子分类图片可用性");
+//                String menu_icon = sub_list_obj.getString("menu_icon");
+//                int statusCode1 = httpClient.getStatusCode(httpClient.get(menu_icon, new HashMap<>()));
+//                Assert.assertEquals(statusCode1, Constants.RESPNSE_STATUS_CODE_200, "子分类图片显示异常：" + menu_name);
+//            }
+//        }
         Reporter.log("判断商城频道");
         JSONObject mall_channel = data.getJSONObject("mall_channel");
         if (mall_channel.size() > 0) {
