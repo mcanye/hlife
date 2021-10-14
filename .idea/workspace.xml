@@ -5,6 +5,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/filters/hlife_online.properties" afterPath="$PROJECT_DIR$/src/main/filters/hlife_online.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/filters/house_online.properties" afterPath="$PROJECT_DIR$/src/main/filters/house_online.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/filters/taiji_online.properties" afterPath="$PROJECT_DIR$/src/main/filters/taiji_online.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,61 +19,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;method#systemVersion#0;class#HomePage#0" expanded="false" />
-                <element signature="method#systemVersion#0;class#HomePage#0" expanded="false" />
-                <element signature="docComment;method#videoList#0;class#HomePage#0" expanded="false" />
-                <element signature="method#videoList#0;class#HomePage#0" expanded="false" />
-                <element signature="docComment;method#videoDetail#0;class#HomePage#0" expanded="false" />
-                <element signature="method#videoDetail#0;class#HomePage#0" expanded="false" />
-                <element signature="docComment;method#videoSupport#0;class#HomePage#0" expanded="false" />
-                <element signature="method#videoSupport#0;class#HomePage#0" expanded="false" />
-                <element signature="docComment;method#publicsGetcomment#0;class#HomePage#0" expanded="false" />
-                <element signature="method#publicsGetcomment#0;class#HomePage#0" expanded="false" />
-                <element signature="docComment;method#publicsWritecomment#0;class#HomePage#0" expanded="false" />
-                <element signature="method#publicsWritecomment#0;class#HomePage#0" expanded="false" />
-                <element signature="docComment;method#publicsCommentpraise#0;class#HomePage#0" expanded="false" />
-                <element signature="method#publicsCommentpraise#0;class#HomePage#0" expanded="false" />
-                <element signature="docComment;method#publicsSetcomment#0;class#HomePage#0" expanded="false" />
-                <element signature="method#publicsSetcomment#0;class#HomePage#0" expanded="false" />
-                <element signature="docComment;method#publicsGettwocomment#0;class#HomePage#0" expanded="false" />
-                <element signature="method#publicsGettwocomment#0;class#HomePage#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="hlife_online.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="175">
+              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="house_online.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/filters/house_online.properties">
+      <file leaf-file-name="LiveList.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+            <state relative-caret-position="231">
+              <caret line="407" column="22" lean-forward="true" selection-start-line="407" selection-start-column="22" selection-end-line="413" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="taiji_online.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fast.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="200" column="37" lean-forward="true" selection-start-line="200" selection-start-column="37" selection-end-line="200" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liveSuite.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/liveSuite.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liveGift.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveGift.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="livePower.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/livePower.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="taiji_online.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/filters/taiji_online.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            <state relative-caret-position="175">
+              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hlife_online_pre.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online_pre.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -92,60 +114,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="431">
               <caret line="249" column="20" lean-forward="false" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MinePage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-575">
-              <caret line="476" column="54" lean-forward="false" selection-start-line="476" selection-start-column="44" selection-end-line="476" selection-end-column="54" />
-              <folding>
-                <element signature="method#friendHome#0;class#MinePage#0" expanded="false" />
-                <element signature="method#myModifymyinfo#0;class#MinePage#0" expanded="false" />
-                <element signature="method#friendMenuInfo#0;class#MinePage#0" expanded="false" />
-                <element signature="method#newsList#0;class#MinePage#0" expanded="false" />
-                <element signature="docComment;method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
-                <element signature="method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
-                <element signature="docComment;method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
-                <element signature="method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
-                <element signature="method#myContacts#0;class#MinePage#0" expanded="false" />
-                <element signature="docComment;method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
-                <element signature="method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
-                <element signature="method#houseSubMembers#0;class#MinePage#0" expanded="false" />
-                <element signature="method#followList#0;class#MinePage#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Suite.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/Suite.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myPage.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/myPage.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="72" lean-forward="true" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="liveSuite.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/liveSuite.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="73" lean-forward="false" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -181,6 +149,7 @@
       <find>顶号</find>
       <find>/union/live/status/</find>
       <find>houseIdList_s</find>
+      <find>小视频文案不能为空</find>
     </findStrings>
     <replaceStrings>
       <replace>hlife</replace>
@@ -249,19 +218,19 @@
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/Collection.java" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/Collection.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/liveGift.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java" />
         <option value="$PROJECT_DIR$/logs/apilog.log" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/HouseList.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
         <option value="$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java" />
-        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/filters/hlife_online_pre.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/homePage.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/suite/Suite.xml" />
-        <option value="$PROJECT_DIR$/src/main/filters/hlife_online.properties" />
-        <option value="$PROJECT_DIR$/src/main/filters/house_online.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java" />
         <option value="$PROJECT_DIR$/src/main/filters/taiji_online.properties" />
+        <option value="$PROJECT_DIR$/src/main/filters/house_online.properties" />
+        <option value="$PROJECT_DIR$/src/main/filters/hlife_online.properties" />
       </list>
     </option>
   </component>
@@ -843,7 +812,7 @@
       <workItem from="1633567978283" duration="8725000" />
       <workItem from="1633653555452" duration="4470000" />
       <workItem from="1633914388925" duration="11364000" />
-      <workItem from="1634176578989" duration="4538000" />
+      <workItem from="1634176578989" duration="6996000" />
     </task>
     <servers />
   </component>
@@ -880,7 +849,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="611600000" />
+    <option name="totallyTimeSpent" value="614058000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -893,7 +862,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2306425" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -907,7 +875,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27987897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27987897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1030,21 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="170" column="27" lean-forward="false" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/livePower.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1195,14 +1148,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveGift.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/apilog.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1269,14 +1214,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10925">
-          <caret line="455" column="21" lean-forward="false" selection-start-line="455" selection-start-column="21" selection-end-line="455" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hlife/base/BaseApi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1304,54 +1241,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online_pre.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/myPage.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="225">
+          <caret line="9" column="72" lean-forward="true" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/Suite.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="249" column="20" lean-forward="false" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="20" />
+        <state relative-caret-position="350">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-575">
-          <caret line="476" column="54" lean-forward="false" selection-start-line="476" selection-start-column="44" selection-end-line="476" selection-end-column="54" />
-          <folding>
-            <element signature="method#friendHome#0;class#MinePage#0" expanded="false" />
-            <element signature="method#myModifymyinfo#0;class#MinePage#0" expanded="false" />
-            <element signature="method#friendMenuInfo#0;class#MinePage#0" expanded="false" />
-            <element signature="method#newsList#0;class#MinePage#0" expanded="false" />
-            <element signature="docComment;method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
-            <element signature="method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
-            <element signature="docComment;method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
-            <element signature="method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
-            <element signature="method#myContacts#0;class#MinePage#0" expanded="false" />
-            <element signature="docComment;method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
-            <element signature="method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
-            <element signature="method#houseSubMembers#0;class#MinePage#0" expanded="false" />
-            <element signature="method#followList#0;class#MinePage#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="265">
+          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#systemVersion#0;class#HomePage#0" expanded="false" />
             <element signature="method#systemVersion#0;class#HomePage#0" expanded="false" />
             <element signature="docComment;method#videoList#0;class#HomePage#0" expanded="false" />
-            <element signature="method#videoList#0;class#HomePage#0" expanded="false" />
             <element signature="docComment;method#videoDetail#0;class#HomePage#0" expanded="false" />
             <element signature="method#videoDetail#0;class#HomePage#0" expanded="false" />
             <element signature="docComment;method#videoSupport#0;class#HomePage#0" expanded="false" />
@@ -1370,6 +1284,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+          <folding>
+            <element signature="method#friendHome#0;class#MinePage#0" expanded="false" />
+            <element signature="method#myModifymyinfo#0;class#MinePage#0" expanded="false" />
+            <element signature="method#friendMenuInfo#0;class#MinePage#0" expanded="false" />
+            <element signature="method#newsList#0;class#MinePage#0" expanded="false" />
+            <element signature="docComment;method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
+            <element signature="method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
+            <element signature="docComment;method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
+            <element signature="method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
+            <element signature="method#myContacts#0;class#MinePage#0" expanded="false" />
+            <element signature="docComment;method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
+            <element signature="method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
+            <element signature="method#houseSubMembers#0;class#MinePage#0" expanded="false" />
+            <element signature="method#houseReport#0;class#MinePage#0" expanded="false" />
+            <element signature="method#houseReportList#0;class#MinePage#0" expanded="false" />
+            <element signature="method#followList#0;class#MinePage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/house_online.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/homePage.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1378,50 +1324,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/liveSuite.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="73" lean-forward="false" selection-start-line="13" selection-start-column="73" selection-end-line="13" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/myPage.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="72" lean-forward="true" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/Suite.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/filters/house_online.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        <state relative-caret-position="431">
+          <caret line="249" column="20" lean-forward="false" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/filters/taiji_online.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="46" lean-forward="false" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="175">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online_pre.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/suite/liveSuite.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/liveGift.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/livePower.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="407" column="22" lean-forward="true" selection-start-line="407" selection-start-column="22" selection-end-line="413" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/Fast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="200" column="37" lean-forward="true" selection-start-line="200" selection-start-column="37" selection-end-line="200" selection-end-column="37" />
           <folding />
         </state>
       </provider>

@@ -82,8 +82,8 @@ public class HomePage extends BaseApi{
                 Assert.assertEquals(id.equals(""),false,"视频id不能为空");
                 video_id_list.add(id);
 
-                String content = list_obj.getString("content");
-                Assert.assertEquals(content.equals(""),false,"小视频文案不能为空");
+/*                String content = list_obj.getString("content");
+                Assert.assertEquals(content.equals(""),false,"小视频文案不能为空");*/
 
                 String avatar = list_obj.getString("avatar");
                 int statusCode = httpClient.getStatusCode(httpClient.get(avatar, new HashMap<>()));

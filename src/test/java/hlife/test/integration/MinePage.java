@@ -37,7 +37,8 @@ public class MinePage extends BaseApi {
      */
     @Test
     public void myServiceHome() throws IOException {
-        HashMap<String, String> header = URLFiltration.addHeader(new HashMap<>());
+        HashMap<String, String> header = new HashMap<>();
+        header.put("apptype","hilife");
         JSONObject rs = httpClient.getResponseJson(httpClient.post(myServiceHome, new HashMap<>(), header));
         log.info(rs.toJSONString());
         Reporter.log(rs.toJSONString());
