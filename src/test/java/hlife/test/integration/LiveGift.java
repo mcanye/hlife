@@ -730,11 +730,11 @@ public class LiveGift extends BaseApi{
 
 
 
-    @Test
+    /*@Test
     public void remind(){
         Assert.assertEquals(true,false,"每间隔1天，判断gift_pop是否走等于0的逻辑liveGiftPopInfo方法");
     }
-
+*/
     /**
      * 获取用户ID
      * @param phone
