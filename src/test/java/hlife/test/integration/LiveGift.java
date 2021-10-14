@@ -195,14 +195,14 @@ public class LiveGift extends BaseApi{
         statusCode = httpClient.getStatusCode(httpClient.get(image, new HashMap<>()));
         Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"分享图片请求异常");
 
-        Reporter.log("您已有其他直播正在直播中");
+/*        Reporter.log("您已有其他直播正在直播中");
         rs = httpClient.getResponseJson(httpClient.post(liveCreate, params,header));
         log.info(rs.toJSONString());
         Reporter.log(rs.toJSONString());
         status = rs.getIntValue("status");
         Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_0,"创建直播接口请求异常"+liveCreate);
         msg = rs.getString("msg");
-        Assert.assertEquals(msg,"您已有其他直播正在直播中","创建直播接口返回msg不正确");
+        Assert.assertEquals(msg,"您已有其他直播正在直播中","创建直播接口返回msg不正确");*/
 
 
     }

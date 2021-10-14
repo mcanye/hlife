@@ -35,11 +35,11 @@ public class LiveRtcFunc extends BaseApi{
     //用户视频权限开关 0 关闭 1开启
     private int enableVideo;
 
+/*
 
-
-    /**
+    *//**
      * 获取直播分类（根据apptype不同返回值不同，分类由后台管理端配置）
-     */
+     *//*
     @Test
     public void liveCategoryList() throws IOException, InterruptedException {
 
@@ -91,9 +91,9 @@ public class LiveRtcFunc extends BaseApi{
         }
     }
 
-    /**
+    *//**
      * 创建直播间
-     */
+     *//*
     @Test(dependsOnMethods = { "liveCategoryList" })
     public void liveCreate() throws IOException {
         HashMap<String,String> header = URLFiltration.addHeader(new HashMap<>());
@@ -197,21 +197,14 @@ public class LiveRtcFunc extends BaseApi{
         statusCode = httpClient.getStatusCode(httpClient.get(image, new HashMap<>()));
         Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"分享图片请求异常");
 
-        Reporter.log("您已有其他直播正在直播中");
-        rs = httpClient.getResponseJson(httpClient.post(liveCreate, params,header));
-        log.info(rs.toJSONString());
-        Reporter.log(rs.toJSONString());
-        status = rs.getIntValue("status");
-        Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_0,"创建直播接口请求异常"+liveCreate);
-        msg = rs.getString("msg");
-        Assert.assertEquals(msg,"您已有其他直播正在直播中","创建直播接口返回msg不正确");
+
 
 
     }
 
-    /**
+    *//**
      * 主播开启聊天室
-     */
+     *//*
     @Test(dependsOnMethods = { "liveCreate" })
     public void liveOpenRtcFunc() throws IOException {
         HashMap<String,String> params = new HashMap<>();
@@ -229,9 +222,9 @@ public class LiveRtcFunc extends BaseApi{
 
     }
 
-    /**
+    *//**
      * 用户加入直播间
-     */
+     *//*
     @Test(dependsOnMethods = { "liveOpenRtcFunc"})
     public void liveJoin() throws IOException {
         HashMap<String,String> params = new HashMap<>();
@@ -247,9 +240,9 @@ public class LiveRtcFunc extends BaseApi{
         chatroomInviteList();
     }
 
-    /**
+    *//**
      * 邀请用户连麦
-     */
+     *//*
     @Test(dependsOnMethods = { "liveJoin"})
     public void chatroomInvite() throws IOException {
         Reporter.log("邀请用户连麦");
@@ -266,9 +259,9 @@ public class LiveRtcFunc extends BaseApi{
         Assert.assertEquals(msg,"操作成功","接口返回msg不正确");
     }
 
-    /**
+    *//**
      * 同意连麦
-     */
+     *//*
     @Test(dependsOnMethods = { "chatroomInvite"})
     public void chatroomUserAgree() throws IOException, InterruptedException {
         HashMap<String,String> params = new HashMap<>();
@@ -299,9 +292,9 @@ public class LiveRtcFunc extends BaseApi{
         Assert.assertEquals(isin,true,"用户同意连麦，没有在邀请列表中移除");
     }
 
-    /**
+    *//**
      * 管理用户
-     */
+     *//*
     @Test(dependsOnMethods = { "chatroomUserAgree"})
     public void chatroomManage() throws IOException, InterruptedException {
         //audio禁音,video禁视频,getout踢出
@@ -375,9 +368,9 @@ public class LiveRtcFunc extends BaseApi{
         Assert.assertEquals(enableVideo,1,"视频修改失败");
     }
 
-    /**
+    *//**
      * 所有人静音
-     */
+     *//*
     @Test(dependsOnMethods = { "chatroomManage"})
     public void chatroomMuteAll() throws IOException, InterruptedException {
         Reporter.log("全员静音");
@@ -411,9 +404,9 @@ public class LiveRtcFunc extends BaseApi{
 
     }
 
-    /**
+    *//**
      * 踢出用户
-     */
+     *//*
     @Test(dependsOnMethods = { "chatroomMuteAll"})
     public void chatroomManage_getout() throws IOException, InterruptedException {
         Reporter.log("踢出用户连麦");
@@ -434,9 +427,9 @@ public class LiveRtcFunc extends BaseApi{
         Assert.assertEquals(isin,false,"踢出用户成功后,管理列表中没有移除对应用户");
     }
 
-    /**
+    *//**
      * 观众申请连麦
-     */
+     *//*
     @Test(dependsOnMethods = { "chatroomManage_getout"})
     public void chatroomApply() throws IOException {
         HashMap<String,String> params = new HashMap<>();
@@ -452,9 +445,9 @@ public class LiveRtcFunc extends BaseApi{
 
     }
 
-    /**
+    *//**
      * 主播查看申请连麦用户列表
-     */
+     *//*
     @Test(dependsOnMethods = { "chatroomApply"})
     public void chatroomApplyList() throws IOException {
         Reporter.log("主播查看申请连麦用户列表");
@@ -493,9 +486,9 @@ public class LiveRtcFunc extends BaseApi{
 
     }
 
-    /**
+    *//**
      * 主播同意连麦申请
-     */
+     *//*
     @Test(dependsOnMethods = { "chatroomApplyList"})
     public void chatroomAgree() throws IOException, InterruptedException {
         HashMap<String,String> params = new HashMap<>();
@@ -558,9 +551,9 @@ public class LiveRtcFunc extends BaseApi{
         Assert.assertEquals(isin,true,"连麦用户管理列表没有添加用户");
     }
 
-    /**
+    *//**
      * 用户断开连麦
-     */
+     *//*
     @Test(dependsOnMethods = { "chatroomAgree"})
     public void chatroomUserCloseMute() throws IOException {
         HashMap<String,String> params = new HashMap<>();
@@ -579,9 +572,9 @@ public class LiveRtcFunc extends BaseApi{
         Assert.assertEquals(isin,true,"用户断开连麦后，邀请列表没有添加用户");
     }
 
-    /**
+    *//**
      * 关闭聊天室
-     */
+     *//*
     @Test(dependsOnMethods = { "chatroomUserCloseMute"})
     public void liveCloseRtcFunc() throws IOException {
         Reporter.log("关闭聊天室");
@@ -611,9 +604,9 @@ public class LiveRtcFunc extends BaseApi{
 
     }
 
-    /**
+    *//**
      * 关闭直播
-     */
+     *//*
     @AfterClass
     public void liveOpera() throws IOException {
         Reporter.log("请登录");
@@ -693,9 +686,9 @@ public class LiveRtcFunc extends BaseApi{
         Assert.assertEquals(can_join,Constants.RESPNSE_STATUS_CODE_0,"关闭直播间失败");
     }
 
-    /**
+    *//**
      * 获取用户ID
-     */
+     *//*
     private String getUser_id(String phone) throws IOException, InterruptedException {
         HashMap<String, String> params = new HashMap<>();
         params.put("type","1");
@@ -717,9 +710,9 @@ public class LiveRtcFunc extends BaseApi{
         return rs.getJSONObject("data").getString("id");
     }
 
-    /**
+    *//**
      * 主播查看邀请连麦用户列表
-     */
+     *//*
     private void chatroomInviteList() throws IOException {
         Reporter.log("主播查看邀请连麦用户列表");
         isin = false;
@@ -756,9 +749,9 @@ public class LiveRtcFunc extends BaseApi{
 
     }
 
-    /**
+    *//**
      * 管理连麦列表
-     */
+     *//*
     private void chatroomManagement() throws IOException {
         isin = false;
         HashMap<String,String> params = new HashMap<>();
@@ -791,5 +784,5 @@ public class LiveRtcFunc extends BaseApi{
                 enableVideo = listObj.getIntValue("enableVideo");
             }
         }
-    }
+    }*/
 }
