@@ -114,19 +114,22 @@ public class HomePage extends BaseApi{
                 Assert.assertEquals(duration.equals(""),false,"音频播放时长不能为空");
 
                 JSONObject share = list_obj.getJSONObject("share");
-                url = share.getString("url");
-                statusCode = httpClient.getStatusCode(httpClient.get(url, new HashMap<>()));
-                Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"分享H5地址请求失败");
-                name = share.getString("name");
-                Assert.assertEquals(name.equals(""),false,"分享名称不能为空");
-                String content1 = share.getString("content");
-                Assert.assertEquals(content1.equals(""),false,"分享文案不能为空");
-                String image = share.getString("image");
-                statusCode = httpClient.getStatusCode(httpClient.get(image, new HashMap<>()));
-                Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"分享图片地址请求失败");
-                String video1 = share.getString("video");
-                statusCode = httpClient.getStatusCode(httpClient.get(video1, new HashMap<>()));
-                Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"分享视频地址请求失败");
+                
+                if(share.size()>0){
+                    url = share.getString("url");
+                    statusCode = httpClient.getStatusCode(httpClient.get(url, new HashMap<>()));
+                    Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"分享H5地址请求失败");
+                    name = share.getString("name");
+                    Assert.assertEquals(name.equals(""),false,"分享名称不能为空");
+                    String content1 = share.getString("content");
+                    Assert.assertEquals(content1.equals(""),false,"分享文案不能为空");
+                    String image = share.getString("image");
+                    statusCode = httpClient.getStatusCode(httpClient.get(image, new HashMap<>()));
+                    Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"分享图片地址请求失败");
+                    String video1 = share.getString("video");
+                    statusCode = httpClient.getStatusCode(httpClient.get(video1, new HashMap<>()));
+                    Assert.assertEquals(statusCode,Constants.RESPNSE_STATUS_CODE_200,"分享视频地址请求失败");
+                }
             }
 
         }

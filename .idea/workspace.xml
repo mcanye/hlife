@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05317c89-b5df-4710-82ef-91eb2dab91c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveGift.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveGift.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java" afterPath="$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,6 +15,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="116" column="16" lean-forward="false" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+              <folding>
+                <element signature="docComment;method#systemVersion#0;class#HomePage#0" expanded="false" />
+                <element signature="method#systemVersion#0;class#HomePage#0" expanded="false" />
+                <element signature="docComment;method#videoList#0;class#HomePage#0" expanded="false" />
+                <element signature="docComment;method#videoDetail#0;class#HomePage#0" expanded="false" />
+                <element signature="method#videoDetail#0;class#HomePage#0" expanded="false" />
+                <element signature="docComment;method#videoSupport#0;class#HomePage#0" expanded="false" />
+                <element signature="method#videoSupport#0;class#HomePage#0" expanded="false" />
+                <element signature="docComment;method#publicsGetcomment#0;class#HomePage#0" expanded="false" />
+                <element signature="method#publicsGetcomment#0;class#HomePage#0" expanded="false" />
+                <element signature="docComment;method#publicsWritecomment#0;class#HomePage#0" expanded="false" />
+                <element signature="method#publicsWritecomment#0;class#HomePage#0" expanded="false" />
+                <element signature="docComment;method#publicsCommentpraise#0;class#HomePage#0" expanded="false" />
+                <element signature="method#publicsCommentpraise#0;class#HomePage#0" expanded="false" />
+                <element signature="docComment;method#publicsSetcomment#0;class#HomePage#0" expanded="false" />
+                <element signature="method#publicsSetcomment#0;class#HomePage#0" expanded="false" />
+                <element signature="docComment;method#publicsGettwocomment#0;class#HomePage#0" expanded="false" />
+                <element signature="method#publicsGettwocomment#0;class#HomePage#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="hlife_online.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LiveGift.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LiveGift.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveGift.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="736" column="2" lean-forward="false" selection-start-line="732" selection-start-column="4" selection-end-line="736" selection-end-column="2" />
+            <state relative-caret-position="468">
+              <caret line="765" column="0" lean-forward="true" selection-start-line="765" selection-start-column="0" selection-end-line="765" selection-end-column="0" />
               <folding>
                 <element signature="docComment;method#liveCategoryList#0;class#LiveGift#0" expanded="false" />
                 <element signature="method#liveCategoryList#0;class#LiveGift#0" expanded="false" />
@@ -93,6 +121,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MinePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+              <folding>
+                <element signature="method#friendHome#0;class#MinePage#0" expanded="false" />
+                <element signature="method#myModifymyinfo#0;class#MinePage#0" expanded="false" />
+                <element signature="method#friendMenuInfo#0;class#MinePage#0" expanded="false" />
+                <element signature="method#newsList#0;class#MinePage#0" expanded="false" />
+                <element signature="docComment;method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
+                <element signature="method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
+                <element signature="docComment;method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
+                <element signature="method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
+                <element signature="method#myContacts#0;class#MinePage#0" expanded="false" />
+                <element signature="docComment;method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
+                <element signature="method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
+                <element signature="method#houseSubMembers#0;class#MinePage#0" expanded="false" />
+                <element signature="method#houseReport#0;class#MinePage#0" expanded="false" />
+                <element signature="method#houseReportList#0;class#MinePage#0" expanded="false" />
+                <element signature="method#followList#0;class#MinePage#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="livePower.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/testng/api/integration/livePower.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,31 +157,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="taiji_online.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/filters/taiji_online.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="hlife_online_pre.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/filters/hlife_online_pre.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
               <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="249" column="20" lean-forward="false" selection-start-line="249" selection-start-column="0" selection-end-line="249" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -239,12 +273,12 @@
         <option value="$PROJECT_DIR$/src/main/filters/hlife_online_pre.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/integration/homePage.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/testng/api/suite/Suite.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java" />
         <option value="$PROJECT_DIR$/src/main/filters/taiji_online.properties" />
         <option value="$PROJECT_DIR$/src/main/filters/house_online.properties" />
         <option value="$PROJECT_DIR$/src/main/filters/hlife_online.properties" />
         <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveGift.java" />
+        <option value="$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java" />
       </list>
     </option>
   </component>
@@ -826,7 +860,7 @@
       <workItem from="1633567978283" duration="8725000" />
       <workItem from="1633653555452" duration="4470000" />
       <workItem from="1633914388925" duration="11364000" />
-      <workItem from="1634176578989" duration="7622000" />
+      <workItem from="1634176578989" duration="8568000" />
     </task>
     <servers />
   </component>
@@ -863,7 +897,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="614684000" />
+    <option name="totallyTimeSpent" value="615630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1248,57 +1282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#systemVersion#0;class#HomePage#0" expanded="false" />
-            <element signature="method#systemVersion#0;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#videoList#0;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#videoDetail#0;class#HomePage#0" expanded="false" />
-            <element signature="method#videoDetail#0;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#videoSupport#0;class#HomePage#0" expanded="false" />
-            <element signature="method#videoSupport#0;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#publicsGetcomment#0;class#HomePage#0" expanded="false" />
-            <element signature="method#publicsGetcomment#0;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#publicsWritecomment#0;class#HomePage#0" expanded="false" />
-            <element signature="method#publicsWritecomment#0;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#publicsCommentpraise#0;class#HomePage#0" expanded="false" />
-            <element signature="method#publicsCommentpraise#0;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#publicsSetcomment#0;class#HomePage#0" expanded="false" />
-            <element signature="method#publicsSetcomment#0;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#publicsGettwocomment#0;class#HomePage#0" expanded="false" />
-            <element signature="method#publicsGettwocomment#0;class#HomePage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-          <folding>
-            <element signature="method#friendHome#0;class#MinePage#0" expanded="false" />
-            <element signature="method#myModifymyinfo#0;class#MinePage#0" expanded="false" />
-            <element signature="method#friendMenuInfo#0;class#MinePage#0" expanded="false" />
-            <element signature="method#newsList#0;class#MinePage#0" expanded="false" />
-            <element signature="docComment;method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
-            <element signature="method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
-            <element signature="docComment;method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
-            <element signature="method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
-            <element signature="method#myContacts#0;class#MinePage#0" expanded="false" />
-            <element signature="docComment;method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
-            <element signature="method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
-            <element signature="method#houseSubMembers#0;class#MinePage#0" expanded="false" />
-            <element signature="method#houseReport#0;class#MinePage#0" expanded="false" />
-            <element signature="method#houseReportList#0;class#MinePage#0" expanded="false" />
-            <element signature="method#followList#0;class#MinePage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/filters/house_online.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1389,8 +1372,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/LiveGift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="736" column="2" lean-forward="false" selection-start-line="732" selection-start-column="4" selection-end-line="736" selection-end-column="2" />
+        <state relative-caret-position="468">
+          <caret line="765" column="0" lean-forward="true" selection-start-line="765" selection-start-column="0" selection-end-line="765" selection-end-column="0" />
           <folding>
             <element signature="docComment;method#liveCategoryList#0;class#LiveGift#0" expanded="false" />
             <element signature="method#liveCategoryList#0;class#LiveGift#0" expanded="false" />
@@ -1409,6 +1392,56 @@
             <element signature="method#getUser_id#0;class#LiveGift#0" expanded="false" />
             <marker date="1634200167024" expanded="false" signature="31824:31834" ph=" { " />
             <marker date="1634200167024" expanded="false" signature="31911:31917" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/MinePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+          <folding>
+            <element signature="method#friendHome#0;class#MinePage#0" expanded="false" />
+            <element signature="method#myModifymyinfo#0;class#MinePage#0" expanded="false" />
+            <element signature="method#friendMenuInfo#0;class#MinePage#0" expanded="false" />
+            <element signature="method#newsList#0;class#MinePage#0" expanded="false" />
+            <element signature="docComment;method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
+            <element signature="method#distributeUpgradeStrategy#0;class#MinePage#0" expanded="false" />
+            <element signature="docComment;method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
+            <element signature="method#distributeMemberInfo#0;class#MinePage#0" expanded="false" />
+            <element signature="method#myContacts#0;class#MinePage#0" expanded="false" />
+            <element signature="docComment;method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
+            <element signature="method#houseStoreShareList#0;class#MinePage#0" expanded="false" />
+            <element signature="method#houseSubMembers#0;class#MinePage#0" expanded="false" />
+            <element signature="method#houseReport#0;class#MinePage#0" expanded="false" />
+            <element signature="method#houseReportList#0;class#MinePage#0" expanded="false" />
+            <element signature="method#followList#0;class#MinePage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/hlife/test/integration/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="116" column="16" lean-forward="false" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+          <folding>
+            <element signature="docComment;method#systemVersion#0;class#HomePage#0" expanded="false" />
+            <element signature="method#systemVersion#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#videoList#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#videoDetail#0;class#HomePage#0" expanded="false" />
+            <element signature="method#videoDetail#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#videoSupport#0;class#HomePage#0" expanded="false" />
+            <element signature="method#videoSupport#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#publicsGetcomment#0;class#HomePage#0" expanded="false" />
+            <element signature="method#publicsGetcomment#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#publicsWritecomment#0;class#HomePage#0" expanded="false" />
+            <element signature="method#publicsWritecomment#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#publicsCommentpraise#0;class#HomePage#0" expanded="false" />
+            <element signature="method#publicsCommentpraise#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#publicsSetcomment#0;class#HomePage#0" expanded="false" />
+            <element signature="method#publicsSetcomment#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#publicsGettwocomment#0;class#HomePage#0" expanded="false" />
+            <element signature="method#publicsGettwocomment#0;class#HomePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
