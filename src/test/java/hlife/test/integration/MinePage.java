@@ -655,7 +655,7 @@ public class MinePage extends BaseApi {
      * 房产报备
      */
     @Test(dependsOnMethods = { "houseSubMembers"})
-    public void houseReport() throws IOException {
+    public void houseReport() throws IOException, InterruptedException {
         String currentTime= System.currentTimeMillis()+"";
         String substring = currentTime.substring(currentTime.length() - 8);
         JSONObject user = new JSONObject();
@@ -678,13 +678,14 @@ public class MinePage extends BaseApi {
         String msg = rs.getString("msg");
         Assert.assertEquals(status,Constants.RESPNSE_STATUS_CODE_1,"接口请求失败");
         Assert.assertEquals(msg,"报备信息已提交成功","接口返回msg不正确");
-
+        loading();
+        houseReportList();
     }
 
     /**
      * 房产我的客户列表
      */
-    public void houseReportList() throws IOException {
+    private void houseReportList() throws IOException {
         HashMap<String,String> params = new HashMap<>();
         params.put("access_token",access_token);
         params.put("type","sales");
@@ -702,9 +703,10 @@ public class MinePage extends BaseApi {
         for(int i =0;i<list.size();i++){
             list_obj = list.getJSONObject(i);
             String house_time = list_obj.getString("house_time");
-            if(house_time.equals(data)){
+            System.out.println(date);
+            if(house_time.equals(date)){
+                System.out.println("------------");
                 isin = true;
-                break;
             }
         }
 

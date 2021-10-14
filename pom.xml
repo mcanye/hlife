@@ -183,9 +183,7 @@
 			<properties>
 				<env>first-debug</env>
 			</properties>
-			<activation>
-				<activeByDefault>true</activeByDefault><!-- 默认启用的是第一套环境配置 -->
-			</activation>
+
 		</profile>
 		<!-- 嗨生活生产环境 -->
 		<profile>
@@ -195,7 +193,16 @@
 			</properties>
 
 		</profile>
-
+		<!-- 预生产环境 -->
+		<profile>
+			<id>hlife_online_pre</id>
+			<properties>
+				<env>hlife_online_pre</env>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault><!-- 默认启用的是第一套环境配置 -->
+			</activation>
+		</profile>
 		<!-- 住金所生产环境 -->
 		<profile>
 			<id>house_online</id>

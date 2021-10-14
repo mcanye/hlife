@@ -4,7 +4,7 @@
     <parameter name="report.config" value="src/main/resources/config/report/extent-config.xml"/>
     <parameter name="system.info" value="reporter.config.MySystemInfo"/>
 
-    <test name = "我的收藏" preserve-order="true">
+    <test name ="我的收藏" preserve-order="true">
         <classes>
             <class name="hlife.test.integration.Collection"/>
         </classes>

@@ -249,11 +249,46 @@ public class BaseApi {
 	protected String houseReport;
 	//房产报备我的客户列表
 	protected String houseReportList;
+	//房产详情
+	protected String houseDetail;
+	//房产全部筛选项
+	protected String houseFilterList;
+	//获取版本信息
+	protected String systemVersion;
+	//视频详情
+	protected String videoDetail;
+	//小视频点赞、取消点赞
+	protected String videoSupport;
+	//评论列表
+	protected String publicsGetcomment;
+	//发布评论
+	protected String publicsWritecomment;
+	//点赞评论
+	protected String publicsCommentpraise;
+	//发布二级评论
+	protected String publicsSetcomment;
+	//二级评论列表
+	protected String publicsGettwocomment;
 
 
 	@BeforeClass
 	public void setUp() throws  IOException, InterruptedException {
-
+		publicsGettwocomment = PropertiesUtils.getConfigValue("publicsGettwocomment");
+		publicsGettwocomment = URLFiltration.addHost_BASEURL_API(publicsGettwocomment);
+		publicsSetcomment = PropertiesUtils.getConfigValue("publicsSetcomment");
+		publicsSetcomment = URLFiltration.addHost_BASEURL_API(publicsSetcomment);
+		publicsCommentpraise = PropertiesUtils.getConfigValue("publicsCommentpraise");
+		publicsCommentpraise = URLFiltration.addHost_BASEURL_API(publicsCommentpraise);
+		publicsWritecomment = PropertiesUtils.getConfigValue("publicsWritecomment");
+		publicsWritecomment = URLFiltration.addHost_BASEURL_API(publicsWritecomment);
+		publicsGetcomment = PropertiesUtils.getConfigValue("publicsGetcomment");
+		publicsGetcomment = URLFiltration.addHost_BASEURL_API(publicsGetcomment);
+		videoSupport = PropertiesUtils.getConfigValue("videoSupport");
+		videoSupport = URLFiltration.addHost_BASEURL_API(videoSupport);
+		videoDetail = PropertiesUtils.getConfigValue("videoDetail");
+		videoDetail = URLFiltration.addHost_BASEURL_API(videoDetail);
+		systemVersion = PropertiesUtils.getConfigValue("systemVersion");
+		systemVersion = URLFiltration.addHost_BASEURL_API(systemVersion);
 		verify = PropertiesUtils.getConfigValue("verify");
 		verify = URLFiltration.addHost_BASEURL_API(verify);
 		city = PropertiesUtils.getConfigValue("city");
@@ -337,7 +372,7 @@ public class BaseApi {
 		distributeMemberInfo = PropertiesUtils.getConfigValue("distributeMemberInfo");
 		distributeMemberInfo = URLFiltration.addHost_BASEURL_API(distributeMemberInfo);
 		chatGroupinfo = PropertiesUtils.getConfigValue("chatGroupinfo");
-		chatGroupinfo = URLFiltration.addHost_BASEURL_API(chatGroupinfo);
+		chatGroupinfo = URLFiltration.addHost_BASEURL_PASSPORT(chatGroupinfo);
 		myContacts = PropertiesUtils.getConfigValue("myContacts");
 		myContacts = URLFiltration.addHost_BASEURL_API(myContacts);
 		chatRecordcollect = PropertiesUtils.getConfigValue("chatRecordcollect");
@@ -362,7 +397,10 @@ public class BaseApi {
 		houseReport = URLFiltration.addHost_BASEURL_API(houseReport);
 		houseReportList = PropertiesUtils.getConfigValue("houseReportList");
 		houseReportList = URLFiltration.addHost_BASEURL_API(houseReportList);
-
+		houseDetail = PropertiesUtils.getConfigValue("houseDetail");
+		houseDetail = URLFiltration.addHost_BASEURL_API(houseDetail);
+		houseFilterList = PropertiesUtils.getConfigValue("houseFilterList");
+		houseFilterList = URLFiltration.addHost_BASEURL_API(houseFilterList);
 
 
 		liveCreate = PropertiesUtils.getConfigValue("liveCreate");
@@ -461,6 +499,9 @@ public class BaseApi {
 		liveBlockUser = URLFiltration.addHost_BASEURL_API(liveBlockUser);
 		liveUnBlock = PropertiesUtils.getConfigValue("liveUnBlock");
 		liveUnBlock = URLFiltration.addHost_BASEURL_API(liveUnBlock);
+
+
+
 
 
 		access_token = fast(verificationParameters.phone);
