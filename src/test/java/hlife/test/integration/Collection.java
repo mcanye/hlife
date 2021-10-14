@@ -56,9 +56,9 @@ public class Collection extends BaseApi{
         group_target_id = data.getString("group_target_id");
     }
 
-    /**
+/*    *//**
      * 获取即信聊天记录
-     */
+     *//*
     @Test(dependsOnMethods = { "friendHome"})
     public void chatRecordList() throws IOException {
         HashMap<String,String> params = new HashMap<>();
@@ -74,26 +74,35 @@ public class Collection extends BaseApi{
         Assert.assertEquals(msg,"获取聊天记录列表","接口返回msg不正确");
         JSONObject data = rs.getJSONObject("data");
         JSONArray list = data.getJSONArray("list");
-        JSONObject jsonObject = list.getJSONObject(3);
-        msg_uid = jsonObject.getString("jsonObject");
-        JSONObject message_content = jsonObject.getJSONObject("message_content");
-        text = message_content.getString("content");
-        JSONObject user = message_content.getJSONObject("user");
-        String headerUrl = user.getString("portrait");
-        String id = user.getString("id");
-        String name = user.getString("name");
-        JSONObject obj = new JSONObject();
-        obj.put("text",text);
-        obj.put("headerUrl",headerUrl);
-        obj.put("id",id);
-        obj.put("name",name);
-        body = obj.toString();
+        for(int i = 0 ;i<list.size();i++){
+            JSONObject jsonObject = list.getJSONObject(i);
+            msg_uid = jsonObject.getString("jsonObject");
+            JSONObject message_content = jsonObject.getJSONObject("message_content");
+            text = message_content.getString("content");
+            JSONObject user = message_content.getJSONObject("user");
+            if(user.size()>0){
+                String headerUrl = user.getString("portrait");
+                String id = user.getString("id");
+                String name = user.getString("name");
+                if(!headerUrl.equals("")){
+                    JSONObject obj = new JSONObject();
+                    obj.put("text",text);
+                    obj.put("headerUrl",headerUrl);
+                    obj.put("id",id);
+                    obj.put("name",name);
+                    body = obj.toString();
+                    break;
+                }
+            }
+
+        }
+
     }
 
-    /**
+    *//**
      * 收藏即信聊天记录
      * @throws IOException
-     */
+     *//*
     @Test(dependsOnMethods = { "chatRecordList"})
     public void chatRecordcollect() throws IOException {
         HashMap<String,String> params = new HashMap<>();
@@ -114,9 +123,9 @@ public class Collection extends BaseApi{
         Assert.assertEquals(isin,true,"收藏失败");
     }
 
-    /**
+    *//**
      * 删除即信聊天
-     */
+     *//*
     @Test(dependsOnMethods = { "chatRecordcollect"})
     public void chatRecordnocollect() throws IOException {
         HashMap<String,String> params  = new HashMap<>();
@@ -132,7 +141,7 @@ public class Collection extends BaseApi{
         Reporter.log("判断是否取消收藏成功");
         boolean isin = myfavorite("chat");
         Assert.assertEquals(isin,false,"取消收藏失败");
-    }
+    }*/
 
     /**
      * 小视频列表

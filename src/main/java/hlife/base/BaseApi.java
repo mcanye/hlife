@@ -505,9 +505,13 @@ public class BaseApi {
 
 
 		access_token = fast(verificationParameters.phone);
+		loading();
 		new_access_token = fast(verificationParameters.newPhone);
+		loading();
 		userIdA = getUser_id(verificationParameters.phone);
+		loading();
 		userIdB = getUser_id(verificationParameters.newPhone);
+		loading();
 	}
 
 	
