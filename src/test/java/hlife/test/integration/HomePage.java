@@ -244,12 +244,13 @@ public class HomePage extends BaseApi{
      * @throws IOException
      */
     private void publicsGetcomment() throws IOException {
-        publicsGetcomment = publicsGetcomment+video_id_list.get(0);
+        String publicsGetcomment_1;
+        publicsGetcomment_1 = publicsGetcomment+video_id_list.get(0);
         HashMap<String,String> params = new HashMap<>();
         params.put("access_token",access_token);
         params.put("type","video");
         params.put("page","1");
-        JSONObject rs = httpClient.getResponseJson(httpClient.post(publicsGetcomment, params));
+        JSONObject rs = httpClient.getResponseJson(httpClient.post(publicsGetcomment_1, params));
         log.info(rs.toJSONString());
         Reporter.log(rs.toJSONString());
         int status = rs.getIntValue("status");
@@ -264,7 +265,7 @@ public class HomePage extends BaseApi{
         for(int i=0;i<list.size();i++){
             list_obj = list.getJSONObject(i);
             String body = list_obj.getString("body");
-            if(body.equals(data)){
+            if(body.equals(date)){
                 isin = true;
                 comment_id = list_obj.getString("comment_id");
                 num_praise = list_obj.getString("num_praise");
