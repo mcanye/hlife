@@ -503,7 +503,7 @@ public class LiveGift extends BaseApi{
                 switch(i)
                 {
                     case 0 :
-                        if(payCopperRechargePackage.contains("api.")){
+                        if(payCopperRechargePackage.contains("api.") || payCopperRechargePackage.contains("apipre.")){
                             Assert.assertEquals(copper_price,"60","铜币数不正确");
                             Assert.assertEquals(cash_price,"6.00","现金不正确");
                         }else {

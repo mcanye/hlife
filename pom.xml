@@ -199,7 +199,9 @@
 			<properties>
 				<env>hlife_online_pre</env>
 			</properties>
-
+			<activation>
+				<activeByDefault>true</activeByDefault><!-- 默认启用的是第一套环境配置 -->
+			</activation>
 		</profile>
 		<!-- 住金所生产环境 -->
 		<profile>
@@ -207,9 +209,7 @@
 			<properties>
 				<env>house_online</env>
 			</properties>
-			<activation>
-				<activeByDefault>true</activeByDefault><!-- 默认启用的是第一套环境配置 -->
-			</activation>
+
 		</profile>
 		<!-- 住金所生产环境 -->
 		<profile>
