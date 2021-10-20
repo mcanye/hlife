@@ -231,7 +231,7 @@ public class HouseList extends BaseApi{
      * 房产详情
      */
     @Test(dependsOnMethods = { "houseList" })
-    public void houseDetail() throws IOException {
+    public void houseDetail() throws IOException, InterruptedException {
         for (int i = 0;i<house_id_list.size();i++){
             HashMap<String,String> params = new HashMap<>();
             params.put("house_id",house_id_list.get(i));
@@ -349,7 +349,7 @@ public class HouseList extends BaseApi{
                 String subtitle1 = house_group.getString("subtitle");
                 Assert.assertEquals(subtitle1,"免费专车全程服务，专业团队带看","看房团副标题不正确");
             }
-
+            loading();
         }
 
     }

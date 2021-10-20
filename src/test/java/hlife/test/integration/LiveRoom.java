@@ -685,7 +685,7 @@ public class LiveRoom extends BaseApi{
      */
     private void chatRecordList() throws IOException {
         HashMap<String,String> params = new HashMap<>();
-        params.put("access_token",new_access_token);
+        params.put("access_token",access_token);
         params.put("target_id",target_id);
         params.put("channel_name","taiji");
         JSONObject rs = httpClient.getResponseJson(httpClient.post(chatRecordList, params));
